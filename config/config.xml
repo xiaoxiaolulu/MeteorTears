@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<myconfig>
+    <c>
+        <type>MySqlDev</type>
+        <host>192.168.170.17</host>
+        <port>3306</port>
+        <user>root</user>
+        <password>test</password>
+        <db>marketing</db>
+    </c>
+    <mysqlTest>
+        <type>MySqlTest</type>
+        <host>192.168.170.24</host>
+        <port>3306</port>
+        <user>devpadmin</user>
+        <password>1234568</password>
+        <db>dada_marketing</db>
+    </mysqlTest>
+    <emailReceivers>
+        <type>EmailReceivers</type>
+        <recvaddress_163>13564957378@163.com</recvaddress_163>
+        <recvaddress_company>ting.lu@dadaabc.com</recvaddress_company>
+    </emailReceivers>
+    <emailSender>
+        <type>EmailSender</type>
+        <sendaddr_name>546464268@qq.com</sendaddr_name>
+        <sendaddr_pswd>bsdrmvxysnzzbdhe</sendaddr_pswd>
+    </emailSender>
+</myconfig>
