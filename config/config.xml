@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <myconfig>
-    <c>
+    <mysqlDev>
         <type>MySqlDev</type>
-        <host>192.168.170.17</host>
-        <port>3306</port>
-        <user>root</user>
-        <password>test</password>
-        <db>marketing</db>
-    </c>
+        <host>b'MTkyLjE2OC4xNzAuMTc='</host>
+        <port>b'MzMwNg=='</port>
+        <user>b'cm9vdA=='</user>
+        <password>b'dGVzdA=='</password>
+        <db>b'bWFya2V0aW5n'</db>
+    </mysqlDev>
     <mysqlTest>
-        <type>MySqlTest</type>
-        <host>192.168.170.24</host>
-        <port>3306</port>
-        <user>devpadmin</user>
-        <password>1234568</password>
-        <db>dada_marketing</db>
+        <type>mysqlTest</type>
+        <host>b'MTkyLjE2OC4xNzAuMjQ='</host>
+        <port>b'MzMwNg=='</port>
+        <user>b'ZGV2cGFkbWlu'</user>
+        <password>b'MTIzNDU2OA=='</password>
+        <db>b'ZGFkYV9tYXJrZXRpbmc='</db>
     </mysqlTest>
     <emailReceivers>
         <type>EmailReceivers</type>
-        <recvaddress_163>13564957378@163.com</recvaddress_163>
-        <recvaddress_company>ting.lu@dadaabc.com</recvaddress_company>
+        <recvaddress_163>b'MTM1NjQ5NTczNzhAMTYzLmNvbQ=='</recvaddress_163>
+        <recvaddress_company>b'dGluZy5sdUBkYWRhYWJjLmNvbQ=='</recvaddress_company>
     </emailReceivers>
     <emailSender>
         <type>EmailSender</type>
-        <sendaddr_name>546464268@qq.com</sendaddr_name>
-        <sendaddr_pswd>bsdrmvxysnzzbdhe</sendaddr_pswd>
+        <sendaddr_name>b'NTQ2NDY0MjY4QHFxLmNvbQ=='</sendaddr_name>
+        <sendaddr_pswd>b'YnNkcm12eHlzbnp6YmRoZQ=='</sendaddr_pswd>
     </emailSender>
 </myconfig>

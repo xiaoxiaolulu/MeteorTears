@@ -1,12 +1,12 @@
 # -*- coding:utf-8 -*-
 import unittest
 
-from config import parameters
+from config import setting
 from lib.public.BeautifulReport import BeautifulReport
 
 
 def run():
-    test_suite = unittest.defaultTestLoader.discover(parameters.make_directory('tests', 0), pattern='test*.py')
+    test_suite = unittest.defaultTestLoader.discover(setting.make_directory('tests', 0), pattern='test*.py')
     result = BeautifulReport(test_suite)
     result.report(
         filename='report',
