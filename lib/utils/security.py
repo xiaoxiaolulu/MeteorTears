@@ -7,7 +7,7 @@ def encrypt(key: bytes)-> bytes:
     加密
 
     :Arg:
-     - key: 加密的字符串, STR TYPE.
+     - key: 加密的字符串, BYTES TYPE.
 
     :Usage:
         encrypt(b'hello')
@@ -28,7 +28,7 @@ def decryption(key: bytes) -> str:
     解密
 
     :Args:
-     - key: 解密的字符串, STR TYPE.
+     - key: 解密的字符串, BYTES TYPE.
 
     :Usage:
         decryption(b'NTQ2NDY0MjY4QHFxLmNvbQ==')
