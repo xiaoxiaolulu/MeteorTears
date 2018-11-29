@@ -1,0 +1,16 @@
+{
+  "ChannelBudget": {
+    "table": "channel_budget",
+    "type": "query",
+    "columns": [
+      "student_id",
+      "score"
+    ],
+    "params": "id='7818751'",
+    "desc": "ORDER BY id DESC LIMIT 1",
+    "except": {
+      "is_table": "0",
+      "message": "You have an error in your SQL syntax"
+    }
+  }
+}

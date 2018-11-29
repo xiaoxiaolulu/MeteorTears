@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import os
 from xml.etree import ElementTree as ET
+from lib.utils import security
 
 
 class MetaSingleton(type):
@@ -65,4 +66,4 @@ class XmlHandler(metaclass=MetaSingleton):
 
 if __name__ == '__main__':
     Xml = XmlHandler(r'F:\MeteorTears\config\config.xml')
-    print(Xml.get_all_receivers)
+    print(security.decryption(bytes(Xml.get_all_receivers[0], encoding='utf-8')))

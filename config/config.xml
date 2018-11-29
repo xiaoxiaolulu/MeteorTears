@@ -2,28 +2,28 @@
 <myconfig>
     <mysqlDev>
         <type>MySqlDev</type>
-        <host>b'MTkyLjE2OC4xNzAuMTc='</host>
-        <port>b'MzMwNg=='</port>
-        <user>b'cm9vdA=='</user>
-        <password>b'dGVzdA=='</password>
-        <db>b'bWFya2V0aW5n'</db>
+        <host>MTkyLjE2OC4xNzAuMTc=</host>
+        <port>MzMwNg==</port>
+        <user>cm9vdA==</user>
+        <password>dGVzdA==</password>
+        <db>bWFya2V0aW5n</db>
     </mysqlDev>
     <mysqlTest>
         <type>mysqlTest</type>
-        <host>b'MTkyLjE2OC4xNzAuMjQ='</host>
-        <port>b'MzMwNg=='</port>
-        <user>b'ZGV2cGFkbWlu'</user>
-        <password>b'MTIzNDU2OA=='</password>
-        <db>b'ZGFkYV9tYXJrZXRpbmc='</db>
+        <host>MTkyLjE2OC4xNzAuMjQ=</host>
+        <port>MzMwNg==</port>
+        <user>ZGV2cGFkbWlu</user>
+        <password>MTIzNDU2OA==</password>
+        <db>ZGFkYV9tYXJrZXRpbmc=</db>
     </mysqlTest>
     <emailReceivers>
         <type>EmailReceivers</type>
-        <recvaddress_163>b'MTM1NjQ5NTczNzhAMTYzLmNvbQ=='</recvaddress_163>
-        <recvaddress_company>b'dGluZy5sdUBkYWRhYWJjLmNvbQ=='</recvaddress_company>
+        <recvaddress_163>MTM1NjQ5NTczNzhAMTYzLmNvbQ==</recvaddress_163>
+        <recvaddress_company>dGluZy5sdUBkYWRhYWJjLmNvbQ==</recvaddress_company>
     </emailReceivers>
     <emailSender>
         <type>EmailSender</type>
-        <sendaddr_name>b'NTQ2NDY0MjY4QHFxLmNvbQ=='</sendaddr_name>
-        <sendaddr_pswd>b'YnNkcm12eHlzbnp6YmRoZQ=='</sendaddr_pswd>
+        <sendaddr_name>NTQ2NDY0MjY4QHFxLmNvbQ==</sendaddr_name>
+        <sendaddr_pswd>YnNkcm12eHlzbnp6YmRoZQ==</sendaddr_pswd>
     </emailSender>
 </myconfig>

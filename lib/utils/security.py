@@ -42,3 +42,19 @@ def decryption(key: bytes) -> str:
         except TypeError:
             raise TypeError("argument should be a bytes-like object"
                             "not %r" % key.__class__.__name__) from None
+
+
+def batch_decryption(keys):
+    """
+    批量解密
+    :Args:
+     - keys:    解密的数据, LIST TYPE OR DICT TYPE.
+
+    :Usage:
+        batch_decryption(['MTkyLjE2OC4xNzAuMjQ=', 'MzMwNg=='])
+    """
+    return dict(zip(keys, map(lambda content: decryption(bytes(content, encoding='utf-8')), keys.values())))\
+        if isinstance(keys, dict) else list(map(lambda item: decryption(bytes(item, encoding='utf-8')), keys))
+
+if __name__ == '__main__':
+    pass

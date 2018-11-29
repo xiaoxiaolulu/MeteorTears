@@ -54,7 +54,7 @@ def analyze_excel(file: str, data_index: int, excel_key: str) -> list:
     return [dic]
 
 
-def save_excel(file, data_index, excel_key, excel_name='copy_excel'):
+def save_excel(file: str, data_index: int, excel_key: str, excel_name: str='copy_excel'):
     """
     分析表格后得到新的数据,并写入一份副本文件
 

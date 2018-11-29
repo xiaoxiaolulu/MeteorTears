@@ -1,6 +1,9 @@
 # -*- coding:utf-8 -*-
 import os
 from lib.utils import time_util
+from config import xml_handler
+from lib.utils import security
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,7 +40,7 @@ def make_directory(root_directory: str, extension_pattern: int, flag: 'default F
     return file_directory[extension_pattern]
 
 
-def document_name(extension_filename: str, filename: 'default Null'='', flag: 'default False'=True) -> str:
+def document_name(extension_filename: str, filename: 'default Null'='', flag: bool=True) -> str:
     """
     指定创建当前时间的日志文件或测试报告文件
 
@@ -54,3 +57,15 @@ def document_name(extension_filename: str, filename: 'default Null'='', flag: 'd
     filename = os.path.abspath(os.path.join(extension_document, '{0}{1}.{2}'
                                             .format(time_util.timestamp('format_now'), filename, extension_filename)))
     return filename
+
+
+BASE_DATA_BASE_CONF = xml_handler.XmlHandler(make_directory('config/config.xml', 0)).get_child('mysqlTest')['mysqlTest']
+
+
+DATABASE = dict(security.batch_decryption({
+    'host': BASE_DATA_BASE_CONF[0]['host'],
+    'port': BASE_DATA_BASE_CONF[1]['port'],
+    'user': BASE_DATA_BASE_CONF[2]['user'],
+    'passwd': BASE_DATA_BASE_CONF[3]['password'],
+    'db': BASE_DATA_BASE_CONF[4]['db'],
+}), **{'charset': "utf8"})
