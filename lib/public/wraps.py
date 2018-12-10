@@ -36,7 +36,4 @@ def test_data_runner(func):
 
 
 if __name__ == '__main__':
-    @test_data_runner
-    def channel_budget():
-        pass
-    channel_budget()
+    pass

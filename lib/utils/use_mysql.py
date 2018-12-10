@@ -87,5 +87,4 @@ class ExecuteSQL(GetJsonParams):
 
 
 if __name__ == '__main__':
-    data = ExecuteSQL.loads_sql_data().__next__()
-    print(data)
+    pass
