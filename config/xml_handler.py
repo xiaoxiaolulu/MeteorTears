@@ -64,6 +64,7 @@ class XmlHandler(metaclass=MetaSingleton):
                 receivers.append(child)
         return receivers
 
+
 if __name__ == '__main__':
     Xml = XmlHandler(r'F:\MeteorTears\config\config.xml')
     print(security.decryption(bytes(Xml.get_all_receivers[0], encoding='utf-8')))

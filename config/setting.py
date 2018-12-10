@@ -9,7 +9,7 @@ from lib.utils import security
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def make_directory(root_directory: str, extension_pattern: int, flag: 'default False'=False) -> str:
+def make_directory(root_directory: str, extension_pattern: int, flag: 'Default False' = False) -> str:
     """
     创建目录结构
 
@@ -40,7 +40,7 @@ def make_directory(root_directory: str, extension_pattern: int, flag: 'default F
     return file_directory[extension_pattern]
 
 
-def document_name(extension_filename: str, filename: 'default Null'='', flag: bool=True) -> str:
+def document_name(extension_filename: str, filename: 'default Null' = '', flag: bool = True) -> str:
     """
     指定创建当前时间的日志文件或测试报告文件
 
@@ -66,6 +66,6 @@ DATABASE = dict(security.batch_decryption({
     'host': BASE_DATA_BASE_CONF[0]['host'],
     'port': BASE_DATA_BASE_CONF[1]['port'],
     'user': BASE_DATA_BASE_CONF[2]['user'],
-    'passwd': BASE_DATA_BASE_CONF[3]['password'],
+    'psw': BASE_DATA_BASE_CONF[3]['password'],
     'db': BASE_DATA_BASE_CONF[4]['db'],
 }), **{'charset': "utf8"})
