@@ -1,9 +1,9 @@
 - ChannelBudget:
-    action: query
+    action: SELECT
     execSQL:
       - table: channel_budget
-      - columns: ['student_id', 'score']
-      - params: id='7818751'
+      - columns: ['channel_id']
+      - params: id='1'
       - desc: ORDER BY id DESC LIMIT 1
     except:
       - is_table: 0

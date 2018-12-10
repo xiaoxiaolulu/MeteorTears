@@ -1,0 +1,18 @@
+[DEBUG] [2018-12-10 17:59:03,525] logger.py [line:136] : 操作的数据库表为 ====> ChannelBudget
+[DEBUG] [2018-12-10 17:59:03,537] logger.py [line:136] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-10 17:59:03,539] logger.py [line:136] : 执行结果为 ===> 1
+[DEBUG] [2018-12-10 17:59:03,541] logger.py [line:136] : 操作的数据库表为 ====> ChannelBudget
+[DEBUG] [2018-12-10 17:59:03,546] logger.py [line:136] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-10 17:59:03,548] logger.py [line:136] : 执行结果为 ===> 1
+[DEBUG] [2018-12-10 17:59:03,549] logger.py [line:136] : 操作的数据库表为 ====> ChannelBudget
+[DEBUG] [2018-12-10 17:59:03,553] logger.py [line:136] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-10 17:59:03,555] logger.py [line:136] : 执行结果为 ===> 1
+[DEBUG] [2018-12-10 17:59:03,557] logger.py [line:136] : 操作的数据库表为 ====> ChannelBudget
+[DEBUG] [2018-12-10 17:59:03,565] logger.py [line:136] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-10 17:59:03,567] logger.py [line:136] : 执行结果为 ===> 1
+[DEBUG] [2018-12-10 17:59:03,569] logger.py [line:136] : 操作的数据库表为 ====> ChannelBudget
+[DEBUG] [2018-12-10 17:59:03,573] logger.py [line:136] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-10 17:59:03,575] logger.py [line:136] : 执行结果为 ===> 1
+[DEBUG] [2018-12-10 17:59:03,577] logger.py [line:136] : 操作的数据库表为 ====> ChannelBudget
+[DEBUG] [2018-12-10 17:59:03,584] logger.py [line:136] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-10 17:59:03,586] logger.py [line:136] : 执行结果为 ===> 1

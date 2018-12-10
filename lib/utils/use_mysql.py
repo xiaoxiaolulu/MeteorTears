@@ -15,15 +15,16 @@ class ExecuteSQL(GetJsonParams):
             'host': setting.DATABASE['host'],
             'port': int(setting.DATABASE['port']),
             'user': setting.DATABASE['user'],
-            'password': setting.DATABASE['psw'],
+            'passwd': setting.DATABASE['psw'],
             'db': setting.DATABASE['db'],
             'charset': setting.DATABASE['charset']
         }
+        self.sql = None
         self.conn = pymysql.connect(**self.mysql_connect)
         self.cursor = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
 
     def __enter__(self):
-        self.file = open(fp.iter_files(setting.make_directory('data', 0))[0], encoding='utf-8')
+        self.file = open(self.sql, encoding='utf-8')
         return self.file
 
     def execute(self, *args, **kwargs) -> dict:
@@ -50,9 +51,10 @@ class ExecuteSQL(GetJsonParams):
         self.cursor.close()
         self.conn.close()
 
-    def loads_sql_data(self) -> types.GeneratorType:
+    @classmethod
+    def loads_sql_data(cls) -> types.GeneratorType:
         """
-        加载SQL数据，并以列表的形式返回
+        加载SQL数据，并以字典的形式返回
 
         :Usage:
             loads_sql_data()
@@ -65,10 +67,10 @@ class ExecuteSQL(GetJsonParams):
                     for class_name, body in dic.items():
                         if len(body) > 1:
                             query_action = body['action']
-                            table = self.get_value(body['execSQL'], 'table')
-                            columns = self.get_value(body['execSQL'], 'columns')
-                            params = self.get_value(body['execSQL'], 'params')
-                            desc = self.get_value(body['execSQL'], 'desc')
+                            table = cls.get_value(body['execSQL'], 'table')
+                            columns = cls.get_value(body['execSQL'], 'columns')
+                            params = cls.get_value(body['execSQL'], 'params')
+                            desc = cls.get_value(body['execSQL'], 'desc')
                             yield {
                                 'classname': class_name,
                                 'action': query_action,
@@ -84,13 +86,6 @@ class ExecuteSQL(GetJsonParams):
         del self.file
 
 
-class CreateSqlObj:
-
-    sql_data = []
-
-    with ExecuteSQL() as file:
-        for items in file.loads_sql_data():
-            print(items)
-
 if __name__ == '__main__':
-    print(CreateSqlObj)
+    data = ExecuteSQL.loads_sql_data().__next__()
+    print(data)
