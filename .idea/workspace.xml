@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6faa8fd-8d2a-43e4-b64e-35cca7c4d703" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/doc/project_log.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/project_log.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,12 +86,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc/project_log.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="253">
                 <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="184">
+                <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -174,7 +195,6 @@
         <option value="$PROJECT_DIR$/lib/utils/email.py" />
         <option value="$PROJECT_DIR$/lib/utils/user_mysql.py" />
         <option value="$PROJECT_DIR$/lib/static.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/utils/time_util.py" />
         <option value="$PROJECT_DIR$/lib/config/setting.py" />
         <option value="$PROJECT_DIR$/lib/public/logger.py" />
@@ -203,6 +223,7 @@
         <option value="$PROJECT_DIR$/doc/sql_write.md" />
         <option value="$PROJECT_DIR$/lib/public/Recursion.py" />
         <option value="$PROJECT_DIR$/doc/project_log.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -224,6 +245,43 @@
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
@@ -599,7 +657,7 @@
       <workItem from="1544433417810" duration="5198000" />
       <workItem from="1544503161564" duration="1273000" />
       <workItem from="1544504514390" duration="53000" />
-      <workItem from="1544504568387" duration="669000" />
+      <workItem from="1544504568387" duration="938000" />
     </task>
     <task id="LOCAL-00001" summary="文件加密">
       <created>1543337953877</created>
@@ -658,7 +716,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22456000" />
+    <option name="totallyTimeSpent" value="22725000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -684,7 +742,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32963988" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32825485" />
-      <window_info anchor="bottom" x="-152" y="182" width="1492" height="692" id="Terminal" order="8" type="WINDOWED" weight="0.95844877" />
+      <window_info anchor="bottom" x="22" y="86" width="1492" height="692" id="Terminal" order="8" type="WINDOWED" weight="0.95844877" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32963988" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.0" />
@@ -727,13 +785,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed bugs&#10;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/distutils/sysconfig.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -845,16 +896,6 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="112">
-            <caret line="4" selection-start-line="4" selection-end-line="4" />
-          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -1033,6 +1074,23 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="253">
             <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="184">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           </first_editor>
           <second_editor />
         </state>
