@@ -7,7 +7,10 @@ from lib.utils import security
 __all__ = [
     'CONTENT',
     'HEADER',
+    'TEST_CASES',
+    'CASES',
 ]
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -75,5 +78,8 @@ DATABASE = dict(security.batch_decryption({
 }), **{'charset': "utf8"})
 
 
+# PATH
 CONTENT = os.path.join(make_directory('lib/template', 0), 'test_content')
 HEADER = os.path.join(make_directory('lib/template', 0), 'test_header')
+TEST_CASES = os.path.join(make_directory('lib/test_cases', 0), '')
+CASES = os.path.join(make_directory('cases', 0), '')

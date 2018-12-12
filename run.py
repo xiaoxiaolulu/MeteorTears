@@ -6,7 +6,7 @@ from lib.public.BeautifulReport import BeautifulReport
 
 
 def run():
-    test_suite = unittest.defaultTestLoader.discover(setting.make_directory('tests', 0), pattern='test*.py')
+    test_suite = unittest.defaultTestLoader.discover(setting.make_directory('cases', 0), pattern='test*.py')
     result = BeautifulReport(test_suite)
     result.report(
         filename='report',
