@@ -30,6 +30,7 @@ def test_data_runner(func):
                     result = ES.execute(sql)
                     logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
                     logger.log_debug("执行结果为 ===> {}".format(result))
+
         return func(*args, **kwargs)
 
     return wrap

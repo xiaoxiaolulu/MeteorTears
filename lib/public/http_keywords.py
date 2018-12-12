@@ -46,8 +46,9 @@ class BaseKeyWords(GetJsonParams):
         """
 
         logger.log_debug(self.request_body)
-        logger.log_info("接受的请求方式 {}, 请求参数为{}".format(
-            self.request_body.get('method'), json.dumps(self.request_body, indent=4, ensure_ascii=False))
+        logger.log_info(
+            "接受的请求方式 {}, 请求参数为{}".format(
+                self.request_body.get('method'), json.dumps(self.request_body, indent=4, ensure_ascii=False))
         )
         method = self.request_body.get('Method')
 

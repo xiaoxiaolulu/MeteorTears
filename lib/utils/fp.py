@@ -30,5 +30,7 @@ def iter_files(path):
                     iterate_files(files)
         except (FileNotFoundError, AttributeError, BytesWarning, IOError, FileExistsError):
             pass
+
     iterate_files(path)
+
     return filename

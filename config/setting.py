@@ -17,7 +17,10 @@ __all__ = [
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def make_directory(root_directory: str, extension_pattern: int, flag: 'Default False' = False) -> str:
+def make_directory(
+        root_directory: str,
+        extension_pattern: int,
+        flag: 'Default False' = False) -> str:
     """
     创建目录结构
 
@@ -48,7 +51,10 @@ def make_directory(root_directory: str, extension_pattern: int, flag: 'Default F
     return file_directory[extension_pattern]
 
 
-def document_name(extension_filename: str, filename: 'default Null' = '', flag: bool = True) -> str:
+def document_name(
+        extension_filename: str,
+        filename: 'default Null' = '',
+        flag: bool = True) -> str:
     """
     指定创建当前时间的日志文件或测试报告文件
 
@@ -62,8 +68,10 @@ def document_name(extension_filename: str, filename: 'default Null' = '', flag: 
     """
     document_index = {'log': 1, 'html': 2}
     extension_document = make_directory('report', int(document_index[extension_filename]), flag)
-    filename = os.path.abspath(os.path.join(extension_document, '{0}{1}.{2}'
-                                            .format(time_util.timestamp('format_now'), filename, extension_filename)))
+    filename = os.path.abspath(
+        os.path.join(extension_document, '{0}{1}.{2}' .format(
+            time_util.timestamp('format_now'), filename, extension_filename))
+    )
     return filename
 
 

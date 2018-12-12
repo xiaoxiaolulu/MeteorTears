@@ -31,16 +31,16 @@ HTML_IMG_TEMPLATE = """
 
 class OutputRedirector(object):
     """ Wrapper to redirect stdout or stderr """
-    
+
     def __init__(self, fp):
         self.fp = fp
-    
+
     def write(self, s):
         self.fp.write(s)
-    
+
     def writelines(self, lines):
         self.fp.writelines(lines)
-    
+
     def flush(self):
         self.fp.flush()
 
@@ -71,7 +71,7 @@ class PATH:
 
 class MakeResultJson:
     """ make html table tags """
-    
+
     def __init__(self, datas: tuple):
         """
         init self object
@@ -79,16 +79,16 @@ class MakeResultJson:
         """
         self.datas = datas
         self.result_schema = {}
-    
+
     def __setitem__(self, key, value):
         """
-        
+
         :param key: self[key]
         :param value: value
         :return:
         """
         self[key] = value
-    
+
     def __repr__(self) -> str:
         """
             返回对象的html结构体
@@ -110,7 +110,7 @@ class MakeResultJson:
 
 class ReportTestResult(unittest.TestResult):
     """ override"""
-    
+
     def __init__(self, suite, stream=sys.stdout):
         """ pass """
         super(ReportTestResult, self).__init__()
@@ -137,12 +137,12 @@ class ReportTestResult(unittest.TestResult):
         self.sys_stdout = None
         self.sys_stderr = None
         self.outputBuffer = None
-    
+
     @property
     def success_counter(self) -> int:
         """ set success counter """
         return self.success_count
-    
+
     @success_counter.setter
     def success_counter(self, value) -> None:
         """
@@ -151,7 +151,7 @@ class ReportTestResult(unittest.TestResult):
         :return:
         """
         self.success_count = value
-    
+
     def startTest(self, test) -> None:
         """
             当测试用例测试即将运行时调用
@@ -166,7 +166,7 @@ class ReportTestResult(unittest.TestResult):
         sys.stdout = stdout_redirector
         sys.stderr = stderr_redirector
         self.start_time = time.time()
-    
+
     def stopTest(self, test) -> None:
         """
             当测试用力执行完成后进行调用
@@ -175,7 +175,7 @@ class ReportTestResult(unittest.TestResult):
         self.end_time = '{0:.3} s'.format((time.time() - self.start_time))
         self.result_list.append(self.get_all_result_info_tuple(test))
         self.complete_output()
-    
+
     def complete_output(self):
         """
         Disconnect output redirection and return buffer.
@@ -187,7 +187,7 @@ class ReportTestResult(unittest.TestResult):
             self.sys_stdout = None
             self.sys_stdout = None
         return self.outputBuffer.getvalue()
-    
+
     def stopTestRun(self, title=None) -> dict:
         """
             所有测试执行完成后, 执行该方法
@@ -203,21 +203,26 @@ class ReportTestResult(unittest.TestResult):
         FIELDS['testFail'] = self.failure_count
         FIELDS['beginTime'] = self.begin_time
         end_time = int(time.time())
-        start_time = int(time.mktime(time.strptime(self.begin_time, '%Y-%m-%d %H:%M:%S')))
+        start_time = int(
+            time.mktime(
+                time.strptime(
+                    self.begin_time,
+                    '%Y-%m-%d %H:%M:%S')))
         FIELDS['totalTime'] = str(end_time - start_time) + 's'
         FIELDS['testError'] = self.error_count
         FIELDS['testSkip'] = self.skipped
         self.FIELDS = FIELDS
         return FIELDS
-    
+
     def get_all_result_info_tuple(self, test) -> tuple:
         """
             接受test 相关信息, 并拼接成一个完成的tuple结构返回
         :param test:
         :return:
         """
-        return tuple([*self.get_testcase_property(test), self.end_time, self.status, self.case_log])
-    
+        return tuple([*self.get_testcase_property(test),
+                      self.end_time, self.status, self.case_log])
+
     @staticmethod
     def error_or_failure_text(err) -> str:
         """
@@ -226,7 +231,7 @@ class ReportTestResult(unittest.TestResult):
         :return:
         """
         return traceback.format_exception(*err)
-    
+
     def addSuccess(self, test) -> None:
         """
             pass
@@ -246,7 +251,7 @@ class ReportTestResult(unittest.TestResult):
         self.status = '成功'
         self.case_log = output.split('\n')
         self._mirrorOutput = True  # print(class_name, method_name, method_doc)
-    
+
     def addError(self, test, err):
         """
             add Some Error report and infos
@@ -266,9 +271,9 @@ class ReportTestResult(unittest.TestResult):
             sys.stderr.write('\n')
         else:
             sys.stderr.write('F')
-        
+
         self._mirrorOutput = True
-    
+
     def addFailure(self, test, err):
         """
             add Some Failures report and infos
@@ -288,9 +293,9 @@ class ReportTestResult(unittest.TestResult):
             sys.stderr.write('\n')
         else:
             sys.stderr.write('F')
-        
+
         self._mirrorOutput = True
-    
+
     def addSkip(self, test, reason) -> None:
         """
             获取全部的跳过的case信息
@@ -302,7 +307,7 @@ class ReportTestResult(unittest.TestResult):
         self.complete_output()
         self.skipped += 1
         self.add_test_type('跳过', logs)
-        
+
         if self.verbosity > 1:
             sys.stderr.write('S  ')
             sys.stderr.write(str(test))
@@ -310,7 +315,7 @@ class ReportTestResult(unittest.TestResult):
         else:
             sys.stderr.write('S')
         self._mirrorOutput = True
-    
+
     def add_test_type(self, status: str, case_log: list) -> None:
         """
             abstruct add test type and return tuple
@@ -320,7 +325,7 @@ class ReportTestResult(unittest.TestResult):
         """
         self.status = status
         self.case_log = case_log
-    
+
     @staticmethod
     def get_testcase_property(test) -> tuple:
         """
@@ -336,7 +341,7 @@ class ReportTestResult(unittest.TestResult):
 
 class BeautifulReport(ReportTestResult, PATH):
     img_path = 'img/' if platform.system() != 'Windows' else 'img\\'
-    
+
     def __init__(self, suites):
         super(BeautifulReport, self).__init__(suites)
         self.suites = suites
@@ -354,17 +359,17 @@ class BeautifulReport(ReportTestResult, PATH):
         """
         if filename:
             self.filename = filename if filename.endswith('.html') else filename + '.html'
-        
+
         if description:
             self.title = description
-        
+
         self.log_path = os.path.abspath(log_path)
         self.suites.run(result=self)
         self.stopTestRun(self.title)
         self.output_report()
         text = '\n测试已全部完成, 可前往{}查询测试报告'.format(self.log_path)
         print(text)
-    
+
     def output_report(self):
         """
             生成测试报告到指定路径下
@@ -374,7 +379,7 @@ class BeautifulReport(ReportTestResult, PATH):
         override_path = os.path.abspath(self.log_path) if \
             os.path.abspath(self.log_path).endswith('/') else \
             os.path.abspath(self.log_path) + '/'
-        
+
         with open(template_path, 'rb') as file:
             body = file.readlines()
         with open(override_path + self.filename, 'wb') as write_file:
@@ -382,11 +387,12 @@ class BeautifulReport(ReportTestResult, PATH):
                 if item.strip().startswith(b'var resultData'):
                     head = '    var resultData = '
                     item = item.decode().split(head)
-                    item[1] = head + json.dumps(self.FIELDS, ensure_ascii=False, indent=4)
+                    item[1] = head + \
+                        json.dumps(self.FIELDS, ensure_ascii=False, indent=4)
                     item = ''.join(item).encode()
                     item = bytes(item) + b';\n'
                 write_file.write(item)
-    
+
     @staticmethod
     def img2base(img_path: str, file_name: str) -> str:
         """
@@ -411,7 +417,8 @@ class BeautifulReport(ReportTestResult, PATH):
         def _wrap(func):
             @wraps(func)
             def __wrap(*args, **kwargs):
-                img_path = os.path.abspath('{}'.format(BeautifulReport.img_path))
+                img_path = os.path.abspath(
+                    '{}'.format(BeautifulReport.img_path))
                 try:
                     result = func(*args, **kwargs)
                 except Exception:

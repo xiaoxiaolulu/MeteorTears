@@ -56,5 +56,6 @@ def batch_decryption(keys):
     return dict(zip(keys, map(lambda content: decryption(bytes(content, encoding='utf-8')), keys.values())))\
         if isinstance(keys, dict) else list(map(lambda item: decryption(bytes(item, encoding='utf-8')), keys))
 
+
 if __name__ == '__main__':
     pass

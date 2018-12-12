@@ -44,7 +44,9 @@ class LoadCase(object):
                 with open(file, encoding='utf-8') as f:
                     files_list.append({class_name: json.load(f)})
             except exceptions.JsonLoadingError as err:
-                logger.log_error("Json file parsing error, error file: {0}, error message: {1}".format(file, err))
+                logger.log_error(
+                    "Json file parsing error, error file: {0}, error message: {1}".format(
+                        file, err))
         return files_list
 
 
