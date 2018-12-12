@@ -1,9 +1,10 @@
 # -*- coding:utf-8 -*-
 import yaml
-import pymysql
 import types
-from config import setting
+import pymysql
 from lib.utils import fp
+from config import setting
+from lib.public import logger
 from lib.public.Recursion import GetJsonParams
 
 
@@ -19,13 +20,13 @@ class ExecuteSQL(GetJsonParams):
             'db': setting.DATABASE['db'],
             'charset': setting.DATABASE['charset']
         }
-        self.sql = None
-        self.conn = pymysql.connect(**self.mysql_connect)
-        self.cursor = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
+        self.conn = None
+        self.cursor = None
 
     def __enter__(self):
-        self.file = open(self.sql, encoding='utf-8')
-        return self.file
+        self.conn = pymysql.connect(**self.mysql_connect)
+        self.cursor = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
+        return self
 
     def execute(self, *args, **kwargs) -> dict:
         """
@@ -39,17 +40,6 @@ class ExecuteSQL(GetJsonParams):
             execute("SELECT count(*) FROM sqlite_master WHERE type='table' AND name='test_results'")
         """
         return self.cursor.execute(*args, **kwargs)
-
-    def close(self) -> None:
-        """
-        关闭游标只会耗尽所有剩余数据.
-
-        :Usage:
-            close()
-        """
-        self.conn.commit()
-        self.cursor.close()
-        self.conn.close()
 
     @classmethod
     def loads_sql_data(cls) -> types.GeneratorType:
@@ -81,9 +71,51 @@ class ExecuteSQL(GetJsonParams):
                             }
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        self.file.close()
-        del self.file
+        if not exc_tb:
+            self.conn.commit()
+            self.cursor.close()
+            del self.cursor
+            self.conn.close()
+            del self.conn
+        else:
+            self.conn.rollback()
 
 
-if __name__ == '__main__':
-    pass
+class SqlContainer:
+
+    data = []
+
+    with ExecuteSQL() as file:
+
+        for items in file.loads_sql_data():
+
+            logger.log_debug("本次操作的数据库为{}".format(items['classname']))
+
+            action = items['action']
+            columns = ','.join(items['columns']) if len(items['columns']) else '*'
+            table = items['table']
+            params = items['params']
+            desc = items['desc']
+
+            if action == 'SELECT':
+                sql = 'SELECT {} FROM {} WHERE {} {}'.format(columns, table, params, desc)
+                result = file.execute(sql)
+                logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
+                logger.log_debug("执行结果为 ===> {}".format(result))
+
+            if action == 'DELETE':
+                sql = 'DELETE FROM {} WHERE {}'.format(table, params)
+                result = file.execute(sql)
+                logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
+                logger.log_debug("执行结果为 ===> {}".format(result))
+
+            data.append(items)
+
+    def __iter__(self):
+        return iter(self.data)
+
+    def __next__(self):
+        return next(self.data)
+
+    def __repr__(self):
+        return self.data
