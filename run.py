@@ -13,5 +13,6 @@ def run():
         description='IDEF测试报告',
         log_path='report/')
 
+
 if __name__ == '__main__':
     run()

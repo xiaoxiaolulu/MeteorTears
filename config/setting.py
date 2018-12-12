@@ -4,6 +4,10 @@ from lib.utils import time_util
 from config import xml_handler
 from lib.utils import security
 
+__all__ = [
+    'CONTENT',
+    'HEADER',
+]
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -69,3 +73,7 @@ DATABASE = dict(security.batch_decryption({
     'psw': BASE_DATA_BASE_CONF[3]['password'],
     'db': BASE_DATA_BASE_CONF[4]['db'],
 }), **{'charset': "utf8"})
+
+
+CONTENT = os.path.join(make_directory('lib/template', 0), 'test_content')
+HEADER = os.path.join(make_directory('lib/template', 0), 'test_header')

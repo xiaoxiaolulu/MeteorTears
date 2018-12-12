@@ -78,7 +78,6 @@ class ExecuteSQL(GetJsonParams):
                                 'columns': columns,
                                 'params': params,
                                 'desc': desc
-
                             }
 
     def __exit__(self, exc_type, exc_val, exc_tb):

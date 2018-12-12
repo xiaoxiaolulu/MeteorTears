@@ -1,14 +1,12 @@
 # -*- coding:utf-8 -*-
+import os
+import six
 import abc
 import logging
-import os
-from logging.handlers import TimedRotatingFileHandler
-
-import six
-from colorama import Fore, init
-
 from config import setting
+from colorama import Fore, init
 from lib.utils import time_util
+from logging.handlers import TimedRotatingFileHandler
 
 init(autoreset=True)
 
@@ -136,6 +134,7 @@ def log_with_color(level, flag=False):
         getattr(Logger(), level)(coloring(msg, color)) if flag else getattr(Logger(), level)(msg)
 
     return wrapper
+
 
 log_info = log_with_color('info')
 log_debug = log_with_color('debug')

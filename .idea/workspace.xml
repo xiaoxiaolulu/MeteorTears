@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6faa8fd-8d2a-43e4-b64e-35cca7c4d703" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/xml_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/xml_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/case_write.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/case_write.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/public/case_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/public/case_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/public/load_cases.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/public/load_cases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/public/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/public/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/template/test_content" beforeDir="false" afterPath="$PROJECT_DIR$/lib/template/test_content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/template/test_header" beforeDir="false" afterPath="$PROJECT_DIR$/lib/template/test_header" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/use_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/use_mysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +30,7 @@
     <SUITE FILE_PATH="coverage/IDEF$Unittest_ExternalSearch_test_is_null.coverage" NAME="Unittest ExternalSearch.test_is_null Coverage Results" MODIFIED="1543202323983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/IDEF$Nosetests_in_test_external_search.coverage" NAME="Nosetests in test_external_search Coverage Results" MODIFIED="1542970381620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/MeteorTears$security.coverage" NAME="security Coverage Results" MODIFIED="1543479067502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/utils" />
-    <SUITE FILE_PATH="coverage/MeteorTears$setting__1_.coverage" NAME="setting (1) Coverage Results" MODIFIED="1544418487581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
+    <SUITE FILE_PATH="coverage/MeteorTears$setting__1_.coverage" NAME="setting (1) Coverage Results" MODIFIED="1544599031694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
     <SUITE FILE_PATH="coverage/IDEF$run.coverage" NAME="run Coverage Results" MODIFIED="1543226012357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IDEF$Unittests_in_ExternalSearch.coverage" NAME="Unittests in ExternalSearch Coverage Results" MODIFIED="1543202157472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/IDEF$parameters.coverage" NAME="parameters Coverage Results" MODIFIED="1543200658459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
@@ -54,34 +64,82 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/sql_write.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="920">
-                <caret line="40" selection-start-line="40" selection-end-line="40" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/lib/public/load_cases.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+              <folding>
+                <element signature="e#23#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/public/Recursion.py">
+        <entry file="file://$PROJECT_DIR$/lib/public/case_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/utils/use_mysql.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2047">
-              <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+            <state relative-caret-position="84">
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/setting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1099">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#23#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/xml_handler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1359">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+              <folding>
+                <element signature="e#23#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/public/http_keywords.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#23#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doc/case_write.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="299">
+                <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -99,20 +157,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/doc/sql_write.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="184">
-                <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <first_editor relative-caret-position="221">
+                <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -120,28 +169,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/utils/time_util.py">
+        <entry file="file://$PROJECT_DIR$/lib/template/test_header">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/utils/excel_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/utils/fp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="69">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -167,6 +198,7 @@
       <find>fp</find>
       <find>bytest</find>
       <find>connect</find>
+      <find>Sends a GET request. Returns :class:`Response` object.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,8 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/__init__.py" />
-        <option value="$PROJECT_DIR$/time_util.py" />
         <option value="$PROJECT_DIR$/tests/test_report_devceinfo_query.py" />
         <option value="$PROJECT_DIR$/logger.py" />
         <option value="$PROJECT_DIR$/variables.py" />
@@ -188,7 +218,6 @@
         <option value="$PROJECT_DIR$/lib/utils/setting.py" />
         <option value="$PROJECT_DIR$/lib/config/parameters.py" />
         <option value="$PROJECT_DIR$/lib/public/models.py" />
-        <option value="$PROJECT_DIR$/lib/public/case_manager.py" />
         <option value="$PROJECT_DIR$/lib/public/case_files.py" />
         <option value="$PROJECT_DIR$/lib/public/case_field.py" />
         <option value="$PROJECT_DIR$/lib/utils/Analyzelog.py" />
@@ -197,9 +226,7 @@
         <option value="$PROJECT_DIR$/lib/static.py" />
         <option value="$PROJECT_DIR$/lib/utils/time_util.py" />
         <option value="$PROJECT_DIR$/lib/config/setting.py" />
-        <option value="$PROJECT_DIR$/lib/public/logger.py" />
         <option value="$PROJECT_DIR$/lib/utils/variables.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/lib/utils/security.py" />
         <option value="$PROJECT_DIR$/lib/utils/excel_handler.py" />
         <option value="$PROJECT_DIR$/lib/utils/fp.py" />
@@ -210,28 +237,35 @@
         <option value="$PROJECT_DIR$/data/21321231.json" />
         <option value="$PROJECT_DIR$/data/2132132132.json" />
         <option value="$USER_HOME$/Desktop/年底总结-陆艇.txt" />
-        <option value="$PROJECT_DIR$/config/xml_handler.py" />
-        <option value="$PROJECT_DIR$/lib/public/load_cases.py" />
         <option value="$PROJECT_DIR$/config/config.xml" />
-        <option value="$PROJECT_DIR$/config/setting.py" />
         <option value="$PROJECT_DIR$/data/test_data2.yaml" />
-        <option value="$PROJECT_DIR$/lib/public/keywords.py" />
         <option value="$PROJECT_DIR$/config/config.py" />
         <option value="$PROJECT_DIR$/data/test_data.yaml" />
-        <option value="$PROJECT_DIR$/lib/utils/use_mysql.py" />
-        <option value="$PROJECT_DIR$/lib/public/wraps.py" />
         <option value="$PROJECT_DIR$/doc/sql_write.md" />
-        <option value="$PROJECT_DIR$/lib/public/Recursion.py" />
         <option value="$PROJECT_DIR$/doc/project_log.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/lib/public/logger.py" />
+        <option value="$PROJECT_DIR$/config/xml_handler.py" />
+        <option value="$PROJECT_DIR$/lib/public/keywords.py" />
+        <option value="$PROJECT_DIR$/lib/utils/use_mysql.py" />
+        <option value="$PROJECT_DIR$/lib/public/Recursion.py" />
+        <option value="$PROJECT_DIR$/lib/public/wraps.py" />
+        <option value="$PROJECT_DIR$/lib/public/load_cases.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/lib/template/test_content" />
+        <option value="$PROJECT_DIR$/lib/template/test_header" />
+        <option value="$PROJECT_DIR$/config/setting.py" />
+        <option value="$PROJECT_DIR$/lib/public/http_keywords.py" />
+        <option value="$PROJECT_DIR$/lib/public/case_manager.py" />
+        <option value="$PROJECT_DIR$/doc/case_write.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1099" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="215" />
+    <option name="y" value="7" />
+    <option name="width" value="1934" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -276,12 +310,13 @@
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
@@ -299,9 +334,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../项目资料/测试脚本/doraemon-master" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -332,7 +367,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.wraps">
+  <component name="RunManager" selected="Python.setting (1)">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -627,11 +662,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.setting (1)" />
         <item itemvalue="Python.wraps" />
         <item itemvalue="Python.use_mysql" />
         <item itemvalue="Python.config" />
         <item itemvalue="Python.Recursion" />
-        <item itemvalue="Python.setting (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -657,7 +692,9 @@
       <workItem from="1544433417810" duration="5198000" />
       <workItem from="1544503161564" duration="1273000" />
       <workItem from="1544504514390" duration="53000" />
-      <workItem from="1544504568387" duration="938000" />
+      <workItem from="1544504568387" duration="9741000" />
+      <workItem from="1544537289767" duration="1254000" />
+      <workItem from="1544596327720" duration="5006000" />
     </task>
     <task id="LOCAL-00001" summary="文件加密">
       <created>1543337953877</created>
@@ -716,7 +753,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22725000" />
+    <option name="totallyTimeSpent" value="37788000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -728,21 +765,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="172" y="6" width="1547" height="869" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16689008" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06850235" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32995495" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.041436464" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2936288" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39889196" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963988" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32825485" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32825485" />
-      <window_info anchor="bottom" x="22" y="86" width="1492" height="692" id="Terminal" order="8" type="WINDOWED" weight="0.95844877" />
+      <window_info anchor="bottom" x="-215" y="152" width="1492" height="692" id="Terminal" order="8" type="WINDOWED" weight="0.95844877" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32963988" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.0" />
@@ -785,29 +822,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed bugs&#10;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/distutils/sysconfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/colorama/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/colorama/ansi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2646">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40663" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/633493848/time.py" />
     <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/633493848/builtins.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/os.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,13 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="33" selection-start-line="33" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -892,14 +899,6 @@
         <state relative-caret-position="-8" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/case_write.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pymysql/connections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -919,13 +918,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/config.py" />
-    <entry file="file://$PROJECT_DIR$/lib/public/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pymysql/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2688">
@@ -940,118 +932,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/BeautifulReport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="355" column="17" selection-start-line="355" selection-start-column="17" selection-end-line="355" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/case_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/wraps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils/email.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/load_cases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/case_field.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/keywords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/xml_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test_data.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/sql_write.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="920">
-            <caret line="40" selection-start-line="40" selection-end-line="40" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/Recursion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils/fp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/utils/use_mysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2047">
-          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
-          <folding>
-            <element signature="e#23#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,16 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/project_log.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="253">
-            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1091,6 +968,194 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="184">
             <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#870#884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="926" column="38" lean-forward="true" selection-start-line="926" selection-start-column="38" selection-end-line="926" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="521" column="11" lean-forward="true" selection-start-line="521" selection-start-column="11" selection-end-line="521" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/wraps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#23#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/Recursion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3013">
+          <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/utils/use_mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="76" column="47" lean-forward="true" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test_data.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/BeautifulReport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="355" column="17" selection-start-line="355" selection-start-column="17" selection-end-line="355" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/case_field.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/test_content">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/test_header">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/xml_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1359">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1099">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/load_cases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/case_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/http_keywords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/sql_write.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="221">
+            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/project_log.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="253">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/case_write.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="299">
+            <caret line="13" column="59" lean-forward="true" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
           </first_editor>
           <second_editor />
         </state>

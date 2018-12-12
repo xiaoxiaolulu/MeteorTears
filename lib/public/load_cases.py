@@ -3,7 +3,6 @@ import os
 import json
 from lib.utils import fp
 from lib.public import logger
-from config import setting
 from lib.utils import exceptions
 
 
@@ -57,7 +56,7 @@ class Containers(object):
     def __repr__(self):
         return "Containers <{}->{}>".format(
             self.crop.get('class_name'),
-            self.crop.get('type')
+            self.crop.get('func_name')
         )
 
 
