@@ -2,6 +2,7 @@
 import os
 import types
 from config import setting
+from lib.public import logger
 from lib.public import load_cases
 from lib.public.Recursion import GetJsonParams
 
@@ -21,7 +22,11 @@ class CreateCase(GetJsonParams):
         self.cont = self.content.read()
         return self
 
-    def make_headers_and_contents(self, class_name: str, func_name: str, description: str) -> None:
+    def make_headers_and_contents(
+            self,
+            class_name: str,
+            func_name: str,
+            description: str) -> None:
         """
         创建用例文件
 
@@ -54,7 +59,7 @@ class CreateCase(GetJsonParams):
                 if len(body):
                     for key, value in body.items():
                         func_name = key
-                        description = self.get_value(value, 'description')
+                        description = self.get_value(value, 'Description')
                         body = value
                         yield load_cases.Containers({
                             'class_name': class_name,
@@ -90,6 +95,10 @@ class TestContainer:
                 obj.crop['description']
             )
             cases.append(obj)
+            logger.log_debug(
+                "测试用例已自动生成完毕, 文件: {}.py -> 具体测试用例:{}".format(
+                    obj.crop['class_name'],
+                    obj.crop['func_name']))
 
     def __iter__(self):
         return iter(self.cases)

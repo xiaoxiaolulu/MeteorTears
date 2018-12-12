@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 import unittest
-
 from config import setting
 from lib.public.BeautifulReport import BeautifulReport
 
@@ -10,7 +9,7 @@ def run():
     result = BeautifulReport(test_suite)
     result.report(
         filename='report',
-        description='IDEF测试报告',
+        description='Marketing测试报告',
         log_path='report/')
 
 

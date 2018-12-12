@@ -1,5 +1,4 @@
 
 
-    def {}(*args, **kwargs):
+    def {}(self, *args, **kwargs):
         """{}"""
-        pass

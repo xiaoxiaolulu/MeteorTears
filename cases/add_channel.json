@@ -1,0 +1,18 @@
+{
+  "add_channel": {
+    "Url": "/admin/channel/add",
+    "Method": "POST",
+    "Data": {
+      "name": "SEMAUTO1",
+      "level": 1,
+      "parentId": 0,
+      "categoryId": 1,
+      "enabled": 1,
+      "enableCaptcha": 1
+    },
+    "Headers": {
+      "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "Description": "添加渠道数据"
+  }
+}
