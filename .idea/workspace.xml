@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6faa8fd-8d2a-43e4-b64e-35cca7c4d703" name="Default" comment="fixed bugs">
-      <change afterPath="$PROJECT_DIR$/doc/case_field.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/project_log.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/project_log.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/public/case_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/public/case_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/public/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/public/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/case_field.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/case_field.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +60,8 @@
         <entry file="file://$PROJECT_DIR$/doc/case_field.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="519">
-                <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+              <first_editor relative-caret-position="161">
+                <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -101,6 +98,47 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/template/test_content">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/template/test_header">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test_cases/AddChannel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cases/add_person.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test_cases/AddPerson.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -127,6 +165,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -207,17 +248,12 @@
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
@@ -228,7 +264,13 @@
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test_cases" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -602,7 +644,7 @@
       <workItem from="1544504568387" duration="9741000" />
       <workItem from="1544537289767" duration="1254000" />
       <workItem from="1544596327720" duration="6851000" />
-      <workItem from="1544605455924" duration="8807000" />
+      <workItem from="1544605455924" duration="9221000" />
     </task>
     <task id="LOCAL-00001" summary="文件加密">
       <created>1543337953877</created>
@@ -632,7 +674,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544609021779</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed bugs">
+      <created>1544615277073</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544615277073</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed bugs">
+      <created>1544615349548</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544615349548</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -668,7 +724,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48440000" />
+    <option name="totallyTimeSpent" value="48854000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -683,7 +739,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.02010724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16353887" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -910,37 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test_cases/AddPerson.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test_cases/AddChannel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/add_person.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/template/test_header">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/template/test_content">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -1082,6 +1107,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/test_content">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/test_header">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test_cases/AddPerson.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test_cases/AddChannel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/add_person.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cases/add_channel.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1092,8 +1148,8 @@
     <entry file="file://$PROJECT_DIR$/doc/case_field.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="519">
-            <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <first_editor relative-caret-position="161">
+            <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>
