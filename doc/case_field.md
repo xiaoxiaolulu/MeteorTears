@@ -20,7 +20,7 @@ JsonDiffField | 返回结果自动对比 |
 from lib.public import case_field
 
 
-class AddChannel(case_field):
+class AddChannel(object):
     
     url = case_field.UrlField('/admin/channel/add')
     method = case_field.MethodField('POST')
