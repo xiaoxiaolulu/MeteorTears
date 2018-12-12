@@ -23,15 +23,15 @@ NOTSET = 0
 @six.add_metaclass(abc.ABCMeta)
 class Color(object):
 
-    @abc.abstractclassmethod
+    @abc.abstractmethod
     def get_color_by_str(self, color_str):
         pass
 
-    @abc.abstractclassmethod
+    @abc.abstractmethod
     def get_all_colors(self):
         pass
 
-    @abc.abstractclassmethod
+    @abc.abstractmethod
     def get_color_set(self):
         pass
 
