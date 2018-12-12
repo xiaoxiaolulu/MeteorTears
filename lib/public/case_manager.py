@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import json
+import types
 from config import setting
 from lib.public import logger
 from lib.public import Recursion
@@ -19,11 +20,11 @@ class CreateCase(object):
         self.cont = self.content.read()
         return self
 
-    def make_headers_and_contents(self, class_name, func_name, description):
+    def make_headers_and_contents(self, class_name, func_name, description) -> None:
         """老子回头在写比较恶心"""
         pass
 
-    def create_template(self):
+    def create_template(self) -> types.GeneratorType:
         """老子回头在写比较恶心"""
         yield load_cases.Containers({
         }), self.make_headers_and_contents
