@@ -1,2 +1,0 @@
-[DEBUG] [2018-12-12 18:52:30,651] logger.py [line:134] : 测试用例已自动生成完成, 文件: AddChannel.py -> 具体测试用例:add_channel
-[DEBUG] [2018-12-12 18:52:30,655] logger.py [line:134] : 测试用例已自动生成完成, 文件: AddPerson.py -> 具体测试用例:add_person

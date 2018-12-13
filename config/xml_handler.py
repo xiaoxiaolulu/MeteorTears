@@ -15,7 +15,7 @@ class MetaSingleton(type):
 
 class XmlHandler(metaclass=MetaSingleton):
 
-    def __init__(self, filename: str):
+    def __init__(self,  filename: str):
         self.filename = os.fspath(filename)
         self.baseFilename = os.path.abspath(filename)
 

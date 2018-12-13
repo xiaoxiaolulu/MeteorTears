@@ -1,4 +1,9 @@
 
 
+    @wraps.cases_runner
     def {}(self, *args, **kwargs):
         """{}"""
+        print(kwargs.get('response'))
+        print(kwargs.get('kwassert'))
+
+

@@ -1,7 +1,9 @@
 # -*- coding:utf-8 -*-
 from functools import wraps
-from lib.utils.use_mysql import ExecuteSQL
 from lib.public import logger
+from lib.public import http_keywords
+from lib.utils.use_mysql import ExecuteSQL
+from lib.public.case_manager import TestContainer
 
 ES = ExecuteSQL()
 
@@ -30,6 +32,27 @@ def test_data_runner(func):
                     result = ES.execute(sql)
                     logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
                     logger.log_debug("执行结果为 ===> {}".format(result))
+        return func(*args, **kwargs)
+
+    return wrap
+
+
+def cases_runner(func):
+
+    @wraps(func)
+    def wrap(*args, **kwargs):
+
+        for items in iter(TestContainer()):
+            for key, value in dict(items).items():
+                if value == func.__name__:
+                    handler = http_keywords.BaseKeyWords(items['body'])
+                    result = handler.make_test_templates()
+                    logger.log_debug("The test result is {}".format(result))
+                    return func(
+                        *args,
+                        response=result,
+                        kwassert=items.get('body').get('assert')
+                    )
 
         return func(*args, **kwargs)
 
@@ -37,4 +60,9 @@ def test_data_runner(func):
 
 
 if __name__ == '__main__':
-    pass
+    @cases_runner
+    def add_channel(*args, **kwargs):
+        print(kwargs.get('response'))
+        print(kwargs.get('kwassert'))
+
+    add_channel()

@@ -7104,99 +7104,40 @@ body.skin-3 {
 <script src="https://cdn.bootcss.com/chosen/1.8.2/chosen.jquery.js"></script>
 <script type="text/javascript">
     var resultData = {
-    "testPass": 6,
+    "testPass": 1,
     "testResult": [
         {
-            "className": "DeviceInfoReport",
-            "methodName": "test_device_info",
-            "description": "DaDa App 上报IDFA 新增",
-            "spendTime": "0.0488 s",
+            "className": "AddChannel",
+            "methodName": "test_add_channel",
+            "description": "添加渠道数据",
+            "spendTime": "0.758 s",
             "status": "成功",
             "log": [
-                "[DEBUG] [2018-11-26 17:53:32,823] logger.py [line:134] : The request interface is http://192.168.170.16:8056/v1/deviceInfo/report",
-                "[DEBUG] [2018-11-26 17:53:32,826] logger.py [line:134] : Request type is POST",
-                "[DEBUG] [2018-11-26 17:53:32,828] logger.py [line:134] : The request header {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQyOTY0OTk2fQ.dBeOHxOX5TGlPbi_Edq82wUu3Bx6ZSs6B_SA1W5C47c', 'Content-Type': 'application/x-www-form-urlencoded'}",
-                "[DEBUG] [2018-11-26 17:53:32,830] logger.py [line:134] : The request data {'appId': '42344494', 'deviceId': '596cb85a', 'type': 2}",
-                ""
-            ]
-        },
-        {
-            "className": "DeviceInfoReport",
-            "methodName": "test_is_null",
-            "description": "DaDa App 上报IDFA 插空",
-            "spendTime": "0.0199 s",
-            "status": "成功",
-            "log": [
-                "[DEBUG] [2018-11-26 17:53:32,846] logger.py [line:134] : The request interface is http://192.168.170.16:8056/v1/deviceInfo/report",
-                "[DEBUG] [2018-11-26 17:53:32,847] logger.py [line:134] : Request type is POST",
-                "[DEBUG] [2018-11-26 17:53:32,849] logger.py [line:134] : The request header {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQyOTY0OTk2fQ.dBeOHxOX5TGlPbi_Edq82wUu3Bx6ZSs6B_SA1W5C47c', 'Content-Type': 'application/x-www-form-urlencoded'}",
-                "[DEBUG] [2018-11-26 17:53:32,851] logger.py [line:134] : The request data is null",
-                ""
-            ]
-        },
-        {
-            "className": "ExternalReport",
-            "methodName": "test_external_report",
-            "description": "渠道商上报信息 新增",
-            "spendTime": "0.0329 s",
-            "status": "成功",
-            "log": [
-                "[DEBUG] [2018-11-26 17:53:32,879] logger.py [line:134] : The request interface is http://192.168.170.16:8156/v1/external/report",
-                "[DEBUG] [2018-11-26 17:53:32,880] logger.py [line:134] : Request type is POST",
-                "[DEBUG] [2018-11-26 17:53:32,882] logger.py [line:134] : The request header {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQyOTY0OTk2fQ.dBeOHxOX5TGlPbi_Edq82wUu3Bx6ZSs6B_SA1W5C47c', 'Content-Type': 'application/x-www-form-urlencoded'}",
-                "[DEBUG] [2018-11-26 17:53:32,883] logger.py [line:134] : The request data {'appId': '42344494', 'deviceId': '596cb85a', 'channelProvider': '1231', 'type': 2}",
-                ""
-            ]
-        },
-        {
-            "className": "ExternalReport",
-            "methodName": "test_is_null",
-            "description": "渠道商上报信息  插空",
-            "spendTime": "0.0239 s",
-            "status": "成功",
-            "log": [
-                "[DEBUG] [2018-11-26 17:53:32,903] logger.py [line:134] : The request interface is http://192.168.170.16:8156/v1/external/report",
-                "[DEBUG] [2018-11-26 17:53:32,905] logger.py [line:134] : Request type is POST",
-                "[DEBUG] [2018-11-26 17:53:32,907] logger.py [line:134] : The request header {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQyOTY0OTk2fQ.dBeOHxOX5TGlPbi_Edq82wUu3Bx6ZSs6B_SA1W5C47c', 'Content-Type': 'application/x-www-form-urlencoded'}",
-                "[DEBUG] [2018-11-26 17:53:32,908] logger.py [line:134] : The request data is null",
-                ""
-            ]
-        },
-        {
-            "className": "ExternalSearch",
-            "methodName": "test_external_search",
-            "description": "渠道商查询app端上报信息",
-            "spendTime": "0.0249 s",
-            "status": "成功",
-            "log": [
-                "[DEBUG] [2018-11-26 17:53:32,928] logger.py [line:134] : The request interface is http://192.168.170.16:8156/v1/external/search",
-                "[DEBUG] [2018-11-26 17:53:32,930] logger.py [line:134] : Request type is POST",
-                "[DEBUG] [2018-11-26 17:53:32,931] logger.py [line:134] : The request header {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQyOTY0OTk2fQ.dBeOHxOX5TGlPbi_Edq82wUu3Bx6ZSs6B_SA1W5C47c', 'Content-Type': 'application/json'}",
-                "[DEBUG] [2018-11-26 17:53:32,932] logger.py [line:134] : The request data {'appId': '42344494', 'deviceId': ['596cb85a']}",
-                "[DEBUG] [2018-11-26 17:53:32,933] logger.py [line:134] : The response is {\"code\":0,\"message\":\"操作成功\",\"data\":[\"596cb85a\"]}",
-                ""
-            ]
-        },
-        {
-            "className": "ExternalSearch",
-            "methodName": "test_is_null",
-            "description": "渠道上查询app接口插空",
-            "spendTime": "0.0279 s",
-            "status": "成功",
-            "log": [
-                "[DEBUG] [2018-11-26 17:53:32,949] logger.py [line:134] : The request interface is http://192.168.170.16:8156/v1/external/search",
-                "[DEBUG] [2018-11-26 17:53:32,958] logger.py [line:134] : Request type is POST",
-                "[DEBUG] [2018-11-26 17:53:32,959] logger.py [line:134] : The request header {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQyOTY0OTk2fQ.dBeOHxOX5TGlPbi_Edq82wUu3Bx6ZSs6B_SA1W5C47c', 'Content-Type': 'application/json'}",
-                "[DEBUG] [2018-11-26 17:53:32,961] logger.py [line:134] : The request data is null",
+                "[DEBUG] [2018-12-13 19:34:48,576] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/landingpage/category/add', 'method': 'POST', 'data': {'name': 'SEMAUTO', 'description': '自动化测试数据勿动', 'enabled': 1}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '添加渠道数据', 'assert': {'code': 1, 'message': '此名称已存在。', 'data': 'None'}}",
+                "[DEBUG] [2018-12-13 19:34:48,578] logger.py [line:134] : 接受POST的请求参数为{",
+                "    \"url\": \"http://test11-marketing.dadaorg.com/admin/landingpage/category/add\",",
+                "    \"headers\": {",
+                "        \"Authorization\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI\"",
+                "    },",
+                "    \"data\": {",
+                "        \"name\": \"SEMAUTO\",",
+                "        \"description\": \"自动化测试数据勿动\",",
+                "        \"enabled\": 1",
+                "    },",
+                "    \"json\": null",
+                "}",
+                "[DEBUG] [2018-12-13 19:34:49,331] logger.py [line:134] : The test result is {'code': 1, 'message': '此名称已存在。', 'data': None}",
+                "{'code': 1, 'message': '此名称已存在。', 'data': None}",
+                "{'code': 1, 'message': '此名称已存在。', 'data': 'None'}",
                 ""
             ]
         }
     ],
-    "testName": "IDEF测试报告",
-    "testAll": 6,
+    "testName": "Marketing测试报告",
+    "testAll": 1,
     "testFail": 0,
-    "beginTime": "2018-11-26 17:53:32",
-    "totalTime": "0s",
+    "beginTime": "2018-12-13 19:34:48",
+    "totalTime": "1s",
     "testSkip": 0,
     "testError": 0
 };

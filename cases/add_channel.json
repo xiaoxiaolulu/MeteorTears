@@ -1,18 +1,20 @@
 {
-  "add_channel": {
-    "Url": "/admin/channel/add",
-    "Method": "POST",
-    "Data": {
-      "name": "SEMAUTO1",
-      "level": 1,
-      "parentId": 0,
-      "categoryId": 1,
-      "enabled": 1,
-      "enableCaptcha": 1
+  "test_add_channel": {
+    "url": "http://test11-marketing.dadaorg.com/admin/landingpage/category/add",
+    "method": "POST",
+    "data": {
+      "name": "SEMAUTO",
+      "description": "自动化测试数据勿动",
+      "enabled": 1
     },
-    "Headers": {
+    "headers": {
       "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
     },
-    "Description": "添加渠道数据"
+    "description": "添加渠道数据",
+    "assert": {
+      "code": 1,
+      "message": "此名称已存在。",
+      "data": "None"
+    }
   }
 }

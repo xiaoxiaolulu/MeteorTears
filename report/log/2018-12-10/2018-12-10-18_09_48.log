@@ -1,3 +1,0 @@
-[DEBUG] [2018-12-10 18:09:48,515] logger.py [line:136] : 操作的数据库表为 ====> ChannelBudget
-[DEBUG] [2018-12-10 18:09:48,518] logger.py [line:136] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
-[DEBUG] [2018-12-10 18:09:48,519] logger.py [line:136] : 执行结果为 ===> 1

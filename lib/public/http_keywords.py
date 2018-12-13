@@ -46,23 +46,27 @@ class BaseKeyWords(GetJsonParams):
         """
 
         logger.log_debug(self.request_body)
-        logger.log_info(
-            "接受的请求方式 {}, 请求参数为{}".format(
-                self.request_body.get('method'), json.dumps(self.request_body, indent=4, ensure_ascii=False))
-        )
-        method = self.request_body.get('Method')
+        method = self.request_body.get('method')
 
         if method in ['get', 'GET']:
-            temp = ('Url', 'UrlParams', 'Headers')
+            temp = ('url', 'params', 'headers')
             request_body = GetJsonParams.for_keys_to_dict(*temp, my_dict=self.request_body)
-            if '=' in request_body.get('UrlParams') or '&' in request_body.get('UrlParams'):
-                request_body['UrlParams'] = dict(parse.parse_qsl(request_body['UrlParams']))
+            if '=' in request_body.get('params') or '&' in request_body.get('params'):
+                request_body['params'] = dict(parse.parse_qsl(request_body['params']))
+
+            logger.log_debug("接受GET的请求参数为{}".format(
+                json.dumps(request_body, indent=4, ensure_ascii=False))
+            )
             return self.get(**request_body)
 
         if method in ['post', 'POST']:
-            temp = ('Url', 'Headers', 'Data', 'Json', 'File')
+            temp = ('url', 'headers', 'data', 'json')
             request_body = GetJsonParams.for_keys_to_dict(*temp, my_dict=self.request_body)
-            self.post(**request_body)
+
+            logger.log_debug("接受POST的请求参数为{}".format(
+                json.dumps(request_body, indent=4, ensure_ascii=False))
+            )
+            return self.post(**request_body)
 
         else:
             raise exceptions.TestApiMethodError("接口测试请求类型错误, 请检查相关用例!")

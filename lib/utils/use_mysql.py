@@ -98,7 +98,8 @@ class SqlContainer:
             desc = items['desc']
 
             if action == 'SELECT':
-                sql = 'SELECT {} FROM {} WHERE {} {}'.format(columns, table, params, desc)
+                sql = 'SELECT {} FROM {} WHERE {} {}'.format(
+                    columns, table, params, desc)
                 result = file.execute(sql)
                 logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
                 logger.log_debug("执行结果为 ===> {}".format(result))

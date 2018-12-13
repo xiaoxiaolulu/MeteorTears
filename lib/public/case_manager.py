@@ -59,7 +59,7 @@ class CreateCase(GetJsonParams):
                 if len(body):
                     for key, value in body.items():
                         func_name = key
-                        description = self.get_value(value, 'Description')
+                        description = self.get_value(value, 'description')
                         body = value
                         yield load_cases.Containers({
                             'class_name': class_name,
@@ -94,7 +94,7 @@ class TestContainer:
                 obj.crop['func_name'],
                 obj.crop['description']
             )
-            cases.append(obj)
+            cases.append(obj.crop)
             logger.log_debug(
                 "测试用例已自动生成完毕, 文件: {}.py -> 具体测试用例:{}".format(
                     obj.crop['class_name'],
