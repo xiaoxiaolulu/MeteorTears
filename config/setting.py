@@ -76,8 +76,7 @@ def document_name(
     return filename
 
 
-BASE_DATA_BASE_CONF = xml_handler.XmlHandler(make_directory(
-    'config/config.xml', 0)).get_child('mysqlTest')['mysqlTest']
+BASE_DATA_BASE_CONF = xml_handler.XmlHandler(make_directory('config/config.xml', 0)).get_child('mysqlTest')['mysqlTest']
 
 
 DATABASE = dict(security.batch_decryption({
@@ -90,8 +89,8 @@ DATABASE = dict(security.batch_decryption({
 
 
 # PATH
-CONTENT = os.path.join(make_directory('lib/template', 0), 'test_content')
-HEADER = os.path.join(make_directory('lib/template', 0), 'test_header')
+CONTENT = os.path.join(make_directory('lib/template', 0), 'content_template')
+HEADER = os.path.join(make_directory('lib/template', 0), 'header_template')
 TEST_CASES = os.path.join(make_directory('lib/test_cases', 0), '')
 CASES = os.path.join(make_directory('cases', 0), '')
 REPORT = os.path.join(make_directory('report', 0), '')
