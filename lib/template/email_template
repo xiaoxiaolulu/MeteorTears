@@ -1,0 +1,76 @@
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ebebeb;color: #555;font-size: 16px;font-family:微软雅黑,Arial,sans-serif;line-height: 1.7;">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
+                <tr>
+                    <td style="height: 3px;background: #E64545;"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;padding: 20px;background-color: #fff;color: #555;font-size: 14px;line-height: 1.7;">
+                <tr>
+                    <td style="font-size: 16px;font-weight: bold;color: #222;padding-bottom: 10px;">Hello All:</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        本次为Marketing接口测试邮件，已经测试完毕(附件为本次测试报告)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 20px;">
+                        如有问题，及时反馈！谢谢！
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 16px;font-weight: bold;color: #222;padding-bottom: 10px;">注意事项:</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        1. 邮件为每日定点发送, 如有打扰抱歉!
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        2. 框架重构ing, 生成用例数据对象正在迁移。
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        3. 运行用例皆为框架自动生成, 如有纰漏及时联系。
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table align="center" id="content" border="0" cellpadding="0" cellspacing="0" width="700" style="border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;padding: 20px;background-color: #fff;color: #555;font-size: 14px;line-height: 1.7;">
+                <tbody>
+                    <tr>
+                        <td style="padding-bottom: 10px;">
+                            如有任何问题或需要帮助，欢迎随时与我联系。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;">
+                            联系人：Null
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;">
+                            QQ：546464268
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="font-size: 14px;padding: 10px 0 40px;">
+            Copyright&copy; MarketingTeam
+        </td>
+    </tr>
+</table>

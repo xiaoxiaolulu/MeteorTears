@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*-
 import unittest
 from lib.public import wraps
-from lib.public import logger
 
 
 class {}(unittest.TestCase):

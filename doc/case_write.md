@@ -9,6 +9,6 @@ file | 上传文件数据 | {file=operate_excel.save_excel(file=os.path.join(par
 json | Json类型请求 | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
 headers | 请求头 | {'Authorization': 'eyJ0eXAiOiJK', 'Content-Type': 'application/json'} 
 assert | 结果断言 | {"username": "NULL", "password": "123456", "auth_code": ['len': 4]}
-responseType | 验证断言结果的数据类型 | {'Response': ['username'：'str']
+responseType | 验证断言结果的数据类型 | {'Response': ['username'：'str']}
 description | 用例描述 | "新增渠道"
 jsonDiff | 返回结果自动对比 | {"code":0,"message":"操作成功","data":""}

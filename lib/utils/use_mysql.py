@@ -89,7 +89,7 @@ class SqlContainer:
 
         for items in file.loads_sql_data():
 
-            # logger.log_debug("本次操作的数据库为{}".format(items['classname']))
+            logger.log_debug("本次操作的数据库为{}".format(items['classname']))
 
             action = items['action']
             columns = ','.join(items['columns']) if len(items['columns']) else '*'
@@ -100,14 +100,14 @@ class SqlContainer:
             if action == 'SELECT':
                 sql = 'SELECT {} FROM {} WHERE {} {}'.format(columns, table, params, desc)
                 result = file.execute(sql)
-                # logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
-                # logger.log_debug("执行结果为 ===> {}".format(result))
+                logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
+                logger.log_debug("执行结果为 ===> {}".format(result))
 
             if action == 'DELETE':
                 sql = 'DELETE FROM {} WHERE {}'.format(table, params)
                 result = file.execute(sql)
-                # logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
-                # logger.log_debug("执行结果为 ===> {}".format(result))
+                logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
+                logger.log_debug("执行结果为 ===> {}".format(result))
 
             data.append(items)
 

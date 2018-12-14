@@ -6,11 +6,12 @@ from lib.utils import security
 
 
 __all__ = [
+    'TEST_CASES',
     'CONTENT',
     'HEADER',
-    'TEST_CASES',
+    'REPORT',
     'CASES',
-    'REPORT'
+    'LOG'
 ]
 
 
@@ -71,7 +72,7 @@ def document_name(
     extension_document = make_directory('report', int(document_index[extension_filename]), flag)
     filename = os.path.abspath(
         os.path.join(extension_document, '{0}{1}.{2}' .format(
-            time_util.timestamp('format_now'), filename, extension_filename))
+            time_util.timestamp('format_day'), filename, extension_filename))
     )
     return filename
 
@@ -92,5 +93,6 @@ DATABASE = dict(security.batch_decryption({
 CONTENT = os.path.join(make_directory('lib/template', 0), 'content_template')
 HEADER = os.path.join(make_directory('lib/template', 0), 'header_template')
 TEST_CASES = os.path.join(make_directory('lib/test_cases', 0), '')
-CASES = os.path.join(make_directory('cases', 0), '')
 REPORT = os.path.join(make_directory('report', 0), '')
+CASES = os.path.join(make_directory('cases', 0), '')
+LOG = document_name('log')

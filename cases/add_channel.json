@@ -12,9 +12,10 @@
     },
     "description": "添加渠道数据",
     "assert": {
-      "code": 1,
-      "message": "此名称已存在。",
-      "data": "None"
+      "code": [
+        "type",
+        "int"
+      ]
     }
   }
 }
