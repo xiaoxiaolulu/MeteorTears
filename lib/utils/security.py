@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import base64
+# FIXME: base64加密方式过去简陋
 
 
 def encrypt(key: bytes)-> bytes:

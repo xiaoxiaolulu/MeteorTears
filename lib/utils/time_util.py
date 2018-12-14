@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import time
+# FIXME: 随着项目配置文件以优雅的方式优化, 此处代码将重构
 
 
 def timestamp(format_key: str) -> str:

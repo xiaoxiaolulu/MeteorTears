@@ -10,6 +10,7 @@ __all__ = [
     'CONTENT',
     'HEADER',
     'REPORT',
+    'EMAIL',
     'CASES',
     'LOG'
 ]
@@ -19,6 +20,7 @@ __all__ = [
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+# FIXME: 创建目录结构待优化
 def make_directory(
         root_directory: str,
         extension_pattern: int,
@@ -53,6 +55,7 @@ def make_directory(
     return file_directory[extension_pattern]
 
 
+# FIXME: 创建具体文件名,并返回值
 def document_name(
         extension_filename: str,
         filename: 'default Null' = '',
@@ -77,6 +80,7 @@ def document_name(
     return filename
 
 
+# FIXME: 配置文件根目录
 BASE_DATA_BASE_CONF = xml_handler.XmlHandler(make_directory('config/config.xml', 0)).get_child('mysqlTest')['mysqlTest']
 
 
@@ -89,9 +93,10 @@ DATABASE = dict(security.batch_decryption({
 }), **{'charset': "utf8"})
 
 
-# PATH
+# FIXME: 文件/目录路径待优化
 CONTENT = os.path.join(make_directory('lib/template', 0), 'content_template')
 HEADER = os.path.join(make_directory('lib/template', 0), 'header_template')
+EMAIL = os.path.join(make_directory('lib/template', 0), 'email_template')
 TEST_CASES = os.path.join(make_directory('lib/test_cases', 0), '')
 REPORT = os.path.join(make_directory('report', 0), '')
 CASES = os.path.join(make_directory('cases', 0), '')

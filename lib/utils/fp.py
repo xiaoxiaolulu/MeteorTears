@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import os
+# FIXME: 文件递归函数当前写法不是很优雅
 
 
 def iter_files(path):

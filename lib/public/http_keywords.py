@@ -7,6 +7,7 @@ from lib.utils import exceptions
 from lib.public.Recursion import GetJsonParams
 
 
+# FIXME:Json自动对比尚在老代码还是重写中取舍
 class BaseKeyWords(GetJsonParams):
 
     def __init__(self, request_body: dict):
@@ -37,6 +38,7 @@ class BaseKeyWords(GetJsonParams):
         """
         return self.session.get(**kwargs).json()
 
+    # FIXME: 缺少dubbo接口方法, 现只有GET AND POST
     def make_test_templates(self) -> dict:
         """
         创建测试用例的基础数据

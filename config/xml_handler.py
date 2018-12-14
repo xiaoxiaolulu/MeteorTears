@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import os
 from xml.etree import ElementTree as ET
+# FIXME: 使用上下文管理器的形式,读写配置文件
 
 
 class MetaSingleton(type):

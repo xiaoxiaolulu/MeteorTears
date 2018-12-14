@@ -6,6 +6,7 @@ from lib.public import logger
 from email.header import Header
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+# FIXME: 老代码实现的方式不是很理想
 
 
 class SendMail(object):

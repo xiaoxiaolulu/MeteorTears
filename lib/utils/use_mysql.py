@@ -81,6 +81,7 @@ class ExecuteSQL(GetJsonParams):
             self.conn.rollback()
 
 
+# FIXME: 使用CONTEXTOR的方式实现对SQL数据的操作, 但这个sql容器类与wrap的一个装饰器功能重复
 class SqlContainer:
 
     data = []

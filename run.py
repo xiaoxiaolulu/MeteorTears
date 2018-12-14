@@ -19,7 +19,7 @@ def run(cases, pattern, report):
     result = BeautifulReport(test_suite)
     result.report(filename='Marketing测试报告', description='Marketing测试报告', log_path=report)
 
-    # shutil.rmtree(setting.TEST_CASES)
+    shutil.rmtree(setting.TEST_CASES)
 
 
 if __name__ == '__main__':

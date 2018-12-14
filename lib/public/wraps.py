@@ -10,6 +10,10 @@ from lib.public.case_manager import TestContainer
 
 ES = ExecuteSQL()
 
+# FIXME: 生成的每个测试用例集中的每个case都将最终配置4-5个装饰器, \
+#  现完成sql操作/用例运行/断言分析等装饰器, 缺少运行locust性能接口测试装饰器  \
+#  locust模板已经构思完成
+
 
 def test_data_runner(func):
 
@@ -60,6 +64,7 @@ def cases_runner(func):
     return wrap
 
 
+# FIXME:还要加入自动对比的逻辑
 def result_assert(func):
 
     @wraps(func)
