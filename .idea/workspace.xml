@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6faa8fd-8d2a-43e4-b64e-35cca7c4d703" name="Default" comment="add email templates">
-      <change afterPath="$PROJECT_DIR$/lib/template/email_template" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/setting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/template/email_template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/AddChannel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelCategoryGet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelCategoryGetall.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelDelete.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelGetchildren.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelGetlist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelUpdate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/GetChannelId.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Marketing测试报告.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Marketing测试报告.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MeteorTears$Unittests_for_AddChannel_AddChannel_test_add_channel.coverage" NAME="Unittests for AddChannel.AddChannel.test_add_channel Coverage Results" MODIFIED="1544769516310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/test_cases" />
-    <SUITE FILE_PATH="coverage/MeteorTears$run.coverage" NAME="run Coverage Results" MODIFIED="1545117769928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MeteorTears$run.coverage" NAME="run Coverage Results" MODIFIED="1545151739605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MeteorTears$email.coverage" NAME="email Coverage Results" MODIFIED="1545045062605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/utils" />
     <SUITE FILE_PATH="coverage/IDEF$Unittest_ExternalReport_test_external_report.coverage" NAME="Unittest ExternalReport.test_external_report Coverage Results" MODIFIED="1543210808839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/IDEF$Nosetests_in_test_external_search.coverage" NAME="Nosetests in test_external_search Coverage Results" MODIFIED="1542970381620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -76,9 +63,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/utils/fp.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="22" column="10" lean-forward="true" selection-start-line="26" selection-end-line="31" selection-end-column="12" />
+              <folding>
+                <element signature="e#23#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -128,7 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/public/logger.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="488">
@@ -285,11 +279,6 @@
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -312,6 +301,12 @@
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="test_cases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
@@ -721,7 +716,7 @@
       <workItem from="1545015353629" duration="3361000" />
       <workItem from="1545036666011" duration="8072000" />
       <workItem from="1545055629758" duration="598000" />
-      <workItem from="1545102263060" duration="17763000" />
+      <workItem from="1545102263060" duration="19126000" />
     </task>
     <task id="LOCAL-00001" summary="文件加密">
       <created>1543337953877</created>
@@ -800,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545116754073</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add email templates">
+      <created>1545151026333</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545151026333</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -836,7 +838,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115309000" />
+    <option name="totallyTimeSpent" value="116672000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -849,7 +851,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22319035" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -1114,16 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/public/BeautifulReport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1258,6 +1249,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="26" selection-end-line="31" selection-end-column="12" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
           </folding>
