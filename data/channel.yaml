@@ -1,0 +1,35 @@
+# 获取一级渠道id
+- channel_get_first_level:
+    action: SELECT
+    execSQL:
+      - table: channel
+      - columns: ['id']
+      - params: name= 'SEMAUTO1' AND deleted='0' AND level = '1'
+      - desc: ORDER BY id DESC LIMIT 1
+    except:
+      - is_table: 0
+      - message: You have an error in your SQL syntax
+
+# 获取二级渠道id
+- channel_get_second_level:
+    action: SELECT
+    execSQL:
+      - table: channel
+      - columns: ['id']
+      - params: name= 'SEMAUTO2' AND deleted='0' AND level = '2'
+      - desc: ORDER BY id DESC LIMIT 1
+    except:
+      - is_table: 0
+      - message: You have an error in your SQL syntax
+
+# 获取三级渠道id
+- channel_get_third_level:
+    action: SELECT
+    execSQL:
+      - table: channel
+      - columns: ['id']
+      - params: name= 'SEMAUTO3' AND deleted='0' AND level = '3'
+      - desc: ORDER BY id DESC LIMIT 1
+    except:
+      - is_table: 0
+      - message: You have an error in your SQL syntax

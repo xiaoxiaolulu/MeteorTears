@@ -78,7 +78,7 @@ class ColorConfig(Color):
 class Logger(logging.Logger):
 
     def __init__(self,  filename=None, filemode='a', encoding='utf-8', level=DEBUG, stream=True, file=True):
-        self.filename = os.fspath(filename if filename is not None else setting.document_name('log'))
+        self.filename = os.fspath(filename if filename is not None else setting.LOG_FILE_NAME)
         self.baseFilename = os.path.abspath(filename)
         self.mode = filemode
         self.encoding = encoding

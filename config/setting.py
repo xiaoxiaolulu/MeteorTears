@@ -1,103 +1,53 @@
 # -*- coding:utf-8 -*-
-import os
-from lib.utils import time_util
 from config import xml_handler
 from lib.utils import security
+from lib.utils import time_util
 
 
 __all__ = [
-    'TEST_CASES',
-    'CONTENT',
-    'HEADER',
-    'REPORT',
-    'EMAIL',
-    'CASES',
-    'LOG'
+    'CONTENT_TEMPLATE_PATH',
+    'HEADER_TEMPLATE_PATH',
+    'EMAIL_TEMPLATE_PATH',
+    'XML_CONFIG_PATH',
+    'TEST_CASES_PATH',
+    'LOG_FILE_NAME',
+    'REPORT_PATH',
+    'CASES_PATH',
+    'DATA_PATH'
 ]
 
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# ALL PATHS
+LOG_FILE_NAME = 'report/log/Mar-{}.log'.format(time_util.timestamp('format_now'))
+CONTENT_TEMPLATE_PATH = 'lib/template/content_template'
+HEADER_TEMPLATE_PATH = 'lib/template/header_template'
+EMAIL_TEMPLATE_PATH = 'lib/template/email_template.html'
+XML_CONFIG_PATH = 'config/config.xml'
+TEST_CASES_PATH = 'lib/test_cases/'
+LOG_PATH = 'report/log/'
+REPORT_PATH = 'report/'
+CASES_PATH = 'cases/'
+DATA_PATH = 'data/'
 
 
-# FIXME: 创建目录结构待优化
-def make_directory(
-        root_directory: str,
-        extension_pattern: int,
-        flag: 'Default False' = False) -> str:
-    """
-    创建目录结构
-
-    :Args:
-     - root_directory: 根目录， STR TYPE.
-     - extension_pattern: 匹配子目录的索引, INT TYPE.
-     - flag: 创建文件标识符, 一般默认为False, BOOLEAN TYPE.
-
-    :Usage:
-        make_directory('case', 0)
-    """
-    extension_root = os.path.abspath(os.path.join(BASE_DIR, root_directory))
-    file_directory = [
-        extension_root,
-        extension_root + '/log/' + time_util.timestamp('format_day'),
-        extension_root + '/report/' + time_util.timestamp('format_day'),
-        extension_root + '/log/',
-        extension_root + '/report/',
-    ]
-
-    if not os.path.exists(extension_root):
-        os.mkdir(extension_root)
-
-    for filename in file_directory:
-        if not os.path.exists(filename) and flag is True:
-            os.makedirs(os.path.abspath(filename))
-
-    return file_directory[extension_pattern]
+# READ_CONF
+BASE_CONF = xml_handler.XmlHandler(XML_CONFIG_PATH)
+BASE_DATA_CONF = BASE_CONF.get_child('mysqlTest')['mysqlTest']
+BASE_EMAIL_CONF = BASE_CONF.get_child('emailSender')['EmailSender']
 
 
-# FIXME: 创建具体文件名,并返回值
-def document_name(
-        extension_filename: str,
-        filename: 'default Null' = '',
-        flag: bool = True) -> str:
-    """
-    指定创建当前时间的日志文件或测试报告文件
-
-    :Args:
-     - extension_filename: 预期匹配类型文件名, STR TYPE.
-     - filename: 文件名, 默认为空, STR TYPE.
-     - flag: 创建文件标识符, 一般默认为True, BOOLEAN TYPE.
-
-    :Usage:
-        document_name('log')
-    """
-    document_index = {'log': 1, 'html': 2}
-    extension_document = make_directory('report', int(document_index[extension_filename]), flag)
-    filename = os.path.abspath(
-        os.path.join(extension_document, '{0}{1}.{2}' .format(
-            time_util.timestamp('format_day'), filename, extension_filename))
-    )
-    return filename
-
-
-# FIXME: 配置文件根目录
-BASE_DATA_BASE_CONF = xml_handler.XmlHandler(make_directory('config/config.xml', 0)).get_child('mysqlTest')['mysqlTest']
-
-
+# MYSQL SETTING
 DATABASE = dict(security.batch_decryption({
-    'host': BASE_DATA_BASE_CONF[0]['host'],
-    'port': BASE_DATA_BASE_CONF[1]['port'],
-    'user': BASE_DATA_BASE_CONF[2]['user'],
-    'psw': BASE_DATA_BASE_CONF[3]['password'],
-    'db': BASE_DATA_BASE_CONF[4]['db'],
+    'host': BASE_DATA_CONF[0]['host'],
+    'port': BASE_DATA_CONF[1]['port'],
+    'user': BASE_DATA_CONF[2]['user'],
+    'psw': BASE_DATA_CONF[3]['password'],
+    'db': BASE_DATA_CONF[4]['db'],
 }), **{'charset': "utf8"})
 
 
-# FIXME: 文件/目录路径待优化
-CONTENT = os.path.join(make_directory('lib/template', 0), 'content_template')
-HEADER = os.path.join(make_directory('lib/template', 0), 'header_template')
-EMAIL = os.path.join(make_directory('lib/template', 0), 'email_template')
-TEST_CASES = os.path.join(make_directory('lib/test_cases', 0), '')
-REPORT = os.path.join(make_directory('report', 0), '')
-CASES = os.path.join(make_directory('cases', 0), '')
-LOG = document_name('log')
+# EMAIL SETTING
+EMAIL_CONF = dict(security.batch_decryption({
+    'sendaddr_name': BASE_EMAIL_CONF[0]['sendaddr_name'],
+    'sendaddr_pswd': BASE_EMAIL_CONF[1]['sendaddr_pswd']
+}), **{'receivers': security.batch_decryption(BASE_CONF.get_all_receivers)})

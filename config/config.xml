@@ -20,10 +20,11 @@
         <type>EmailReceivers</type>
         <recvaddress_163>MTM1NjQ5NTczNzhAMTYzLmNvbQ==</recvaddress_163>
         <recvaddress_company>dGluZy5sdUBkYWRhYWJjLmNvbQ==</recvaddress_company>
+        <recvaddress_yuanyuan>dHJhY3kubGl1QGRhZGFhYmMuY29t</recvaddress_yuanyuan>
     </emailReceivers>
     <emailSender>
         <type>EmailSender</type>
         <sendaddr_name>NTQ2NDY0MjY4QHFxLmNvbQ==</sendaddr_name>
-        <sendaddr_pswd>YnNkcm12eHlzbnp6YmRoZQ==</sendaddr_pswd>
+        <sendaddr_pswd>bXh4bG5zZnByZmN3YmNoZA==</sendaddr_pswd>
     </emailSender>
 </myconfig>

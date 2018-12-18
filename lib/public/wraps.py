@@ -20,10 +20,13 @@ def test_data_runner(func):
     @wraps(func)
     def wrap(*args, **kwargs):
 
+        global ExecuteResult
+
         for item in iter(ExecuteSQL.loads_sql_data()):
 
             func_name = func.__name__.title().replace('_', '')
-            if item['classname'] == func_name:
+            sql_pattern_obj = item['classname'].split('_')[0]
+            if sql_pattern_obj in func_name:
                 logger.log_debug("操作的数据库表为 ====> {}".format(item['classname']))
                 columns = ','.join(item['columns']) if len(item['columns']) else '*'
                 table = item['table']
@@ -31,15 +34,15 @@ def test_data_runner(func):
                 desc = item['desc']
                 if item['action'] == 'SELECT':
                     sql = 'SELECT {} FROM {} WHERE {} {}'.format(columns, table, params, desc)
-                    result = ES.execute(sql)
+                    ExecuteResult = ES.execute(sql)[0]['id']
                     logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
-                    logger.log_debug("执行结果为 ===> {}".format(result))
+                    logger.log_debug("执行结果为 ===> {}".format(ExecuteResult))
                 if item['action'] == 'DELETE':
                     sql = 'DELETE FROM {} WHERE {}'.format(table, params)
-                    result = ES.execute(sql)
+                    ExecuteResult = ES.execute(sql)
                     logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
-                    logger.log_debug("执行结果为 ===> {}".format(result))
-        return func(*args, **kwargs)
+                    logger.log_debug("执行结果为 ===> {}".format(ExecuteResult))
+        return func(*args, **kwargs, resql=ExecuteResult)
 
     return wrap
 
@@ -94,11 +97,15 @@ def result_assert(func):
             sort_keys=True,
             ensure_ascii=False
         )
-        return func(*args, response=result, expect_assert_value=expect_assert_value, kwassert_value=kwassert_value)
+        return func(
+            *args,
+            response=result,
+            expect_assert_value=expect_assert_value,
+            kwassert_value=kwassert_value
+        )
 
     return wrap
 
 
 if __name__ == '__main__':
     pass
-

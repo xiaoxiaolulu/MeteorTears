@@ -39,7 +39,8 @@ class ExecuteSQL(GetJsonParams):
         :Usage:
             execute("SELECT count(*) FROM sqlite_master WHERE type='table' AND name='test_results'")
         """
-        return self.cursor.execute(*args, **kwargs)
+        self.cursor.execute(*args, **kwargs)
+        return self.cursor.fetchall()
 
     @classmethod
     def loads_sql_data(cls) -> types.GeneratorType:
@@ -50,7 +51,7 @@ class ExecuteSQL(GetJsonParams):
             loads_sql_data()
         """
 
-        sql_files = fp.iter_files(setting.make_directory('data', 0))
+        sql_files = fp.iter_files(setting.DATA_PATH)
         for sql in sql_files:
             with open(sql, encoding='utf-8') as file:
                 for dic in yaml.load(file):

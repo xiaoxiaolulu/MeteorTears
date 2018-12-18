@@ -1,14 +1,15 @@
 {
-  "test_channel_getchildren": {
-    "url": "http://test11-marketing.dadaorg.com/admin/channel/getchildren",
+  "test_channel_getlist": {
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/getlist",
     "method": "POST",
     "data": {
-      "parentId": 1544509895584490
+      "pageNo": 1,
+      "pageSize": 10
     },
     "headers": {
       "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
     },
-    "description": "获得子渠道",
+    "description": "获取渠道列表数据",
     "assert": {
       "code": 0
     }

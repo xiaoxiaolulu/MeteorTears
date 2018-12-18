@@ -1,82 +1,83 @@
 # -*- coding:utf-8 -*-
-import os
 import smtplib
+from lib.utils import fp
 from config import setting
 from lib.public import logger
 from email.header import Header
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-# FIXME: 老代码实现的方式不是很理想
 
 
 class SendMail(object):
 
-    def __init__(self, filename, receiver=None, mode='rb'):
-        self.filename = os.fspath(filename)
-        self.baseFilename = os.path.abspath(filename)
+    def __init__(self, receiver=None, mode='rb'):
         # The recipient, list type, can be reassigned,
-        # and if the recipient list is empty, the default sender is the receiver.
+        # and if the recipient list is empty, the default sender is the
+        # receiver.
         if receiver is None:
-            if isinstance(parameters.EMAILS['default']['receivers'], list):
-                if len(parameters.EMAILS['default']['receivers']) < 1:
-                    self.receiver = parameters.EMAILS['default']['sender_name']
+            if isinstance(setting.EMAIL_CONF['receivers'], list):
+                if len(setting.EMAIL_CONF['receivers']) < 1:
+                    self.receiver = setting.EMAIL_CONF['sendaddr_name']
                 else:
-                    self.receiver = parameters.EMAILS['default']['receivers']
+                    self.receiver = setting.EMAIL_CONF['receivers']
         else:
             self.receiver = receiver
         self.mode = mode
         self.msg = MIMEMultipart()
 
     @property
-    def get_report(self) -> str:
-        try:
-            dirs = os.listdir(self.filename)
-            if dirs is not None:
-                dirs.sort()
-                new_report = dirs[-1]
-                print('Latest test generated reports {0}'.format(new_report))
-                return new_report
-            else:
-                print('This directory {0} is empty'.format(dirs))
-        except Exception:
-            print('The directory was not found。')
-            raise
+    def get_html_report(self) -> str:
+        """
+        获取测试报告路径
 
-    # 邮件附件与内容
-    def take_content(self):
-        new_report = os.path.join(self.filename, self.get_report)
+        :Usage:
+            get_html_report()
+        """
+        try:
+            return setting.REPORT_PATH + 'Marketing测试报告.html'
+        except FileNotFoundError:
+            pass
+
+    def email_content(self) -> None:
+        """
+        定义发送邮件的内容
+
+        :Usage:
+            email_content()
+        """
         self.msg['Subject'] = Header('SEM AUTO TEST REPORT', 'utf-8')
-        with open(new_report, self.mode) as file:
+        with open(setting.EMAIL_TEMPLATE_PATH, self.mode) as file:
             mail_body = file.read()
         self.msg.attach(MIMEText(mail_body, _subtype='html', _charset='utf-8'))
-        att = MIMEText(mail_body, 'base64', 'utf-8')
-        att["Content-Type"] = 'application/octet-stream'
-        att["Content-Disposition"] = 'attachment; filename="report.html"'
-        self.msg.attach(att)
+        att1 = MIMEText(open(self.get_html_report, self.mode).read(), 'base64', 'utf-8')
+        att1["Content-Type"] = 'application/octet-stream'
+        att1["Content-Disposition"] = 'attachment; filename="report.html"'
+        self.msg.attach(att1)
+        att2 = MIMEText(open(fp.iter_files(setting.LOG_PATH)[-1], self.mode).read(), 'base64', 'utf-8')
+        att2["Content-Type"] = 'application/octet-stream'
+        att2["Content-Disposition"] = 'attachment; filename="mar.log"'
+        self.msg.attach(att2)
 
-    # Flag为True 邮件发送
-    def send_mail(self, flag: 'default Boolean False'=False):
-        if flag:
-            self.take_content()
-            self.msg['From'] = parameters.EMAILS['default']['sender_name']
-            self.msg['To'] = ','.join(self.receiver)
-            server = smtplib.SMTP_SSL('smtp.qq.com', 465)
-            try:
-                server.login(parameters.EMAILS['default']['sender_name'], parameters.EMAILS['default']['sender_psw'])
-                server.sendmail(parameters.EMAILS['default']['sender_name'], self.receiver, self.msg.as_string())
-                print('{0} Please check if the email has been sent successfully.'
-                      .format(parameters.EMAILS['default']['receivers']))
-            except Exception:
-                print('Mailbox sending failed, please check the parameters of each setting.')
-                raise
-            finally:
-                server.quit()
+    def send_mail(self):
+        self.email_content()
+        self.msg['From'] = setting.EMAIL_CONF['sendaddr_name']
+        self.msg['To'] = ','.join(self.receiver)
+        server = smtplib.SMTP_SSL('smtp.qq.com', 465)
+        try:
+            server.login(
+                setting.EMAIL_CONF['sendaddr_name'],
+                setting.EMAIL_CONF['sendaddr_pswd'])
+            server.sendmail(
+                setting.EMAIL_CONF['sendaddr_name'],
+                self.receiver,
+                self.msg.as_string())
+            logger.log_debug(
+                'Please check if the email has been sent successfully.')
+        except smtplib.SMTPException:
+            pass
+        finally:
+            server.quit()
 
 
 if __name__ == '__main__':
-
-    print(parameters.EMAILS['default']['filename'])
-    send = SendMail(parameters.EMAILS['default']['filename'])
-    print(send.get_report)
-    send = SendMail(parameters.EMAILS['default']['filename'])
-    send.send_mail(flag=True)
+    pass

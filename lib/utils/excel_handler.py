@@ -71,7 +71,7 @@ def save_excel(
     :Usage:
         save_excel('../data/test.xlsx', 2, 'landing_page', 'test-副本.xlsx')
     """
-    excel_copy = os.path.join(setting.make_directory('data', 0), 'copy_excel')
+    excel_copy = os.path.join(setting.DATA_PATH, 'copy_excel')
     workbook = xlwt.Workbook(encoding='utf-8')
     table, data = workbook.add_sheet(u"sheet1", cell_overwrite_ok=True), analyze_excel(file, data_index, excel_key)
 
@@ -86,3 +86,7 @@ def save_excel(
         for q, p in enumerate(j):
             table.write(i, q, str(p))
     workbook.save(os.path.join(excel_copy, excel_name))
+
+
+if __name__ == '__main__':
+    pass
