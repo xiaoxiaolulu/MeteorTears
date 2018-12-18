@@ -25,11 +25,11 @@ def run(cases, pattern, report):
     send_mail.send_mail()
 
     # 测试用例回溯
-    # try:
-    #     for files in os.listdir(cases):
-    #         os.remove(cases + files)
-    # except PermissionError:
-    #     pass
+    try:
+        for files in os.listdir(cases):
+            os.remove(cases + files)
+    except PermissionError:
+        pass
 
 
 if __name__ == '__main__':

@@ -20,7 +20,7 @@
         <type>EmailReceivers</type>
         <recvaddress_163>MTM1NjQ5NTczNzhAMTYzLmNvbQ==</recvaddress_163>
         <recvaddress_company>dGluZy5sdUBkYWRhYWJjLmNvbQ==</recvaddress_company>
-        <recvaddress_yuanyuan>dHJhY3kubGl1QGRhZGFhYmMuY29t</recvaddress_yuanyuan>
+        <!--<recvaddress_yuanyuan>dHJhY3kubGl1QGRhZGFhYmMuY29t</recvaddress_yuanyuan>-->
     </emailReceivers>
     <emailSender>
         <type>EmailSender</type>
