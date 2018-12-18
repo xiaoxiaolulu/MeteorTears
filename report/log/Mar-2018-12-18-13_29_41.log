@@ -1,0 +1,11 @@
+[DEBUG] [2018-12-18 13:29:41,422] logger.py [line:134] : 测试用例已自动生成完毕, 文件: AddChannel.py -> 具体测试用例:test_channel_getchildren
+[DEBUG] [2018-12-18 13:29:41,425] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelCategoryGet.py -> 具体测试用例:test_channel_category_get
+[DEBUG] [2018-12-18 13:29:41,427] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelCategoryGetall.py -> 具体测试用例:test_channel_category_getall
+[DEBUG] [2018-12-18 13:29:41,429] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelDelete.py -> 具体测试用例:test_channel_delete
+[DEBUG] [2018-12-18 13:29:41,431] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelGetchildren.py -> 具体测试用例:test_channel_getchildren
+[DEBUG] [2018-12-18 13:29:41,433] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelGetlist.py -> 具体测试用例:test_channel_getlist
+[DEBUG] [2018-12-18 13:29:41,434] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelUpdate.py -> 具体测试用例:test_channel_update
+[DEBUG] [2018-12-18 13:29:41,436] logger.py [line:134] : 测试用例已自动生成完毕, 文件: GetChannelId.py -> 具体测试用例:test_get_channel_id
+[DEBUG] [2018-12-18 13:29:41,701] logger.py [line:134] : 本次操作的数据库为ChannelBudget
+[DEBUG] [2018-12-18 13:29:41,714] logger.py [line:134] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-18 13:29:41,716] logger.py [line:134] : 执行结果为 ===> 1

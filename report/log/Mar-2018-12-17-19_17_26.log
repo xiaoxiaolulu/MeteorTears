@@ -1,0 +1,19 @@
+[DEBUG] [2018-12-17 19:17:26,481] logger.py [line:134] : 测试用例已自动生成完毕, 文件: AddChannel.py -> 具体测试用例:test_add_channel
+[DEBUG] [2018-12-17 19:17:26,709] logger.py [line:134] : 本次操作的数据库为ChannelBudget
+[DEBUG] [2018-12-17 19:17:26,722] logger.py [line:134] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-17 19:17:26,723] logger.py [line:134] : 执行结果为 ===> 1
+[DEBUG] [2018-12-17 19:17:26,727] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/landingpage/category/add', 'method': 'POST', 'data': {'name': 'SEMAUTO', 'description': '自动化测试数据勿动', 'enabled': 1}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '添加渠道数据', 'assert': {'code': ['type', 'int']}}
+[DEBUG] [2018-12-17 19:17:26,728] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/landingpage/category/add",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "name": "SEMAUTO",
+        "description": "自动化测试数据勿动",
+        "enabled": 1
+    },
+    "json": null
+}
+[DEBUG] [2018-12-17 19:17:27,491] logger.py [line:134] : The test result is {'code': 1, 'message': '此名称已存在。', 'data': None}
+[DEBUG] [2018-12-17 19:17:29,929] logger.py [line:134] : Please check if the email has been sent successfully.

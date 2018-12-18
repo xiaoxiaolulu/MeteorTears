@@ -1,0 +1,110 @@
+[DEBUG] [2018-12-18 14:53:09,649] logger.py [line:134] : 测试用例已自动生成完毕, 文件: AddChannel.py -> 具体测试用例:test_channel_getchildren
+[DEBUG] [2018-12-18 14:53:09,652] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelCategoryGet.py -> 具体测试用例:test_channel_category_get
+[DEBUG] [2018-12-18 14:53:09,655] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelCategoryGetall.py -> 具体测试用例:test_channel_category_getall
+[DEBUG] [2018-12-18 14:53:09,658] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelDelete.py -> 具体测试用例:test_channel_delete
+[DEBUG] [2018-12-18 14:53:09,661] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelGetchildren.py -> 具体测试用例:test_channel_getchildren
+[DEBUG] [2018-12-18 14:53:09,663] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelGetlist.py -> 具体测试用例:test_channel_getlist
+[DEBUG] [2018-12-18 14:53:09,665] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelUpdate.py -> 具体测试用例:test_channel_update
+[DEBUG] [2018-12-18 14:53:09,667] logger.py [line:134] : 测试用例已自动生成完毕, 文件: GetChannelId.py -> 具体测试用例:test_get_channel_id
+[DEBUG] [2018-12-18 14:53:09,930] logger.py [line:134] : 本次操作的数据库为channel_get_first_level
+[DEBUG] [2018-12-18 14:53:09,933] logger.py [line:134] : 执行的SQL语句为 ===> SELECT id FROM channel WHERE name= 'SEMAUTO1' AND deleted='0' AND level = '1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-18 14:53:09,934] logger.py [line:134] : 执行结果为 ===> [{'id': 1540546068355773}]
+[DEBUG] [2018-12-18 14:53:09,935] logger.py [line:134] : 本次操作的数据库为channel_get_second_level
+[DEBUG] [2018-12-18 14:53:09,938] logger.py [line:134] : 执行的SQL语句为 ===> SELECT id FROM channel WHERE name= 'SEMAUTO2' AND deleted='0' AND level = '2' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-18 14:53:09,939] logger.py [line:134] : 执行结果为 ===> [{'id': 1540546069128949}]
+[DEBUG] [2018-12-18 14:53:09,940] logger.py [line:134] : 本次操作的数据库为channel_get_third_level
+[DEBUG] [2018-12-18 14:53:09,943] logger.py [line:134] : 执行的SQL语句为 ===> SELECT id FROM channel WHERE name= 'SEMAUTO3' AND deleted='0' AND level = '3' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-18 14:53:09,944] logger.py [line:134] : 执行结果为 ===> [{'id': 1540966456998053}]
+[DEBUG] [2018-12-18 14:53:09,971] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/getchildren', 'method': 'POST', 'data': {'parentId': 1544509895584490}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '获得子渠道', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 14:53:09,972] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/getchildren",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "parentId": 1544509895584490
+    },
+    "json": null
+}
+[DEBUG] [2018-12-18 14:53:15,002] logger.py [line:134] : The test result is {'msg': '无权限操作', 'code': 99}
+[DEBUG] [2018-12-18 14:53:15,006] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/category/get', 'method': 'POST', 'data': {'id': 1544509895584490}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '获得渠道类别', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 14:53:15,007] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/category/get",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "id": 1544509895584490
+    },
+    "json": null
+}
+[DEBUG] [2018-12-18 14:53:18,428] logger.py [line:134] : The test result is {'msg': '无权限操作', 'code': 99}
+[DEBUG] [2018-12-18 14:53:18,431] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/category/getall', 'method': 'GET', 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '获取渠道分类', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 14:53:18,434] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/update', 'method': 'POST', 'data': {'id': 1545104152328809}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '删除渠道数据', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 14:53:18,434] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/update",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "id": 1545104152328809
+    },
+    "json": null
+}
+[DEBUG] [2018-12-18 14:53:19,042] logger.py [line:134] : The test result is {'timestamp': '2018-12-18T06:53:17.933+0000', 'status': 400, 'error': 'Bad Request', 'message': "Required String parameter 'name' is not present", 'path': '/admin/channel/update'}
+[DEBUG] [2018-12-18 14:53:19,044] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/getchildren', 'method': 'POST', 'data': {'parentId': 1544509895584490}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '获得子渠道', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 14:53:19,045] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/getchildren",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "parentId": 1544509895584490
+    },
+    "json": null
+}
+[DEBUG] [2018-12-18 14:53:19,682] logger.py [line:134] : The test result is {'code': 0, 'message': '操作成功', 'data': {}}
+[DEBUG] [2018-12-18 14:53:19,683] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/getlist', 'method': 'POST', 'data': {'pageNo': 1, 'pageSize': 10}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '获取渠道列表数据', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 14:53:19,684] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/getlist",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "pageNo": 1,
+        "pageSize": 10
+    },
+    "json": null
+}
+[DEBUG] [2018-12-18 14:53:20,348] logger.py [line:134] : The test result is {'code': 0, 'message': '操作成功', 'data': {'channelList': [{'id': 1545104152328809, 'name': 'SEMAUTO', 'level': 1, 'description': '自动化测试数据勿动', 'parentNamePath': '', 'landingPageUrl': '', 'promoteUrl': '', 'salesTalk': 'hello world', 'landingPageId': 1629972073214798, 'categoryId': 1, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1544509895584490, 'name': '疯子3号', 'level': 3, 'description': '3213131', 'parentNamePath': '疯了1号/疯子2号', 'landingPageUrl': 'https://test11-www.dadaabc.us/mstudent/activity/2018/0601/share', 'promoteUrl': 'https://redirect.dadaabc.com/?track=57cb93badaaea&nt=1', 'salesTalk': '3213221', 'landingPageId': 1544509837756835, 'categoryId': 1, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1544509874310795, 'name': '疯子2号', 'level': 2, 'description': '231321', 'parentNamePath': '疯了1号', 'landingPageUrl': '', 'promoteUrl': '', 'salesTalk': '', 'landingPageId': 0, 'categoryId': 1, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1544509858545339, 'name': '疯了1号', 'level': 1, 'description': '21321321', 'parentNamePath': '', 'landingPageUrl': '', 'promoteUrl': '', 'salesTalk': '', 'landingPageId': 0, 'categoryId': 1, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1544110543778776, 'name': '打撒萨达萨达', 'level': 3, 'description': '的撒旦撒旦', 'parentNamePath': '1一级渠道/11二级渠道', 'landingPageUrl': 'https://test11-www.dadaabc.us/apps/student/pass/register.html', 'promoteUrl': 'https://redirect.dadaabc.com/?track=57c5c4074b3d8&nt=1', 'salesTalk': '大撒大撒大撒', 'landingPageId': 1539673660588438, 'categoryId': 0, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1544103762430850, 'name': '撒打算打', 'level': 3, 'description': '', 'parentNamePath': '2一级渠道/8二级渠道', 'landingPageUrl': 'https://test11-www.dadaabc.us/apps/student/pass/register.html', 'promoteUrl': 'https://redirect.dadaabc.com/?track=57c5aac418b82&nt=1', 'salesTalk': '', 'landingPageId': 0, 'categoryId': 5, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1544098984784074, 'name': 'dsada', 'level': 3, 'description': 'dsadas', 'parentNamePath': 'IVY一级渠道/IVY二级渠道', 'landingPageUrl': 'https://test11-www.dadaabc.us/apps/student/pass/register.html', 'promoteUrl': 'https://redirect.dadaabc.com/?track=57c598f7c70ca&nt=1', 'salesTalk': 'dsadasd', 'landingPageId': 1539673660588438, 'categoryId': 2, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1544097741082932, 'name': '21q313123', 'level': 3, 'description': '321321', 'parentNamePath': '1一级渠道/11二级渠道', 'landingPageUrl': 'http://test11-marketing.dadaorg.com/cms/landing', 'promoteUrl': 'https://redirect.dadaabc.com/?track=57c59455b1134&nt=1', 'salesTalk': '321321321', 'landingPageId': 1537515651567206, 'categoryId': 0, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1540966456998053, 'name': 'SEMAUTO3', 'level': 3, 'description': '', 'parentNamePath': 'SEMAUTO1/SEMAUTO2', 'landingPageUrl': 'https://www.dadaabc.com', 'promoteUrl': 'https://redirect.dadaabc.com/?track=579803647b8a5&nt=1', 'salesTalk': '', 'landingPageId': 1540966184388756, 'categoryId': 1, 'enabled': 1, 'enableCaptcha': 1}, {'id': 1540546069128949, 'name': 'SEMAUTO2', 'level': 2, 'description': '', 'parentNamePath': 'SEMAUTO1', 'landingPageUrl': '', 'promoteUrl': '', 'salesTalk': '', 'landingPageId': 0, 'categoryId': 1, 'enabled': 1, 'enableCaptcha': 1}], 'total': 144, 'pageNo': 1}}
+[DEBUG] [2018-12-18 14:53:20,350] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/update', 'method': 'POST', 'data': {'id': 1545104152328809, 'name': 'SEMAUTO', 'description': '自动化测试数据勿动', 'salesTalk': 'hello world', 'landingPageId': 1629972073214798, 'enabled': 1, 'enableCaptcha': 1}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '更新渠道数据', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 14:53:20,351] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/update",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "id": 1545104152328809,
+        "name": "SEMAUTO",
+        "description": "自动化测试数据勿动",
+        "salesTalk": "hello world",
+        "landingPageId": 1629972073214798,
+        "enabled": 1,
+        "enableCaptcha": 1
+    },
+    "json": null
+}
+[DEBUG] [2018-12-18 14:53:21,203] logger.py [line:134] : The test result is {'code': 0, 'message': '操作成功', 'data': None}
+[DEBUG] [2018-12-18 14:53:21,205] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/get', 'method': 'POST', 'data': {'id': 1544509895584490}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '获取渠道id', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 14:53:21,206] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/get",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "id": 1544509895584490
+    },
+    "json": null
+}
+[DEBUG] [2018-12-18 14:53:21,808] logger.py [line:134] : The test result is {'code': 0, 'message': '操作成功', 'data': {'id': 1544509895584490, 'name': '疯子3号', 'description': '3213131', 'level': 3, 'parentId': 1544509874310795, 'categoryId': 1, 'salesTalk': '3213221', 'landingPageId': 1544509837756835, 'enabled': 1, 'enableCaptcha': 1, 'deleted': 0, 'createTime': 'Dec 11, 2018 2:31:35 PM', 'updateTime': 'Jan 1, 1970 12:00:00 AM'}}
+[DEBUG] [2018-12-18 14:53:24,460] logger.py [line:134] : Please check if the email has been sent successfully.
