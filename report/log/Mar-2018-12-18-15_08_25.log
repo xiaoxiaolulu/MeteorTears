@@ -1,0 +1,28 @@
+[DEBUG] [2018-12-18 15:08:25,617] logger.py [line:134] : 测试用例已自动生成完毕, 文件: AddChannel.py -> 具体测试用例:test_channel_getchildren
+[DEBUG] [2018-12-18 15:08:25,619] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelCategoryGet.py -> 具体测试用例:test_channel_category_get
+[DEBUG] [2018-12-18 15:08:25,620] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelCategoryGetall.py -> 具体测试用例:test_channel_category_getall
+[DEBUG] [2018-12-18 15:08:25,622] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelDelete.py -> 具体测试用例:test_channel_delete
+[DEBUG] [2018-12-18 15:08:25,623] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelGetchildren.py -> 具体测试用例:test_channel_getchildren
+[DEBUG] [2018-12-18 15:08:25,625] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelGetlist.py -> 具体测试用例:test_channel_getlist
+[DEBUG] [2018-12-18 15:08:25,627] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelUpdate.py -> 具体测试用例:test_channel_update
+[DEBUG] [2018-12-18 15:08:25,629] logger.py [line:134] : 测试用例已自动生成完毕, 文件: GetChannelId.py -> 具体测试用例:test_get_channel_id
+[DEBUG] [2018-12-18 15:08:25,958] logger.py [line:134] : 本次操作的数据库为channel_get_first_level
+[DEBUG] [2018-12-18 15:08:25,961] logger.py [line:134] : 执行的SQL语句为 ===> SELECT id FROM channel WHERE name= 'SEMAUTO1' AND deleted='0' AND level = '1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-18 15:08:25,962] logger.py [line:134] : 执行结果为 ===> [{'id': 1540546068355773}]
+[DEBUG] [2018-12-18 15:08:25,963] logger.py [line:134] : 本次操作的数据库为channel_get_second_level
+[DEBUG] [2018-12-18 15:08:25,965] logger.py [line:134] : 执行的SQL语句为 ===> SELECT id FROM channel WHERE name= 'SEMAUTO2' AND deleted='0' AND level = '2' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-18 15:08:25,966] logger.py [line:134] : 执行结果为 ===> [{'id': 1540546069128949}]
+[DEBUG] [2018-12-18 15:08:25,967] logger.py [line:134] : 本次操作的数据库为channel_get_third_level
+[DEBUG] [2018-12-18 15:08:25,970] logger.py [line:134] : 执行的SQL语句为 ===> SELECT id FROM channel WHERE name= 'SEMAUTO3' AND deleted='0' AND level = '3' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-18 15:08:25,971] logger.py [line:134] : 执行结果为 ===> [{'id': 1540966456998053}]
+[DEBUG] [2018-12-18 15:08:26,009] logger.py [line:134] : {'url': 'http://test11-marketing.dadaorg.com/admin/channel/getchildren', 'method': 'POST', 'data': {'parentId': 1544509895584490}, 'headers': {'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI'}, 'description': '获得子渠道', 'assert': {'code': 0}}
+[DEBUG] [2018-12-18 15:08:26,012] logger.py [line:134] : 接受POST的请求参数为{
+    "url": "http://test11-marketing.dadaorg.com/admin/channel/getchildren",
+    "headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+    },
+    "data": {
+        "parentId": 1544509895584490
+    },
+    "json": null
+}
