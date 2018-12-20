@@ -22,10 +22,10 @@ from lib.public import case_field
 
 class AddChannel(object):
     
-    url = case_field.UrlField('/admin/channel/add')
+    url = case_field.UrlField('/admin/add')
     method = case_field.MethodField('POST')
     data = case_field.DataField({
-      "name": "SEMAUTO1",
+      "name": "AUTO1",
       "level": 1,
       "parentId": 0,
       "categoryId": 1,
@@ -33,7 +33,7 @@ class AddChannel(object):
       "enableCaptcha": 1
     })
     headers = case_field.HeadersField({
-      "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1X2lkIjoiODg5MDIiLCJ1X21peCI6IiIsInVfbmFtZSI6ImhlbGxvIiwidV90aW1lIjoxNTQwNTM1MjYzfQ.eN8ozTkSzqxIbVq4Fa2AhvTZNjozpUP_Ad5XAw6xicI"
+      "Authorization": "eyJ0eXAiOiJKV1"
     })
     description = case_field.DescriptionField("添加渠道数据")
 ```
