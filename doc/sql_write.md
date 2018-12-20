@@ -5,8 +5,8 @@
 - ChannelBudget:
     action: SELECT
     execSQL:
-      - table: channel_budget
-      - columns: ['channel_id']
+      - table: shopping
+      - columns: ['id']
       - params: id='1'
       - desc: ORDER BY id DESC LIMIT 1
     except:
@@ -34,7 +34,7 @@ def channel_budget():
 
 #### 返回结果如下
 ```python
-[DEBUG] [2018-12-10 18:12:25,227] logger.py [line:136] : 操作的数据库表为 ====> ChannelBudget
-[DEBUG] [2018-12-10 18:12:25,233] logger.py [line:136] : 执行的SQL语句为 ===> SELECT channel_id FROM channel_budget WHERE id='1' ORDER BY id DESC LIMIT 1
+[DEBUG] [2018-12-10 18:12:25,227] logger.py [line:136] : 操作的数据库表为 ====> Shopping
+[DEBUG] [2018-12-10 18:12:25,233] logger.py [line:136] : 执行的SQL语句为 ===> SELECT id FROM shopping WHERE id='1' ORDER BY id DESC LIMIT 1
 [DEBUG] [2018-12-10 18:12:25,234] logger.py [line:136] : 执行结果为 ===> 1
 ```
