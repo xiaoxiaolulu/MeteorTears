@@ -1,9 +1,0 @@
-[DEBUG] [2018-12-18 13:54:05,641] logger.py [line:134] : 测试用例已自动生成完毕, 文件: A001AddChannel.py -> 具体测试用例:test_channel_getchildren
-[DEBUG] [2018-12-18 13:54:05,643] logger.py [line:134] : 测试用例已自动生成完毕, 文件: A002ChannelCategoryGet.py -> 具体测试用例:test_channel_category_get
-[DEBUG] [2018-12-18 13:54:05,734] logger.py [line:134] : 测试用例已自动生成完毕, 文件: A003ChannelGetlist.py -> 具体测试用例:test_channel_getlist
-[DEBUG] [2018-12-18 13:54:05,737] logger.py [line:134] : 测试用例已自动生成完毕, 文件: A004ChannelUpdate.py -> 具体测试用例:test_channel_update
-[DEBUG] [2018-12-18 13:54:05,739] logger.py [line:134] : 测试用例已自动生成完毕, 文件: A005ChannelGetchildren.py -> 具体测试用例:test_channel_getchildren
-[DEBUG] [2018-12-18 13:54:05,741] logger.py [line:134] : 测试用例已自动生成完毕, 文件: A006ChannelCategoryGetall.py -> 具体测试用例:test_channel_category_getall
-[DEBUG] [2018-12-18 13:54:05,742] logger.py [line:134] : 测试用例已自动生成完毕, 文件: A007GetChannelId.py -> 具体测试用例:test_get_channel_id
-[DEBUG] [2018-12-18 13:54:05,745] logger.py [line:134] : 测试用例已自动生成完毕, 文件: A008ChannelDelete.py -> 具体测试用例:test_channel_delete
-[DEBUG] [2018-12-18 13:54:09,239] logger.py [line:134] : Please check if the email has been sent successfully.

@@ -3,7 +3,73 @@
   <component name="ChangeListManager">
     <list default="true" id="a6faa8fd-8d2a-43e4-b64e-35cca7c4d703" name="Default" comment="add email templates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/public/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/public/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/add_channel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/channel_category_get.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/channel_category_getall.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/channel_delete.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/channel_getchildren.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/channel_getlist.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/channel_update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cases/get_channel_id.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Marketing测试报告.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-17_52_17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-17_52_57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-17_54_19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-17_55_51.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-17_57_17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_05_16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_17_09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_19_12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_20_16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_42_12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_42_38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_43_28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_44_43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-18_46_10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-19_12_30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-19_15_48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-19_16_46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-17-19_17_26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_35_50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_54_37.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_54_50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_55_33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_55_55.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_56_02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_56_13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_56_34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_56_49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-11_57_20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-12_40_05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-13_24_26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-13_26_05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-13_27_19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-13_29_41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-13_51_09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-13_51_58.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-13_54_05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-13_58_48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_06_57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_07_53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_17_52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_20_59.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_29_34.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_30_28.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_37_53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_38_19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_38_53.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_39_48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_40_01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_48_09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_53_09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-14_56_58.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-15_08_25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-15_09_08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-15_16_40.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-15_18_04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-15_20_29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-18-15_22_50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/log/Mar-2018-12-19-00_49_00.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +79,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MeteorTears$Unittests_for_AddChannel_AddChannel_test_add_channel.coverage" NAME="Unittests for AddChannel.AddChannel.test_add_channel Coverage Results" MODIFIED="1544769516310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/test_cases" />
-    <SUITE FILE_PATH="coverage/MeteorTears$run.coverage" NAME="run Coverage Results" MODIFIED="1545151739605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MeteorTears$run.coverage" NAME="run Coverage Results" MODIFIED="1545153759699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MeteorTears$email.coverage" NAME="email Coverage Results" MODIFIED="1545045062605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/utils" />
     <SUITE FILE_PATH="coverage/IDEF$Unittest_ExternalReport_test_external_report.coverage" NAME="Unittest ExternalReport.test_external_report Coverage Results" MODIFIED="1543210808839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/IDEF$Nosetests_in_test_external_search.coverage" NAME="Nosetests in test_external_search Coverage Results" MODIFIED="1542970381620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -63,11 +129,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="22" column="10" lean-forward="true" selection-start-line="26" selection-end-line="31" selection-end-column="12" />
+            <state relative-caret-position="282">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
               </folding>
@@ -76,19 +142,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/utils/security.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1403">
-              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/lib/utils/fp.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/utils/time_util.py">
+        <entry file="file://$PROJECT_DIR$/lib/utils/security.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="650">
+              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -96,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/utils/use_mysql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2829">
+            <state relative-caret-position="650">
               <caret line="123" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
@@ -111,58 +173,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/public/case_manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#23#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/lib/test_cases/ChannelUpdate.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/public/logger.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/test_cases/GetChannelId.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/utils/analyze_log.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/utils/email.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+            <state relative-caret-position="475">
+              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
               <folding>
-                <element signature="e#23#32#0" expanded="true" />
+                <element signature="e#23#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.xml">
+        <entry file="file://$PROJECT_DIR$/lib/utils/excel_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/xml_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-              <folding>
-                <element signature="e#23#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/setting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="26" selection-start-line="26" selection-end-line="27" />
-              <folding>
-                <element signature="e#23#53#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="46">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -247,20 +288,20 @@
         <option value="$PROJECT_DIR$/lib/utils/use_mysql.py" />
         <option value="$PROJECT_DIR$/lib/public/wraps.py" />
         <option value="$PROJECT_DIR$/lib/utils/email.py" />
-        <option value="$PROJECT_DIR$/config/config.xml" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/lib/template/email_template.html" />
         <option value="$PROJECT_DIR$/lib/template/email_template" />
         <option value="$PROJECT_DIR$/config/setting.py" />
         <option value="$PROJECT_DIR$/lib/public/logger.py" />
+        <option value="$PROJECT_DIR$/config/config.xml" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-105" />
-    <option name="y" value="47" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="257" />
+    <option name="y" value="16" />
+    <option name="width" value="1538" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -268,7 +309,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,6 +346,18 @@
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="test_cases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -313,11 +365,6 @@
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
@@ -338,6 +385,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +394,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../项目资料/MagicAuto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
@@ -662,8 +710,8 @@
       <item itemvalue="Python.run" />
       <item itemvalue="Python.security" />
       <item itemvalue="Python.use_mysql" />
-      <item itemvalue="Python tests.Unittests for A001AddChannel.A001AddChannel" />
       <item itemvalue="Python.wraps" />
+      <item itemvalue="Python tests.Unittests for A001AddChannel.A001AddChannel" />
     </list>
     <recent_temporary>
       <list>
@@ -716,7 +764,8 @@
       <workItem from="1545015353629" duration="3361000" />
       <workItem from="1545036666011" duration="8072000" />
       <workItem from="1545055629758" duration="598000" />
-      <workItem from="1545102263060" duration="19260000" />
+      <workItem from="1545102263060" duration="20910000" />
+      <workItem from="1545291852651" duration="289000" />
     </task>
     <task id="LOCAL-00001" summary="文件加密">
       <created>1543337953877</created>
@@ -809,7 +858,28 @@
       <option name="project" value="LOCAL" />
       <updated>1545152712102</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add email templates">
+      <created>1545152846658</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545152846658</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add email templates">
+      <created>1545152955363</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545152955363</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add email templates">
+      <created>1545153658340</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1545153658340</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -845,7 +915,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116806000" />
+    <option name="totallyTimeSpent" value="118745000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -860,7 +930,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22319035" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29825738" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -870,7 +940,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49932975" weight="0.8504155" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.95844877" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32825485" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.300554" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067025" side_tool="true" weight="0.87811637" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32963988" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.0" />
@@ -918,81 +988,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add email templates" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/report/log/Mar-2018-12-17-18_17_09.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/log/Mar-2018-12-17-19_17_26.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/project_log.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="529">
-            <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/sql_write.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/case_write.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/log/Mar-2018-12-18-11_54_50.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-473" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/log/Mar-2018-12-18-11_57_20.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/log/Mar-2018-12-18-12_40_05.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4024" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/log/Mar-2018-12-18-13_51_09.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test_cases/001AddChannel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test_cases/A001AddChannel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="69" lean-forward="true" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="1058" selection-start-line="1058" selection-end-line="1058" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/log/Mar-2018-12-18-14_30_28.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/633493848/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1008,16 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/utils/email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
-          <folding>
-            <element signature="e#23#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cases/channel_getlist.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -1025,47 +1010,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/channel.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test_cases/AddChannel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/log/Mar-2018-12-18-15_22_50.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/template/email_template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="79" column="130" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/template/content_template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cases/add_channel.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1123,6 +1071,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/utils/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/utils/time_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cases/add_channel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/case_write.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
+          <folding>
+            <element signature="e#23#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/xml_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/channel.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/case_field.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-10" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/project_log.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="529">
+            <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/sql_write.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-401" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/public/BeautifulReport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1137,26 +1170,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/http_keywords.py">
+    <entry file="file://$PROJECT_DIR$/lib/public/case_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="299">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#23#34#0" expanded="true" />
+            <element signature="e#23#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/Recursion.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/wraps.py">
+    <entry file="file://$PROJECT_DIR$/lib/public/http_keywords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1119">
-          <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+        <state relative-caret-position="161">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
           </folding>
@@ -1173,8 +1200,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/Recursion.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/public/wraps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/static/auto_create_cases.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/static/cases_obj.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/static/data_obj.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/content_template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/email_template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="79" column="130" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/header_template">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/locust_template">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test_cases/AddChannel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test_cases/ChannelCategoryGet.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test_cases/ChannelDelete.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test_cases/ChannelUpdate.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test_cases/GetChannelId.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils/analyze_log.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/utils/email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+          <folding>
+            <element signature="e#23#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils/excel_handler.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1183,29 +1296,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/utils/exceptions.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils/fp.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils/security.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1403">
+        <state relative-caret-position="650">
           <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/utils/time_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils/use_mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2829">
+        <state relative-caret-position="650">
           <caret line="123" selection-start-line="123" selection-end-line="123" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
@@ -1216,57 +1319,10 @@
     <entry file="file://$PROJECT_DIR$/lib/utils/variables.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/xml_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="26" selection-start-line="26" selection-end-line="27" />
-          <folding>
-            <element signature="e#23#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/case_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="26" selection-end-line="31" selection-end-column="12" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/public/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
+        <state relative-caret-position="282">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
           </folding>

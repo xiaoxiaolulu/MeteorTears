@@ -1,8 +1,0 @@
-[DEBUG] [2018-12-18 14:38:53,179] logger.py [line:134] : 测试用例已自动生成完毕, 文件: AddChannel.py -> 具体测试用例:test_channel_getchildren
-[DEBUG] [2018-12-18 14:38:53,181] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelCategoryGet.py -> 具体测试用例:test_channel_category_get
-[DEBUG] [2018-12-18 14:38:53,183] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelCategoryGetall.py -> 具体测试用例:test_channel_category_getall
-[DEBUG] [2018-12-18 14:38:53,184] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelDelete.py -> 具体测试用例:test_channel_delete
-[DEBUG] [2018-12-18 14:38:53,186] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelGetchildren.py -> 具体测试用例:test_channel_getchildren
-[DEBUG] [2018-12-18 14:38:53,187] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelGetlist.py -> 具体测试用例:test_channel_getlist
-[DEBUG] [2018-12-18 14:38:53,189] logger.py [line:134] : 测试用例已自动生成完毕, 文件: ChannelUpdate.py -> 具体测试用例:test_channel_update
-[DEBUG] [2018-12-18 14:38:53,190] logger.py [line:134] : 测试用例已自动生成完毕, 文件: GetChannelId.py -> 具体测试用例:test_get_channel_id
