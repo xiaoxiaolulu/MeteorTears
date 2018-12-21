@@ -1,12 +1,3 @@
-"""
-@Version: 1.0
-@Project: BeautyReport
-@Author: Raymond
-@Data: 2017/11/15 下午5:28
-@File: __init__.py.py
-@License: MIT
-"""
-
 import os
 import sys
 from io import StringIO as StringIO
