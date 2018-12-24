@@ -6,7 +6,7 @@ from lib.utils import fp
 from yaml import scanner
 
 
-class FiddlerFilter(object):
+class LoadFiddlerFiles(object):
 
     def __init__(self, path: str = None):
         self.path = path
@@ -20,7 +20,7 @@ class FiddlerFilter(object):
         return fp.iter_files(self.path)
 
     @staticmethod
-    def __match_files(request_url):
+    def __match_files(re_pattern, request_url):
         """
         匹配有效接口文件, 匹配不成功返回None
 
@@ -28,9 +28,9 @@ class FiddlerFilter(object):
          - request_url:  匹配的路由, STR TYPE.
 
         :Usage:
-            match_files('test11-marketing.dadaorg.com/admin/dada/getConfigInfo')
+            match_files('/admin/ConfigInfo')
         """
-        http_url_regexp = re.compile(r"test11-marketing.dadaorg.com/admin/.*?", re.I)
+        http_url_regexp = re.compile(re_pattern, re.I)
         return http_url_regexp.match(request_url)
 
     def loads_fiddler_request(self) ->types.GeneratorType:
