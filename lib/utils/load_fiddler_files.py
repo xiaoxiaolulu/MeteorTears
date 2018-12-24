@@ -54,7 +54,7 @@ class LoadFiddlerFiles(object):
                     request_url = content['Request url']
                     request_type = content['Request header'][:4]
                     request_api = content['Request header'][4:].replace('HTTP/1.1', '')
-                    class_name = (request_api.split('/')[-2] + request_api.split('/')[-1]).strip().title()
+                    class_name = (request_api.split('/')[-2] + '_' + request_api.split('/')[-1]).strip().title()
                     content_type = content['Content-Type']
                     request_body = content['Request body']
                     authorization = content['Authorization']

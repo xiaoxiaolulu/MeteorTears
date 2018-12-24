@@ -47,11 +47,8 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
 ```
 3. C:\Users\56464\Documents\Fiddler2\Scripts\目录下最好先备份原文件,并命名CustomRulesBack.js
 4. 录制的原始接口信息会保存在/WorkFlow/目录下
-5. 录制完的接口为Yaml格式文件, load_fiddler_files.py分析并生成新的迭代对象, create_workFlow_obj.py将生成新的yaml格式用例文件,
-workFlow_manage.py 运行录制接口主体逻辑.
+5. 录制完的接口为JSON格式文件, load_fiddler_files.py分析并生成新的迭代对象, create_workFlow_obj.py将生成新的Json格式用例文件,
 
 
 ### 注意事项
-录制的接口采用不同的文件管理用例,  同时在不同的case层进行遍历, 因此录制接口将是完全独立的一套操作模式(当在项目忙碌时，又要大量回归测试, 可以采用)
-但生成的Html测试报告将采用同一份。
-
+录制的接口采用不同的文件管理用例,  同时在不同的case层进行遍历, 但运行逻辑与报告生成方式与手动编写用例同
