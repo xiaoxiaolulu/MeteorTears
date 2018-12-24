@@ -19,3 +19,10 @@ class ChannelGetchildren(unittest.TestCase):
         """添加渠道数据"""
         response = kwargs.get('response')
         self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))
+
+    @wraps.cases_runner
+    @wraps.result_assert
+    def test_channel_getchildren(self, *args, **kwargs):
+        """添加渠道数据"""
+        response = kwargs.get('response')
+        self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))

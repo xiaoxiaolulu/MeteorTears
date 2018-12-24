@@ -1,4 +1,3 @@
-# 20181221 Created By Null
 ### Fiddler会话保存
 ```text
 File -》Save -》  (a) All sessions  以saz格式文件保存所有会话 
@@ -24,14 +23,26 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
 3. 点击Replay按钮, 批量请求
 
 
-### 解析saz文件or 修改CustomRules.js文件(构思与思考)
-1. 解析saz文件  再批量分析接口 (待晚上和大佬讨论)
-2. 改造CustomRules.js 文件批量保存txt文件，再批量分析
-3. 关于Fiddler接口分析
-```text
-1. 去除非测试项目接口, 正则匹配
-2. 接口去重判断
-
---- 进阶
-1. 爬虫遍历保存的项目接口文档与Fiddler接口文档做diff差异化对比
+### CustomRules文件(接口录制V.1.0.0)
+1. 找到OnBeforeResponse方法
+2. 添加如下代码
+```javascript
+        oSession.utilDecodeResponse();
+        var now = new Date();
+        var ts = now.getTime();
+        var filename =  'F:/MeteorTears/WorkFlow/' + ts + '_' + oSession.id + '.txt';
+        var curDate = new Date();
+        var logContent = "Request url: " + oSession.url + "\r\nRequest header: " + oSession.oRequest.headers +  "\r\nRequest body: " + oSession.GetRequestBodyAsString() + "\r\nResponse code: " + oSession.responseCode + "\r\nResponse body: " + oSession.GetResponseBodyAsString() + "\r\n";
+        var sw : System.IO.StreamWriter;
+        if (System.IO.File.Exists(filename)){
+            sw = System.IO.File.AppendText(filename);
+            sw.Write(logContent);
+        }
+        else{
+            sw = System.IO.File.CreateText(filename);
+            sw.Write(logContent);
+        }
+        sw.Close();
+        sw.Dispose();
 ```
+3. C:\Users\56464\Documents\Fiddler2\Scripts\目录下最好先备份原文件,并命名CustomRulesBack.js

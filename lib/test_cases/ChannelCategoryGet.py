@@ -19,3 +19,10 @@ class ChannelCategoryGet(unittest.TestCase):
         """获得渠道类别"""
         response = kwargs.get('response')
         self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))
+
+    @wraps.cases_runner
+    @wraps.result_assert
+    def test_channel_category_get(self, *args, **kwargs):
+        """获得渠道类别"""
+        response = kwargs.get('response')
+        self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))

@@ -19,3 +19,10 @@ class ChannelGetlist(unittest.TestCase):
         """获取渠道列表数据"""
         response = kwargs.get('response')
         self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))
+
+    @wraps.cases_runner
+    @wraps.result_assert
+    def test_channel_getlist(self, *args, **kwargs):
+        """获取渠道列表数据"""
+        response = kwargs.get('response')
+        self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))

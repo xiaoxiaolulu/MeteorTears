@@ -19,3 +19,10 @@ class ChannelDelete(unittest.TestCase):
         """删除渠道数据"""
         response = kwargs.get('response')
         self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))
+
+    @wraps.cases_runner
+    @wraps.result_assert
+    def test_channel_delete(self, *args, **kwargs):
+        """删除渠道数据"""
+        response = kwargs.get('response')
+        self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))
