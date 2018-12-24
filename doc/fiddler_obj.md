@@ -46,3 +46,5 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
         sw.Dispose();
 ```
 3. C:\Users\56464\Documents\Fiddler2\Scripts\目录下最好先备份原文件,并命名CustomRulesBack.js
+
+4. 录制的原始接口信息会保存在/WorkFlow/目录下
