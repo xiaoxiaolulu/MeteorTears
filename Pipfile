@@ -4,9 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-
+requests = "*"
+contextlib2 = "*"
+colorama = "*"
+xlrd = "*"
+xlwt = "*"
+pyyaml = "*"
+pymysql = "*"
 
 [dev-packages]
 coverage = "*"
+coveralls = "*"
+twine = "*"
 
-[scripts]
+[requires]
+python_version = "3.6.3"
