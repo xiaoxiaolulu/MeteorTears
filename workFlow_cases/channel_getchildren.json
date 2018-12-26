@@ -1,0 +1,15 @@
+{
+    "test_channel_getchildren": {
+        "url": "xxxxx",
+        "method": "POST",
+        "data": "parentId=0",
+        "headers": {
+            "Authorization": "xxxxxx",
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        "description": "channel_getchildren",
+        "assert": {
+            "code": 0
+        }
+    }
+}
