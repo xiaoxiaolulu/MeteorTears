@@ -1,6 +1,7 @@
 ### 2018-12-26
 1. 搭建travis-ci + coveralls
 2. 使用 coverage
+3. setup.py done
 
 
 ### 2018-12-24

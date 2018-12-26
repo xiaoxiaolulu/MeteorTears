@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: MeteorTears
+Version: 1.0.0
+Summary: Even the most boring times in life are limited.
+Home-page: https://github.com/xiaoxiaolulu/MeteorTears
+Author: Null
+Author-email: 546464268@qq.com
+License: MIT
+Description: ### Meteor tears
+        
+        Meteor tears 一款基于python-request通过Json格式文件管理用例的接口测试工具
+        
+        
+        #### 业务数据层-Mysql数据操作参考文档
+        [具体操作请参考sql_write文档](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/doc/sql_write.md)
+        
+        
+        #### 用例编写规则参考文档
+        [具体操作请参考case_write文档](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/doc/case_write.md)
+        
+        
+        #### Fiddler接口录制
+        [具体操作请参考fiddler_obj文档](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/doc/fiddler_obj.md)
+Keywords: HTTP api test requests
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+Description-Content-Type: text/markdown

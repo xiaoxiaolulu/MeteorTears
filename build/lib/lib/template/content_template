@@ -1,0 +1,8 @@
+
+
+    @wraps.cases_runner
+    @wraps.result_assert
+    def {}(self, *args, **kwargs):
+        """{}"""
+        response = kwargs.get('response')
+        self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))
