@@ -92,3 +92,7 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
 3. C:\Users\56464\Documents\Fiddler2\Scripts\目录下最好先备份原文件,并命名CustomRulesBack.js
 4. 录制的原始接口信息会保存在/WorkFlow/目录下
 5. 录制完的接口为JSON格式文件, load_fiddler_files.py分析并生成新的迭代对象, create_workFlow_obj.py将生成新的Json格式用例文件,
+
+--------------
+
+欢迎交流   QQ: 546464268(Null)
