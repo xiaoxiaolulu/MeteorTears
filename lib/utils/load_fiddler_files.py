@@ -25,6 +25,7 @@ class LoadFiddlerFiles(object):
         匹配有效接口文件, 匹配不成功返回None
 
         :Args:
+         - re_pattern: 匹配规则, STR TYPE.
          - request_url:  匹配的路由, STR TYPE.
 
         :Usage:
