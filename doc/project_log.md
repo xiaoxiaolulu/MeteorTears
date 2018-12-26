@@ -1,3 +1,8 @@
+### 2018-12-26
+1. 搭建travis-ci + coveralls
+2. 使用 coverage
+
+
 ### 2018-12-24
 1. 修改CustomRules文件代码,使Fiddler能自动保存会话进指定的目录
 2. 分析录制接口文件并生成新的request的对象
