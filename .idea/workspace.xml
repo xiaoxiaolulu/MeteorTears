@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6faa8fd-8d2a-43e4-b64e-35cca7c4d703" name="Default" comment="接口录制功能已完成">
-      <change afterPath="$PROJECT_DIR$/.coveralls.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.travis.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/locust.md" afterDir="false" />
+    <list default="true" id="a6faa8fd-8d2a-43e4-b64e-35cca7c4d703" name="Default" comment="覆盖">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/case_field.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/public/case_field.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/public/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/AddChannel.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_cases/AddChannel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelCategoryGet.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_cases/ChannelCategoryGet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelCategoryGetall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_cases/ChannelCategoryGetall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelDelete.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_cases/ChannelDelete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelGetchildren.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_cases/ChannelGetchildren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelGetlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_cases/ChannelGetlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ChannelUpdate.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_cases/ChannelUpdate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/GetChannelId.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test_cases/GetChannelId.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/load_fiddler_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/load_fiddler_files.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +103,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.coveralls.yaml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -178,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/xml_handler.py" />
         <option value="$PROJECT_DIR$/lib/utils/excel_handler.py" />
         <option value="$PROJECT_DIR$/lib/utils/security.py" />
         <option value="$PROJECT_DIR$/cases/get_channel_id.json" />
@@ -229,6 +216,7 @@
         <option value="$PROJECT_DIR$/config/setting.py" />
         <option value="$PROJECT_DIR$/lib/utils/load_fiddler_files.py" />
         <option value="$PROJECT_DIR$/Pipfile" />
+        <option value="$PROJECT_DIR$/.coveralls.yaml" />
       </list>
     </option>
   </component>
@@ -652,7 +640,7 @@
       <workItem from="1545659412357" duration="574000" />
       <workItem from="1545659988379" duration="3025000" />
       <workItem from="1545714042296" duration="9279000" />
-      <workItem from="1545795523180" duration="6399000" />
+      <workItem from="1545795523180" duration="7139000" />
     </task>
     <task id="LOCAL-00001" summary="文件加密">
       <created>1543337953877</created>
@@ -843,7 +831,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545662768939</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="覆盖">
+      <created>1545818305554</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1545818305554</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -879,7 +874,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169236000" />
+    <option name="totallyTimeSpent" value="169976000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -891,7 +886,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21715818" />
@@ -958,7 +953,8 @@
     <MESSAGE value="完成录制接口部分逻辑" />
     <MESSAGE value="接口安全安全安全" />
     <MESSAGE value="接口录制功能已完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="接口录制功能已完成" />
+    <MESSAGE value="覆盖" />
+    <option name="LAST_COMMIT_MESSAGE" value="覆盖" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/WorkFlow/1545637332398_8.yaml" />
@@ -1209,7 +1205,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.coveralls.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
