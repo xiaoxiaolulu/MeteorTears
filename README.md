@@ -1,6 +1,7 @@
 ### Meteor tears
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-green.svg))](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/LICENSE)
+[![LICENSE](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/LICENSE) [![python version](https://img.shields.io/badge/python-3.4%7C3.5%7C3.6%7C3.7-blue.svg)](https://pypi.org/project/MeteorTears/)
+
 
 Meteor tears 一款基于python-request通过Json格式文件管理用例的接口测试工具
 
