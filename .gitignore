@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Rope project settings
+.ropeproject
+
+# search
+cases/*
+config/config.xml
+data/*
+lib/static/*
+testhtml/*
+WorkFlow/*
+WorkFlow_cases/*
+report/log/*
+report/*
