@@ -1,0 +1,10 @@
+requests
+contextlib2
+colorama
+xlrd
+xlwt
+pyyaml
+pymysql
+coverage
+coveralls
+twine
