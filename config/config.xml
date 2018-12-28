@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<myconfig>
+    <mysqlDev>
+        <type>MySqlDev</type>
+        <host>MTkyLjE2OC4xNzAuMTc=</host>
+        <port>MzMwNg==</port>
+        <user>cm9vdA==</user>
+        <password>dGVzdA==</password>
+        <db>bWFya2V0aW5n</db>
+    </mysqlDev>
+    <mysqlTest>
+        <type>mysqlTest</type>
+        <host>MTkyLjE2OC4xNzAuMjQ=</host>
+        <port>MzMwNg==</port>
+        <user>ZGV2cGFkbWlu</user>
+        <password>MTIzNDU2OA==</password>
+        <db>ZGFkYV9tYXJrZXRpbmc=</db>
+    </mysqlTest>
+    <emailReceivers>
+        <type>EmailReceivers</type>
+        <recvaddress_163>MTM1NjQ5NTczNzhAMTYzLmNvbQ==</recvaddress_163>
+        <recvaddress_company>dGluZy5sdUBkYWRhYWJjLmNvbQ==</recvaddress_company>
+        <recvaddress_yuanyuan>dHJhY3kubGl1QGRhZGFhYmMuY29t</recvaddress_yuanyuan>
+    </emailReceivers>
+    <emailSender>
+        <type>EmailSender</type>
+        <sendaddr_name>NTQ2NDY0MjY4QHFxLmNvbQ==</sendaddr_name>
+        <sendaddr_pswd>bXh4bG5zZnByZmN3YmNoZA==</sendaddr_pswd>
+    </emailSender>
+</myconfig>
