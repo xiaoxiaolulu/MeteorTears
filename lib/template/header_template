@@ -1,0 +1,14 @@
+# -*- coding:utf-8 -*-
+import unittest
+from lib.public import wraps
+
+
+class {}(unittest.TestCase):
+
+    """{}接口测试脚本"""
+
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass

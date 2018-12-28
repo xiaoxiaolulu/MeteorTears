@@ -1,0 +1,13 @@
+sudo: false
+language: python
+python:
+  - 3.6.3
+install:
+  - pip install pipenv --upgrade-strategy=only-if-needed
+  - pipenv install --dev
+script:
+  - pipenv run python setup.py install
+  - pipenv run coverage html -d testhtml
+after_success:
+  - pipenv run coveralls
+
