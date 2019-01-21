@@ -1,4 +1,9 @@
 # -*- coding:utf-8 -*-
+"""
+@Author: Null
+@File: excel_handler.py
+@description: 发送Eamil邮件
+"""
 import smtplib
 from lib.utils import fp
 from config import setting
