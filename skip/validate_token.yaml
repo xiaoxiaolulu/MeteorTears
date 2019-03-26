@@ -1,0 +1,9 @@
+test_validate_token:
+  description: "验证token信息"
+  method: post
+  url: https://192.168.1.104:10033/api/auth/validateToken
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: 8E2DB22CFED897269A308C1793C8BE684E2735E44D6489F322DC7B57BB485C70
+  assert:
+    IsValid: True

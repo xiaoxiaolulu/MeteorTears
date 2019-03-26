@@ -1,6 +1,10 @@
 # -*- coding:utf-8 -*-
+"""
+@Author: Null
+@File: time_util.py
+@description: 格式化时间
+"""
 import time
-# FIXME: 随着项目配置文件以优雅的方式优化, 此处代码将重构
 
 
 def timestamp(format_key: str) -> str:

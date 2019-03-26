@@ -3,10 +3,10 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/LICENSE) [![python version](https://img.shields.io/badge/python-3.4%7C3.5%7C3.6%7C3.7-blue.svg)](https://pypi.org/project/MeteorTears/) [![Build Status](https://travis-ci.org/xiaoxiaolulu/MeteorTears.svg?branch=master)](https://travis-ci.org/xiaoxiaolulu/MeteorTears)
 
 
-Meteor tears 一款基于python-request通过Json格式文件管理用例的接口测试工具
+Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接口测试工具
 
 
-### 用例编写(Json文件管理)
+### 用例编写(Yaml文件管理)
 key | value | example
 ------------ | -------------| ----------------
 url | 请求接口路由 | /admin/compaign/export

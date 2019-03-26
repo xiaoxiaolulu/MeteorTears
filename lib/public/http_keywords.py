@@ -1,20 +1,21 @@
 # -*- coding:utf-8 -*-
 import json
+import urllib3
+import requests
 from urllib import parse
-from requests import Session
 from lib.public import logger
 from lib.utils import exceptions
 from lib.public.Recursion import GetJsonParams
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# FIXME:Json自动对比尚在老代码还是重写中取舍
+
 class BaseKeyWords(GetJsonParams):
 
     def __init__(self, request_body: dict):
-        self.session = Session()
         self.request_body = request_body
 
-    def post(self, **kwargs: dict) -> dict:
+    def post(self, **kwargs: dict):
         """
         发送POST请求。返回:class:`Response` object。
 
@@ -24,9 +25,9 @@ class BaseKeyWords(GetJsonParams):
         :Usage:
             post(url='/admin/category/add', data={"name": "AUTO", "enabled": 1})
         """
-        return self.session.post(**kwargs).json()
+        return requests.post(verify=False, **kwargs)
 
-    def get(self, **kwargs: dict) -> dict:
+    def get(self, **kwargs: dict):
         """
         发送GET请求。返回:class:`Response` object。
 
@@ -36,9 +37,8 @@ class BaseKeyWords(GetJsonParams):
         :Usage:
             get(url='/admin/category/getNames')
         """
-        return self.session.get(**kwargs).json()
+        return requests.get(**kwargs, verify=False)
 
-    # FIXME: 缺少dubbo接口方法, 现只有GET AND POST
     def make_test_templates(self) -> dict:
         """
         创建测试用例的基础数据
@@ -48,27 +48,28 @@ class BaseKeyWords(GetJsonParams):
         """
 
         logger.log_debug(self.request_body)
-        method = self.request_body.get('method')
+        method = GetJsonParams.get_value(self.request_body, 'method')
 
         if method in ['get', 'GET']:
             temp = ('url', 'params', 'headers')
             request_body = GetJsonParams.for_keys_to_dict(*temp, my_dict=self.request_body)
-            if '=' in request_body.get('params') or '&' in request_body.get('params'):
-                request_body['params'] = dict(parse.parse_qsl(request_body['params']))
+            if request_body['params']:
+                if '=' in request_body.get('params') or '&' in request_body.get('params'):
+                    request_body['params'] = dict(parse.parse_qsl(request_body['params']))
 
-            logger.log_debug("接受GET的请求参数为{}".format(
+            logger.log_info("接受GET的请求参数为{}".format(
                 json.dumps(request_body, indent=4, ensure_ascii=False))
             )
-            return self.get(**request_body)
+            return self.get(**request_body).json()
 
         if method in ['post', 'POST']:
-            temp = ('url', 'headers', 'data', 'json')
+            temp = ('url', 'headers', 'json', 'data', 'files')
             request_body = GetJsonParams.for_keys_to_dict(*temp, my_dict=self.request_body)
 
-            logger.log_debug("接受POST的请求参数为{}".format(
+            logger.log_info("接受POST的请求参数为{}".format(
                 json.dumps(request_body, indent=4, ensure_ascii=False))
             )
-            return self.post(**request_body)
+            return self.post(**request_body).json()
 
         else:
             raise exceptions.TestApiMethodError("接口测试请求类型错误, 请检查相关用例!")

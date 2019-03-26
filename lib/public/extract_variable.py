@@ -6,19 +6,16 @@ from lib.public import logger
 from lib.public import load_cases
 from lib.public.Recursion import GetJsonParams
 
-LD = load_cases.LoadCase(setting.CASES_PATH)
+LD = load_cases.LoadCase(setting.EXTRACT_VARIABLE)
 
 
-class CreateCase(GetJsonParams):
+class CreateExtractVariable(GetJsonParams):
 
     def __init__(self):
-        self.headers = None
         self.content = None
 
     def __enter__(self):
-        self.headers = open(setting.HEADER_TEMPLATE_PATH, encoding='utf-8')
-        self.header = self.headers.read()
-        self.content = open(setting.CONTENT_TEMPLATE_PATH, encoding='utf-8')
+        self.content = open(setting.EXTRACT_VARIABLE_TEMPLATE, encoding='utf-8')
         self.cont = self.content.read()
         return self
 
@@ -28,7 +25,7 @@ class CreateCase(GetJsonParams):
             func_name: str,
             description: str) -> None:
         """
-        创建用例文件
+        创建临时变量文件
 
         :Args:
          - classname: 类名&文件名, STR TYPE.
@@ -38,17 +35,14 @@ class CreateCase(GetJsonParams):
         :Usage:
             make_headers_and_contents('Channel', 'add_channel', '新增渠道')
         """
-        filename = setting.TEST_CASES_PATH + class_name + '.py'
+        filename = setting.EXTRACT + class_name + '.py'
         if not os.path.exists(filename):
-            with open(filename, 'w', encoding='utf-8') as file:
-                file.write(self.header.format(class_name, class_name))
-
-        with open(filename, 'a', encoding='utf-8') as file:
-            file.write(self.cont.format(func_name, description))
+            with open(filename, 'a', encoding='utf-8') as file:
+                file.write(self.cont.format(func_name, description))
 
     def create_template(self) -> types.GeneratorType:
         """
-        通过文件管理器Contextor创建并关闭文件
+        通过文件管理器创建并关闭文件
 
         :Usage:
             create_template()
@@ -77,16 +71,14 @@ class CreateCase(GetJsonParams):
                         })
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        self.headers.close()
-        del self.header
         self.content.close()
         del self.cont
 
 
-class TestContainer:
+class ExtractContainer:
 
-    cases = []
-    with CreateCase() as file:
+    extract = []
+    with CreateExtractVariable() as file:
         for items in file.create_template():
             obj, func = items
             func(
@@ -94,17 +86,17 @@ class TestContainer:
                 obj.crop['func_name'],
                 obj.crop['description']
             )
-            cases.append(obj.crop)
-            logger.log_info(
-                "测试用例已自动生成完毕, 文件: {}.py -> 具体测试用例:{}".format(
+            extract.append(obj.crop)
+            logger.log_debug(
+                "临时变量文件已自动生成完毕, 文件: {}.py -> 具体变量文件:{}".format(
                     obj.crop['class_name'],
                     obj.crop['func_name']))
 
     def __iter__(self):
-        return iter(self.cases)
+        return iter(self.extract)
 
     def __next__(self):
-        return next(self.cases)
+        return next(self.extract)
 
     def __repr__(self):
-        return self.cases
+        return self.extract

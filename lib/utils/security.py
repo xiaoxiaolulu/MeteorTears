@@ -1,6 +1,10 @@
 # -*- coding:utf-8 -*-
+"""
+@Author: Null
+@File: security.py
+@description: 加密解密配置文件
+"""
 import base64
-# FIXME: base64加密方式过去简陋
 
 
 def encrypt(key: bytes)-> bytes:

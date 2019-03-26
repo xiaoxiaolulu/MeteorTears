@@ -1,4 +1,9 @@
 # -*- coding:utf-8 -*-
+"""
+@Author: Null
+@File: create_workFlow_obj.py
+@description: 创建Json格式文件的遍历接口对象
+"""
 import json
 from config import setting
 from lib.utils.load_fiddler_files import LoadFiddlerFiles

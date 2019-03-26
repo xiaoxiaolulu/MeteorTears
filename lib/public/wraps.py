@@ -1,18 +1,18 @@
 # -*- coding:utf-8 -*-
+import os
+import yaml
 import json
 import builtins
 from functools import wraps
+from config import setting
 from lib.public import logger
 from lib.public import http_keywords
-from lib.utils.use_mysql import ExecuteSQL
+from lib.utils.use_SqlServer import ExecuteSQL
 from lib.public.Recursion import GetJsonParams
 from lib.public.case_manager import TestContainer
+from lib.public.extract_variable import ExtractContainer
 
 ES = ExecuteSQL()
-
-# FIXME: 生成的每个测试用例集中的每个case都将最终配置4-5个装饰器, \
-#  现完成sql操作/用例运行/断言分析等装饰器, 缺少运行locust性能接口测试装饰器  \
-#  locust模板已经构思完成
 
 
 def test_data_runner(func):
@@ -47,17 +47,78 @@ def test_data_runner(func):
     return wrap
 
 
+def extract_variable(func):
+
+    @wraps(func)
+    def wrap(*args):
+
+        for items in iter(ExtractContainer()):
+
+            for key, value in dict(items).items():
+                if value == func.__name__:
+
+                    handler = http_keywords.BaseKeyWords(items['body'])
+                    result = handler.make_test_templates()
+
+                    logger.log_info("临时变量文件运行结果为 {}".format(
+                        json.dumps(result, indent=4, ensure_ascii=False))
+                    )
+                    return func(
+                        *args,
+                        response=result
+                    )
+
+    return wrap
+
+#     logger.log_debug('my test {}'.format(value))
+#
+#     change_files_name = setting.CASES_PATH + value[len('test_'):] + '.yaml'
+#     for res_file in os.listdir(setting.PUBLIC_RES):
+#
+#         variables = yaml.load(setting.PUBLIC_RES + res_file)
+#         if items['body'].get('extend') is True:
+#             with open(change_files_name, 'r', encoding='utf-8') as rf:
+#                 change_file_content = rf.read()
+#                 with open(change_files_name, 'w', encoding='utf-8') as wf:
+#                     wf.write(change_file_content.format(res_file=variables))
+#
+#     # 将临时变量写入yaml文件
+#     res_index = items.get('body').get('res_index')
+#     if res_index:
+#         if isinstance(res_index, list):
+#             for res_key in res_index:
+#                 return_res = {res_key: GetJsonParams.get_value(result, res_key)}
+#                 file_name = setting.PUBLIC_RES + res_key + '.yaml'
+#                 logger.log_debug('取值测试{} => '.format(return_res))
+#
+#                 with open(file_name, 'w', encoding='utf-8') as file:
+#                     file.write(str(return_res))
+#
+#         if isinstance(res_index, str):
+#             return_res = {res_index: GetJsonParams.get_value(result, res_index)}
+#             file_name = setting.PUBLIC_RES + res_index + '.yaml'
+#             logger.log_debug('取值测试{}'.format(res_index))
+#
+#             with open(file_name, 'w', encoding='utf-8') as file:
+#                 file.write(str(return_res))
+
+
 def cases_runner(func):
 
     @wraps(func)
     def wrap(*args):
 
         for items in iter(TestContainer()):
+
             for key, value in dict(items).items():
                 if value == func.__name__:
+
                     handler = http_keywords.BaseKeyWords(items['body'])
                     result = handler.make_test_templates()
-                    logger.log_debug("The test result is {}".format(result))
+
+                    logger.log_info("The test result is{}".format(
+                        json.dumps(result, indent=4, ensure_ascii=False))
+                    )
                     return func(
                         *args,
                         response=result,
@@ -67,7 +128,6 @@ def cases_runner(func):
     return wrap
 
 
-# FIXME:还要加入自动对比的逻辑
 def result_assert(func):
 
     @wraps(func)
@@ -78,14 +138,16 @@ def result_assert(func):
         tmp = tuple(kwassert.keys())
         result = GetJsonParams.for_keys_to_dict(*tmp, my_dict=response)
         for key, value in kwassert.items():
-            if isinstance(value, list):
-                tp, _value = value
+            if isinstance(value, list) and len(value) > 1:
+                tp, _ = value
                 if tp == "type" and key == "responseType":
                     result[key] = [tp, repr(getattr(builtins, tp)(response)).split("'")[1]]
                 elif tp == "type":
                     result[key] = [tp, repr(getattr(builtins, tp)(result.get(key))).split("'")[1]]
                 else:
                     result[key] = [tp, getattr(builtins, tp)(result.get(key))]
+            else:
+                result[key] = response[key]
 
         expect_assert_value = json.dumps(
             result,

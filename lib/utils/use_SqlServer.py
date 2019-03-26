@@ -1,10 +1,9 @@
 # -*- coding:utf-8 -*-
 import yaml
 import types
-import pymysql
+import pymssql
 from lib.utils import fp
 from config import setting
-from lib.public import logger
 from lib.public.Recursion import GetJsonParams
 
 
@@ -14,18 +13,17 @@ class ExecuteSQL(GetJsonParams):
         """数据库链接池"""
         self.mysql_connect = {
             'host': setting.DATABASE['host'],
-            'port': int(setting.DATABASE['port']),
             'user': setting.DATABASE['user'],
-            'passwd': setting.DATABASE['psw'],
-            'db': setting.DATABASE['db'],
+            'password': setting.DATABASE['psw'],
+            'database': setting.DATABASE['db'],
             'charset': setting.DATABASE['charset']
         }
         self.conn = None
         self.cursor = None
 
     def __enter__(self):
-        self.conn = pymysql.connect(**self.mysql_connect)
-        self.cursor = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
+        self.conn = pymssql.connect(**self.mysql_connect)
+        self.cursor = self.conn.cursor()
         return self
 
     def execute(self, *args, **kwargs) -> dict:
@@ -80,44 +78,3 @@ class ExecuteSQL(GetJsonParams):
             del self.conn
         else:
             self.conn.rollback()
-
-
-# FIXME: 使用CONTEXTOR的方式实现对SQL数据的操作, 但这个sql容器类与wrap的一个装饰器功能重复
-class SqlContainer:
-
-    data = []
-
-    with ExecuteSQL() as file:
-
-        for items in file.loads_sql_data():
-
-            logger.log_debug("本次操作的数据库为{}".format(items['classname']))
-
-            action = items['action']
-            columns = ','.join(items['columns']) if len(items['columns']) else '*'
-            table = items['table']
-            params = items['params']
-            desc = items['desc']
-
-            if action == 'SELECT':
-                sql = 'SELECT {} FROM {} WHERE {} {}'.format(columns, table, params, desc)
-                result = file.execute(sql)
-                logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
-                logger.log_debug("执行结果为 ===> {}".format(result))
-
-            if action == 'DELETE':
-                sql = 'DELETE FROM {} WHERE {}'.format(table, params)
-                result = file.execute(sql)
-                logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
-                logger.log_debug("执行结果为 ===> {}".format(result))
-
-            data.append(items)
-
-    def __iter__(self):
-        return iter(self.data)
-
-    def __next__(self):
-        return next(self.data)
-
-    def __repr__(self):
-        return self.data

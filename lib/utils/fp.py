@@ -1,4 +1,9 @@
 # -*- coding:utf-8 -*-
+"""
+@Author: Null
+@File: fp.py
+@description: 递归函数遍历文件
+"""
 import os
 
 

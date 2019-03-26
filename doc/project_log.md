@@ -1,3 +1,11 @@
+### 2019-03-22
+1.用例管理文件格式变更为Yaml  json.load =》yaml.load，方便contextor更优雅的实现传参方式
+2.添加res_index方便动态传参，保存入临时变量文件(用例执行完自动回溯)
+```text
+用例中的变量名以{临时变量文件名}的方式书写
+1. 用例编写文件目录cases，生成临时yaml用例文件目录caseAll, test_cases根据caseAll自动生成py用例文件，并执行
+```
+
 ### 2018-12-26
 1. 搭建travis-ci + coveralls
 2. 使用 coverage

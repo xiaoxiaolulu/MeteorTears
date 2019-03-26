@@ -1,0 +1,4 @@
+public_key:
+  description: "获取公钥"
+  method: get
+  url: https://192.168.1.103:10003/api/auth/getpublickey

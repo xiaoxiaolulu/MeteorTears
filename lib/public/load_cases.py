@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import os
 import json
+import yaml
 from lib.utils import fp
 from lib.public import logger
 from lib.utils import exceptions
@@ -42,7 +43,7 @@ class LoadCase(object):
             class_name = self.__get_files_name[index].split('.')[0].title().replace('_', '')
             try:
                 with open(file, encoding='utf-8') as f:
-                    files_list.append({class_name: json.load(f)})
+                    files_list.append({class_name: yaml.load(f)})
             except exceptions.JsonLoadingError as err:
                 logger.log_error(
                     "Json file parsing error, error file: {0}, error message: {1}".format(

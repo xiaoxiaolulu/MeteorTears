@@ -39,7 +39,7 @@ class SendMail(object):
             get_html_report()
         """
         try:
-            return setting.REPORT_PATH + 'Marketing测试报告.html'
+            return setting.REPORT_PATH + 'HighTalkReport.html'
         except FileNotFoundError:
             pass
 
