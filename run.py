@@ -37,8 +37,8 @@ def run(cases, pattern, report):
     # send_mail.send_mail()
 
     # 日志告警
-    push_msg = WeChatAlarm()
-    push_msg.send_message(push_msg.error_log_message())
+    # push_msg = WeChatAlarm()
+    # push_msg.send_message(push_msg.error_log_message())
 
 
 if __name__ == '__main__':

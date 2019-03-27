@@ -17,7 +17,7 @@ def read_excel(file: str) -> list:
      - file: 文件路径, STR TYPE.
 
     :Usage:
-        read_excel(../data/test.xlsx)
+        read_excel(../data/test.yaml.xlsx)
     """
     workbook = xlrd.open_workbook(file)
     table = workbook.sheet_by_index(0)
@@ -45,7 +45,7 @@ def analyze_excel(file: str, data_index: int, excel_key: str) -> list:
      - excel_key: python代码数据对应的键, STR TYPE
 
     :Usage:
-        analyze_excel('..data/test.xlsx', 1, 'landing_page')
+        analyze_excel('..data/test.yaml.xlsx', 1, 'landing_page')
     """
 
     data = read_excel(file)[data_index]
@@ -74,7 +74,7 @@ def save_excel(
      - excel_name: 复制的文件名, 默认为copy_excel, STR TYPE.
 
     :Usage:
-        save_excel('../data/test.xlsx', 2, 'landing_page', 'test-副本.xlsx')
+        save_excel('../data/test.yaml.xlsx', 2, 'landing_page', 'test.yaml-副本.xlsx')
     """
     excel_copy = os.path.join(setting.DATA_PATH, 'copy_excel')
     workbook = xlwt.Workbook(encoding='utf-8')

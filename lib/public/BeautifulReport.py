@@ -309,7 +309,7 @@ class ReportTestResult(unittest.TestResult):
 
     def add_test_type(self, status: str, case_log: list) -> None:
         """
-            abstruct add test type and return tuple
+            abstruct add test.yaml type and return tuple
         :param status:
         :param case_log:
         :return:

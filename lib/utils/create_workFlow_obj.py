@@ -27,7 +27,7 @@ class CreateJsonCaseObj(object):
         for dic in iter(LD.loads_fiddler_request()):
             filename = dic['class_name'].lower()
             case_obj = {
-                'test' + '_' + filename: {
+                'test.yaml' + '_' + filename: {
                     "url": dic['request_url'],
                     "method": dic['request_type'],
                     "data": dic['request_body'],

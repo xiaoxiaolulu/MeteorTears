@@ -70,7 +70,7 @@ def extract_variable(func):
 
     return wrap
 
-#     logger.log_debug('my test {}'.format(value))
+#     logger.log_debug('my test.yaml {}'.format(value))
 #
 #     change_files_name = setting.CASES_PATH + value[len('test_'):] + '.yaml'
 #     for res_file in os.listdir(setting.PUBLIC_RES):
@@ -116,7 +116,7 @@ def cases_runner(func):
                     handler = http_keywords.BaseKeyWords(items['body'])
                     result = handler.make_test_templates()
 
-                    logger.log_info("The test result is{}".format(
+                    logger.log_info("The test.yaml result is{}".format(
                         json.dumps(result, indent=4, ensure_ascii=False))
                     )
                     return func(
