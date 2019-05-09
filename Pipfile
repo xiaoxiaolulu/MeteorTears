@@ -21,9 +21,6 @@ PyMySQL = "*"
 Flask = "==1.0.2"
 
 [dev-packages]
-coverage = "*"
-coveralls = "*"
-twine = "*"
 
 [requires]
 python_version = "3.6.3"
