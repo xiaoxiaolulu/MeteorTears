@@ -56,7 +56,7 @@ FIELDS = {
 
 class PATH:
     """ all file PATH meta """
-    config_tmp_path = './lib/template/report_template'
+    config_tmp_path = './lib/templates/report'
 
 
 class MakeResultJson:

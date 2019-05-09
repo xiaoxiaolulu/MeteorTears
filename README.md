@@ -7,6 +7,27 @@ Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接�
 
 
 ### 用例编写(Yaml文件管理)
+```yaml
+test_get_public_key:
+  # 上下游关联的参数文件名
+  relevant_parameter: [Host]
+  # 此接口落库的sql语句
+  relevant_sql: search_all_tenant_conf
+  # 测试用例名称
+  description: "获取公钥"
+  # 请求方式
+  method: get
+  # 请求路由
+  url: ${Host}$/api/auth/getpublickey
+  # 接口断言
+  assert:
+    Code: 1
+  # 提取测试接口Response返回参数
+  res_index: [RsaPublicKey, Key]
+  # 落库校验
+  check_db:
+    TenantName: TESTRLBC
+```
 key | value | example
 ------------ | -------------| ----------------
 url | 请求接口路由 | /admin/compaign/export
@@ -22,7 +43,7 @@ description | 用例描述 | "新增渠道"
 jsonDiff | 返回结果自动对比 | {"code":0,"message":"操作成功","data":""}
 
 
-### Mysql执行语句编写讲解
+### Mysql执行语句编写
 ```yaml
 - ChannelBudget:
     action: SELECT

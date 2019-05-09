@@ -8,12 +8,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/.travis.yml">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/get_public_key.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/config/path.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/search_all_tenant_conf.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/doc/project_log.md">
           <value>
             <set />
           </value>
@@ -29,6 +49,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/lib/public/wraps.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/templates/content">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/utils/use_SqlServer.py">
           <value>
             <set />
           </value>

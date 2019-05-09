@@ -73,7 +73,7 @@ setup(
     packages=find_packages(exclude=["testhtml", "WorkFlow", 'workFlow_cases']),
     package_data={
         '': ["README.md"],
-        'lib': ["template/*"],
+        'lib': ["templates/*"],
     },
     keywords='HTTP api test.json requests',
     install_requires=install_requires,

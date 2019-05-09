@@ -2,8 +2,7 @@
 import yaml
 import types
 import pymssql
-from lib.utils import fp
-# from config import setting
+from config import setting
 from lib.public.Recursion import GetJsonParams
 
 
@@ -35,34 +34,31 @@ class ExecuteSQL(GetJsonParams):
         self.cursor.execute(*args, **kwargs)
         return self.cursor.fetchall()
 
-    # @classmethod
-    # def loads_sql_data(cls) -> types.GeneratorType:
-    #     """
-    #     加载SQL数据，并以字典的形式返回
-    #
-    #     :Usage:
-    #         loads_sql_data()
-    #     """
-    #
-    #     sql_files = fp.iter_files(setting.DATA_PATH)
-    #     for sql in sql_files:
-    #         with open(sql, encoding='utf-8') as file:
-    #             for dic in yaml.load(file):
-    #                 for class_name, body in dic.items():
-    #                     if len(body) > 1:
-    #                         query_action = body['action']
-    #                         table = cls.get_value(body['execSQL'], 'table')
-    #                         columns = cls.get_value(body['execSQL'], 'columns')
-    #                         params = cls.get_value(body['execSQL'], 'params')
-    #                         desc = cls.get_value(body['execSQL'], 'desc')
-    #                         yield {
-    #                             'classname': class_name,
-    #                             'action': query_action,
-    #                             'table': table,
-    #                             'columns': columns,
-    #                             'params': params,
-    #                             'desc': desc
-    #                         }
+    @classmethod
+    def loads_sql_data(cls, filename) -> types.GeneratorType:
+        """
+        加载SQL数据，并以字典的形式返回
+
+        :Usage:
+            loads_sql_data()
+        """
+        with open(setting.DATA_PATH + filename, encoding='utf-8') as file:
+            for dic in yaml.load(file):
+                for class_name, body in dic.items():
+                    if len(body) > 1:
+                        query_action = body['action']
+                        table = cls.get_value(body['execSQL'], 'table')
+                        columns = cls.get_value(body['execSQL'], 'columns')
+                        params = cls.get_value(body['execSQL'], 'params')
+                        desc = cls.get_value(body['execSQL'], 'desc')
+                        yield {
+                            'classname': class_name,
+                            'action': query_action,
+                            'table': table,
+                            'columns': columns,
+                            'params': params,
+                            'desc': desc
+                        }
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         if not exc_tb:
@@ -76,20 +72,8 @@ class ExecuteSQL(GetJsonParams):
 
 
 if __name__ == '__main__':
-    pass
-
-    server="192.168.1.171:21433"
-    user="testuser"
-    password="testuser@123"
-    EX = ExecuteSQL({'server': server, 'user': user, 'password': password, 'database': 'ChatbotTenant-TEST'})
+    DataBaseSetting = {
+        'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotTenant-TEST'
+    }
+    EX = ExecuteSQL(DataBaseSetting)
     print(EX.execute("""SELECT * FROM [dbo].[Tenant_Info]"""))
-
-# conn=pymssql.connect(server,user,password,database="ChatbotTenant-TEST")
-# cursor=conn.cursor()
-# cursor.execute("""SELECT * FROM [dbo].[Tenant_Info]""")
-# row=cursor.fetchone()
-# while row:
-#     row=cursor.fetchone()
-#     print(row)
-#
-# conn.close()

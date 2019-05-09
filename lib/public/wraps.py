@@ -12,39 +12,10 @@ from lib.utils.use_SqlServer import ExecuteSQL
 from lib.public.Recursion import GetJsonParams
 from lib.public.case_manager import TestContainer
 
-ES = ExecuteSQL()
 
-
-def test_data_runner(func):
-
-    @wraps(func)
-    def wrap(*args, **kwargs):
-
-        global ExecuteResult
-
-        for item in iter(ExecuteSQL.loads_sql_data()):
-
-            func_name = func.__name__.title().replace('_', '')
-            sql_pattern_obj = item['classname'].split('_')[0]
-            if sql_pattern_obj in func_name:
-                logger.log_debug("操作的数据库表为 ====> {}".format(item['classname']))
-                columns = ','.join(item['columns']) if len(item['columns']) else '*'
-                table = item['table']
-                params = item['params']
-                desc = item['desc']
-                if item['action'] == 'SELECT':
-                    sql = 'SELECT {} FROM {} WHERE {} {}'.format(columns, table, params, desc)
-                    ExecuteResult = ES.execute(sql)[0]['id']
-                    logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
-                    logger.log_debug("执行结果为 ===> {}".format(ExecuteResult))
-                if item['action'] == 'DELETE':
-                    sql = 'DELETE FROM {} WHERE {}'.format(table, params)
-                    ExecuteResult = ES.execute(sql)
-                    logger.log_debug("执行的SQL语句为 ===> {}".format(sql))
-                    logger.log_debug("执行结果为 ===> {}".format(ExecuteResult))
-        return func(*args, **kwargs, resql=ExecuteResult)
-
-    return wrap
+DataBaseSetting = {
+    'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotTenant-TEST'
+}
 
 
 def cases_runner(func):
@@ -112,12 +83,34 @@ def cases_runner(func):
                                 with open(file_name, 'w', encoding='utf-8') as file:
                                     file.write('{}: {}'.format(res_index, return_res))
 
-                        return func(
-                            *args,
-                            response=result,
-                            kwassert=items.get('body').get('assert'),
-                            db_check=items.get('body').get('check_db')
-                        )
+                        # 验证接口请求数据是否落库
+                        relevant_database = items.get('body').get('relevant_sql')
+                        if relevant_database:
+
+                            filename = relevant_database + '.yaml'
+
+                            relevant_sql = {}
+                            with open(setting.DATA_PATH + filename, 'rb') as file:
+                                relevant_sql.update(yaml.load(file, Loader=yaml.FullLoader))
+
+                            action = relevant_sql[relevant_database]['action']
+                            columns = relevant_sql[relevant_database]['execSQL']['columns']
+                            table = relevant_sql[relevant_database]['execSQL']['table']
+                            params = relevant_sql[relevant_database]['execSQL']['params']
+                            desc = relevant_sql[relevant_database]['execSQL']['desc']
+                            execute_sql = '{} {} FROM {} {} {}'.format(action, columns, table, params, desc)
+
+                            execute_res = ExecuteSQL(DataBaseSetting).execute(execute_sql)
+                            logger.log_debug('执行sql结果为{}'.format(execute_res))
+
+                            return func(
+                                *args,
+                                response=result,
+                                columns=columns,
+                                execute_res=execute_res,
+                                kwassert=items.get('body').get('assert'),
+                                db_check=items.get('body').get('check_db')
+                            )
 
     return wrap
 
@@ -129,7 +122,9 @@ def result_assert(func):
 
         response = kwargs.get('response')
         kwassert = kwargs.get('kwassert')
-        database_check = kwargs.get('db_check')
+        assert_columns = kwargs.get('columns')
+        database_check = kwargs.get('db_check')[assert_columns]
+        execute_res = kwargs.get('execute_res')[0][0]
 
         tmp = tuple(kwassert.keys())
         result = GetJsonParams.for_keys_to_dict(*tmp, my_dict=response)
@@ -159,7 +154,9 @@ def result_assert(func):
             *args,
             response=result,
             expect_assert_value=expect_assert_value,
-            kwassert_value=kwassert_value
+            kwassert_value=kwassert_value,
+            database_check=database_check,
+            execute_res=execute_res
         )
 
     return wrap
