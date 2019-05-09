@@ -31,7 +31,11 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc73178-6bec-49d2-b7e5-05535893c997" name="Default Changelist" comment="" />
+    <list default="true" id="dbc73178-6bec-49d2-b7e5-05535893c997" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/HighTalkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/HighTalkReport.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +43,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MeteorTears$run.coverage" NAME="run Coverage Results" MODIFIED="1557384291137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MeteorTears$run.coverage" NAME="run Coverage Results" MODIFIED="1557385461416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -67,17 +71,22 @@
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/template/locust_template">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/public/BeautifulReport.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="260">
-                <caret line="41" column="6" selection-start-line="41" selection-end-line="41" selection-end-column="6" />
+              <first_editor relative-caret-position="157">
+                <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
                 <folding>
                   <element signature="e#0#9#0" expanded="true" />
                 </folding>
@@ -102,7 +111,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pipfile">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -129,6 +138,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SYSSTR</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -136,6 +150,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/lib/public/BeautifulReport.py" />
         <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
@@ -168,7 +183,7 @@
               <item name="MeteorTears" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeteorTears" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -244,17 +259,18 @@
       <option name="presentableId" value="Default" />
       <updated>1557382613522</updated>
       <workItem from="1557382620604" duration="468000" />
-      <workItem from="1557383195029" duration="2108000" />
+      <workItem from="1557383195029" duration="2885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2576000" />
+    <option name="totallyTimeSpent" value="3353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24932976" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24932976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="aws.explorer" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -279,7 +295,7 @@
       <window_info anchor="bottom" id="Gerrit" order="17" />
       <window_info anchor="bottom" id="Database Changes" order="18" />
       <window_info anchor="bottom" id="reVu" order="19" />
-      <window_info anchor="bottom" id="Terminal" order="20" weight="0.49865592" />
+      <window_info anchor="bottom" id="Terminal" order="20" weight="0.5994624" />
       <window_info anchor="bottom" id="Review Board" order="21" />
       <window_info anchor="bottom" id="TeamCity" order="22" weight="0.3293011" />
       <window_info anchor="bottom" id="Alipay DevTools" order="23" />
@@ -371,9 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pipfile.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -382,13 +395,6 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -405,8 +411,8 @@
     <entry file="file://$PROJECT_DIR$/lib/public/BeautifulReport.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="260">
-            <caret line="41" column="6" selection-start-line="41" selection-end-line="41" selection-end-column="6" />
+          <first_editor relative-caret-position="157">
+            <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
             <folding>
               <element signature="e#0#9#0" expanded="true" />
             </folding>
@@ -414,6 +420,19 @@
           <second_editor relative-caret-position="-161" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/template/locust_template">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="p4-ProjectCache">

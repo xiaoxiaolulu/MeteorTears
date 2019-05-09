@@ -24,7 +24,8 @@ def run(cases, pattern, report):
     # 测试用例回溯
     try:
         for files in os.listdir(cases):
-            os.remove(cases + files)
+            if os.path.isfile(cases + files):
+                os.remove(cases + files)
     except PermissionError:
         pass
 
