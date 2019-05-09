@@ -1,0 +1,11 @@
+Request url: wup.browser.qq.com:443
+Request header: CONNECT wup.browser.qq.com:443 HTTP/1.0
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0) QQBrowser/6.0
+Host: wup.browser.qq.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+Request body: 
+Response code: 0
+Response body: 

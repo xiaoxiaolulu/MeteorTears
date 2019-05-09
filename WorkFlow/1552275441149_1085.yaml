@@ -1,0 +1,12 @@
+Request url: hightalkadminapi-test.json.azurewebsites.net:443
+Request header: CONNECT hightalkadminapi-test.json.azurewebsites.net:443 HTTP/1.1
+Content-Type: application/json
+cache-control: no-cache
+User-Agent: PostmanRuntime/7.6.1
+Accept: */*
+host: hightalkadminapi-test.json.azurewebsites.net:443
+Connection: close
+
+Request body: 
+Response code: 0
+Response body: 

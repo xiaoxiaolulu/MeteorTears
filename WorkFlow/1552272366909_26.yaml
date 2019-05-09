@@ -1,0 +1,9 @@
+Request url: analytics.getpostman.com:443
+Request header: CONNECT analytics.getpostman.com:443 HTTP/1.1
+Host: analytics.getpostman.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Postman/7.0.4 Chrome/59.0.3071.115 Electron/1.8.8 Safari/537.36
+
+Request body: 
+Response code: 0
+Response body: 

@@ -1,0 +1,10 @@
+Request url: ocsp.msocsp.com/MFQwUjBQME4wTDAJBgUrDgMCGgUABBSIGkp0%2Fv9GUvNUu1EP06Tu7%2BChyAQUkZ47RGw9V5xCdyo010%2FRzEqXLNoCEyAAAQ91Be8HFROcknAAAAABD3U%3D
+Request header: GET /MFQwUjBQME4wTDAJBgUrDgMCGgUABBSIGkp0%2Fv9GUvNUu1EP06Tu7%2BChyAQUkZ47RGw9V5xCdyo010%2FRzEqXLNoCEyAAAQ91Be8HFROcknAAAAABD3U%3D HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+User-Agent: Microsoft-CryptoAPI/10.0
+Host: ocsp.msocsp.com
+
+Request body: 
+Response code: 0
+Response body: 

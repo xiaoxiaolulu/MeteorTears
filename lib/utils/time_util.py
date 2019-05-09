@@ -1,9 +1,4 @@
 # -*- coding:utf-8 -*-
-"""
-@Author: Null
-@File: time_util.py
-@description: 格式化时间
-"""
 import time
 
 

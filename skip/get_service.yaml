@@ -1,0 +1,27 @@
+test_get_service:
+  relevant_parameter: [Host, Access-Token, RecordId]
+  description: "获取服务状态"
+  method: post
+  url: ${Host}$/api/admin/portal/guidequestion/getservice
+  json:
+    BotConfigId: ${RecordId}$
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    Status: 1
+  check_db:
+
+test_get_service_required_verify_botconfigid:
+  relevant_parameter: [Host, Access-Token, RecordId]
+  description: "获取服务状态-botConfigId为空"
+  method: post
+  url: ${Host}$/api/admin/portal/guidequestion/getservice
+  json:
+    BotConfigId:
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    BotConfigId: [ "The BotIds field is required." ]
+  check_db:

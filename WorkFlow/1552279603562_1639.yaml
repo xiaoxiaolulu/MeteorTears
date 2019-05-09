@@ -1,0 +1,11 @@
+Request url: s2.mini.wpscdn.cn:443
+Request header: CONNECT s2.mini.wpscdn.cn:443 HTTP/1.0
+User-Agent: Mozilla/5.0
+Host: s2.mini.wpscdn.cn:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+Request body: 
+Response code: 0
+Response body: 

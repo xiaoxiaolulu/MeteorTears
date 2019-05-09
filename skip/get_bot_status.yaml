@@ -1,0 +1,27 @@
+test_get_bot_status:
+  relevant_parameter: [Host, Access-Token]
+  description: "根据机器人id获取当前机器人状态信息"
+  method: post
+  url: ${Host}$/api/admin/portal/botmanager/getbotstatus
+  json:
+    BotIds: [e7e280a9-2880-4f98-b3b1-1235794f1793]
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    Status: 1
+  check_db:
+
+test_get_bot_status_required_verify_botid:
+  relevant_parameter: [Host, Access-Token]
+  description: "根据机器人id获取当前机器人状态信息-botId为空"
+  method: post
+  url: ${Host}$/api/admin/portal/botmanager/getbotstatus
+  json:
+    BotId: []
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    BotIds: [ "The BotIds field is required." ]
+  check_db:

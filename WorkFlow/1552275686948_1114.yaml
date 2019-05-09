@@ -1,0 +1,12 @@
+Request url: ptlogin2.qzone.qq.com/check_sig?pttype=2&uin=546464268&service=jump&nodirect=0&ptsigx=ab83a1c45bb737fb5a2eb1d844d6d58f38864c86c2b756aa983e79839d0f1c73f3349aa48208589998cdfdf86fd34d97df5651a746127dc02f5a7139ce166235&s_url=https%3A%2F%2Fuser.qzone.qq.com&f_url=&ptlang=2052&ptredirect=0&aid=1000101&daid=5&j_later=0&low_login_hour=0&regmaster=0&pt_login_type=-1&pt_aid=0&pt_aaid=0&pt_light=0&pt_3rd_aid=0
+Request header: GET /check_sig?pttype=2&uin=546464268&service=jump&nodirect=0&ptsigx=ab83a1c45bb737fb5a2eb1d844d6d58f38864c86c2b756aa983e79839d0f1c73f3349aa48208589998cdfdf86fd34d97df5651a746127dc02f5a7139ce166235&s_url=https%3A%2F%2Fuser.qzone.qq.com&f_url=&ptlang=2052&ptredirect=0&aid=1000101&daid=5&j_later=0&low_login_hour=0&regmaster=0&pt_login_type=-1&pt_aid=0&pt_aaid=0&pt_light=0&pt_3rd_aid=0 HTTP/1.1
+Host: ptlogin2.qzone.qq.com
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2864.400
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: RK=mALYNIigSq; ptcz=3828aab01b2ab31f9c3c412578ba61533b58704481a3c4cbd752c1cfd2468193; cuid=8114433234; pgv_pvid=2329560972; pgv_pvi=6448719872; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2206d23d0ab3a30edb50443c8396a4586c%22%2C%22%24device_id%22%3A%22166578a885871d-014804c194918f-30584d74-2073600-166578a885922f%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%7D; tvfe_boss_uuid=0d2625880788cb3d; o_cookie=546464268; pac_uid=1_546464268; eas_sid=g165R4s35578H9I4A1u5n2o236; __Q_w_s_hat_seed=1; QZ_FE_WEBP_SUPPORT=1; __Q_w_s__QZN_TodoMsgCnt=1; cpu_performance_v8=8; _ga=GA1.2.1675033956.1551927873; uin=o0546464268; ptisp=cnc; p_uin=o0546464268; pgv_si=s8461548544; _qpsvr_localtk=0.5896572863013461; pt4_token=MuZ9qgv9jM7VVtQUyhukl49OT0ssjOGM0HYNVgCFtPc_; skey=@8JXozLuTT; qzone_check=546464268_1552275686
+
+Request body: 
+Response code: 0
+Response body: 

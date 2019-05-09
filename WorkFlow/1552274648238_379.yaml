@@ -1,0 +1,10 @@
+Request url: ws.sj.qq.com/webservices/jump.do?identify=20141125103511
+Request header: GET /webservices/jump.do?identify=20141125103511 HTTP/1.1
+Host: ws.sj.qq.com
+Accept: */*
+Proxy-Connection: Keep-Alive
+If-Modified-Since: Tue, 25 Nov 2014 01:51:29 GMT
+
+Request body: 
+Response code: 0
+Response body: 

@@ -1,0 +1,14 @@
+Request url: googleads.g.doubleclick.net/pagead/adview?ai=CMzGrbteFXIz4F93hqAHwnoqgC8_g24RVyevpn-UI-O7bp4ELEAEg_tH9bWCdAaAB6o-PhgPIAQapAkadRMb994M-qAMByAPDBKoEwQFP0Mi19lyRKtgeprWiZ-TNjyb6DMgHG6tj34OFJ9udz6cwh_V-Km3ZjugyE_qOvaVnhT_LCv6j_JLiL2RjsXaxJYVE5UdA6XpmEEr93qiu8AlO1VhQ69BO9_Y2qcryjWZUrSe-xQ2l8B6ewtr1GOr2845VeSAs97Uxwpo0Hwy7K52k9CCONLEegDHa6vludPjTQhQCtxTXWmbshvekwxPbOpGtbDHIPYnLyxLEKDYh89m6nTNvQjGpBrf9SteTJC5pwAS3jerR6QGSBQQIBBgBkgUECAUYBJIFBAgFGBiSBQUIBRioAaAGN4AH7tCCeagHjs4bqAfVyRuoB6gGqAe6BqgH2csbqAfPzBuoB6a-G9gHAfIHAxCAV9IIBwiAYRABGAKACgHYEwyIFAI&sigh=xMeQBs8Mu2A&template_id=492&tpd=AGWhJms2d0LFFcQphiYbPBo8lWKdEa0cyO8lZD6hA1yDitzX3w
+Request header: GET /pagead/adview?ai=CMzGrbteFXIz4F93hqAHwnoqgC8_g24RVyevpn-UI-O7bp4ELEAEg_tH9bWCdAaAB6o-PhgPIAQapAkadRMb994M-qAMByAPDBKoEwQFP0Mi19lyRKtgeprWiZ-TNjyb6DMgHG6tj34OFJ9udz6cwh_V-Km3ZjugyE_qOvaVnhT_LCv6j_JLiL2RjsXaxJYVE5UdA6XpmEEr93qiu8AlO1VhQ69BO9_Y2qcryjWZUrSe-xQ2l8B6ewtr1GOr2845VeSAs97Uxwpo0Hwy7K52k9CCONLEegDHa6vludPjTQhQCtxTXWmbshvekwxPbOpGtbDHIPYnLyxLEKDYh89m6nTNvQjGpBrf9SteTJC5pwAS3jerR6QGSBQQIBBgBkgUECAUYBJIFBAgFGBiSBQUIBRioAaAGN4AH7tCCeagHjs4bqAfVyRuoB6gGqAe6BqgH2csbqAfPzBuoB6a-G9gHAfIHAxCAV9IIBwiAYRABGAKACgHYEwyIFAI&sigh=xMeQBs8Mu2A&template_id=492&tpd=AGWhJms2d0LFFcQphiYbPBo8lWKdEa0cyO8lZD6hA1yDitzX3w HTTP/1.1
+Host: googleads.g.doubleclick.net
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2864.400
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-7797720034334349&output=html&h=124&slotname=2878400235&adk=1895910915&adf=1378487019&w=483&lmt=1552275310&rafmt=11&guci=2.2.0.0.2.2.0.0&format=483x124&url=http%3A%2F%2Fwww.it1352.com%2F547804.html&flash=27.9.9&wgl=1&adsid=NT&dt=1552275310136&bpp=63&bdt=887&fdt=66&idt=-M&shv=r20190306&cbv=r20190131&saldr=aa&abxe=1&correlator=3572673224807&frm=20&pv=2&ga_vid=270932122.1552275310&ga_sid=1552275310&ga_hid=118768953&ga_fc=0&iag=0&icsg=10737418370&dssz=24&mdo=0&mso=0&u_tz=480&u_his=1&u_java=0&u_h=864&u_w=1536&u_ah=864&u_aw=1536&u_cd=24&u_nplug=5&u_nmime=7&adx=60&ady=7799&biw=1479&bih=764&scr_x=0&scr_y=0&eid=4089042%2C21060853&oid=3&ref=https%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3DPrti0drSLU9FnfRBozxB2q6Qh05GbXnN6DQaLNWdzqxPR8p__8HkxhSn1yLJMXjt%26wd%3D%26eqid%3Da528bb7600023fe7000000025c85d768&rx=0&eae=0&fc=1936&brdim=40%2C100%2C40%2C100%2C1536%2C0%2C1496%2C764%2C1496%2C764&vis=1&rsz=%7C%7CoeEbr%7C&abl=CS&ppjl=u&pfx=0&fu=136&bc=5&ifi=1&uci=1.lo1jqpxll2ww&fsb=1&xpc=gk2siNf83t&p=http%3A//www.it1352.com&dtd=113
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: id=22e0f27541af00ab||t=1534745604|et=730|cs=002213fd485672936aa2f93f78
+
+Request body: 
+Response code: 0
+Response body: 

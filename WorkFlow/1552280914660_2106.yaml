@@ -1,0 +1,14 @@
+Request url: canonicalizer.ucsuri.tcs/680074007400700073003a002f002f00700069006e0067002e002e006e00610076002e0073006d00610072007400730063007200650065006e002e006d006900630072006f0073006f00660074002e0063006f006d002f00770069006e0064006f00770073002f00620072006f0077007300650072002f0065006400670065002f0061006300740069006f006e007300
+Request header: POST /680074007400700073003a002f002f00700069006e0067002e002e006e00610076002e0073006d00610072007400730063007200650065006e002e006d006900630072006f0073006f00660074002e0063006f006d002f00770069006e0064006f00770073002f00620072006f0077007300650072002f0065006400670065002f0061006300740069006f006e007300 HTTP/1.1
+Accept-Encoding: gzip, deflate
+User-Agent: SmartScreen/2814750890000940
+Authorization: SmartScreenHash eyJhdXRoSWQiOiJhZGZmZjVhZC1lZjllLTQzYTYtYjFhMy0yYWQ0MjY3YWVlZDUiLCJoYXNoIjoiQnR6SVhvL3hYM1k9Iiwia2V5IjoiUVFGMjIxYzZoaU1pbVhBQWdKSXExUT09In0=
+Content-Length: 1331
+Content-Type: application/json; charset=utf-8
+Host: canonicalizer.ucsuri.tcs
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+Request body: {"config":{"device":{"appControl":{"level":"anywhere"},"appReputation":{"enforcedByPolicy":false,"level":"warn"}},"user":{"uriReputation":{"enforcedByPolicy":false,"level":"warn"}}},"identity":{"caller":{"locales":["zh-CN","en-US"],"process":{"application":{"$type":"win32","path":"C:\\Windows\\System32\\smartscreen.exe"},"creationTime":"131967545143782244","id":11732,"owner":"S-1-5-21-1544284504-803816537-3875076218-1002"}},"client":{"data":{"script":"7414862947782954385266051583322345725.rel.v2","topTraffic":"170540185939602997400506234197983529371"},"version":"2814750890000940"},"device":{"architecture":9,"browser":{"edge":"Microsoft.MicrosoftEdge_42.17134.1.0_neutral__8wekyb3d8bbwe","internetExplorer":"9.11.17134.0"},"cloudSku":false,"enterprise":null,"family":3,"id":"nWB+i9rPnpOFxS6qrlQN1FdzbwxK2mrQG3pVh0foSZA=:1","locale":"zh-CN","netJoinStatus":2,"onlineIdTicket":"t=GwAWAd9tBAAUbd7jjTETE61kse6bFnP4+gMN5XcOZgAAEEtl7/32a8sWIj35+HNxJvvgAJVLZbqZJg+XlLXeMPue3ZSLE9JcrKpa9HLNQh0izSNae82Ac2oTXWuAl9L6XXN+GrPDllJSn77c/tfiTIGxPL7QHtu2Nu6r4bcbSOu1aED71Jm3fFVTlQV73J7npfPgSAeJwvn+A8XNUSCMym1E2CtYKdKilty6R8iwE1qRTeq4/ISESh5Y0vzBLaFr00QZpdZ4Y70tUNTnRWltCD2sN5OzIe3cmuOhqrLvm/soYIu73zamXQdKsQSmzfIBgV+Hhy0u416bK6gIBwRZ/5EghH32W9OtLkw/7wAtuIGxpCP9HAE=&p=","osVersion":"10.0.17134.590.rs4_release"},"user":{"locale":"zh-CN"}}}
+Response code: 0
+Response body: 

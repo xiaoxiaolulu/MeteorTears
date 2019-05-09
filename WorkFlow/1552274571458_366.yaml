@@ -1,0 +1,10 @@
+Request url: share.microsoft.com:443
+Request header: CONNECT share.microsoft.com:443 HTTP/1.0
+Host: share.microsoft.com:443
+Content-Length: 0
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+Request body: 
+Response code: 0
+Response body: 

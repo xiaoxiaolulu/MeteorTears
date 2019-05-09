@@ -1,9 +1,4 @@
 # -*- coding:utf-8 -*-
-"""
-@Author: Null
-@File: load_fiddler_files.py
-@description: 加载Fiddler录制的接口文件
-"""
 import re
 import yaml
 import types

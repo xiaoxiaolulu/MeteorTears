@@ -1,4 +1,4 @@
-### 用例编写设计(Json文件管理)
+### 用例编写
 key | value | example
 ------------ | -------------| ----------------
 url | 请求接口路由 | /admin/compaign/export

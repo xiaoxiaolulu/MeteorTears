@@ -1,0 +1,15 @@
+Request url: sync.mookie1.cn/t/v2?tagid=C2_334375&src.visitorid=J23GG3DT000CT
+Request header: GET /t/v2?tagid=C2_334375&src.visitorid=J23GG3DT000CT HTTP/1.1
+Host: sync.mookie1.cn
+Proxy-Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2864.400
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://pos.baidu.com/dcwm?conwid=960&conhei=90&rdid=3651106&dc=3&exps=110011&psi=76d50a12c19e6854550bcd6c874374d7&di=u3651106&dri=1&dis=0&dai=3&ps=90x0&enu=encoding&dcb=___adblockplus&dtm=HTML_POST&dvi=0.0&dci=-1&dpt=none&tsr=0&tpr=1552280434645&ari=2&dbv=2&drs=1&pcs=450x270&pss=960x270&cfv=0&cpl=5&chi=1&cce=true&cec=UTF-8&tlm=1552280434&rw=320&ltu=http%3A%2F%2Fwww.ifeng.com%2F&liu=http%3A%2F%2Fwww.it1352.com%2F296269.html&ecd=1&uc=1536x864&pis=450x270&sr=1536x864&tcn=1552280435&qn=20dea9b93062f475&tt=1552280434623.272.595.598&lto=http%3A%2F%2Fwww.it1352.com&ltl=1
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: id=10810046484486938462; mdata=1|10810046484486938462|1534745847315; syncdata_IPY=1
+
+Request body: 
+Response code: 0
+Response body: 

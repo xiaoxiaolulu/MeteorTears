@@ -1,9 +1,4 @@
 # -*- coding:utf-8 -*-
-"""
-@Author: Null
-@File: security.py
-@description: 加密解密配置文件
-"""
 import base64
 
 

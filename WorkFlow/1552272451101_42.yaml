@@ -1,0 +1,11 @@
+Request url: redisdesktop.com/get-update?version=0.9.3.817&platform=windows
+Request header: GET /get-update?version=0.9.3.817&platform=windows HTTP/1.1
+Connection: Keep-Alive
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en,*
+User-Agent: Mozilla/5.0
+Host: redisdesktop.com
+
+Request body: 
+Response code: 0
+Response body: 

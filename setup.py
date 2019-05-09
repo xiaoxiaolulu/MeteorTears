@@ -75,7 +75,7 @@ setup(
         '': ["README.md"],
         'lib': ["template/*"],
     },
-    keywords='HTTP api test.yaml requests',
+    keywords='HTTP api test.json requests',
     install_requires=install_requires,
     extras_require={},
     classifiers=[

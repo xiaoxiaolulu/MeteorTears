@@ -1,0 +1,11 @@
+Request url: static2.sharepointonline.com:443
+Request header: CONNECT static2.sharepointonline.com:443 HTTP/1.0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+Content-Length: 0
+Host: static2.sharepointonline.com
+Proxy-Connection: Keep-Alive
+Pragma: no-cache
+
+Request body: 
+Response code: 0
+Response body: 

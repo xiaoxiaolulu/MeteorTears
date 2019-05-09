@@ -1,0 +1,14 @@
+Request url: eclick.baidu.com/rs.jpg?type=newTwiceCheck&spendTime=47&rdm=0.41567050429468444
+Request header: GET /rs.jpg?type=newTwiceCheck&spendTime=47&rdm=0.41567050429468444 HTTP/1.1
+Accept: */*
+Referer: http://tao.duba.com/minisite/baidu478.html
+Accept-Language: zh-Hans-CN,zh-Hans;q=0.8,en-IE;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)
+Host: eclick.baidu.com
+Proxy-Connection: Keep-Alive
+Cookie: BAIDUID=91B3D769373EFC25337411C3C7F60154:FG=1
+
+Request body: 
+Response code: 0
+Response body: 

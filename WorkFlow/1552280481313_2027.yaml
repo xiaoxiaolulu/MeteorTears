@@ -1,0 +1,14 @@
+Request url: our.umbraco.org/forum/developers/extending-umbraco/46086-UmbracoApiController-No-HTTP-resource-was-found-that-matches-the-request-URI
+Request header: GET /forum/developers/extending-umbraco/46086-UmbracoApiController-No-HTTP-resource-was-found-that-matches-the-request-URI HTTP/1.1
+Host: our.umbraco.org
+Proxy-Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2864.400
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://www.baidu.com/link?url=mrxr4N6F_jlHxSL4GW3TVki7FMAP1q2LoRvZyyxtRULMGrYS1z4KE0Wqh0-tDqfj_OnHZx97PEq7ida8-vlTlhwiTHNUxJRumf24jdsgBrOwpPGSkVBsrynffc2ivl5jL7XDPQdWgWE7SaMoB4sRzBd0jYZCNNWAlQ5QE-0S-vZcuNcA3t-GW-zjfhHi5tHfdeL2L-A_zLftabs7tZNOYa&wd=&eqid=a32cc4c000005a9e000000025c85eb9e
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+Request body: 
+Response code: 0
+Response body: 

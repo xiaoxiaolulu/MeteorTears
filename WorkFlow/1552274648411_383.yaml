@@ -1,0 +1,11 @@
+Request url: agent.sj.qq.com/query.do
+Request header: POST /query.do HTTP/1.1
+Host: agent.sj.qq.com
+Accept: */*
+Proxy-Connection: Keep-Alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 379
+
+Request body: post=Mp28NvEaYXrzE7wuAYoKkHu0h9Enl%2BnUdSm78oERBHjq13uKA2RQJ4y2JNYTUzvPMTyOCg5B0o%2BgRpGZI1S6g8q4HDrzSmkV319XywXejn6guX6C9TWpSSqZskgcz312nowIeGS8kgSm%2F2HZve1CGCyif2qDfFpWM6gHnIRga41AuggFIqeKpzTw%2ByE93WBMUlOaLwRcxjt4iFgfE38OCLLDuIUmtxqxR%2BJFGC6H79IUF0FFyY067JCF2P2%2Bi1NEyfXOCFrLw1vnu84wF%2Fm81XX5ApPG58A%2FF9wuVON8uR84jehNWPKWU6G%2BIdJfJmMTYzR6DQ9BHDAWnWtggo703%2F967%2B7AJB3x
+Response code: 0
+Response body: 

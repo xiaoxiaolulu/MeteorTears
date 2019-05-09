@@ -19,14 +19,14 @@ from lib.utils.analyze_log import WeChatAlarm
 def run(cases, pattern, report):
     test_suite = unittest.defaultTestLoader.discover(cases, pattern)
     result = BeautifulReport(test_suite)
-    result.report(filename='关键字回复测试报告', description='关键字回复测试报告', log_path=report)
+    result.report(filename='HighTalkReport', description='HighTalkReport', log_path=report)
 
     # 测试用例回溯
-    try:
-        for files in os.listdir(cases):
-            os.remove(cases + files)
-    except PermissionError:
-        pass
+    # try:
+    #     for files in os.listdir(cases):
+    #         os.remove(cases + files)
+    # except PermissionError:
+    #     pass
 
     # 临时变量文件回溯
     # for files in os.listdir(setting.PUBLIC_RES):

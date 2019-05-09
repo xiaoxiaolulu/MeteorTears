@@ -1,0 +1,12 @@
+Request url: m2.vip.wpscdn.cn/storage/image/f/5/c/d/e/0168f80b5d99b7ebc99e69dbd8cf05e5.jpg@base@tag=imgScale&F=webp&cox=0&coy=0&w=150&h=98&q=100&c=1&m=2
+Request header: GET /storage/image/f/5/c/d/e/0168f80b5d99b7ebc99e69dbd8cf05e5.jpg@base@tag=imgScale&F=webp&cox=0&coy=0&w=150&h=98&q=100&c=1&m=2 HTTP/1.1
+Host: m2.vip.wpscdn.cn
+Proxy-Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: zh_CN
+
+Request body: 
+Response code: 0
+Response body: 

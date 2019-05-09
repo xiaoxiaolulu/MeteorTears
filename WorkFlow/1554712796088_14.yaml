@@ -1,0 +1,10 @@
+Request url: config.pinyin.sogou.com/api/toolbox/geturl.php?h=713390583512B56BF110A98A97E3CD26&v=9.1.0.2618&r=6990_sogou_pinyin_8.9.0.2180_6990
+Request header: GET /api/toolbox/geturl.php?h=713390583512B56BF110A98A97E3CD26&v=9.1.0.2618&r=6990_sogou_pinyin_8.9.0.2180_6990 HTTP/1.1
+User-Agent: SOGOU_UPDATER
+Host: config.pinyin.sogou.com
+Accept: */*
+Proxy-Connection: Keep-Alive
+
+Request body: 
+Response code: 0
+Response body: 

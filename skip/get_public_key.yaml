@@ -1,0 +1,9 @@
+test_get_public_key:
+  relevant_parameter: [Host]
+  description: "获取公钥"
+  method: get
+  url: ${Host}$/api/auth/getpublickey
+  assert:
+    Code: 1
+  res_index: [RsaPublicKey, Key]
+  check_db:

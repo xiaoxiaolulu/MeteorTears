@@ -1,0 +1,19 @@
+Request url: hightalkssoapi-test.json.azurewebsites.net/api/Auth/RemoveToken
+Request header: POST /api/Auth/RemoveToken HTTP/1.1
+Content-Type: application/json
+cache-control: no-cache
+Postman-Token: cb9fe9f4-46f5-499f-955f-ce2018bbc973
+User-Agent: PostmanRuntime/7.6.1
+Accept: */*
+Host: hightalkssoapi-test.json.azurewebsites.net
+cookie: ARRAffinity=31a6ded4c763388c922a7fc75aae643ec0f1de8ea0664e1425849b0037addc42
+accept-encoding: gzip, deflate
+content-length: 128
+Connection: keep-alive
+
+Request body: {
+  "Account": "Null@test11.hightalk.online",
+  "Token": "3E4C8E57C548E9EC8D5D511170A1889A57ED58BD59329E4E8C80CB3C6C786F80"
+}
+Response code: 0
+Response body: 

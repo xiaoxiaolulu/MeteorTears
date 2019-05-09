@@ -1,0 +1,29 @@
+test_kqa_get:
+  relevant_parameter: [Host, Access-Token, BotId]
+  description: "关键字回复-获取kqa服务信息-成功"
+  method: post
+  url: ${Host}$/api/admin/portal/KQA/Get
+  json:
+    BotConfigId: ${BotId}$
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    Status: 1
+  check_db:
+
+test_kqa_get_required_verify_botconfigid:
+  relevant_parameter: [Host, Access-Token]
+  description: "关键字回复-获取kqa服务信息-缺少BotConfigId"
+  method: post
+  url: ${Host}$/api/admin/portal/KQA/Get
+  json:
+    BotConfigId: ""
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    BotConfigId: [
+      "The BotConfigId field is required."
+    ]
+  check_db:

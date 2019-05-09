@@ -1,0 +1,9 @@
+Request url: newsminisite.duba.com:443
+Request header: CONNECT newsminisite.duba.com:443 HTTP/1.1
+Host: newsminisite.duba.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36 KWebUI/7.0
+
+Request body: 
+Response code: 0
+Response body: 

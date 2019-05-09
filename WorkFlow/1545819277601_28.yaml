@@ -1,0 +1,9 @@
+Request url: www.google-analytics.com:443
+Request header: CONNECT www.google-analytics.com:443 HTTP/1.1
+Host: www.google-analytics.com:443
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+
+Request body: 
+Response code: 0
+Response body: 

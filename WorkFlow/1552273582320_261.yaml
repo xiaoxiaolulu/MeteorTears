@@ -1,0 +1,11 @@
+Request url: info.pinyin.sogou.com/ime_push/getPopupIni.php?h=713390583512B56BF110A98A97E3CD26&v=9.1.0.2618&r=6990_sogou_pinyin_8.9.0.2180_6990&passport=&activeOp=0&action_skin=4194304&action_dict=1&action_normal=128&action_gram=15&skinOp=c5i17966&updateOp=185&dictOp=c0i17966&DisabledEntries=0&disable_newword=0&uex=0&defaultime=0&fvo=6.2.17134&pvo=10.0.17134&sgse=0&ppversion=3.1.0.2102&active_skin=%A1%BE%BE%B0%C5%B5%A1%BF%B8%DC%BE%AB&active_skin_id=594652&active_skin_md5=1BA52897026E77FA6C313E3B41ACB4BB&active_skin_isflash=0&urlguide=120&type=query&Popup_DisableSkinBubble=0&pushids=&hpushids=N10000271&hpopids=S10002375&popids=Y10000001&condids=N10000258%7CN10000113%7CN10000112%7CN10000371&sgse_r=&snni=1&sndd=0&snlt=263052
+Request header: GET /ime_push/getPopupIni.php?h=713390583512B56BF110A98A97E3CD26&v=9.1.0.2618&r=6990_sogou_pinyin_8.9.0.2180_6990&passport=&activeOp=0&action_skin=4194304&action_dict=1&action_normal=128&action_gram=15&skinOp=c5i17966&updateOp=185&dictOp=c0i17966&DisabledEntries=0&disable_newword=0&uex=0&defaultime=0&fvo=6.2.17134&pvo=10.0.17134&sgse=0&ppversion=3.1.0.2102&active_skin=%A1%BE%BE%B0%C5%B5%A1%BF%B8%DC%BE%AB&active_skin_id=594652&active_skin_md5=1BA52897026E77FA6C313E3B41ACB4BB&active_skin_isflash=0&urlguide=120&type=query&Popup_DisableSkinBubble=0&pushids=&hpushids=N10000271&hpopids=S10002375&popids=Y10000001&condids=N10000258%7CN10000113%7CN10000112%7CN10000371&sgse_r=&snni=1&sndd=0&snlt=263052 HTTP/1.1
+Accept-Encoding: gzip,deflate
+User-Agent: SogouIMEMiniSetup_imepopup
+Host: info.pinyin.sogou.com
+Pragma: no-cache
+Cookie: YYID=713390583512B56BF110A98A97E3CD26; QQ_Sogou_Openid=9C0E38512EB1F15C5F038B8BFBAF70D0,1552268546; ad=zZllllllll2t5KLwlllllVec@cwlllllNnCtalllll9llllllylll5@@@@@@@@@@; IMESKIN=1:1BA52897026E77FA6C313E3B41ACB4BB; IMEVER=9.1.0.2618; SUV=00EA50547C4EA4F95C3D461B3A00D873; IMESKINID=2:594652
+
+Request body: 
+Response code: 0
+Response body: 

@@ -1,9 +1,4 @@
 # -*- coding:utf-8 -*-
-"""
-@Author: Null
-@File: create_workFlow_obj.py
-@description: 创建Json格式文件的遍历接口对象
-"""
 import json
 from config import setting
 from lib.utils.load_fiddler_files import LoadFiddlerFiles
@@ -27,7 +22,7 @@ class CreateJsonCaseObj(object):
         for dic in iter(LD.loads_fiddler_request()):
             filename = dic['class_name'].lower()
             case_obj = {
-                'test.yaml' + '_' + filename: {
+                'test.json' + '_' + filename: {
                     "url": dic['request_url'],
                     "method": dic['request_type'],
                     "data": dic['request_body'],

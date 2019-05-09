@@ -1,7 +1,8 @@
 test_kqa_upload:
+  relevant_parameter: [Host, Access-Token]
   description: "上传文件-成功"
   method: post
-  url: https://192.168.1.104:10033/api/admin/keyword/KQA/Upload
+  url: ${Host}$/api/admin/keyword/KQA/Upload
   data:
     BotId: 04372bfa-f0ee-4545-8ab2-42e9f69e222f
     TenantId: 928d2511-6783-43c2-bde5-dcf059f55710

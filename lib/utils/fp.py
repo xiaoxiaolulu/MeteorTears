@@ -1,21 +1,13 @@
 # -*- coding:utf-8 -*-
-"""
-@Author: Null
-@File: fp.py
-@description: 递归函数遍历文件
-"""
 import os
 
 
-def iter_files(path):
-    """
-    返回文件目录路径下全部文件列表
-
-    :Args:
-     - path: 文件路径, STR TYPE.
-
-    :Usage:
-        iter_files(’../case/')
+def iter_files(path: str) -> list:
+    r"""
+    Returns a list of all files in the file directory path.
+    :param path: file path, str object.
+    :return: files path list.
+    :rtype: list object
     """
 
     filename = []

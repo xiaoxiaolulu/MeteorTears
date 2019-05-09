@@ -5,12 +5,12 @@ import json
 import builtins
 from functools import wraps
 from config import setting
+from lib.utils import relevance
 from lib.public import logger
 from lib.public import http_keywords
 from lib.utils.use_SqlServer import ExecuteSQL
 from lib.public.Recursion import GetJsonParams
 from lib.public.case_manager import TestContainer
-from lib.public.extract_variable import ExtractContainer
 
 ES = ExecuteSQL()
 
@@ -47,62 +47,6 @@ def test_data_runner(func):
     return wrap
 
 
-def extract_variable(func):
-
-    @wraps(func)
-    def wrap(*args):
-
-        for items in iter(ExtractContainer()):
-
-            for key, value in dict(items).items():
-                if value == func.__name__:
-
-                    handler = http_keywords.BaseKeyWords(items['body'])
-                    result = handler.make_test_templates()
-
-                    logger.log_info("临时变量文件运行结果为 {}".format(
-                        json.dumps(result, indent=4, ensure_ascii=False))
-                    )
-                    return func(
-                        *args,
-                        response=result
-                    )
-
-    return wrap
-
-#     logger.log_debug('my test.yaml {}'.format(value))
-#
-#     change_files_name = setting.CASES_PATH + value[len('test_'):] + '.yaml'
-#     for res_file in os.listdir(setting.PUBLIC_RES):
-#
-#         variables = yaml.load(setting.PUBLIC_RES + res_file)
-#         if items['body'].get('extend') is True:
-#             with open(change_files_name, 'r', encoding='utf-8') as rf:
-#                 change_file_content = rf.read()
-#                 with open(change_files_name, 'w', encoding='utf-8') as wf:
-#                     wf.write(change_file_content.format(res_file=variables))
-#
-#     # 将临时变量写入yaml文件
-#     res_index = items.get('body').get('res_index')
-#     if res_index:
-#         if isinstance(res_index, list):
-#             for res_key in res_index:
-#                 return_res = {res_key: GetJsonParams.get_value(result, res_key)}
-#                 file_name = setting.PUBLIC_RES + res_key + '.yaml'
-#                 logger.log_debug('取值测试{} => '.format(return_res))
-#
-#                 with open(file_name, 'w', encoding='utf-8') as file:
-#                     file.write(str(return_res))
-#
-#         if isinstance(res_index, str):
-#             return_res = {res_index: GetJsonParams.get_value(result, res_index)}
-#             file_name = setting.PUBLIC_RES + res_index + '.yaml'
-#             logger.log_debug('取值测试{}'.format(res_index))
-#
-#             with open(file_name, 'w', encoding='utf-8') as file:
-#                 file.write(str(return_res))
-
-
 def cases_runner(func):
 
     @wraps(func)
@@ -113,17 +57,67 @@ def cases_runner(func):
             for key, value in dict(items).items():
                 if value == func.__name__:
 
-                    handler = http_keywords.BaseKeyWords(items['body'])
-                    result = handler.make_test_templates()
+                    body = {}
+                    # 用例文件与临时变量文件相互关联
+                    relevant_params = items.get('body').get('relevant_parameter')
 
-                    logger.log_info("The test.yaml result is{}".format(
-                        json.dumps(result, indent=4, ensure_ascii=False))
-                    )
-                    return func(
-                        *args,
-                        response=result,
-                        kwassert=items.get('body').get('assert')
-                    )
+                    if relevant_params:
+
+                        if isinstance(relevant_params, str):
+                            relevant_files = relevant_params + '.yaml'
+                            _relevance = {}
+                            with open(setting.PUBLIC_RES + relevant_files, 'rb') as file:
+                                _relevance.update(yaml.load(file))
+
+                            relevance_body = relevance.custom_manage(str(items['body']), _relevance)
+                            body.update(eval(relevance_body))
+
+                        if isinstance(relevant_params, list):
+
+                            _relevance = {}
+                            for relevant_param in relevant_params:
+
+                                relevant_files = relevant_param + '.yaml'
+                                with open(setting.PUBLIC_RES + relevant_files, 'rb') as file:
+                                    _relevance.update(yaml.load(file))
+
+                            relevance_body = relevance.custom_manage(str(items['body']), _relevance)
+                            body.update(eval(relevance_body))
+
+                        # 运行用例，暂支持Post与Get请求接口
+                        handler = http_keywords.BaseKeyWords(body)
+                        result = handler.make_test_templates()
+
+                        logger.log_info("The test.json result is{}".format(
+                            json.dumps(result, indent=4, ensure_ascii=False))
+                        )
+
+                        # 将临时变量写入yaml文件
+                        res_index = items.get('body').get('res_index')
+                        if res_index:
+                            if isinstance(res_index, list):
+                                for res_key in res_index:
+                                    return_res = GetJsonParams.get_value(result, res_key)
+                                    file_name = setting.PUBLIC_RES + res_key
+                                    logger.log_debug('保存的变量值为 {} => '.format(return_res))
+
+                                    with open(file_name + '.yaml', 'w', encoding='utf-8') as file:
+                                        file.write('{}: {}'.format(res_key, return_res))
+
+                            if isinstance(res_index, str):
+                                return_res = GetJsonParams.get_value(result, res_index)
+                                file_name = setting.PUBLIC_RES + res_index
+                                logger.log_debug('保存的变量值为 {}'.format(return_res))
+
+                                with open(file_name, 'w', encoding='utf-8') as file:
+                                    file.write('{}: {}'.format(res_index, return_res))
+
+                        return func(
+                            *args,
+                            response=result,
+                            kwassert=items.get('body').get('assert'),
+                            db_check=items.get('body').get('check_db')
+                        )
 
     return wrap
 
@@ -135,6 +129,8 @@ def result_assert(func):
 
         response = kwargs.get('response')
         kwassert = kwargs.get('kwassert')
+        database_check = kwargs.get('db_check')
+
         tmp = tuple(kwassert.keys())
         result = GetJsonParams.for_keys_to_dict(*tmp, my_dict=response)
         for key, value in kwassert.items():

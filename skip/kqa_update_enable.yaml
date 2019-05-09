@@ -1,0 +1,46 @@
+test_kqa_update_enable:
+  relevant_parameter: [Host, Access-Token, BotId]
+  description: "设置开关-成功"
+  method: post
+  url: ${Host}$/api/admin/portal/KQA/UpdateEnable
+  json:
+    BotConfigId: ${BotId}$
+    Enable: false
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    Status: 0
+  check_db:
+
+test_kqa_update_enable_required_verify_botId:
+  relevant_parameter: [Host, Access-Token, BotId]
+  description: "设置开关-BotConfigId为空"
+  method: post
+  url: ${Host}$/api/admin/portal/KQA/UpdateEnable
+  json:
+    Enable: false
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    BotConfigId: [
+      "The BotConfigId field is required."
+    ]
+  check_db:
+
+test_kqa_update_enable_required_verify_enable:
+  relevant_parameter: [Host, Access-Token, BotId]
+  description: "设置开关-enable为空"
+  method: post
+  url: ${Host}$/api/admin/portal/KQA/UpdateEnable
+  json:
+    BotConfigId: ${BotId}$
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Access-Token}$
+  assert:
+    Enable: [
+      "The Enable field is required."
+    ]
+  check_db:

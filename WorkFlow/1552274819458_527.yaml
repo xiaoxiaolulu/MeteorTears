@@ -1,0 +1,10 @@
+Request url: ocsp2.globalsign.com/gsorganizationvalsha2g2/ME0wSzBJMEcwRTAJBgUrDgMCGgUABBQMnk2cPe3vhNiR6XLHz4QGvBl7BwQUlt5h8b0cFilTHMDMfTuDAEDmGnwCDCRVqcJv%2F%2BAdywb8NQ%3D%3D
+Request header: GET /gsorganizationvalsha2g2/ME0wSzBJMEcwRTAJBgUrDgMCGgUABBQMnk2cPe3vhNiR6XLHz4QGvBl7BwQUlt5h8b0cFilTHMDMfTuDAEDmGnwCDCRVqcJv%2F%2BAdywb8NQ%3D%3D HTTP/1.1
+Proxy-Connection: Keep-Alive
+Accept: */*
+User-Agent: Microsoft-CryptoAPI/10.0
+Host: ocsp2.globalsign.com
+
+Request body: 
+Response code: 0
+Response body: 

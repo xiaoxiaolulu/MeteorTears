@@ -1,0 +1,14 @@
+Request url: cdn.bootcss.com/codemirror/5.42.2/codemirror.min.js
+Request header: GET /codemirror/5.42.2/codemirror.min.js HTTP/1.1
+Host: cdn.bootcss.com
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2864.400
+Accept: */*
+Referer: http://www.it1352.com/547804.html
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Hm_lvt_3d8e7fc0de8a2a75f2ca3bfe128e6391=1540791377,1542701975; Hm_lvt_079fac161efc4b2a6f31e80064f14e82=1540791378,1542701975
+
+Request body: 
+Response code: 0
+Response body: 
