@@ -22,11 +22,11 @@ def run(cases, pattern, report):
     result.report(filename='HighTalkReport', description='HighTalkReport', log_path=report)
 
     # 测试用例回溯
-    # try:
-    #     for files in os.listdir(cases):
-    #         os.remove(cases + files)
-    # except PermissionError:
-    #     pass
+    try:
+        for files in os.listdir(cases):
+            os.remove(cases + files)
+    except PermissionError:
+        pass
 
     # 临时变量文件回溯
     # for files in os.listdir(setting.PUBLIC_RES):

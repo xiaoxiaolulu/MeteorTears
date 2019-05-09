@@ -1,10 +1,11 @@
 language: python
 python:
-    - "3.5"
     - "3.6"
 install:
   - pip install pipenv --upgrade-strategy=only-if-needed
   - pipenv install --dev --skip-lock
+  - pipenv git clone https://github.com/TesterlifeRaymond/BeautifulReport
+  - pipenv cp -R BeautifulReport to/python/site-packages/
 script:
   - pipenv run coverage run run.py
 after_success:
