@@ -17,6 +17,9 @@ downloads/
 eggs/
 .eggs/
 lib64/
+WorkFlow/
+workFlow_cases/
+test.*
 parts/
 sdist/
 var/
