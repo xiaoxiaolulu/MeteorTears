@@ -1,6 +1,6 @@
 ### Meteor tears
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/LICENSE) [![python version](https://img.shields.io/badge/python-3.4%7C3.5%7C3.6%7C3.7-blue.svg)](https://pypi.org/project/MeteorTears/) [![Build Status](https://travis-ci.org/xiaoxiaolulu/MeteorTears.svg?branch=master)](https://travis-ci.org/xiaoxiaolulu/MeteorTears)
+[![LICENSE](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/LICENSE) [![python version](https://img.shields.io/badge/python-3.4%7C3.5%7C3.6%7C3.7-blue.svg)](https://pypi.org/project/MeteorTears/) [![Build Status](https://travis-ci.org/xiaoxiaolulu/MeteorTears.svg?branch=master)](https://travis-ci.org/xiaoxiaolulu/MeteorTears) [![Coverage Status](https://coveralls.io/repos/github/xiaoxiaolulu/MeteorTears/badge.svg?branch=master)](https://coveralls.io/github/xiaoxiaolulu/MeteorTears?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bfd93c4e2362409da23ee48826d1ad39)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=xiaoxiaolulu/MeteorTears&amp;utm_campaign=Badge_Grade)
 
 
 Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接口测试工具
