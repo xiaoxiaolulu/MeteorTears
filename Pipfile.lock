@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0b5fab1e90ff3548c1113433a55f354cf3d2c665bab5e3bddabf0729f4c0b93b"
+            "sha256": "c1f4371fd6808e5946a1a5fc14d32f3a2efa59e9f603f8b5bb97999241651330"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.6.3"
+            "python_version": "3.6"
         },
         "sources": [
             {
@@ -52,14 +52,6 @@
             ],
             "index": "pypi",
             "version": "==0.3.9"
-        },
-        "contextlib2": {
-            "hashes": [
-                "sha256:509f9419ee91cdd00ba34443217d5ca51f5a364a404e1dce9e8979cea969ca48",
-                "sha256:f5260a6e679d2ff42ec91ec5252f4eeffdcf21053db9113bd0a8e4d953769c00"
-            ],
-            "index": "pypi",
-            "version": "==0.5.5"
         },
         "coverage": {
             "hashes": [
@@ -247,14 +239,6 @@
             ],
             "index": "pypi",
             "version": "==2.1.4"
-        },
-        "pymysql": {
-            "hashes": [
-                "sha256:3943fbbbc1e902f41daf7f9165519f140c4451c179380677e6a848587042561a",
-                "sha256:d8c059dcd81dedb85a9f034d5e22dcb4442c0b201908bede99e306d65ea7c8e7"
-            ],
-            "index": "pypi",
-            "version": "==0.9.3"
         },
         "pyyaml": {
             "hashes": [
