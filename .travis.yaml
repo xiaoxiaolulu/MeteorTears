@@ -1,15 +1,11 @@
-sudo: false
 language: python
 python:
-  - 3.6.3
+    - "3.5"
+    - "3.6"
 install:
-  - pip install -r requirements.txt
-#  - pip install pipenv --upgrade-strategy=only-if-needed
-#  - pipenv install --dev
+  - pip install pipenv --upgrade-strategy=only-if-needed
+  - pipenv install --dev --skip-lock
 script:
-  - python run.py
-#  - pipenv run python setup.py install
-#  - pipenv run coverage html -d testhtml
+  - pipenv run coverage run run.py
 after_success:
-#  - pipenv run coveralls
-  - coveralls
+  - pipenv run coveralls
