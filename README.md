@@ -6,7 +6,19 @@
 Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接口测试工具
 
 
-### 用例编写(Yaml文件管理)
+#### 项目特点如下
+1. 数据管理使用Yaml文件
+2. 用例编写使用Yaml文件
+3. 支持上下游接口参数关联，提取
+4. 接口返回体多字段, Type断言
+5. 数据落库校验
+6. 接口录制功能
+7. 接口性能(待开发，敬请期待)
+8. 微信，邮件告警
+9. 人人都能自动化，因为不需要学代码，分分钟直接上手
+
+
+#### 用例编写(Yaml文件管理)
 ```yaml
 test_get_public_key:
   # 上下游关联的参数文件名
@@ -43,7 +55,7 @@ description | 用例描述 | "新增渠道"
 jsonDiff | 返回结果自动对比 | {"code":0,"message":"操作成功","data":""}
 
 
-### Mysql执行语句编写
+#### Mysql执行语句编写
 ```yaml
 - ChannelBudget:
     action: SELECT
@@ -66,7 +78,7 @@ params| 检索条件 | id='1'
 desc| 排序 | ORDER BY ID DESC LIMIT 1
 
 
-### 接口录制V1.0.0
+#### 接口录制V1.0.0
 ```text
 File -》Save -》  (a) All sessions  以saz格式文件保存所有会话 
                  (b) Selected Sessions 保存选择的会话
