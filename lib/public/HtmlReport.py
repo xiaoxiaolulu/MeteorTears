@@ -10,7 +10,7 @@ from distutils.sysconfig import get_python_lib
 import traceback
 from functools import wraps
 
-__all__ = ['BeautifulReport']
+__all__ = ['Report']
 
 HTML_IMG_TEMPLATE = """
     <a href="data:image/png;base64, {}">
@@ -329,11 +329,11 @@ class ReportTestResult(unittest.TestResult):
         return class_name, method_name, method_doc
 
 
-class BeautifulReport(ReportTestResult, PATH):
+class Report(ReportTestResult, PATH):
     img_path = 'img/' if platform.system() != 'Windows' else 'img\\'
 
     def __init__(self, suites):
-        super(BeautifulReport, self).__init__(suites)
+        super(Report, self).__init__(suites)
         self.suites = suites
         self.log_path = None
         self.title = '自动化测试报告'
@@ -408,14 +408,14 @@ class BeautifulReport(ReportTestResult, PATH):
             @wraps(func)
             def __wrap(*args, **kwargs):
                 img_path = os.path.abspath(
-                    '{}'.format(BeautifulReport.img_path))
+                    '{}'.format(Report.img_path))
                 try:
                     result = func(*args, **kwargs)
                 except Exception:
                     if 'save_img' in dir(args[0]):
                         save_img = getattr(args[0], 'save_img')
                         save_img(func.__name__)
-                        data = BeautifulReport.img2base(img_path, pargs[0] + '.png')
+                        data = Report.img2base(img_path, pargs[0] + '.png')
                         print(HTML_IMG_TEMPLATE.format(data, data))
                     sys.exit(0)
                 print('<br></br>')
@@ -423,12 +423,12 @@ class BeautifulReport(ReportTestResult, PATH):
                 if len(pargs) > 1:
                     for parg in pargs:
                         print(parg + ':')
-                        data = BeautifulReport.img2base(img_path, parg + '.png')
+                        data = Report.img2base(img_path, parg + '.png')
                         print(HTML_IMG_TEMPLATE.format(data, data))
                     return result
                 if not os.path.exists(img_path + pargs[0] + '.png'):
                     return result
-                data = BeautifulReport.img2base(img_path, pargs[0] + '.png')
+                data = Report.img2base(img_path, pargs[0] + '.png')
                 print(HTML_IMG_TEMPLATE.format(data, data))
                 return result
             return __wrap

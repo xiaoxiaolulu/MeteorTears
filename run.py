@@ -5,7 +5,7 @@ import unittest
 from config import setting
 from lib.utils import email
 from lib.public.case_manager import TestContainer
-from lib.public.BeautifulReport import BeautifulReport
+from lib.public.HtmlReport import Report
 from lib.utils.analyze_log import WeChatAlarm
 
 
@@ -18,20 +18,23 @@ from lib.utils.analyze_log import WeChatAlarm
     help="generator report in path")
 def run(cases, pattern, report):
     test_suite = unittest.defaultTestLoader.discover(cases, pattern)
-    result = BeautifulReport(test_suite)
+    result = Report(test_suite)
     result.report(filename='HighTalkReport', description='HighTalkReport', log_path=report)
 
     # 测试用例回溯
     try:
         for files in os.listdir(cases):
-            if os.path.isfile(cases + files):
-                os.remove(cases + files)
+            filename = cases + files
+            if os.path.isfile(filename):
+                os.remove(filename)
     except PermissionError:
         pass
 
     # 临时变量文件回溯
     # for files in os.listdir(setting.PUBLIC_RES):
-    #     os.remove(setting.PUBLIC_RES + files)
+    #     filename = setting.PUBLIC_RES + files
+    #     if os.path.isfile(filename):
+    #         os.remove(filename)
 
     # 发送邮件
     # send_mail = email.SendMail()

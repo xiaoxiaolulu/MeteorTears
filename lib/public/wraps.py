@@ -67,7 +67,7 @@ def cases_runner(func):
                             relevant_files = relevant_params + '.yaml'
                             _relevance = {}
                             with open(setting.PUBLIC_RES + relevant_files, 'rb') as file:
-                                _relevance.update(yaml.load(file))
+                                _relevance.update(yaml.load(file, Loader=yaml.FullLoader))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
                             body.update(eval(relevance_body))
@@ -79,7 +79,7 @@ def cases_runner(func):
 
                                 relevant_files = relevant_param + '.yaml'
                                 with open(setting.PUBLIC_RES + relevant_files, 'rb') as file:
-                                    _relevance.update(yaml.load(file))
+                                    _relevance.update(yaml.load(file, Loader=yaml.FullLoader))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
                             body.update(eval(relevance_body))

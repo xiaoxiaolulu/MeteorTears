@@ -7104,13 +7104,43 @@ body.skin-3 {
 <script src="https://cdn.bootcss.com/chosen/1.8.2/chosen.jquery.js"></script>
 <script type="text/javascript">
     var resultData = {
-    "testPass": 0,
-    "testResult": [],
+    "testPass": 1,
+    "testResult": [
+        {
+            "className": "GetPublicKey",
+            "methodName": "test_get_public_key",
+            "description": "获取公钥",
+            "spendTime": "0.969 s",
+            "status": "成功",
+            "log": [
+                "[DEBUG] [2019-05-09 15:36:49,717] logger.py [line:132] : {'relevant_parameter': ['Host'], 'description': '获取公钥', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/auth/getpublickey', 'assert': {'Code': 1}, 'res_index': ['RsaPublicKey', 'Key'], 'check_db': None}",
+                "[INFO] [2019-05-09 15:36:49,718] logger.py [line:132] : 接受GET的请求参数为{",
+                "    \"url\": \"https://192.168.1.104:10033/api/auth/getpublickey\",",
+                "    \"params\": null,",
+                "    \"headers\": null",
+                "}",
+                "[INFO] [2019-05-09 15:36:50,681] logger.py [line:132] : The test.json result is{",
+                "    \"Code\": 1,",
+                "    \"RsaPublicKey\": \"-----BEGIN PUBLIC KEY-----\\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBZvlatoOxKWbwQF+WsbUNXsw0\\nZTOge7he5WxybkPfxvY63VBkF+AyNjfn+pukL5UkMEv42cok3NYRrqhbeFGpyMFS\\n69r7iSfZV1gsXYKVNetxZUKneVAjGEt+AAEuf/WK1gYtuIJEin4Gg/zPUdUD9AtH\\ne7Gxc7Z0YFUI1Vu9RwIDAQAB\\n-----END PUBLIC KEY-----\\n\",",
+                "    \"Key\": \"813490a6-52d1-4e57-b54a-768623b7d71a\"",
+                "}",
+                "[DEBUG] [2019-05-09 15:36:50,682] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----",
+                "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCBZvlatoOxKWbwQF+WsbUNXsw0",
+                "ZTOge7he5WxybkPfxvY63VBkF+AyNjfn+pukL5UkMEv42cok3NYRrqhbeFGpyMFS",
+                "69r7iSfZV1gsXYKVNetxZUKneVAjGEt+AAEuf/WK1gYtuIJEin4Gg/zPUdUD9AtH",
+                "e7Gxc7Z0YFUI1Vu9RwIDAQAB",
+                "-----END PUBLIC KEY-----",
+                " => ",
+                "[DEBUG] [2019-05-09 15:36:50,683] logger.py [line:132] : 保存的变量值为 813490a6-52d1-4e57-b54a-768623b7d71a => ",
+                ""
+            ]
+        }
+    ],
     "testName": "HighTalkReport",
-    "testAll": 0,
+    "testAll": 1,
     "testFail": 0,
-    "beginTime": "2019-05-09 15:15:06",
-    "totalTime": "0s",
+    "beginTime": "2019-05-09 15:36:49",
+    "totalTime": "1s",
     "testSkip": 0,
     "testError": 0
 };
