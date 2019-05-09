@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Pipenv (BotChatContrastV2)" project-jdk-type="Python SDK" />
-  <component name="jetbrains.communicator.idea.IdProvider" IDEtalkID="5D8EF98C3CB7C5119BC8C3362BC110F4" />
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (MeteorTears)" project-jdk-type="Python SDK" />
 </project>
