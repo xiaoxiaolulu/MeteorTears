@@ -1,0 +1,9 @@
+[INFO] [2019-03-27 14:40:19,452] logger.py [line:132] : The test.yaml result is{
+    "Status": 1,
+    "ErrorMsg": null,
+    "ResultValue": {
+        "Answer": "23",
+        "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+        "Score": 0.13353139
+    }
+}

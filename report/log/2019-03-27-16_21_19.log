@@ -1,0 +1,3 @@
+[INFO] [2019-03-27 16:21:19,483] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetPublicKey.py -> 具体测试用例:test_get_public_key
+[INFO] [2019-03-27 16:21:19,485] logger.py [line:132] : 测试用例已自动生成完毕, 文件: RsaEncrypt.py -> 具体测试用例:test_rsa_encrypt
+[DEBUG] [2019-03-27 16:21:19,610] logger.py [line:132] : 临时变量文件已自动生成完毕, 文件: PublicKey.py -> 具体变量文件:public_key

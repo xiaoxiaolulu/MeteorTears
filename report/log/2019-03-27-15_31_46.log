@@ -1,0 +1,21 @@
+[INFO] [2019-03-27 15:31:46,006] logger.py [line:132] : 测试用例已自动生成完毕, 文件: RsaEncrypt.py -> 具体测试用例:test_rsa_encrypt
+[DEBUG] [2019-03-27 15:31:46,135] logger.py [line:132] : 临时变量文件已自动生成完毕, 文件: PublicKey.py -> 具体变量文件:public_key
+[DEBUG] [2019-03-27 15:31:46,139] logger.py [line:132] : {'relevant_parameter': ['Host', 'RsaPublicKey', 'Access-Token'], 'description': '加密', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/internaltest/internaltest/rsa/encrypt', 'json': {'PublicKey': '-----BEGIN PUBLIC KEY-----MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzG2Mw/24WC9DKiyu3gBR3+4IalO4Lfd1afW+UlbTIA8TPtUn2wUaWwCbc4fYvsqIJ58c40fqgeHz+svBaFjZFErHRvLHPm9Rf1C3QU53PbR1m5UkQm0BBaacK+nbeVeIHoFrUlcBC5U1g1AJxoeZwlxvmegwVTJS+p+5Gkn2GgwIDAQAB-----END PUBLIC KEY-----', 'EncryptString': '123456.a'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-27 15:31:46,140] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/internaltest/internaltest/rsa/encrypt",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "PublicKey": "-----BEGIN PUBLIC KEY-----MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzG2Mw/24WC9DKiyu3gBR3+4IalO4Lfd1afW+UlbTIA8TPtUn2wUaWwCbc4fYvsqIJ58c40fqgeHz+svBaFjZFErHRvLHPm9Rf1C3QU53PbR1m5UkQm0BBaacK+nbeVeIHoFrUlcBC5U1g1AJxoeZwlxvmegwVTJS+p+5Gkn2GgwIDAQAB-----END PUBLIC KEY-----",
+        "EncryptString": "123456.a"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 15:31:46,719] logger.py [line:132] : The test.yaml result is{
+    "Status": 0,
+    "ErrorMsg": "加密失败",
+    "Content": null
+}

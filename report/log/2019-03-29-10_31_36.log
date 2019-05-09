@@ -1,0 +1,16 @@
+[INFO] [2019-03-29 10:31:36,969] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_bot_list
+[INFO] [2019-03-29 10:31:36,971] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_bot_list_required_verify_TenantId
+[INFO] [2019-03-29 10:31:36,972] logger.py [line:132] : 测试用例已自动生成完毕, 文件: CreateBot.py -> 具体测试用例:test_bot_create_bot
+[INFO] [2019-03-29 10:31:36,973] logger.py [line:132] : 测试用例已自动生成完毕, 文件: CreateBot.py -> 具体测试用例:test_create_bot_required_verify_botid
+[INFO] [2019-03-29 10:31:36,974] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetBotStatus.py -> 具体测试用例:test_get_bot_status
+[INFO] [2019-03-29 10:31:36,975] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetBotStatus.py -> 具体测试用例:test_get_bot_status_required_verify_botid
+[INFO] [2019-03-29 10:31:36,977] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetPublicKey.py -> 具体测试用例:test_get_public_key
+[INFO] [2019-03-29 10:31:36,978] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search
+[INFO] [2019-03-29 10:31:36,979] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaGet.py -> 具体测试用例:test_kqa_get
+[INFO] [2019-03-29 10:31:36,980] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaGet.py -> 具体测试用例:test_kqa_get_required_verify
+[INFO] [2019-03-29 10:31:36,982] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable
+[INFO] [2019-03-29 10:31:36,983] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable_required_verify_botId
+[INFO] [2019-03-29 10:31:36,984] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable_required_verify_enable
+[INFO] [2019-03-29 10:31:36,985] logger.py [line:132] : 测试用例已自动生成完毕, 文件: SkillSetList.py -> 具体测试用例:test_skill_set_list
+[INFO] [2019-03-29 10:31:36,986] logger.py [line:132] : 测试用例已自动生成完毕, 文件: SkillSetList.py -> 具体测试用例:test_skill_set_list_required_verify_botid
+[INFO] [2019-03-29 10:31:36,988] logger.py [line:132] : 测试用例已自动生成完毕, 文件: ValidateToken.py -> 具体测试用例:test_validate_token

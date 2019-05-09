@@ -1,0 +1,12 @@
+[INFO] [2019-03-27 16:04:44,586] logger.py [line:132] : The test result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbPyl4/f6UWpl2nWFmNP0xGjWs\nh6jB6y8hW9Q0qUDMpKsRJT7e3o8XUFVnZnf8ryV9tbabcmpgq5unoaweAVwf5+73\n5TThrbHMc0HjVLvbBbbRivCyUC1nwwzHtqpoMr0x4ZKKJG2WlB7Koy+uHKQO0hvK\n7I2hHyXnaF12C3tBJQIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "54d5359f-3027-44b5-93d0-03e1664969b3"
+}
+[DEBUG] [2019-03-27 16:04:44,587] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbPyl4/f6UWpl2nWFmNP0xGjWs
+h6jB6y8hW9Q0qUDMpKsRJT7e3o8XUFVnZnf8ryV9tbabcmpgq5unoaweAVwf5+73
+5TThrbHMc0HjVLvbBbbRivCyUC1nwwzHtqpoMr0x4ZKKJG2WlB7Koy+uHKQO0hvK
+7I2hHyXnaF12C3tBJQIDAQAB
+-----END PUBLIC KEY-----
+ => 

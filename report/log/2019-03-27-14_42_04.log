@@ -1,0 +1,30 @@
+[INFO] [2019-03-27 14:42:04,001] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search
+[INFO] [2019-03-27 14:42:04,003] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaGet.py -> 具体测试用例:test_kqa_get
+[INFO] [2019-03-27 14:42:04,005] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaGet.py -> 具体测试用例:test_kqa_get_required_verify
+[INFO] [2019-03-27 14:42:04,007] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable
+[INFO] [2019-03-27 14:42:04,010] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable_required_verify_botId
+[INFO] [2019-03-27 14:42:04,011] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable_required_verify_enable
+[DEBUG] [2019-03-27 14:42:04,155] logger.py [line:132] : 临时变量文件已自动生成完毕, 文件: PublicKey.py -> 具体变量文件:public_key
+[DEBUG] [2019-03-27 14:42:04,166] logger.py [line:132] : {'relevant_parameter': 'Access-Token', 'description': 'bot查询接口-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch', 'json': {'BotId': '04372bfa-f0ee-4545-8ab2-42e9f69e222f', 'Content': ''}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-27 14:42:04,167] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+        "Content": ""
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 14:42:04,643] logger.py [line:132] : The test.yaml result is{
+    "Status": 1,
+    "ErrorMsg": null,
+    "ResultValue": {
+        "Answer": "23",
+        "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+        "Score": 0.13353139
+    }
+}

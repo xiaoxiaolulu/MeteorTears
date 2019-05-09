@@ -1,0 +1,2 @@
+[DEBUG] [2019-03-27 14:55:16,065] logger.py [line:132] : 临时变量文件已自动生成完毕, 文件: PublicKey.py -> 具体变量文件:public_key
+[DEBUG] [2019-03-27 14:55:16,067] logger.py [line:132] : my ['Access-Token', 'Host']

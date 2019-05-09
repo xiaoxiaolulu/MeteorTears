@@ -1,0 +1,167 @@
+[INFO] [2019-03-29 14:45:37,833] logger.py [line:132] : The test.json result is{
+    "BotConfigList": [
+        {
+            "RecordId": "e066c8d5-0586-42ad-9381-819bd103cfa9",
+            "AliasName": null,
+            "Domain": null,
+            "Description": null,
+            "BotType": "SQSW",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 1,
+            "StatusString": "未创建",
+            "CreateDate": "2019-02-25",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "ca31ae3a-789e-47e5-b1d8-34308c951bda",
+            "AliasName": "002da9d7-b6b5-4982-bc67-4a0d877a53fc",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": "HighTalkSharedService",
+            "LuisAppId": null,
+            "Status": 1,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "121712f9-7cbb-442d-b1a9-a95c65386ab8",
+            "AliasName": "00d2c124-8cfd-409f-bcb2-1de69116eb0d",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 1,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "17b21399-6192-433a-a388-44b99144b9be",
+            "AliasName": "00d8ce1b-a087-433d-a176-a74ba1e81134",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 1,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "08e708b7-3531-4bf0-880c-f758e7171dd6",
+            "AliasName": "00dd3970-a352-4861-a4b4-40b1a92232a4",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 1,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "7a8ceaf3-5a44-4fff-b7b6-a8350419a303",
+            "AliasName": "012926d5-80af-47f2-896d-0353c5f675b5",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 0,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "119192ca-4d78-4e63-b4dd-d1a2435fbd5e",
+            "AliasName": "012e1be3-2da8-4fa7-8cf0-f4cc798af33b",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 0,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "dd2c629a-f4c5-4153-a349-6c46ce40b79a",
+            "AliasName": "015fe69c-a2e6-4ffc-a2c1-ba48a3ad8c8b",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 0,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "6e0f3eba-4f6d-4d50-9439-005ff30f3586",
+            "AliasName": "018933d6-a357-494f-8c30-01c70ff5440b",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 0,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        },
+        {
+            "RecordId": "7d80cb5f-82b3-4202-9d73-7fbae428b377",
+            "AliasName": "01e11236-e312-43f4-87e1-a6473557dda4",
+            "Domain": "XNBZ",
+            "Description": "大连税务工作助理",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": null,
+            "LuisAppId": null,
+            "Status": 0,
+            "StatusString": "未创建",
+            "CreateDate": "2019-03-05",
+            "OrderBy": 1
+        }
+    ],
+    "TotalCount": 2094,
+    "PageIndex": 1,
+    "PageSize": 10,
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": 0
+}
+[DEBUG] [2019-03-29 14:45:37,834] logger.py [line:132] : 保存的变量值为 e066c8d5-0586-42ad-9381-819bd103cfa9 => 
+[DEBUG] [2019-03-29 14:45:37,837] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '获取机器人列表-TenantId为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist', 'json': {'PageIndex': 1, 'PageSize': 10, 'description': None, 'searchStatus': 0}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'TenantId': ['The TenantId field is required.']}, 'check_db': None}
+[INFO] [2019-03-29 14:45:37,838] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "PageIndex": 1,
+        "PageSize": 10,
+        "description": null,
+        "searchStatus": 0
+    },
+    "data": null,
+    "files": null
+}

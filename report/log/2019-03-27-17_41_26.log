@@ -1,0 +1,67 @@
+[INFO] [2019-03-27 17:41:26,191] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_bot_list
+[INFO] [2019-03-27 17:41:26,193] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_bot_list_required_verify_TenantId
+[INFO] [2019-03-27 17:41:26,195] logger.py [line:132] : 测试用例已自动生成完毕, 文件: CreateBot.py -> 具体测试用例:test_bot_create_bot
+[INFO] [2019-03-27 17:41:26,196] logger.py [line:132] : 测试用例已自动生成完毕, 文件: CreateBot.py -> 具体测试用例:test_create_bot_required_verify_botid
+[INFO] [2019-03-27 17:41:26,198] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetBotStatus.py -> 具体测试用例:test_get_bot_status
+[INFO] [2019-03-27 17:41:26,199] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetBotStatus.py -> 具体测试用例:test_get_bot_status_required_verify_botid
+[INFO] [2019-03-27 17:41:26,201] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetPublicKey.py -> 具体测试用例:test_get_public_key
+[INFO] [2019-03-27 17:41:26,202] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search
+[INFO] [2019-03-27 17:41:26,203] logger.py [line:132] : 测试用例已自动生成完毕, 文件: ValidateToken.py -> 具体测试用例:test_validate_token
+[DEBUG] [2019-03-27 17:41:26,320] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '获取机器人列表', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist', 'json': {'TenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'Description': 'test', 'SearchStatus': 0, 'PageIndex': 1, 'PageSize': 5}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'Status': 1}, 'res_index': ['RecordId'], 'check_db': None}
+[INFO] [2019-03-27 17:41:26,321] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "Description": "test",
+        "SearchStatus": 0,
+        "PageIndex": 1,
+        "PageSize": 5
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 17:41:26,877] logger.py [line:132] : The test result is{
+    "BotConfigList": [
+        {
+            "RecordId": "e7e280a9-2880-4f98-b3b1-1235794f1793",
+            "AliasName": "test_sqsw机器人",
+            "Domain": "dlsw",
+            "Description": "test",
+            "BotType": "SQSW",
+            "DeployModel": "share",
+            "AzureRegName": "HighTalkSharedService",
+            "LuisAppId": null,
+            "Status": 1,
+            "StatusString": "未创建",
+            "CreateDate": "2019-02-28",
+            "OrderBy": 1
+        }
+    ],
+    "TotalCount": 1,
+    "PageIndex": 1,
+    "PageSize": 5,
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": 0
+}
+[DEBUG] [2019-03-27 17:41:26,877] logger.py [line:132] : 保存的变量值为 e7e280a9-2880-4f98-b3b1-1235794f1793 => 
+[DEBUG] [2019-03-27 17:41:26,879] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '获取机器人列表-TenantId为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist', 'json': {'Description': 'test', 'SearchStatus': 0, 'PageIndex': 1, 'PageSize': 5}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'TenantId': ['The TenantId field is required.']}, 'check_db': None}
+[INFO] [2019-03-27 17:41:26,880] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "Description": "test",
+        "SearchStatus": 0,
+        "PageIndex": 1,
+        "PageSize": 5
+    },
+    "data": null,
+    "files": null
+}

@@ -1,0 +1,27 @@
+[INFO] [2019-03-27 15:36:19,113] logger.py [line:132] : The test.yaml result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3R80EW971OXmP7UNN5bdABnmU\nTIXloUE1/S6yK5f4Q+PZXdoQgl6bbt5ElKe708c7qpGPxXWCz3IgZ1wm9Q51rta0\nSo4ePY2BonCR0Zzoju9hqOK7CJM3rtCe91t43clNI834ujuFvQQjq11DtrKDUp6F\nBuQ1GPb3aqAADe02kQIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "0a72f1ec-0282-4ad6-9eee-76378ae1a0f8"
+}
+[DEBUG] [2019-03-27 15:36:19,114] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3R80EW971OXmP7UNN5bdABnmU
+TIXloUE1/S6yK5f4Q+PZXdoQgl6bbt5ElKe708c7qpGPxXWCz3IgZ1wm9Q51rta0
+So4ePY2BonCR0Zzoju9hqOK7CJM3rtCe91t43clNI834ujuFvQQjq11DtrKDUp6F
+BuQ1GPb3aqAADe02kQIDAQAB
+-----END PUBLIC KEY-----
+ => 
+[DEBUG] [2019-03-27 15:36:19,116] logger.py [line:132] : 保存的变量值为 0a72f1ec-0282-4ad6-9eee-76378ae1a0f8 => 
+[DEBUG] [2019-03-27 15:36:19,118] logger.py [line:132] : {'relevant_parameter': ['Host', 'RsaPublicKey', 'Access-Token'], 'description': '加密', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/internaltest/internaltest/rsa/encrypt', 'json': {'PublicKey': '-----BEGIN PUBLIC KEY----- MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3R80EW971OXmP7UNN5bdABnmU TIXloUE1/S6yK5f4Q+PZXdoQgl6bbt5ElKe708c7qpGPxXWCz3IgZ1wm9Q51rta0 So4ePY2BonCR0Zzoju9hqOK7CJM3rtCe91t43clNI834ujuFvQQjq11DtrKDUp6F BuQ1GPb3aqAADe02kQIDAQAB -----END PUBLIC KEY----- ', 'EncryptString': '123456.a'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-27 15:36:19,119] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/internaltest/internaltest/rsa/encrypt",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "PublicKey": "-----BEGIN PUBLIC KEY----- MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3R80EW971OXmP7UNN5bdABnmU TIXloUE1/S6yK5f4Q+PZXdoQgl6bbt5ElKe708c7qpGPxXWCz3IgZ1wm9Q51rta0 So4ePY2BonCR0Zzoju9hqOK7CJM3rtCe91t43clNI834ujuFvQQjq11DtrKDUp6F BuQ1GPb3aqAADe02kQIDAQAB -----END PUBLIC KEY----- ",
+        "EncryptString": "123456.a"
+    },
+    "data": null,
+    "files": null
+}

@@ -1,0 +1,13 @@
+[INFO] [2019-03-27 17:15:23,577] logger.py [line:132] : The test result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCNkGueYD2aevhvlauYguUY8h9d\ncWhQFOSqVcCXC0QgA2giizxR2Go3oD2ylnX/+xll30X8xKlcvGrlRrEEq6FheMvM\n4CgGO2BOgRNalXKfW07pL1RGZn2SbgMHhXgvEe9cOb1pyGL9Amr6L7PYdroPMPTK\nG+BuGDIJwXxsgFlYTwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "12da899a-1f10-4958-b360-a507fcb88569"
+}
+[DEBUG] [2019-03-27 17:15:23,578] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCNkGueYD2aevhvlauYguUY8h9d
+cWhQFOSqVcCXC0QgA2giizxR2Go3oD2ylnX/+xll30X8xKlcvGrlRrEEq6FheMvM
+4CgGO2BOgRNalXKfW07pL1RGZn2SbgMHhXgvEe9cOb1pyGL9Amr6L7PYdroPMPTK
+G+BuGDIJwXxsgFlYTwIDAQAB
+-----END PUBLIC KEY-----
+ => 
+[DEBUG] [2019-03-27 17:15:23,580] logger.py [line:132] : 保存的变量值为 12da899a-1f10-4958-b360-a507fcb88569 => 

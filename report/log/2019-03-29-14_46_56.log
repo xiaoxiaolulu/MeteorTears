@@ -1,0 +1,69 @@
+[INFO] [2019-03-29 14:46:56,109] logger.py [line:132] : The test.json result is{
+    "Status": 1,
+    "ErrorMsg": null,
+    "ResultValue": {
+        "ID": "7e9433ee-e01c-44b7-a9b9-a4e1182bacb6",
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "Keyword": "3212321",
+        "KeywordForCompare": "3212321",
+        "Answer": "321321",
+        "Status": 0,
+        "CreateDate": "2019-03-29 14:28:43",
+        "UpdateDate": "0001-01-01 00:00:00",
+        "CreateUserId": null,
+        "CreateUserName": "testbot",
+        "UpdateUserId": null,
+        "UpdateUserName": null
+    }
+}
+[DEBUG] [2019-03-29 14:46:56,112] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '设置开关-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'BotConfigId': '16a600bb-e081-4346-a687-6cfe69da4280', 'Enable': False}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 0}, 'check_db': None}
+[INFO] [2019-03-29 14:46:56,113] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "BotConfigId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "Enable": false
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 14:46:56,542] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorCodes": null,
+    "Data": false
+}
+[DEBUG] [2019-03-29 14:46:56,545] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '设置开关-BotConfigId为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'Enable': False}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'BotConfigId': ['The BotConfigId field is required.']}, 'check_db': None}
+[INFO] [2019-03-29 14:46:56,546] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "Enable": false
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 14:46:56,715] logger.py [line:132] : The test.json result is{
+    "BotConfigId": [
+        "The BotConfigId field is required."
+    ]
+}
+[DEBUG] [2019-03-29 14:46:56,717] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '设置开关-enable为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'BotConfigId': '16a600bb-e081-4346-a687-6cfe69da4280'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Enable': ['The Enable field is required.']}, 'check_db': None}
+[INFO] [2019-03-29 14:46:56,718] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "BotConfigId": "16a600bb-e081-4346-a687-6cfe69da4280"
+    },
+    "data": null,
+    "files": null
+}

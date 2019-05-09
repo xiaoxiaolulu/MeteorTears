@@ -1,0 +1,13 @@
+[INFO] [2019-03-27 15:29:49,624] logger.py [line:132] : The test.yaml result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzG2Mw/24WC9DKiyu3gBR3+4Ia\nlO4Lfd1afW+UlbTIA8TPtUn2wUaWwCbc4fYvsqIJ58c40fqgeHz+svBaFjZFErHR\nvLHPm9Rf1C3QU53PbR1m5UkQm0BBaacK+nbeVeIHoFrUlcBC5U1g1AJxoeZwlxvm\negwVTJS+p+5Gkn2GgwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "672776a6-e11e-43fa-9380-90466e9eadb0"
+}
+[DEBUG] [2019-03-27 15:29:49,625] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzG2Mw/24WC9DKiyu3gBR3+4Ia
+lO4Lfd1afW+UlbTIA8TPtUn2wUaWwCbc4fYvsqIJ58c40fqgeHz+svBaFjZFErHR
+vLHPm9Rf1C3QU53PbR1m5UkQm0BBaacK+nbeVeIHoFrUlcBC5U1g1AJxoeZwlxvm
+egwVTJS+p+5Gkn2GgwIDAQAB
+-----END PUBLIC KEY-----
+ => 
+[DEBUG] [2019-03-27 15:29:49,626] logger.py [line:132] : 保存的变量值为 672776a6-e11e-43fa-9380-90466e9eadb0 => 

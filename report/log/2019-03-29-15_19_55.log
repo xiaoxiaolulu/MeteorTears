@@ -1,0 +1,141 @@
+[INFO] [2019-03-29 15:19:55,032] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "租户域名不能为空.",
+    "ResultValue": null
+}
+[DEBUG] [2019-03-29 15:19:55,034] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字搜索-添加关键字-answer为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/add', 'json': {'TenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280', 'TenantDomain': 'test01@testbot.hightalk.ai', 'KeyWord': 'wud2i', 'CreateUserId': None, 'CreateUserName': 'testbot'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'ErrorMsg': '答案不能为空.'}, 'check_db': None}
+[INFO] [2019-03-29 15:19:55,035] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/add",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "KeyWord": "wud2i",
+        "CreateUserId": null,
+        "CreateUserName": "testbot"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:19:55,190] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "答案不能为空.",
+    "ResultValue": null
+}
+[DEBUG] [2019-03-29 15:19:55,193] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字搜索- 查询关键字-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/search', 'json': {'BotId': '04372bfa-f0ee-4545-8ab2-42e9f69e222f', 'TenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'TenantDomain': 'test01@testbot.hightalk.ai', 'Page': 0, 'KeyWord': '', 'PageSize': 10}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-29 15:19:55,194] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/search",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "Page": 0,
+        "KeyWord": "",
+        "PageSize": 10
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:19:55,357] logger.py [line:132] : The test.json result is{
+    "Status": 1,
+    "ErrorMsg": null,
+    "ResultValue": {
+        "Total": 3,
+        "Page": 0,
+        "PageSize": 10,
+        "Datas": [
+            {
+                "ID": "c7b44e18-4aa0-4958-b95f-c2cf12ec9b22",
+                "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+                "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+                "Keyword": "13223&321321",
+                "KeywordForCompare": "13223_321321",
+                "Answer": "313213312",
+                "Status": 0,
+                "CreateDate": "2019-03-29 09:49:03",
+                "UpdateDate": "2019-03-29 09:49:56",
+                "CreateUserId": null,
+                "CreateUserName": "testbot",
+                "UpdateUserId": null,
+                "UpdateUserName": "test01@testbot.hightalk.ai"
+            },
+            {
+                "ID": "7509ac2a-5e23-473f-937f-a7e7578033c0",
+                "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+                "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+                "Keyword": "我是谁",
+                "KeywordForCompare": "我是谁",
+                "Answer": "大佬大佬",
+                "Status": 0,
+                "CreateDate": "2019-03-29 11:34:48",
+                "UpdateDate": "0001-01-01 00:00:00",
+                "CreateUserId": null,
+                "CreateUserName": "testbot",
+                "UpdateUserId": null,
+                "UpdateUserName": null
+            },
+            {
+                "ID": "e6a0f429-3378-4733-9d2a-11fed4b34898",
+                "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+                "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+                "Keyword": "凤凰股份",
+                "KeywordForCompare": "凤凰股份",
+                "Answer": "57656765",
+                "Status": 0,
+                "CreateDate": "2019-03-29 13:34:34",
+                "UpdateDate": "0001-01-01 00:00:00",
+                "CreateUserId": null,
+                "CreateUserName": "testbot",
+                "UpdateUserId": null,
+                "UpdateUserName": null
+            }
+        ]
+    }
+}
+[DEBUG] [2019-03-29 15:19:55,359] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字回复-获取kqa服务信息-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/Get', 'json': {'BotConfigId': '16a600bb-e081-4346-a687-6cfe69da4280'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-29 15:19:55,360] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/Get",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "BotConfigId": "16a600bb-e081-4346-a687-6cfe69da4280"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:19:55,877] logger.py [line:132] : The test.json result is{
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": {
+        "ID": "3f0eee0d-6d93-49e2-ba09-1a200e0e14dc",
+        "BotConfigId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "ServiceName": "KQA",
+        "Parameters": "{\"Endpoint\": \"https://192.168.1.104:10037/api/admin/keyword/KQA/botsearch\"}",
+        "ServiceType": null,
+        "Enable": true,
+        "Status": 1
+    }
+}
+[DEBUG] [2019-03-29 15:19:55,878] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '关键字回复-获取kqa服务信息-缺少BotConfigId', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/Get', 'json': {'BotConfigId': ''}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'BotConfigId': ['The BotConfigId field is required.']}, 'check_db': None}
+[INFO] [2019-03-29 15:19:55,879] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/Get",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "BotConfigId": ""
+    },
+    "data": null,
+    "files": null
+}

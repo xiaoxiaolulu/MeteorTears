@@ -1,0 +1,20 @@
+[DEBUG] [2019-03-27 15:26:54,015] logger.py [line:132] : 临时变量文件已自动生成完毕, 文件: PublicKey.py -> 具体变量文件:public_key
+[DEBUG] [2019-03-27 15:26:54,018] logger.py [line:132] : {'relevant_parameter': ['Host'], 'description': '获取公钥', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/auth/getpublickey', 'assert': {'Code': 1}, 'res_index': ['RsaPublicKey', 'Key'], 'check_db': None}
+[INFO] [2019-03-27 15:26:54,019] logger.py [line:132] : 接受GET的请求参数为{
+    "url": "https://192.168.1.104:10033/api/auth/getpublickey",
+    "params": null,
+    "headers": null
+}
+[INFO] [2019-03-27 15:26:54,632] logger.py [line:132] : The test.yaml result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxVVS+k1nwtkZ8NdDRmcI9Gloh\nsxdLNiHzeTnro6T3urI42KfySet5cEky+P59Tagf7hjB4LHbS497JHpLFVwN3MqJ\npHGlvxYZQ/vMMbprfnCer1JKHcsG+PTDCRK9O35Mgd69yPHvll15jdr87XcC5t/w\n9GDqwcCrkeIsYzcVGwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "f868f87b-df94-424b-9e56-8514099f5f77"
+}
+[DEBUG] [2019-03-27 15:26:54,633] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxVVS+k1nwtkZ8NdDRmcI9Gloh
+sxdLNiHzeTnro6T3urI42KfySet5cEky+P59Tagf7hjB4LHbS497JHpLFVwN3MqJ
+pHGlvxYZQ/vMMbprfnCer1JKHcsG+PTDCRK9O35Mgd69yPHvll15jdr87XcC5t/w
+9GDqwcCrkeIsYzcVGwIDAQAB
+-----END PUBLIC KEY-----
+ => 
+[DEBUG] [2019-03-27 15:26:54,634] logger.py [line:132] : 保存的变量值为 f868f87b-df94-424b-9e56-8514099f5f77 => 

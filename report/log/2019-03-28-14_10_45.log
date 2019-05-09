@@ -1,0 +1,26 @@
+[INFO] [2019-03-28 14:10:45,804] logger.py [line:132] : The test.json result is{
+    "BotConfigList": [],
+    "TotalCount": 0,
+    "PageIndex": 1,
+    "PageSize": 5,
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": 0
+}
+[DEBUG] [2019-03-28 14:10:45,805] logger.py [line:132] : 保存的变量值为 None => 
+[DEBUG] [2019-03-28 14:10:45,808] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '获取机器人列表-TenantId为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist', 'json': {'Description': 'test.json', 'SearchStatus': 0, 'PageIndex': 1, 'PageSize': 5}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '3A7FEB5150A67C4474F48753C1E843FF3E5B338938FA735F0683B7C86B17A313'}, 'assert': {'TenantId': ['The TenantId field is required.']}, 'check_db': None}
+[INFO] [2019-03-28 14:10:45,809] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "3A7FEB5150A67C4474F48753C1E843FF3E5B338938FA735F0683B7C86B17A313"
+    },
+    "json": {
+        "Description": "test.json",
+        "SearchStatus": 0,
+        "PageIndex": 1,
+        "PageSize": 5
+    },
+    "data": null,
+    "files": null
+}

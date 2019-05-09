@@ -1,0 +1,41 @@
+[INFO] [2019-03-29 15:12:55,250] logger.py [line:132] : The test.json result is{
+    "BotConfigId": [
+        "The BotConfigId field is required."
+    ]
+}
+[DEBUG] [2019-03-29 15:12:55,252] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '设置开关-enable为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'BotConfigId': '16a600bb-e081-4346-a687-6cfe69da4280'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Enable': ['The Enable field is required.']}, 'check_db': None}
+[INFO] [2019-03-29 15:12:55,254] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "BotConfigId": "16a600bb-e081-4346-a687-6cfe69da4280"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:12:55,801] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorCodes": null,
+    "Data": false
+}
+[DEBUG] [2019-03-29 15:12:55,804] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字重复校验', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/verifyduplicated', 'json': {'TenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280', 'CreateUserName': 'testbot', 'CreateUserId': None, 'TenantDomain': 'test01@testbot.hightalk.ai', 'KeyWord': 3212321}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 0}, 'check_db': None}
+[INFO] [2019-03-29 15:12:55,804] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/verifyduplicated",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "CreateUserName": "testbot",
+        "CreateUserId": null,
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "KeyWord": 3212321
+    },
+    "data": null,
+    "files": null
+}

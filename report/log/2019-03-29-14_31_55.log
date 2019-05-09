@@ -1,0 +1,10 @@
+[INFO] [2019-03-29 14:31:55,789] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_bot_list
+[INFO] [2019-03-29 14:31:55,791] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_bot_list_required_verify_TenantId
+[INFO] [2019-03-29 14:31:55,793] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search
+[INFO] [2019-03-29 14:31:55,883] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaGet.py -> 具体测试用例:test_kqa_get
+[INFO] [2019-03-29 14:31:55,885] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaGet.py -> 具体测试用例:test_kqa_get_required_verify_botconfigid
+[INFO] [2019-03-29 14:31:55,887] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaSearch.py -> 具体测试用例:test_kqa_bot_search
+[INFO] [2019-03-29 14:31:55,888] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaSearch.py -> 具体测试用例:test_kqa_bot_search_required_verify_tenantdomain
+[INFO] [2019-03-29 14:31:55,890] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable
+[INFO] [2019-03-29 14:31:55,892] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable_required_verify_botId
+[INFO] [2019-03-29 14:31:55,892] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable_required_verify_enable

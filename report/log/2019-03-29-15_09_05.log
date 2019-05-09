@@ -1,0 +1,116 @@
+[INFO] [2019-03-29 15:09:05,123] logger.py [line:132] : The test.json result is{
+    "BotConfigId": [
+        "The BotConfigId field is required."
+    ]
+}
+[DEBUG] [2019-03-29 15:09:05,125] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId', 'ID', 'TenantDomain'], 'description': '根据id获取关键字信息', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/get/test01@testbot.hightalk.ai/16a600bb-e081-4346-a687-6cfe69da4280/7e9433ee-e01c-44b7-a9b9-a4e1182bacb6', 'headers': {'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-29 15:09:05,126] logger.py [line:132] : 接受GET的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/get/test01@testbot.hightalk.ai/16a600bb-e081-4346-a687-6cfe69da4280/7e9433ee-e01c-44b7-a9b9-a4e1182bacb6",
+    "params": null,
+    "headers": {
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    }
+}
+[INFO] [2019-03-29 15:09:05,290] logger.py [line:132] : The test.json result is{
+    "Status": 1,
+    "ErrorMsg": null,
+    "ResultValue": {
+        "ID": "7e9433ee-e01c-44b7-a9b9-a4e1182bacb6",
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "Keyword": "3212321",
+        "KeywordForCompare": "3212321",
+        "Answer": "321321",
+        "Status": 0,
+        "CreateDate": "2019-03-29 14:28:43",
+        "UpdateDate": "0001-01-01 00:00:00",
+        "CreateUserId": null,
+        "CreateUserName": "testbot",
+        "UpdateUserId": null,
+        "UpdateUserName": null
+    }
+}
+[DEBUG] [2019-03-29 15:09:05,292] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '更新关键字', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/update', 'json': {'ID': '0deccd49-a869-4ffc-9a9a-29f765806170', 'AnsWer': 57656765321, 'CreateUserId': None, 'UpdateUserName': 'test01@testbot.hightalk.ai', 'TenantDomain': 'test01@testbot.hightalk.ai', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'ResultValue': '更新关键词答案成功'}, 'check_db': None}
+[INFO] [2019-03-29 15:09:05,292] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/update",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "ID": "0deccd49-a869-4ffc-9a9a-29f765806170",
+        "AnsWer": 57656765321,
+        "CreateUserId": null,
+        "UpdateUserName": "test01@testbot.hightalk.ai",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:09:05,470] logger.py [line:132] : The test.json result is{
+    "Status": 1,
+    "ErrorMsg": null,
+    "ResultValue": "更新关键词答案成功"
+}
+[DEBUG] [2019-03-29 15:09:05,472] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '更新关键字-TenantDomain为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/update', 'json': {'ID': '0deccd49-a869-4ffc-9a9a-29f765806170', 'AnsWer': 57656765321, 'CreateUserId': None, 'UpdateUserName': 'test01@testbot.hightalk.ai', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'ErrorMsg': '租户域名不能为空.'}, 'check_db': None}
+[INFO] [2019-03-29 15:09:05,473] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/update",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "ID": "0deccd49-a869-4ffc-9a9a-29f765806170",
+        "AnsWer": 57656765321,
+        "CreateUserId": null,
+        "UpdateUserName": "test01@testbot.hightalk.ai",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:09:05,643] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "租户域名不能为空.",
+    "ResultValue": null
+}
+[DEBUG] [2019-03-29 15:09:05,645] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '更新关键字-answer为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/update', 'json': {'ID': '0deccd49-a869-4ffc-9a9a-29f765806170', 'CreateUserId': None, 'UpdateUserName': 'test01@testbot.hightalk.ai', 'TenantDomain': 'test01@testbot.hightalk.ai', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'ErrorMsg': '答案不能为空.'}, 'check_db': None}
+[INFO] [2019-03-29 15:09:05,645] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/update",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "ID": "0deccd49-a869-4ffc-9a9a-29f765806170",
+        "CreateUserId": null,
+        "UpdateUserName": "test01@testbot.hightalk.ai",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:09:05,830] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "答案不能为空.",
+    "ResultValue": null
+}
+[DEBUG] [2019-03-29 15:09:05,833] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '更新关键字-updateName为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/update', 'json': {'ID': '0deccd49-a869-4ffc-9a9a-29f765806170', 'AnsWer': 57656765321, 'CreateUserId': None, 'TenantDomain': 'test01@testbot.hightalk.ai', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'ErrorMsg': '更新者姓名不能为空.'}, 'check_db': None}
+[INFO] [2019-03-29 15:09:05,834] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/update",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "ID": "0deccd49-a869-4ffc-9a9a-29f765806170",
+        "AnsWer": 57656765321,
+        "CreateUserId": null,
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280"
+    },
+    "data": null,
+    "files": null
+}

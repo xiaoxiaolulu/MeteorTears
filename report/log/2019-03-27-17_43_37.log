@@ -1,0 +1,5 @@
+[INFO] [2019-03-27 17:43:37,270] logger.py [line:132] : The test result is{
+    "IsValid": true,
+    "Status": 1,
+    "ErrorCodes": null
+}

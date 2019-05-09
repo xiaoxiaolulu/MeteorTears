@@ -1,0 +1,18 @@
+[INFO] [2019-03-27 17:42:34,064] logger.py [line:132] : The test result is{
+    "TenantId": [
+        "The TenantId field is required."
+    ]
+}
+[DEBUG] [2019-03-27 17:42:34,068] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'RecordId'], 'description': '创建机器人', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/createbot', 'json': {'BotId': 'e7e280a9-2880-4f98-b3b1-1235794f1793'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'ErrorCodes': [{'ErrorCode': 'PE00001', 'ErrorMessage': 'Bot正在创建中'}]}, 'check_db': None}
+[INFO] [2019-03-27 17:42:34,069] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/botmanager/createbot",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "BotId": "e7e280a9-2880-4f98-b3b1-1235794f1793"
+    },
+    "data": null,
+    "files": null
+}

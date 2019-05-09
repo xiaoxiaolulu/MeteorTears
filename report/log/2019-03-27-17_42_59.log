@@ -1,0 +1,58 @@
+[INFO] [2019-03-27 17:42:59,263] logger.py [line:132] : The test result is{
+    "BotIds": [
+        "The BotIds field is required."
+    ]
+}
+[DEBUG] [2019-03-27 17:42:59,265] logger.py [line:132] : {'relevant_parameter': ['Host'], 'description': '获取公钥', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/auth/getpublickey', 'assert': {'Code': 1}, 'res_index': ['RsaPublicKey', 'Key'], 'check_db': None}
+[INFO] [2019-03-27 17:42:59,266] logger.py [line:132] : 接受GET的请求参数为{
+    "url": "https://192.168.1.104:10033/api/auth/getpublickey",
+    "params": null,
+    "headers": null
+}
+[INFO] [2019-03-27 17:42:59,717] logger.py [line:132] : The test result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSMNcZLfFy2FxQJGb3WiRz2BDP\nx91yGqr+P1mdzlX0aFJGzU1xlGzoj/u6Kn1JCpCLTn7xPI2n/7/M6dpWqXG63n4s\nkxtm8oh9w9+Zi0roZbxDy1faF4DasilYGvbQRsRRxCxqQSs+8Hu+oHNPU+njVmJN\nUMa2awYbYKN5YnguLwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "8a083d06-9f23-4070-8835-efdb4b60f5ad"
+}
+[DEBUG] [2019-03-27 17:42:59,718] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCSMNcZLfFy2FxQJGb3WiRz2BDP
+x91yGqr+P1mdzlX0aFJGzU1xlGzoj/u6Kn1JCpCLTn7xPI2n/7/M6dpWqXG63n4s
+kxtm8oh9w9+Zi0roZbxDy1faF4DasilYGvbQRsRRxCxqQSs+8Hu+oHNPU+njVmJN
+UMa2awYbYKN5YnguLwIDAQAB
+-----END PUBLIC KEY-----
+ => 
+[DEBUG] [2019-03-27 17:42:59,719] logger.py [line:132] : 保存的变量值为 8a083d06-9f23-4070-8835-efdb4b60f5ad => 
+[DEBUG] [2019-03-27 17:42:59,722] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': 'bot查询接口-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch', 'json': {'BotId': '04372bfa-f0ee-4545-8ab2-42e9f69e222f', 'Content': ''}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-27 17:42:59,723] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+        "Content": ""
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 17:42:59,903] logger.py [line:132] : The test result is{
+    "Status": 1,
+    "ErrorMsg": null,
+    "ResultValue": {
+        "Answer": "eee",
+        "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+        "Score": 0.2876821
+    }
+}
+[DEBUG] [2019-03-27 17:42:59,905] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '验证token信息', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/auth/validateToken', 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'IsValid': True}}
+[INFO] [2019-03-27 17:42:59,906] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/auth/validateToken",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": null,
+    "data": null,
+    "files": null
+}

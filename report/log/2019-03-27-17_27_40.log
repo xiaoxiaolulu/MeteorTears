@@ -1,0 +1,38 @@
+[INFO] [2019-03-27 17:27:40,158] logger.py [line:132] : The test result is{
+    "TenantId": [
+        "The TenantId field is required."
+    ]
+}
+[DEBUG] [2019-03-27 17:27:40,159] logger.py [line:132] : {'relevant_parameter': ['Host'], 'description': '获取公钥', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/auth/getpublickey', 'assert': {'Code': 1}, 'res_index': ['RsaPublicKey', 'Key'], 'check_db': None}
+[INFO] [2019-03-27 17:27:40,160] logger.py [line:132] : 接受GET的请求参数为{
+    "url": "https://192.168.1.104:10033/api/auth/getpublickey",
+    "params": null,
+    "headers": null
+}
+[INFO] [2019-03-27 17:27:40,349] logger.py [line:132] : The test result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOmBdyNVeLBBjGuQaSKdL4hjUF\nW6ol6PXvzg+KV6LBTny27URRlGNkCSloEivlgE2j1JSTM0dxIRW2evaX1X/lARil\nF40NjYYwgP6qeQ0FgN6ACFFB6qHv4fZYFXSyPhvHSoUfCJIKZyQTfGSqca5W8oZ6\nuXhOZt05lzt3pOrmgQIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "91853b97-c1ad-4868-b1e9-d0304eba57b4"
+}
+[DEBUG] [2019-03-27 17:27:40,350] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOmBdyNVeLBBjGuQaSKdL4hjUF
+W6ol6PXvzg+KV6LBTny27URRlGNkCSloEivlgE2j1JSTM0dxIRW2evaX1X/lARil
+F40NjYYwgP6qeQ0FgN6ACFFB6qHv4fZYFXSyPhvHSoUfCJIKZyQTfGSqca5W8oZ6
+uXhOZt05lzt3pOrmgQIDAQAB
+-----END PUBLIC KEY-----
+ => 
+[DEBUG] [2019-03-27 17:27:40,351] logger.py [line:132] : 保存的变量值为 91853b97-c1ad-4868-b1e9-d0304eba57b4 => 
+[DEBUG] [2019-03-27 17:27:40,352] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': 'bot查询接口-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch', 'json': {'BotId': '04372bfa-f0ee-4545-8ab2-42e9f69e222f', 'Content': ''}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-27 17:27:40,353] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+        "Content": ""
+    },
+    "data": null,
+    "files": null
+}

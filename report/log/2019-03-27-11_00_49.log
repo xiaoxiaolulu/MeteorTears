@@ -1,0 +1,38 @@
+[INFO] [2019-03-27 11:00:49,080] logger.py [line:132] : The test result is{
+    "Status": 0,
+    "ErrorCodes": [
+        {
+            "ErrorCode": "",
+            "ErrorMessage": "token验证失败"
+        }
+    ],
+    "Data": 0
+}
+[DEBUG] [2019-03-27 11:00:49,081] logger.py [line:132] : {'description': '设置开关-enable为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'BotConfigId': 'c7fb61ed-6a49-4a03-a74a-cfe406793bfc'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '8E2DB22CFED897269A308C1793C8BE684E2735E44D6489F322DC7B57BB485C70'}, 'assert': {'Enable': ['The Enable field is required.']}, 'check_db': None}
+[INFO] [2019-03-27 11:00:49,082] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "8E2DB22CFED897269A308C1793C8BE684E2735E44D6489F322DC7B57BB485C70"
+    },
+    "json": {
+        "BotConfigId": "c7fb61ed-6a49-4a03-a74a-cfe406793bfc"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 11:00:49,165] logger.py [line:132] : The test result is{
+    "Status": 0,
+    "ErrorCodes": [
+        {
+            "ErrorCode": "",
+            "ErrorMessage": "token验证失败"
+        }
+    ],
+    "Data": 0
+}
+[INFO] [2019-03-27 11:00:49,624] logger.py [line:132] : The Push WeChat message result is {
+    "errcode": 0,
+    "errmsg": "ok",
+    "invaliduser": ""
+}

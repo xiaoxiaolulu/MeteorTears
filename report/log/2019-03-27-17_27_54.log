@@ -1,0 +1,78 @@
+[INFO] [2019-03-27 17:27:54,095] logger.py [line:132] : The test result is{
+    "BotConfigList": [
+        {
+            "RecordId": "ad7b6b15-3b7a-43b1-b119-94d54ef69526",
+            "AliasName": "test",
+            "Domain": "企业服务",
+            "Description": "test",
+            "BotType": "XNBZ",
+            "DeployModel": "share",
+            "AzureRegName": "HighTalkSharedService",
+            "LuisAppId": null,
+            "Status": 2,
+            "StatusString": "已创建",
+            "CreateDate": "2019-01-31",
+            "OrderBy": 2
+        }
+    ],
+    "TotalCount": 1,
+    "PageIndex": 1,
+    "PageSize": 5,
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": 0
+}
+[DEBUG] [2019-03-27 17:27:54,097] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '获取机器人列表-TenantId为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist', 'json': {'Description': 'test', 'SearchStatus': '1', 'PageIndex': 1, 'PageSize': 5}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'TenantId': ['The TenantId field is required.']}, 'check_db': None}
+[INFO] [2019-03-27 17:27:54,098] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "Description": "test",
+        "SearchStatus": "1",
+        "PageIndex": 1,
+        "PageSize": 5
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 17:27:54,501] logger.py [line:132] : The test result is{
+    "TenantId": [
+        "The TenantId field is required."
+    ]
+}
+[DEBUG] [2019-03-27 17:27:54,502] logger.py [line:132] : {'relevant_parameter': ['Host'], 'description': '获取公钥', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/auth/getpublickey', 'assert': {'Code': 1}, 'res_index': ['RsaPublicKey', 'Key'], 'check_db': None}
+[INFO] [2019-03-27 17:27:54,503] logger.py [line:132] : 接受GET的请求参数为{
+    "url": "https://192.168.1.104:10033/api/auth/getpublickey",
+    "params": null,
+    "headers": null
+}
+[INFO] [2019-03-27 17:27:54,749] logger.py [line:132] : The test result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7cNwoQv1zovzbsTbUnj8Ud3UY\nykWwHOKm9oLT4mvIkHgTY9mhm2WEWw6YifHOiyoTp5q3lTrP2pVJFTz/aEPWJZyd\n1HfyxUXbM4mLtIvAKZxpWSYYrUT7JhJfXdKY/zEGy0KdtsNX+jk6qcVk3bLB4kOn\nXDm2g+7z847DQkfoaQIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "efbb98a7-6f1b-43fc-ac61-225a4af7d8f3"
+}
+[DEBUG] [2019-03-27 17:27:54,750] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7cNwoQv1zovzbsTbUnj8Ud3UY
+ykWwHOKm9oLT4mvIkHgTY9mhm2WEWw6YifHOiyoTp5q3lTrP2pVJFTz/aEPWJZyd
+1HfyxUXbM4mLtIvAKZxpWSYYrUT7JhJfXdKY/zEGy0KdtsNX+jk6qcVk3bLB4kOn
+XDm2g+7z847DQkfoaQIDAQAB
+-----END PUBLIC KEY-----
+ => 
+[DEBUG] [2019-03-27 17:27:54,751] logger.py [line:132] : 保存的变量值为 efbb98a7-6f1b-43fc-ac61-225a4af7d8f3 => 
+[DEBUG] [2019-03-27 17:27:54,753] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': 'bot查询接口-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch', 'json': {'BotId': '04372bfa-f0ee-4545-8ab2-42e9f69e222f', 'Content': ''}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-27 17:27:54,754] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "BotId": "04372bfa-f0ee-4545-8ab2-42e9f69e222f",
+        "Content": ""
+    },
+    "data": null,
+    "files": null
+}

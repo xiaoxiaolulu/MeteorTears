@@ -1,0 +1,13 @@
+[INFO] [2019-03-27 16:09:02,455] logger.py [line:132] : The test result is{
+    "Code": 1,
+    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCfNMDjUsFC6Pgnruq5vVthJszV\nmthbiFevddVQwInWFhMdRrbPQKzlzrpjowzD4fn8hNLenIg/172RtbHkHbPdUDMc\nMKCetpfqnof7ymsy2RIjCv6gU5IwE76PlJemJo1L2yLm0MMtvmBVK0oCmpyp4UqU\nBS64/mWOhYW3ySEPAwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "Key": "c12c344b-ec14-4d15-95ba-5fd0728e512f"
+}
+[DEBUG] [2019-03-27 16:09:02,456] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCfNMDjUsFC6Pgnruq5vVthJszV
+mthbiFevddVQwInWFhMdRrbPQKzlzrpjowzD4fn8hNLenIg/172RtbHkHbPdUDMc
+MKCetpfqnof7ymsy2RIjCv6gU5IwE76PlJemJo1L2yLm0MMtvmBVK0oCmpyp4UqU
+BS64/mWOhYW3ySEPAwIDAQAB
+-----END PUBLIC KEY-----
+ => 
+[DEBUG] [2019-03-27 16:09:02,458] logger.py [line:132] : 保存的变量值为 c12c344b-ec14-4d15-95ba-5fd0728e512f => 

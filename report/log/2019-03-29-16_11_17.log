@@ -1,0 +1,15 @@
+[INFO] [2019-03-29 16:11:17,830] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search
+[DEBUG] [2019-03-29 16:11:17,946] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字搜索- bot查询接口-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch', 'json': {'BotId': '16a600bb-e081-4346-a687-6cfe69da4280', 'Content': '我是谁'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-29 16:11:17,947] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "Content": "我是谁"
+    },
+    "data": null,
+    "files": null
+}

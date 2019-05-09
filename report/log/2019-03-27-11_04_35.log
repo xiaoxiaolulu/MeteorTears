@@ -1,0 +1,41 @@
+[INFO] [2019-03-27 11:04:35,115] logger.py [line:132] : The test result is{
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": true
+}
+[DEBUG] [2019-03-27 11:04:35,116] logger.py [line:132] : {'description': '设置开关-BotConfigId为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'Enable': False}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E'}, 'assert': {'BotConfigId': ['The BotConfigId field is required.']}, 'check_db': None}
+[INFO] [2019-03-27 11:04:35,117] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E"
+    },
+    "json": {
+        "Enable": false
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 11:04:35,365] logger.py [line:132] : The test result is{
+    "BotConfigId": [
+        "The BotConfigId field is required."
+    ]
+}
+[DEBUG] [2019-03-27 11:04:35,366] logger.py [line:132] : {'description': '设置开关-enable为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'BotConfigId': 'c7fb61ed-6a49-4a03-a74a-cfe406793bfc'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E'}, 'assert': {'Enable': ['The Enable field is required.']}, 'check_db': None}
+[INFO] [2019-03-27 11:04:35,367] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E"
+    },
+    "json": {
+        "BotConfigId": "c7fb61ed-6a49-4a03-a74a-cfe406793bfc"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 11:04:35,690] logger.py [line:132] : The test result is{
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": true
+}

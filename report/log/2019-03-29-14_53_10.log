@@ -1,0 +1,5 @@
+[INFO] [2019-03-29 14:53:10,168] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorCodes": null,
+    "Data": false
+}

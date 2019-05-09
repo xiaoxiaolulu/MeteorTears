@@ -1,0 +1,95 @@
+[INFO] [2019-03-29 15:09:03,128] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "租户域名不能为空.",
+    "ResultValue": null
+}
+[DEBUG] [2019-03-29 15:09:03,130] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字搜索- 添加关键字-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/add', 'json': {'TenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280', 'TenantDomain': 'test01@testbot.hightalk.ai', 'AnsWer': '57656765', 'KeyWord': 'wud2z3i1', 'CreateUserId': None, 'CreateUserName': 'testbot'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-29 15:09:03,132] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/add",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "AnsWer": "57656765",
+        "KeyWord": "wud2z3i1",
+        "CreateUserId": null,
+        "CreateUserName": "testbot"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:09:03,307] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "关键字[wud2z3i1]重复",
+    "ResultValue": null
+}
+[DEBUG] [2019-03-29 15:09:03,310] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字搜索- 添加关键字-keyword不超过三个', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/add', 'json': {'TenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280', 'TenantDomain': 'test01@testbot.hightalk.ai', 'AnsWer': '57656765', 'KeyWord': 'wud23i1&3213&321321&321321', 'CreateUserId': None, 'CreateUserName': 'testbot'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 0}, 'check_db': None}
+[INFO] [2019-03-29 15:09:03,311] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/add",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "AnsWer": "57656765",
+        "KeyWord": "wud23i1&3213&321321&321321",
+        "CreateUserId": null,
+        "CreateUserName": "testbot"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:09:03,490] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "关键字只能由汉字、字母（大小）、数字组合,每个关键字以'&'符号进行分隔,关键字数量不能超过3个.",
+    "ResultValue": null
+}
+[DEBUG] [2019-03-29 15:09:03,492] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字搜索- 添加关键字-keyword分隔符', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/add', 'json': {'TenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280', 'TenantDomain': 'test01@testbot.hightalk.ai', 'AnsWer': '57656765', 'KeyWord': 'wud23i1|31232', 'CreateUserId': None, 'CreateUserName': 'testbot'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 0}, 'check_db': None}
+[INFO] [2019-03-29 15:09:03,493] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/add",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "AnsWer": "57656765",
+        "KeyWord": "wud23i1|31232",
+        "CreateUserId": null,
+        "CreateUserName": "testbot"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:09:03,920] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "关键字只能由汉字、字母（大小）、数字组合,每个关键字以'&'符号进行分隔,关键字数量不能超过3个.",
+    "ResultValue": null
+}
+[DEBUG] [2019-03-29 15:09:03,922] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字搜索- 添加关键字-CreateUserName为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/add', 'json': {'TenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'BotId': '16a600bb-e081-4346-a687-6cfe69da4280', 'TenantDomain': 'test01@testbot.hightalk.ai', 'AnsWer': '57656765', 'KeyWord': 'wud2i1', 'CreateUserId': None}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'ErrorMsg': '创建者姓名不能为空.'}, 'check_db': None}
+[INFO] [2019-03-29 15:09:03,923] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/add",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "TenantId": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "AnsWer": "57656765",
+        "KeyWord": "wud2i1",
+        "CreateUserId": null
+    },
+    "data": null,
+    "files": null
+}

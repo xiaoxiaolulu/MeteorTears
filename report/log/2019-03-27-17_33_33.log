@@ -1,0 +1,24 @@
+[INFO] [2019-03-27 17:33:33,678] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_kqa_bot_bot_list
+[INFO] [2019-03-27 17:33:33,679] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_kqa_bot_bot_list_required_verify_TenantId
+[INFO] [2019-03-27 17:33:33,680] logger.py [line:132] : 测试用例已自动生成完毕, 文件: CreateBot.py -> 具体测试用例:test_kqa_bot_create_bot
+[INFO] [2019-03-27 17:33:33,682] logger.py [line:132] : 测试用例已自动生成完毕, 文件: CreateBot.py -> 具体测试用例:test_kqa_bot_create_bot_required_verify_botid
+[INFO] [2019-03-27 17:33:33,683] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetPublicKey.py -> 具体测试用例:test_get_public_key
+[INFO] [2019-03-27 17:33:33,685] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search
+[INFO] [2019-03-27 17:33:33,686] logger.py [line:132] : 测试用例已自动生成完毕, 文件: ValidateToken.py -> 具体测试用例:test_validate_token
+[DEBUG] [2019-03-27 17:33:33,808] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '获取机器人列表', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist', 'json': {'TenantId': 'a719682c-addf-4c73-9ece-ff78cd91241f', 'Description': 'test', 'SearchStatus': 0, 'PageIndex': 1, 'PageSize': 5}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E'}, 'assert': {'Status': 1}, 'res_index': ['RecordId'], 'check_db': None}
+[INFO] [2019-03-27 17:33:33,809] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "B921597A20570510DB8789D6C3DA672194A29A726290F08ED36AF907CC9E6C3E"
+    },
+    "json": {
+        "TenantId": "a719682c-addf-4c73-9ece-ff78cd91241f",
+        "Description": "test",
+        "SearchStatus": 0,
+        "PageIndex": 1,
+        "PageSize": 5
+    },
+    "data": null,
+    "files": null
+}

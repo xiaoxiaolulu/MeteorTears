@@ -1,0 +1,26 @@
+[INFO] [2019-03-29 15:19:59,227] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorCodes": null,
+    "Data": false
+}
+[DEBUG] [2019-03-29 15:19:59,229] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token', 'BotId'], 'description': '关键字搜索- 关键字重复校验', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/verifyDuplicated', 'json': {'TenantId"': '928d2511-6783-43c2-bde5-dcf059f55710', 'BotId"': '16a600bb-e081-4346-a687-6cfe69da4280', 'TenantDomain': 'test01@testbot.hightalk.ai', 'KeyWord': '苹果'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-29 15:19:59,230] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/keyword/KQA/verifyDuplicated",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02"
+    },
+    "json": {
+        "TenantId\"": "928d2511-6783-43c2-bde5-dcf059f55710",
+        "BotId\"": "16a600bb-e081-4346-a687-6cfe69da4280",
+        "TenantDomain": "test01@testbot.hightalk.ai",
+        "KeyWord": "苹果"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-29 15:19:59,380] logger.py [line:132] : The test.json result is{
+    "Status": 0,
+    "ErrorMsg": "BotId不是有效guid,租户id不是有效guid.",
+    "ResultValue": null
+}

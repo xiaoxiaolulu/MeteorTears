@@ -1,0 +1,86 @@
+[INFO] [2019-03-27 11:15:04,205] logger.py [line:132] : The test result is{
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": {
+        "ID": "46f65dfe-7149-43f4-925c-25cc6edccd0e",
+        "BotConfigId": "c7fb61ed-6a49-4a03-a74a-cfe406793bfc",
+        "ServiceName": "KQA",
+        "Parameters": "https://192.168.1.103:10037/api/admin/keyword/KQA/search",
+        "ServiceType": null,
+        "Enable": false,
+        "Status": 1
+    }
+}
+[DEBUG] [2019-03-27 11:15:04,206] logger.py [line:132] : {'description': '获取kqa服务信息-缺少BotConfigId', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/Get', 'json': {'BotConfigId': ''}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E'}, 'assert': {'BotConfigId': ['The BotConfigId field is required.']}, 'check_db': None}
+[INFO] [2019-03-27 11:15:04,207] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/Get",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E"
+    },
+    "json": {
+        "BotConfigId": ""
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 11:15:04,362] logger.py [line:132] : The test result is{
+    "BotConfigId": [
+        "The BotConfigId field is required."
+    ]
+}
+[DEBUG] [2019-03-27 11:15:04,363] logger.py [line:132] : {'description': '设置开关-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'BotConfigId': 'c7fb61ed-6a49-4a03-a74a-cfe406793bfc', 'Enable': False}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E'}, 'assert': {'Status': 1}, 'check_db': None}
+[INFO] [2019-03-27 11:15:04,364] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E"
+    },
+    "json": {
+        "BotConfigId": "c7fb61ed-6a49-4a03-a74a-cfe406793bfc",
+        "Enable": false
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 11:15:04,558] logger.py [line:132] : The test result is{
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": true
+}
+[DEBUG] [2019-03-27 11:15:04,558] logger.py [line:132] : {'description': '设置开关-BotConfigId为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'Enable': False}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E'}, 'assert': {'BotConfigId': ['The BotConfigId field is required.']}, 'check_db': None}
+[INFO] [2019-03-27 11:15:04,559] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E"
+    },
+    "json": {
+        "Enable": false
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 11:15:04,710] logger.py [line:132] : The test result is{
+    "BotConfigId": [
+        "The BotConfigId field is required."
+    ]
+}
+[DEBUG] [2019-03-27 11:15:04,710] logger.py [line:132] : {'description': '设置开关-enable为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable', 'json': {'BotConfigId': 'c7fb61ed-6a49-4a03-a74a-cfe406793bfc'}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E'}, 'assert': {'Enable': ['The Enable field is required.']}, 'check_db': None}
+[INFO] [2019-03-27 11:15:04,711] logger.py [line:132] : 接受POST的请求参数为{
+    "url": "https://192.168.1.104:10033/api/admin/portal/KQA/UpdateEnable",
+    "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Token": "C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E"
+    },
+    "json": {
+        "BotConfigId": "c7fb61ed-6a49-4a03-a74a-cfe406793bfc"
+    },
+    "data": null,
+    "files": null
+}
+[INFO] [2019-03-27 11:15:04,909] logger.py [line:132] : The test result is{
+    "Status": 1,
+    "ErrorCodes": null,
+    "Data": true
+}

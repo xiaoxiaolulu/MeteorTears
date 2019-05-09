@@ -1,0 +1,3 @@
+[INFO] [2019-03-27 17:21:02,953] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetBotList.py -> 具体测试用例:test_kqa_bot_bot_list
+[INFO] [2019-03-27 17:21:02,955] logger.py [line:132] : 测试用例已自动生成完毕, 文件: GetPublicKey.py -> 具体测试用例:test_get_public_key
+[INFO] [2019-03-27 17:21:02,957] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search

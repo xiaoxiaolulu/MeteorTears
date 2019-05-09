@@ -1,0 +1,2 @@
+[DEBUG] [2019-03-27 14:23:32,111] logger.py [line:132] : 临时变量文件已自动生成完毕, 文件: PublicKey.py -> 具体变量文件:public_key
+[DEBUG] [2019-03-27 14:23:32,114] logger.py [line:132] : {'description': 'bot查询接口-成功', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/keyword/KQA/botsearch', 'json': {'BotId': '04372bfa-f0ee-4545-8ab2-42e9f69e222f', 'Content': ''}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': 'C5FC812291A42ED477D1FBAC27E199F6DDF5F440C352E623CFB303EE027B4A9E'}, 'assert': {'Status': 1}, 'check_db': None}

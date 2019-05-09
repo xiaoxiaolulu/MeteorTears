@@ -1,0 +1,6 @@
+[INFO] [2019-03-27 14:38:59,928] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search
+[INFO] [2019-03-27 14:38:59,929] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaGet.py -> 具体测试用例:test_kqa_get
+[INFO] [2019-03-27 14:38:59,930] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaGet.py -> 具体测试用例:test_kqa_get_required_verify
+[INFO] [2019-03-27 14:38:59,932] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable
+[INFO] [2019-03-27 14:38:59,933] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable_required_verify_botId
+[INFO] [2019-03-27 14:38:59,934] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaUpdateEnable.py -> 具体测试用例:test_kqa_update_enable_required_verify_enable
