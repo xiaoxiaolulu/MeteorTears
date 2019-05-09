@@ -7103,17 +7103,7 @@ body.skin-3 {
 <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.min.js"></script>
 <script src="https://cdn.bootcss.com/chosen/1.8.2/chosen.jquery.js"></script>
 <script type="text/javascript">
-    var resultData = {
-    "testPass": 0,
-    "testResult": [],
-    "testName": "HighTalkReport",
-    "testAll": 0,
-    "testFail": 0,
-    "beginTime": "2019-05-09 15:04:22",
-    "totalTime": "0s",
-    "testSkip": 0,
-    "testError": 0
-};
+    var resultData = ${resultData};
     function details(obj) {
         if ($(obj).text() == '展开') {
             var len = $(obj).parent().parent().children().length;

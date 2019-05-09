@@ -4,8 +4,6 @@ python:
 install:
   - pip install pipenv --upgrade-strategy=only-if-needed
   - pipenv install --dev --skip-lock
-  - git clone https://github.com/TesterlifeRaymond/BeautifulReport
-  - cp -R /home/travis/virtualenv/python3.6.3/lib/python3.6/site-packages
 script:
   - pipenv run coverage run run.py
 after_success:

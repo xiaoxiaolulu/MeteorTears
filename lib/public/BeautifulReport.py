@@ -40,7 +40,6 @@ stdout_redirector = OutputRedirector(sys.stdout)
 stderr_redirector = OutputRedirector(sys.stderr)
 
 SYSSTR = platform.system()
-SITE_PAKAGE_PATH = get_python_lib()
 
 FIELDS = {
     "testPass": 0,
@@ -57,7 +56,7 @@ FIELDS = {
 
 class PATH:
     """ all file PATH meta """
-    config_tmp_path = SITE_PAKAGE_PATH + '/BeautifulReport/template/template'
+    config_tmp_path = './lib/template/report_template'
 
 
 class MakeResultJson:
