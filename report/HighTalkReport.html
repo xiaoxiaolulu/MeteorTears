@@ -7107,10 +7107,46 @@ body.skin-3 {
     "testPass": 1,
     "testResult": [
         {
+            "className": "AGetBotList",
+            "methodName": "test_bot_list",
+            "description": "获取机器人列表",
+            "spendTime": "0.398 s",
+            "status": "失败",
+            "log": [
+                "F:\\MeteorTears\\lib\\public\\wraps.py:82: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.\n  _relevance.update(yaml.load(file))\n[DEBUG] [2019-05-09 13:56:35,167] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '获取机器人列表', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist', 'json': {'PageIndex': 1, 'PageSize': 10, 'tenantId': '928d2511-6783-43c2-bde5-dcf059f55710', 'description': None, 'searchStatus': 0}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'Status': 1}, 'res_index': ['RecordId'], 'check_db': None}\n[INFO] [2019-05-09 13:56:35,170] logger.py [line:132] : 接受POST的请求参数为{\n    \"url\": \"https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist\",\n    \"headers\": {\n        \"Content-Type\": \"application/json; charset=utf-8\",\n        \"Access-Token\": \"5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02\"\n    },\n    \"json\": {\n        \"PageIndex\": 1,\n        \"PageSize\": 10,\n        \"tenantId\": \"928d2511-6783-43c2-bde5-dcf059f55710\",\n        \"description\": null,\n        \"searchStatus\": 0\n    },\n    \"data\": null,\n    \"files\": null\n}\n[INFO] [2019-05-09 13:56:35,558] logger.py [line:132] : The test.json result is{\n    \"Status\": 0,\n    \"ErrorCodes\": [\n        {\n            \"ErrorCode\": \"\",\n            \"ErrorMessage\": \"token验证失败\"\n        }\n    ],\n    \"Data\": 0\n}\n[DEBUG] [2019-05-09 13:56:35,559] logger.py [line:132] : 保存的变量值为 None => \n",
+                "Traceback (most recent call last):\n",
+                "  File \"c:\\users\\56464\\appdata\\local\\programs\\python\\python36\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"c:\\users\\56464\\appdata\\local\\programs\\python\\python36\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"F:\\MeteorTears\\lib\\public\\wraps.py\", line 119, in wrap\n    db_check=items.get('body').get('check_db')\n",
+                "  File \"F:\\MeteorTears\\lib\\public\\wraps.py\", line 162, in wrap\n    kwassert_value=kwassert_value\n",
+                "  File \"F:\\MeteorTears\\lib\\test_cases\\AGetBotList.py\", line 35, in test_bot_list\n    self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))\n",
+                "  File \"c:\\users\\56464\\appdata\\local\\programs\\python\\python36\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"c:\\users\\56464\\appdata\\local\\programs\\python\\python36\\lib\\unittest\\case.py\", line 1202, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n",
+                "  File \"c:\\users\\56464\\appdata\\local\\programs\\python\\python36\\lib\\unittest\\case.py\", line 670, in fail\n    raise self.failureException(msg)\n",
+                "AssertionError: '{\"Status\": 0}' != '{\"Status\": 1}'\n- {\"Status\": 0}\n?            ^\n+ {\"Status\": 1}\n?            ^\n\n"
+            ]
+        },
+        {
+            "className": "AGetBotList",
+            "methodName": "test_bot_list_required_verify_TenantId",
+            "description": "获取机器人列表-TenantId为空",
+            "spendTime": "0.0688 s",
+            "status": "失败",
+            "log": [
+                "[DEBUG] [2019-05-09 13:56:35,565] logger.py [line:132] : {'relevant_parameter': ['Host', 'Access-Token'], 'description': '获取机器人列表-TenantId为空', 'method': 'post', 'url': 'https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist', 'json': {'PageIndex': 1, 'PageSize': 10, 'description': None, 'searchStatus': 0}, 'headers': {'Content-Type': 'application/json; charset=utf-8', 'Access-Token': '5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02'}, 'assert': {'TenantId': ['The TenantId field is required.']}, 'check_db': None}\n[INFO] [2019-05-09 13:56:35,566] logger.py [line:132] : 接受POST的请求参数为{\n    \"url\": \"https://192.168.1.104:10033/api/admin/portal/botmanager/getbotlist\",\n    \"headers\": {\n        \"Content-Type\": \"application/json; charset=utf-8\",\n        \"Access-Token\": \"5F9140635BC53F2947FFD48309AC23C04C95B9E0D9B8F4C4142C3533BEC90B02\"\n    },\n    \"json\": {\n        \"PageIndex\": 1,\n        \"PageSize\": 10,\n        \"description\": null,\n        \"searchStatus\": 0\n    },\n    \"data\": null,\n    \"files\": null\n}\n[INFO] [2019-05-09 13:56:35,629] logger.py [line:132] : The test.json result is{\n    \"Status\": 0,\n    \"ErrorCodes\": [\n        {\n            \"ErrorCode\": \"\",\n            \"ErrorMessage\": \"token验证失败\"\n        }\n    ],\n    \"Data\": 0\n}\n",
+                "Traceback (most recent call last):\n",
+                "  File \"c:\\users\\56464\\appdata\\local\\programs\\python\\python36\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"c:\\users\\56464\\appdata\\local\\programs\\python\\python36\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"F:\\MeteorTears\\lib\\public\\wraps.py\", line 119, in wrap\n    db_check=items.get('body').get('check_db')\n",
+                "  File \"F:\\MeteorTears\\lib\\public\\wraps.py\", line 146, in wrap\n    result[key] = response[key]\n",
+                "KeyError: 'TenantId'\n"
+            ]
+        },
+        {
             "className": "Ksqa",
             "methodName": "test_ks_qa",
             "description": "快速问答某接口",
-            "spendTime": "0.0 s",
+            "spendTime": "0.000997 s",
             "status": "成功",
             "log": [
                 ""
@@ -7118,9 +7154,9 @@ body.skin-3 {
         }
     ],
     "testName": "HighTalkReport",
-    "testAll": 1,
-    "testFail": 0,
-    "beginTime": "2019-05-08 16:09:28",
+    "testAll": 3,
+    "testFail": 2,
+    "beginTime": "2019-05-09 13:56:35",
     "totalTime": "0s",
     "testSkip": 0,
     "testError": 0

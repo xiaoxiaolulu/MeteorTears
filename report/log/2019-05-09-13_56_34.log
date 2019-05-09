@@ -1,0 +1,2 @@
+[INFO] [2019-05-09 13:56:34,761] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_bot_list
+[INFO] [2019-05-09 13:56:34,764] logger.py [line:132] : 测试用例已自动生成完毕, 文件: AGetBotList.py -> 具体测试用例:test_bot_list_required_verify_TenantId
