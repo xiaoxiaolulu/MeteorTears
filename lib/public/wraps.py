@@ -129,16 +129,17 @@ def result_assert(func):
         tmp = tuple(kwassert.keys())
         result = GetJsonParams.for_keys_to_dict(*tmp, my_dict=response)
         for key, value in kwassert.items():
-            if isinstance(value, list) and len(value) > 1:
-                tp, _ = value
-                if tp == "type" and key == "responseType":
+
+            if isinstance(value, list):
+                tp, _value = value
+                if tp == "type" and key == "ResponseType":
                     result[key] = [tp, repr(getattr(builtins, tp)(response)).split("'")[1]]
                 elif tp == "type":
                     result[key] = [tp, repr(getattr(builtins, tp)(result.get(key))).split("'")[1]]
+                elif tp == "len":
+                    result[key] = [tp, repr(getattr(builtins, tp)(result.get(key)))]
                 else:
                     result[key] = [tp, getattr(builtins, tp)(result.get(key))]
-            else:
-                result[key] = response[key]
 
         expect_assert_value = json.dumps(
             result,

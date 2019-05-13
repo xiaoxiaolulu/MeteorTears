@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/1.json">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/README.md">
           <value>
             <set />
@@ -79,6 +84,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/run.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../项目资料/测试脚本/doraemon-master/src/lib/BeautifulReport.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../项目资料/测试脚本/doraemon-master/src/testcases/TestGithubApi.py">
           <value>
             <set />
           </value>
