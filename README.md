@@ -11,33 +11,48 @@ Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接�
 2. 用例编写使用Yaml文件
 3. 支持上下游接口参数关联，提取
 4. 接口返回体多字段, Type断言, len断言
-5. 数据落库校验
-6. 接口录制功能
-7. 微信，邮件告警
-8. 真正做到人人都能自动化，无需写一行代码，分分钟上手。
+5. 落库校验，支持多个字段
+6. 数据落库校验
+7. 接口录制功能
+8. 微信，邮件告警
 
 
 #### 用例编写(Yaml文件管理)
 ```yaml
-test_get_public_key:
-  relevant_parameter: [Host]
-  relevant_sql: search_all_tenant_conf
-  description: "获取公钥"
-  method: get
-  url: ${Host}$/api/auth/getpublickey
+test_update_bot_baseinfo:
+  relevant_parameter: [Host, Token]
+  relevant_sql: [bot_profile, bot_prs]
+  description: "更新机器人"
+  method: post
+  url: ${Host}$/api/admin/bot/botprofile/updatebotbaseinfo
+  json:
+    BotConfigId: 8e0b6707-bcc6-4c4c-b072-80b169003804
+    Bot_Name: Null
+    Bot_Gender: 女
+    Bot_DayOfBirth: "2019-03-08"
+    Bot_Constellation: 双鱼座
+    Bot_BloodType: AB
+    Bot_Birthplace: 上海-上海
+    Bot_Height: 165
+    Bot_Weight: 50
+    Bot_Company: 骨灰级
+    Bot_School: 上海灵羚科技有限公司
+    ID: 273d8a2a-9b0e-4582-b13b-0a60f103f621
+    CreateDate: ""
+    UpdateDate: ""
+    CreateUserId: ""
+    CreateUserName: ""
+    UpdateUserId": ""
+    UpdateUserName: ""
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Access-Token: ${Token}$
   assert:
-    Code: 1
-    ResponseType: [
-      "type",
-      "dict"
-    ]
-    Key: [
-      "len",
-      "36"
-    ]
-  res_index: [RsaPublicKey, Key]
+    Status: 1
+    Data: true
   check_db:
-    TenantName: TESTRLBC
+    Bot_Name: test
+    Bot_Constellation: 水瓶座
 ```
 key | value | example
 ------------ | -------------| ----------------
@@ -75,6 +90,17 @@ assert:
         len,
         8]
 ```
+
+##### 落库校验
+1. 用例头写入关联的sql文件 relevant_sql: [bot_profile, bot_prs]
+```text
+relevant_sql: [bot_profile, bot_prs]
+check_db:
+    Bot_Name: test
+    Bot_Constellation: 水瓶座
+```
+
+
 #### Mysql执行语句编写
 ```yaml
 - ChannelBudget:
