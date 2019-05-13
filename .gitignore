@@ -162,3 +162,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+.idea/fileTemplates/
+lib/static/

@@ -10,33 +10,32 @@ Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接�
 1. 数据管理使用Yaml文件
 2. 用例编写使用Yaml文件
 3. 支持上下游接口参数关联，提取
-4. 接口返回体多字段, Type断言
+4. 接口返回体多字段, Type断言, len断言
 5. 数据落库校验
 6. 接口录制功能
-7. 接口性能(待开发，敬请期待)
-8. 微信，邮件告警
-9. 真正做到人人都能自动化，无需写一行代码，分分钟上手。
+7. 微信，邮件告警
+8. 真正做到人人都能自动化，无需写一行代码，分分钟上手。
 
 
 #### 用例编写(Yaml文件管理)
 ```yaml
 test_get_public_key:
-  # 上下游关联的参数文件名
   relevant_parameter: [Host]
-  # 此接口落库的sql语句
   relevant_sql: search_all_tenant_conf
-  # 测试用例名称
   description: "获取公钥"
-  # 请求方式
   method: get
-  # 请求路由
   url: ${Host}$/api/auth/getpublickey
-  # 接口断言
   assert:
     Code: 1
-  # 提取测试接口Response返回参数
+    ResponseType: [
+      "type",
+      "dict"
+    ]
+    Key: [
+      "len",
+      "36"
+    ]
   res_index: [RsaPublicKey, Key]
-  # 落库校验
   check_db:
     TenantName: TESTRLBC
 ```
