@@ -28,12 +28,67 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/A003_validate_token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/A004_remove_token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/A_get_bot_list.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/B002_create_bot.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/HT.Api.Auth.Service/ValidateToken.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/HT.Api.Auth.Service/validatelogin.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/get_public_key.yaml">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/update_bot_baseinfo.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/updatebotbaseinfo.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/validate_token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/config/path.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/bot_profile.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/bot_prs.yaml">
           <value>
             <set />
           </value>
@@ -63,6 +118,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/public/load_cases.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/public/wraps.py">
           <value>
             <set />
@@ -73,7 +133,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/utils/fp.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/utils/use_SqlServer.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/relevant_params/Token.yaml">
           <value>
             <set />
           </value>
@@ -93,7 +163,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/skip/A_get_bot_list.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/test.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/update_log.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/大.json">
           <value>
             <set />
           </value>

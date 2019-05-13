@@ -1,0 +1,16 @@
+# 登录成功接口, 供所有接口提取Token参数依赖, Token值来源为后台, 个人信息无法使用此类Token
+# 后门方式入参, 正常流程获取公钥接口中Key和RsaPublic再调用加密接口，通过RSA加密后的密码入参
+# Created By Null
+# Create Date Time 2019-05-13
+test_validate_login:
+  relevant_parameter: [Host]
+  description: "登录成功"
+  method: post
+  url: ${Host}$/api/auth/validatelogin
+  json:
+    Account: 062E4604BD48485AB63DBC16899640EB
+    Password: 75A98A08965D48079F565EA561AF37F6
+    TokenSource: APP2BFE4250D27C443FBBD5FD6D6EA0C631
+  assert:
+    Status: 1
+  res_index: [Token]

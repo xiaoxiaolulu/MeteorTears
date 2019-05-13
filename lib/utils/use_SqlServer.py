@@ -73,7 +73,7 @@ class ExecuteSQL(GetJsonParams):
 
 if __name__ == '__main__':
     DataBaseSetting = {
-        'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotTenant-TEST'
+        'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotAdmin-TEST'
     }
     EX = ExecuteSQL(DataBaseSetting)
-    print(EX.execute("""SELECT * FROM [dbo].[Tenant_Info]"""))
+    print(EX.execute("""SELECT Bot_Name FROM [dbo].[Tenant_Bot_Profile] WHERE Bot_Name = 'Null'"""))

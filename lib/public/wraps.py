@@ -14,7 +14,7 @@ from lib.public.case_manager import TestContainer
 
 
 DataBaseSetting = {
-    'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotTenant-TEST'
+    'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotAdmin-TEST'
 }
 
 
@@ -84,30 +84,54 @@ def cases_runner(func):
                                     file.write('{}: {}'.format(res_index, return_res))
 
                         # 验证接口请求数据是否落库
+                        excep_columns, res_sql = {}, {}
                         relevant_database = items.get('body').get('relevant_sql')
                         if relevant_database:
 
-                            filename = relevant_database + '.yaml'
+                            if isinstance(relevant_database, str):
 
-                            relevant_sql = {}
-                            with open(setting.DATA_PATH + filename, 'rb') as file:
-                                relevant_sql.update(yaml.load(file, Loader=yaml.FullLoader))
+                                filename = relevant_database + '.yaml'
 
-                            action = relevant_sql[relevant_database]['action']
-                            columns = relevant_sql[relevant_database]['execSQL']['columns']
-                            table = relevant_sql[relevant_database]['execSQL']['table']
-                            params = relevant_sql[relevant_database]['execSQL']['params']
-                            desc = relevant_sql[relevant_database]['execSQL']['desc']
-                            execute_sql = '{} {} FROM {} {} {}'.format(action, columns, table, params, desc)
+                                relevant_sql = {}
+                                with open(setting.DATA_PATH + filename, 'rb') as file:
+                                    relevant_sql.update(yaml.load(file, Loader=yaml.FullLoader))
 
-                            execute_res = ExecuteSQL(DataBaseSetting).execute(execute_sql)
-                            logger.log_debug('执行sql结果为{}'.format(execute_res))
+                                action = relevant_sql[relevant_database]['action']
+                                columns = relevant_sql[relevant_database]['execSQL']['columns']
+                                table = relevant_sql[relevant_database]['execSQL']['table']
+                                params = relevant_sql[relevant_database]['execSQL']['params']
+                                desc = relevant_sql[relevant_database]['execSQL']['desc']
+                                execute_sql = '{} {} FROM {} {} {}'.format(action, columns, table, params, desc)
+                                execute_res = ExecuteSQL(DataBaseSetting).execute(execute_sql)[0][0]
+
+                                res_sql.update({columns: execute_res})
+                                logger.log_debug('执行sql结果为{}'.format(execute_res))
+
+                            if isinstance(relevant_database, list):
+
+                                for relevant_db in relevant_database:
+
+                                    filename = relevant_db + '.yaml'
+
+                                    relevant_sql = {}
+                                    with open(setting.DATA_PATH + filename, 'rb') as file:
+                                        relevant_sql.update(yaml.load(file, Loader=yaml.FullLoader))
+
+                                    action = relevant_sql[relevant_db]['action']
+                                    columns = relevant_sql[relevant_db]['execSQL']['columns']
+                                    table = relevant_sql[relevant_db]['execSQL']['table']
+                                    params = relevant_sql[relevant_db]['execSQL']['params']
+                                    desc = relevant_sql[relevant_db]['execSQL']['desc']
+                                    execute_sql = '{} {} FROM {} {} {}'.format(action, columns, table, params, desc)
+                                    execute_res = ExecuteSQL(DataBaseSetting).execute(execute_sql)[0][0]
+
+                                    res_sql.update({columns: execute_res})
+                                    logger.log_debug('执行sql结果为{}'.format(execute_res))
 
                             return func(
                                 *args,
                                 response=result,
-                                columns=columns,
-                                execute_res=execute_res,
+                                execute_res=res_sql,
                                 kwassert=items.get('body').get('assert'),
                                 db_check=items.get('body').get('check_db')
                             )
@@ -122,12 +146,12 @@ def result_assert(func):
 
         response = kwargs.get('response')
         kwassert = kwargs.get('kwassert')
-        assert_columns = kwargs.get('columns')
-        database_check = kwargs.get('db_check')[assert_columns]
-        execute_res = kwargs.get('execute_res')[0][0]
+        database_check = kwargs.get('db_check')
+        execute_res = kwargs.get('execute_res')
 
         tmp = tuple(kwassert.keys())
         result = GetJsonParams.for_keys_to_dict(*tmp, my_dict=response)
+
         for key, value in kwassert.items():
 
             if isinstance(value, list):

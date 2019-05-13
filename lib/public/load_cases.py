@@ -29,7 +29,7 @@ class LoadCase(object):
         :Usage:
             __get_files_name
         """
-        return os.listdir(self.path)
+        return fp.iter_files(self.path, otype='name')
 
     def load_files(self) -> list:
         """

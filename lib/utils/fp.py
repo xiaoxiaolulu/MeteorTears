@@ -2,10 +2,11 @@
 import os
 
 
-def iter_files(path: str) -> list:
+def iter_files(path: str, otype='path') -> list:
     r"""
     Returns a list of all files in the file directory path.
     :param path: file path, str object.
+    :param otype: out params type, str object default path.
     :return: files path list.
     :rtype: list object
     """
@@ -22,7 +23,7 @@ def iter_files(path: str) -> list:
             for items in all_files:
                 files = os.path.join(path, items)
                 if os.path.isfile(files):
-                    filename.append(files)
+                    filename.append(files) if otype == 'path' else filename.append(items)
                 else:
                     iterate_files(files)
         except (FileNotFoundError, AttributeError, BytesWarning, IOError, FileExistsError):

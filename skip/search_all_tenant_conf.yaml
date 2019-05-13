@@ -1,0 +1,7 @@
+search_all_tenant_conf:
+  action: SELECT
+  execSQL:
+    table: "[dbo].[Tenant_Info]"
+    columns: TenantName
+    params: WHERE ID = '0005d3d4-be10-4a3a-b7e3-1964e1c72c45'
+    desc: ""

@@ -1,6 +1,6 @@
 test_bot_list:
   # 关联变量文件
-  relevant_parameter: [Host, Access-Token]
+  relevant_parameter: [Host, Token]
   description: "获取机器人列表"
   method: post
   url: ${Host}$/api/admin/portal/botmanager/getbotlist
@@ -12,15 +12,14 @@ test_bot_list:
     searchStatus: 0
   headers:
     Content-Type: application/json; charset=utf-8
-    Access-Token: ${Access-Token}$
+    Access-Token: ${Token}$
   assert:
     Status: 1
   # 提取Response体返回字段，存入Public_res文件，方便后面接口关联变量调用
   res_index: [RecordId]
-  check_db:
 
 test_bot_list_required_verify_TenantId:
-  relevant_parameter: [Host, Access-Token]
+  relevant_parameter: [Host, Token]
   description: "获取机器人列表-TenantId为空"
   method: post
   url: ${Host}$/api/admin/portal/botmanager/getbotlist
@@ -31,9 +30,8 @@ test_bot_list_required_verify_TenantId:
     searchStatus: 0
   headers:
     Content-Type: application/json; charset=utf-8
-    Access-Token: ${Access-Token}$
+    Access-Token: ${Token}$
   assert:
     TenantId: [
       "The TenantId field is required."
     ]
-  check_db:
