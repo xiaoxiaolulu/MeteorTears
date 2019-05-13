@@ -70,7 +70,7 @@ def cases_runner(func):
                                 for res_key in res_index:
                                     return_res = GetJsonParams.get_value(result, res_key)
                                     file_name = setting.PUBLIC_RES + res_key
-                                    logger.log_debug('保存的变量值为 {} => '.format(return_res))
+                                    logger.log_debug('保存的变量值为 => {} '.format(return_res))
 
                                     with open(file_name + '.yaml', 'w', encoding='utf-8') as file:
                                         file.write('{}: {}'.format(res_key, return_res))

@@ -7104,33 +7104,43 @@ body.skin-3 {
 <script src="https://cdn.bootcss.com/chosen/1.8.2/chosen.jquery.js"></script>
 <script type="text/javascript">
     var resultData = {
-    "testPass": 0,
+    "testPass": 1,
     "testResult": [
         {
             "className": "GetPublicKey",
             "methodName": "test_get_public_key",
             "description": "获取公钥",
-            "spendTime": "0.763 s",
-            "status": "失败",
+            "spendTime": "0.834 s",
+            "status": "成功",
             "log": [
-                "[DEBUG] [2019-05-13 13:04:52,628] logger.py [line:132] : {'relevant_parameter': ['Host'], 'relevant_sql': 'search_all_tenant_conf', 'description': '获取公钥', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/auth/getpublickey', 'assert': {'Code': 1, 'ResponseType': ['type', 'dict'], 'Key': ['len', '37']}, 'res_index': ['RsaPublicKey', 'Key'], 'check_db': {'TenantName': 'TESTRLBC'}}\n[INFO] [2019-05-13 13:04:52,630] logger.py [line:132] : 接受GET的请求参数为{\n    \"url\": \"https://192.168.1.104:10033/api/auth/getpublickey\",\n    \"params\": null,\n    \"headers\": null\n}\n[INFO] [2019-05-13 13:04:53,297] logger.py [line:132] : The test.json result is{\n    \"Code\": 1,\n    \"RsaPublicKey\": \"-----BEGIN PUBLIC KEY-----\\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOs197fisD+SpzPW2kbgyrT/VS\\nSSVy57TDhBVukjFhXu1e91q90hwtXqyyZJn5nZO2JeQJ60OKbCbNOD3C6mZQp4QD\\n++VVWe8qD0Dq6qprL1NHzXGcpaae0bOvp1qagmzbxbs1DE0q5uTMlXj1Ass75KQi\\nl0+TKdtx9uRDVX4qjQIDAQAB\\n-----END PUBLIC KEY-----\\n\",\n    \"Key\": \"e5c12528-8a40-439e-bd73-607b0809fd3c\"\n}\n[DEBUG] [2019-05-13 13:04:53,298] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOs197fisD+SpzPW2kbgyrT/VS\nSSVy57TDhBVukjFhXu1e91q90hwtXqyyZJn5nZO2JeQJ60OKbCbNOD3C6mZQp4QD\n++VVWe8qD0Dq6qprL1NHzXGcpaae0bOvp1qagmzbxbs1DE0q5uTMlXj1Ass75KQi\nl0+TKdtx9uRDVX4qjQIDAQAB\n-----END PUBLIC KEY-----\n => \n[DEBUG] [2019-05-13 13:04:53,299] logger.py [line:132] : 保存的变量值为 e5c12528-8a40-439e-bd73-607b0809fd3c => \n[DEBUG] [2019-05-13 13:04:53,386] logger.py [line:132] : 执行sql结果为[('TESTRLBC',)]\n",
-                "Traceback (most recent call last):\n",
-                "  File \"C:\\Users\\56464\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
-                "  File \"C:\\Users\\56464\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
-                "  File \"F:\\MeteorTears\\lib\\public\\wraps.py\", line 112, in wrap\n    db_check=items.get('body').get('check_db')\n",
-                "  File \"F:\\MeteorTears\\lib\\public\\wraps.py\", line 160, in wrap\n    execute_res=execute_res\n",
-                "  File \"F:\\MeteorTears\\lib\\test_cases\\GetPublicKey.py\", line 21, in test_get_public_key\n    self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))\n",
-                "  File \"C:\\Users\\56464\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
-                "  File \"C:\\Users\\56464\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 1202, in assertMultiLineEqual\n    self.fail(self._formatMessage(msg, standardMsg))\n",
-                "  File \"C:\\Users\\56464\\AppData\\Local\\Programs\\Python\\Python36\\lib\\unittest\\case.py\", line 670, in fail\n    raise self.failureException(msg)\n",
-                "AssertionError: '{\"Code\": 1, \"Key\": [\"len\", \"36\"], \"ResponseType\": [\"type\", \"dict\"]}' != '{\"Code\": 1, \"Key\": [\"len\", \"37\"], \"ResponseType\": [\"type\", \"dict\"]}'\n- {\"Code\": 1, \"Key\": [\"len\", \"36\"], \"ResponseType\": [\"type\", \"dict\"]}\n?                              ^\n+ {\"Code\": 1, \"Key\": [\"len\", \"37\"], \"ResponseType\": [\"type\", \"dict\"]}\n?                              ^\n\n"
+                "[DEBUG] [2019-05-13 13:25:40,905] logger.py [line:132] : {'relevant_parameter': ['Host'], 'relevant_sql': 'search_all_tenant_conf', 'description': '获取公钥', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/auth/getpublickey', 'assert': {'Code': 1, 'ResponseType': ['type', 'dict'], 'Key': ['len', '36']}, 'res_index': ['RsaPublicKey', 'Key'], 'check_db': {'TenantName': 'TESTRLBC'}}",
+                "[INFO] [2019-05-13 13:25:40,906] logger.py [line:132] : 接受GET的请求参数为{",
+                "    \"url\": \"https://192.168.1.104:10033/api/auth/getpublickey\",",
+                "    \"params\": null,",
+                "    \"headers\": null",
+                "}",
+                "[INFO] [2019-05-13 13:25:41,628] logger.py [line:132] : The test.json result is{",
+                "    \"Code\": 1,",
+                "    \"RsaPublicKey\": \"-----BEGIN PUBLIC KEY-----\\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq6b0bSE/4zkhHhLZ3g/Xo6i0f\\n1gjE1wUs6LRVsZUu2Dp8izAzffaXKzSTdJQk5e1RUMpJtleEabfPz+tqT2djuEwq\\n4JxjwJiuLzI3DJGGU0g2/LBhxtXOXnoqgjnvpV3EHTnoLpuYtx6FPJhWOJgTbN8N\\nxXVvmaVJmiJvalgFlwIDAQAB\\n-----END PUBLIC KEY-----\\n\",",
+                "    \"Key\": \"4d23b694-9b57-4679-b5c2-9f3443442746\"",
+                "}",
+                "[DEBUG] [2019-05-13 13:25:41,629] logger.py [line:132] : 保存的变量值为 -----BEGIN PUBLIC KEY-----",
+                "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq6b0bSE/4zkhHhLZ3g/Xo6i0f",
+                "1gjE1wUs6LRVsZUu2Dp8izAzffaXKzSTdJQk5e1RUMpJtleEabfPz+tqT2djuEwq",
+                "4JxjwJiuLzI3DJGGU0g2/LBhxtXOXnoqgjnvpV3EHTnoLpuYtx6FPJhWOJgTbN8N",
+                "xXVvmaVJmiJvalgFlwIDAQAB",
+                "-----END PUBLIC KEY-----",
+                " => ",
+                "[DEBUG] [2019-05-13 13:25:41,631] logger.py [line:132] : 保存的变量值为 4d23b694-9b57-4679-b5c2-9f3443442746 => ",
+                "[DEBUG] [2019-05-13 13:25:41,737] logger.py [line:132] : 执行sql结果为[('TESTRLBC',)]",
+                ""
             ]
         }
     ],
     "testName": "HighTalkReport",
     "testAll": 1,
-    "testFail": 1,
-    "beginTime": "2019-05-13 13:04:52",
+    "testFail": 0,
+    "beginTime": "2019-05-13 13:25:40",
     "totalTime": "1s",
     "testSkip": 0,
     "testError": 0
