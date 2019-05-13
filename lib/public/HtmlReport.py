@@ -6,7 +6,6 @@ import json
 import unittest
 import platform
 import base64
-from distutils.sysconfig import get_python_lib
 import traceback
 from functools import wraps
 

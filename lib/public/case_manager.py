@@ -6,7 +6,7 @@ from lib.public import logger
 from lib.public import load_cases
 from lib.public.Recursion import GetJsonParams
 
-LD = load_cases.LoadCase(setting.CASES_PATH)
+LD = load_cases.LoadCase(setting.CASES)
 
 
 class CreateCase(GetJsonParams):
@@ -16,9 +16,9 @@ class CreateCase(GetJsonParams):
         self.content = None
 
     def __enter__(self):
-        self.headers = open(setting.HEADER_TEMPLATE_PATH, encoding='utf-8')
+        self.headers = open(setting.HEADER, encoding='utf-8')
         self.header = self.headers.read()
-        self.content = open(setting.CONTENT_TEMPLATE_PATH, encoding='utf-8')
+        self.content = open(setting.CONTENT, encoding='utf-8')
         self.cont = self.content.read()
         return self
 
@@ -29,16 +29,14 @@ class CreateCase(GetJsonParams):
             description: str) -> None:
         """
         创建用例文件
-
         :Args:
          - classname: 类名&文件名, STR TYPE.
          - func_name: 函数方法名, STR TYPE.
          - description: 用例描述, STR TYPE.
-
         :Usage:
             make_headers_and_contents('Channel', 'add_channel', '新增渠道')
         """
-        filename = setting.TEST_CASES_PATH + class_name + '.py'
+        filename = setting.TEST_CASES + class_name + '.py'
         if not os.path.exists(filename):
             with open(filename, 'w', encoding='utf-8') as file:
                 file.write(self.header.format(class_name, class_name))
@@ -49,7 +47,6 @@ class CreateCase(GetJsonParams):
     def create_template(self) -> types.GeneratorType:
         """
         通过文件管理器Contextor创建并关闭文件
-
         :Usage:
             create_template()
         """

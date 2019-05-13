@@ -34,7 +34,7 @@ class SendMail(object):
             get_html_report()
         """
         try:
-            return setting.REPORT_PATH + 'HighTalkReport.html'
+            return setting.REPORT + 'HighTalkReport.html'
         except FileNotFoundError:
             pass
 
@@ -46,14 +46,14 @@ class SendMail(object):
             email_content()
         """
         self.msg['Subject'] = Header('SEM AUTO TEST REPORT', 'utf-8')
-        with open(setting.EMAIL_TEMPLATE_PATH, self.mode) as file:
+        with open(setting.EMAIL, self.mode) as file:
             mail_body = file.read()
         self.msg.attach(MIMEText(mail_body, _subtype='html', _charset='utf-8'))
         att1 = MIMEText(open(self.get_html_report, self.mode).read(), 'base64', 'utf-8')
         att1["Content-Type"] = 'application/octet-stream'
         att1["Content-Disposition"] = 'attachment; filename="report.html"'
         self.msg.attach(att1)
-        att2 = MIMEText(open(fp.iter_files(setting.LOG_PATH)[-1], self.mode).read(), 'base64', 'utf-8')
+        att2 = MIMEText(open(fp.iter_files(setting.LOG)[-1], self.mode).read(), 'base64', 'utf-8')
         att2["Content-Type"] = 'application/octet-stream'
         att2["Content-Disposition"] = 'attachment; filename="mar.log"'
         self.msg.attach(att2)

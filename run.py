@@ -2,6 +2,7 @@
 import os
 import click
 import unittest
+import pysnooper
 from config import setting
 from lib.utils import email
 from lib.public.case_manager import TestContainer
@@ -10,13 +11,14 @@ from lib.utils.analyze_log import WeChatAlarm
 
 
 @click.command()
-@click.option('--cases', default=setting.TEST_CASES_PATH, help="case file path")
+@click.option('--cases', default=setting.TEST_CASES, help="case file path")
 @click.option('--pattern', default='*.py', help="get cases file pattern")
 @click.option(
     '--report',
-    default=setting.REPORT_PATH,
+    default=setting.REPORT,
     help="generator report in path")
-def run(cases, pattern, report):
+@pysnooper.snoop()
+def run(cases=setting.TEST_CASES, pattern='*.py', report=setting.REPORT):
     test_suite = unittest.defaultTestLoader.discover(cases, pattern)
     result = Report(test_suite)
     result.report(filename='HighTalkReport', description='HighTalkReport', log_path=report)

@@ -1,0 +1,12 @@
+# Created By Null
+# Create Date Time 2019-05-13
+test_validate_token:
+  relevant_parameter: [Host, Token]
+  description: "token验证"
+  method: post
+  url: ${Host}$/api/Auth/ValidateToken
+  headers:
+    Access-Token: ${Token}$
+  assert:
+    Status: 1
+    IsValid: true

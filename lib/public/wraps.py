@@ -37,7 +37,7 @@ def cases_runner(func):
                         if isinstance(relevant_params, str):
                             relevant_files = relevant_params + '.yaml'
                             _relevance = {}
-                            with open(setting.PUBLIC_RES + relevant_files, 'rb') as file:
+                            with open(setting.RES + relevant_files, 'rb') as file:
                                 _relevance.update(yaml.load(file, Loader=yaml.FullLoader))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
@@ -49,7 +49,7 @@ def cases_runner(func):
                             for relevant_param in relevant_params:
 
                                 relevant_files = relevant_param + '.yaml'
-                                with open(setting.PUBLIC_RES + relevant_files, 'rb') as file:
+                                with open(setting.RES + relevant_files, 'rb') as file:
                                     _relevance.update(yaml.load(file, Loader=yaml.FullLoader))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
@@ -69,7 +69,7 @@ def cases_runner(func):
                             if isinstance(res_index, list):
                                 for res_key in res_index:
                                     return_res = GetJsonParams.get_value(result, res_key)
-                                    file_name = setting.PUBLIC_RES + res_key
+                                    file_name = setting.RES + res_key
                                     logger.log_debug('保存的变量值为 => {} '.format(return_res))
 
                                     with open(file_name + '.yaml', 'w', encoding='utf-8') as file:
@@ -77,7 +77,7 @@ def cases_runner(func):
 
                             if isinstance(res_index, str):
                                 return_res = GetJsonParams.get_value(result, res_index)
-                                file_name = setting.PUBLIC_RES + res_index
+                                file_name = setting.RES + res_index
                                 logger.log_debug('保存的变量值为 {}'.format(return_res))
 
                                 with open(file_name, 'w', encoding='utf-8') as file:
@@ -93,7 +93,7 @@ def cases_runner(func):
                                 filename = relevant_database + '.yaml'
 
                                 relevant_sql = {}
-                                with open(setting.DATA_PATH + filename, 'rb') as file:
+                                with open(setting.DATA + filename, 'rb') as file:
                                     relevant_sql.update(yaml.load(file, Loader=yaml.FullLoader))
 
                                 action = relevant_sql[relevant_database]['action']
@@ -114,7 +114,7 @@ def cases_runner(func):
                                     filename = relevant_db + '.yaml'
 
                                     relevant_sql = {}
-                                    with open(setting.DATA_PATH + filename, 'rb') as file:
+                                    with open(setting.DATA + filename, 'rb') as file:
                                         relevant_sql.update(yaml.load(file, Loader=yaml.FullLoader))
 
                                     action = relevant_sql[relevant_db]['action']

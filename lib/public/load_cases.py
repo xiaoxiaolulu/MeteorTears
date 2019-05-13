@@ -1,6 +1,4 @@
 # -*- coding:utf-8 -*-
-import os
-import json
 import yaml
 from lib.utils import fp
 from lib.public import logger

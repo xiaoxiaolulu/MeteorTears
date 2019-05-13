@@ -3,7 +3,7 @@ import json
 from config import setting
 from lib.utils.load_fiddler_files import LoadFiddlerFiles
 
-LD = LoadFiddlerFiles(setting.FIDDLER_CASES_PATH)
+LD = LoadFiddlerFiles(setting.FIDDLER_CASES)
 
 
 class CreateJsonCaseObj(object):
@@ -34,7 +34,7 @@ class CreateJsonCaseObj(object):
                 }
             }
             try:
-                with open(setting.WORK_FLOW_CASE_PATH + filename + '.json', 'w', encoding='utf-8') as file:
+                with open(setting.WORK_FLOW + filename + '.json', 'w', encoding='utf-8') as file:
                     file.write(json.dumps(case_obj, indent=4, ensure_ascii=False))
             except OSError:
                 continue

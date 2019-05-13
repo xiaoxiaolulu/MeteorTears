@@ -12,9 +12,8 @@ Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接�
 3. 支持上下游接口参数关联，提取
 4. 接口返回体多字段, Type断言, len断言
 5. 落库校验，支持多个字段
-6. 数据落库校验
-7. 接口录制功能
-8. 微信，邮件告警
+6. 接口录制功能
+7. 微信，邮件告警
 
 
 #### 用例编写(Yaml文件管理)
@@ -36,7 +35,7 @@ test_update_bot_baseinfo:
     Bot_Height: 165
     Bot_Weight: 50
     Bot_Company: 骨灰级
-    Bot_School: 上海灵羚科技有限公司
+    Bot_School: 上海有限公司
     ID: 273d8a2a-9b0e-4582-b13b-0a60f103f621
     CreateDate: ""
     UpdateDate: ""

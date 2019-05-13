@@ -22,7 +22,7 @@ class WeChatAlarm(object):
         :Usage:
             log_file()
         """
-        log_list = os.listdir(setting.LOG_PATH)
+        log_list = os.listdir(setting.LOG)
         log_list.sort()
         return log_list[-1]
 
@@ -34,7 +34,7 @@ class WeChatAlarm(object):
             analyze_files()
         """
         error_message = []
-        with open(setting.LOG_PATH + self.log_file, 'r', encoding='utf-8') as file:
+        with open(setting.LOG + self.log_file, 'r', encoding='utf-8') as file:
             for line in file.readlines():
                 er, wr = re.compile(r'ERROR.*'), re.compile(r'WARN.*')
                 if er.findall(line) or wr.findall(line):
