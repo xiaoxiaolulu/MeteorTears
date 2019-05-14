@@ -1,5 +1,0 @@
-[INFO] [2019-03-26 16:18:54,230] logger.py [line:132] : The Push WeChat message result is {
-    "errcode": 0,
-    "errmsg": "ok",
-    "invaliduser": ""
-}

@@ -24,13 +24,13 @@ def run(cases=setting.TEST_CASES, pattern='*.py', report=setting.REPORT):
     result.report(filename='HighTalkReport', description='HighTalkReport', log_path=report)
 
     # 测试用例回溯
-    try:
-        for files in os.listdir(cases):
-            filename = cases + files
-            if os.path.isfile(filename):
-                os.remove(filename)
-    except PermissionError:
-        pass
+    # try:
+    #     for files in os.listdir(cases):
+    #         filename = cases + files
+    #         if os.path.isfile(filename):
+    #             os.remove(filename)
+    # except PermissionError:
+    #     pass
 
     # 临时变量文件回溯
     # for files in os.listdir(setting.PUBLIC_RES):

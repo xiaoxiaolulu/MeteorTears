@@ -1,5 +1,0 @@
-[INFO] [2019-03-27 14:27:12,680] logger.py [line:132] : The test.yaml result is{
-    "Status": 0,
-    "ErrorMsg": "token校验失败！",
-    "ResultValue": null
-}

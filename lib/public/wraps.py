@@ -29,6 +29,7 @@ def cases_runner(func):
                 if value == func.__name__:
 
                     body = {}
+
                     # 用例文件与临时变量文件相互关联
                     relevant_params = items.get('body').get('relevant_parameter')
 

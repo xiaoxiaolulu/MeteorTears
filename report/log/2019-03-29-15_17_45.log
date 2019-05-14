@@ -1,5 +1,0 @@
-[INFO] [2019-03-29 15:17:45,013] logger.py [line:132] : The test.json result is{
-    "Status": 0,
-    "ErrorMsg": "BotId不是有效guid,租户id不是有效guid.",
-    "ResultValue": null
-}

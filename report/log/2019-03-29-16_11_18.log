@@ -1,9 +1,0 @@
-[INFO] [2019-03-29 16:11:18,429] logger.py [line:132] : The test.json result is{
-    "Status": 1,
-    "ErrorMsg": null,
-    "ResultValue": {
-        "Answer": null,
-        "BotId": null,
-        "Score": 0.0
-    }
-}

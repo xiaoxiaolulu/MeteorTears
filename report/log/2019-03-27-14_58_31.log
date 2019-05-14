@@ -1,3 +1,0 @@
-[INFO] [2019-03-27 14:58:31,294] logger.py [line:132] : 测试用例已自动生成完毕, 文件: KqaBotSearch.py -> 具体测试用例:test_kqa_bot_search
-[DEBUG] [2019-03-27 14:58:31,411] logger.py [line:132] : 临时变量文件已自动生成完毕, 文件: PublicKey.py -> 具体变量文件:public_key
-[DEBUG] [2019-03-27 14:58:31,413] logger.py [line:132] : Access-Token.yaml

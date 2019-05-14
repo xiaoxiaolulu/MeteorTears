@@ -67,10 +67,10 @@ cases/
 config/config.xml
 config/wechat.yaml
 data/
-relevant_params/
+lib/relevant_params/
 report/
-workFlow_cases/
-WorkFlow/
+work_flow/
+lib/record/
 build/
 develop-eggs/
 dist/
@@ -164,3 +164,10 @@ venv.bak/
 
 .idea/fileTemplates/
 lib/static/
+.idea/sonarlint/issuestore/0/
+.idea/sonarlint/issuestore/1/
+.idea/sonarlint/issuestore/2/
+.idea/sonarlint/issuestore/3/
+.idea/sonarlint/issuestore/8/
+.idea/sonarlint/issuestore/a/
+.idea/sonarlint/issuestore/b/

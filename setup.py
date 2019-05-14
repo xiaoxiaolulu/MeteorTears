@@ -70,7 +70,7 @@ setup(
     url=about['__url__'],
     license=about['__license__'],
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4',
-    packages=find_packages(exclude=["testhtml", "WorkFlow", 'workFlow_cases']),
+    packages=find_packages(exclude=["testhtml", "record", 'work_flow']),
     package_data={
         '': ["README.md"],
         'lib': ["templates/*"],

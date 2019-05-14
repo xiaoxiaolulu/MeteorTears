@@ -25,6 +25,7 @@ class CreateCase(GetJsonParams):
     def make_headers_and_contents(
             self,
             class_name: str,
+            skip: str,
             func_name: str,
             description: str) -> None:
         """
@@ -32,6 +33,7 @@ class CreateCase(GetJsonParams):
         :Args:
          - classname: 类名&文件名, STR TYPE.
          - func_name: 函数方法名, STR TYPE.
+         - skip: 用例跳过, STR TYPE.
          - description: 用例描述, STR TYPE.
         :Usage:
             make_headers_and_contents('Channel', 'add_channel', '新增渠道')
@@ -42,7 +44,7 @@ class CreateCase(GetJsonParams):
                 file.write(self.header.format(class_name, class_name))
 
         with open(filename, 'a', encoding='utf-8') as file:
-            file.write(self.cont.format(func_name, description))
+            file.write(self.cont.format(skip, func_name,  description))
 
     def create_template(self) -> types.GeneratorType:
         """
@@ -57,11 +59,13 @@ class CreateCase(GetJsonParams):
                     for key, value in body.items():
                         func_name = key
                         description = self.get_value(value, 'description')
+                        skip = self.get_value(value, 'skip')
                         body = value
                         yield load_cases.Containers({
                             'class_name': class_name,
                             'func_name': func_name,
                             'description': description,
+                            'skip': bool(skip),
                             'body': body
                         }), self.make_headers_and_contents
                 else:
@@ -70,6 +74,7 @@ class CreateCase(GetJsonParams):
                             'class_name': class_name,
                             'func_name': func,
                             'description': self.get_value(_body, 'description'),
+                            'skip': bool(self.get_value(_body, 'skip')),
                             'body': _body
                         })
 
@@ -88,6 +93,7 @@ class TestContainer:
             obj, func = items
             func(
                 obj.crop['class_name'],
+                obj.crop['skip'],
                 obj.crop['func_name'],
                 obj.crop['description']
             )

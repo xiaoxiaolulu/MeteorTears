@@ -1,5 +1,0 @@
-[INFO] [2019-03-27 15:21:21,040] logger.py [line:132] : The test.yaml result is{
-    "Code": 1,
-    "RsaPublicKey": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDbfdox5jtfW6PTgO42mGyiFZYN\n7JTDhILDHtMimuENDOKMXYYSnU55yrJuX9YbnqTzUu2mykg1naAHfTNf1KsYd5he\nu80P52O6qd5OWv/ljeBQB7+FP64AxW5MltktTDQt142CnQeVANyfQCtPrcJu6IRb\noEj1Pjpyfg+5haq8jwIDAQAB\n-----END PUBLIC KEY-----\n",
-    "Key": "4a59fadb-a317-44d6-9ebc-5bbbd2c193b9"
-}

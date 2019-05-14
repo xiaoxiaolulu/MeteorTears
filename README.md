@@ -61,7 +61,8 @@ params | url地址参数 | ?channelId=123importId=456
 data | 请求数据 | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
 file | 上传文件数据 | {file=operate_excel.save_excel(file=os.path.join(parameters.make_directory('Data', 0), 'excel\compaign_template.xlsx'),data_index=0,excel_key='落地页编号',excel_name='compaign_template_副本.xlsx')}
 json | Json类型请求 | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
-headers | 请求头 | {'Authorization': 'eyJ0eXAiOiJK', 'Content-Type': 'application/json'} 
+headers | 请求头 | {'Authorization': 'eyJ0eXAiOiJK', 'Content-Type': 'application/json'}
+skip | 用例跳过 | 布尔值False或者True 
 assert | 结果断言 | {"username": "NULL", "password": "123456", "auth_code": ['len', 4]}
 responseType | 验证断言结果的数据类型 | {'Response': ['type', 'dict']}
 description | 用例描述 | "新增渠道"
@@ -152,7 +153,7 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
         oSession.utilDecodeResponse();
         var now = new Date();
         var ts = now.getTime();
-        var filename =  'F:/MeteorTears/WorkFlow/' + ts + '_' + oSession.id + '.yaml';
+        var filename =  record + ts + '_' + oSession.id + '.yaml';
         var curDate = new Date();
         var logContent = "Request url: " + oSession.url + "\r\nRequest header: " + oSession.oRequest.headers +  "\r\nRequest body: " + oSession.GetRequestBodyAsString() + "\r\nResponse code: " + oSession.responseCode + "\r\nResponse body: " + oSession.GetResponseBodyAsString() + "\r\n";
         var sw : System.IO.StreamWriter;

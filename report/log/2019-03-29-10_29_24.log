@@ -1,5 +1,0 @@
-[INFO] [2019-03-29 10:29:24,259] logger.py [line:132] : The test.json result is{
-    "IsValid": true,
-    "Status": 1,
-    "ErrorCodes": null
-}

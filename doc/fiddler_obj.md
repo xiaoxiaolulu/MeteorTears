@@ -30,7 +30,7 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
         oSession.utilDecodeResponse();
         var now = new Date();
         var ts = now.getTime();
-        var filename =  'F:/MeteorTears/WorkFlow/' + ts + '_' + oSession.id + '.yaml';
+        var filename =  record + ts + '_' + oSession.id + '.yaml';
         var curDate = new Date();
         var logContent = "Request url: " + oSession.url + "\r\nRequest header: " + oSession.oRequest.headers +  "\r\nRequest body: " + oSession.GetRequestBodyAsString() + "\r\nResponse code: " + oSession.responseCode + "\r\nResponse body: " + oSession.GetResponseBodyAsString() + "\r\n";
         var sw : System.IO.StreamWriter;

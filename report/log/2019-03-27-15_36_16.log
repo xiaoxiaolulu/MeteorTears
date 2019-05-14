@@ -1,7 +1,0 @@
-[DEBUG] [2019-03-27 15:36:16,100] logger.py [line:132] : 临时变量文件已自动生成完毕, 文件: PublicKey.py -> 具体变量文件:public_key
-[DEBUG] [2019-03-27 15:36:16,105] logger.py [line:132] : {'relevant_parameter': ['Host'], 'description': '获取公钥', 'method': 'get', 'url': 'https://192.168.1.104:10033/api/auth/getpublickey', 'assert': {'Code': 1}, 'res_index': ['RsaPublicKey', 'Key'], 'check_db': None}
-[INFO] [2019-03-27 15:36:16,106] logger.py [line:132] : 接受GET的请求参数为{
-    "url": "https://192.168.1.104:10033/api/auth/getpublickey",
-    "params": null,
-    "headers": null
-}

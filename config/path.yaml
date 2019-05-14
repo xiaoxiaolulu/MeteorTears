@@ -5,21 +5,22 @@ HEADER:
 EMAIL:
   lib/templates/email
 WORK_FLOW:
-  workFlow_cases/
+  work_flow/
 XML_CONFIG:
   config/config.xml
 TEST_CASES:
   lib/test_cases/
-FIDDLER_CASES:
-  WorkFlow/
+Recording:
+  record/
 WECHAT:
   config/wechat.yaml
 LOG:
-  report/log/
+  lib/report/log/
 REPORT:
-  report/
+  lib/report/
 CASES:
   cases/
-DATA: data/
+DATA:
+  data/
 RES:
-  relevant_params/
+  lib/relevant_params/
