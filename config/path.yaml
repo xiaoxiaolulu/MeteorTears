@@ -15,9 +15,9 @@ Recording:
 WECHAT:
   config/wechat.yaml
 LOG:
-  lib/report/log/
+  report/log/
 REPORT:
-  lib/report/
+  report/
 CASES:
   cases/
 DATA:
