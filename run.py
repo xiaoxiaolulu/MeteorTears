@@ -35,7 +35,7 @@ def run(cases=setting.TEST_CASES, pattern='*.py', report=setting.REPORT):
                 except PermissionError:
                     pass
 
-    back_track_files_path = [cases, setting.Recording, setting.WORK_FLOW, setting.LOG]
+    back_track_files_path = [cases, setting.Recording, setting.WORK_FLOW]
     files_backtrack(back_track_files_path)
 
     # 发送邮件

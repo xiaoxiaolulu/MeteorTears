@@ -163,6 +163,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/Key.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RecordId.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RsaPublicKey.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/Token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/report/HighTalkReport.html">
           <value>
             <set />

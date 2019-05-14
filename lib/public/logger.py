@@ -77,7 +77,7 @@ class ColorConfig(Color):
 class Logger(logging.Logger):
 
     def __init__(self, filemode='a', encoding='utf-8', level=DEBUG, stream=True, file=True):
-        self.filename = setting.LOG + '{}.log'.format(time_util.timestamp('format_now'))
+        self.filename = setting.LOG + '{}.log'.format(time_util.timestamp('format_day'))
         self.mode = filemode
         self.encoding = encoding
         self.now = time_util.timestamp('format_now')
