@@ -7,13 +7,13 @@ Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接�
 
 
 #### 项目特点如下
-1. 数据管理使用Yaml文件
-2. 用例编写使用Yaml文件
-3. 支持上下游接口参数关联，提取
-4. 接口返回体多字段, Type断言, len断言
-5. 落库校验，支持多个字段
-6. 接口录制功能
-7. 微信，邮件告警
+1.  数据管理使用Yaml文件
+2.  用例编写使用Yaml文件
+3.  支持上下游接口参数关联，提取
+4.  接口返回体多字段, Type断言, len断言
+5.  落库校验，支持多个字段
+6.  接口录制功能
+7.  微信，邮件告警
 
 
 #### 用例编写(Yaml文件管理)
@@ -53,23 +53,23 @@ test_update_bot_baseinfo:
     Bot_Name: test
     Bot_Constellation: 水瓶座
 ```
-key | value | example
------------- | -------------| ----------------
-url | 请求接口路由 | /admin/compaign/export
-method | 请求方式 | GET
-params | url地址参数 | ?channelId=123importId=456
-data | 请求数据 | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
-file | 上传文件数据 | {file=operate_excel.save_excel(file=os.path.join(parameters.make_directory('Data', 0), 'excel\compaign_template.xlsx'),data_index=0,excel_key='落地页编号',excel_name='compaign_template_副本.xlsx')}
-json | Json类型请求 | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
-headers | 请求头 | {'Authorization': 'eyJ0eXAiOiJK', 'Content-Type': 'application/json'}
-skip | 用例跳过 | 布尔值False或者True 
-assert | 结果断言 | {"username": "NULL", "password": "123456", "auth_code": ['len', 4]}
-responseType | 验证断言结果的数据类型 | {'Response': ['type', 'dict']}
-description | 用例描述 | "新增渠道"
-res_index | 提取变量 | res_index: [RsaPublicKey, Key]
-check_db | 落库检查 |   check_db: {TenantName: TESTRLBC}
-relevant_parameter | 上下游接口关联参数 | relevant_parameter: [Host]
-relevant_sql |  需要检查的sql语句 | relevant_sql: search_all_tenant_conf
+key                 | value               | example
+------------------- | ------------------- | ----------------
+url                 | 请求接口路由          | /admin/compaign/export
+method              | 请求方式             | GET
+params              | url地址参数          | ?channelId=123importId=456
+data                | 请求数据             | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
+file                | 上传文件数据          | {file=operate_excel.save_excel(file=os.path.join(parameters.make_directory('Data', 0), 'excel\compaign_template.xlsx'),data_index=0,excel_key='落地页编号',excel_name='compaign_template_副本.xlsx')}
+json                | Json类型请求         | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
+headers             | 请求头               | {'Authorization': 'eyJ0eXAiOiJK', 'Content-Type': 'application/json'}
+skip                | 用例跳过             | 布尔值False或者True 
+assert              | 结果断言             | {"username": "NULL", "password": "123456", "auth_code": ['len', 4]}
+responseType        | 验证断言结果的数据类型 | {'Response': ['type', 'dict']}
+description         | 用例描述             | "新增渠道"
+res_index           | 提取变量             | res_index: [RsaPublicKey, Key]
+check_db            | 落库检查             |   check_db: {TenantName: TESTRLBC}
+relevant_parameter  | 上下游接口关联参数     | relevant_parameter: [Host]
+relevant_sql        |  需要检查的sql语句    | relevant_sql: search_all_tenant_conf
 
 ##### 关于断言
 1. 多层结果断言, 以键值对的方式写入， 断言的Key: 预期的Value
@@ -112,13 +112,13 @@ check_db:
       - desc: ORDER BY id DESC LIMIT 1
 ```
 
-key | value | Sample
+key          | value        | Sample
 ------------ | -------------| ----------------
-action| sql执行操作类 | SELECT/DELETE/INSERT/UPDATE等   
-table| 数据库表 | channel_budget
-columns| 列名 | ['channel_id'] 列表类型，支持多个值
-params| 检索条件 | id='1'
-desc| 排序 | ORDER BY ID DESC LIMIT 1
+action       | sql执行操作类 | SELECT/DELETE/INSERT/UPDATE等   
+table        | 数据库表      | channel_budget
+columns      | 列名          | ['channel_id'] 列表类型，支持多个值
+params       | 检索条件      | id='1'
+desc         | 排序          | ORDER BY ID DESC LIMIT 1
 
 
 #### 接口录制V1.0.0
