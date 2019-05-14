@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-import os
+import ast
 import yaml
 import json
 import builtins
@@ -42,7 +42,7 @@ def cases_runner(func):
                                 _relevance.update(yaml.safe_load(file))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
-                            body.update(eval(relevance_body))
+                            body.update(ast.literal_eval(relevance_body))
 
                         if isinstance(relevant_params, list):
 
@@ -54,7 +54,7 @@ def cases_runner(func):
                                     _relevance.update(yaml.safe_load(file))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
-                            body.update(eval(relevance_body))
+                            body.update(ast.literal_eval(relevance_body))
 
                         # 运行用例，暂支持Post与Get请求接口
                         handler = http_keywords.BaseKeyWords(body)

@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import ast
 import os
 import xlrd
 import xlwt
@@ -44,7 +45,7 @@ def analyze_excel(file: str, data_index: int, excel_key: str) -> list:
     """
 
     data = read_excel(file)[data_index]
-    function_obj = eval(data[excel_key])
+    function_obj = ast.literal_eval(data[excel_key])
 
     dic = {}
     for key, value in dict(data).items():

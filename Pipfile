@@ -19,7 +19,8 @@ coveralls = "==1.5.1"
 pylint = "==2.3.1"
 Flask = "==1.0.2"
 PyYAML = "==5.1"
-pysnooper = "==0.0.37"
+defusedxml = "==0.5.0"
+PySnooper = "==0.0.37"
 
 [requires]
 python_version = "3.6"

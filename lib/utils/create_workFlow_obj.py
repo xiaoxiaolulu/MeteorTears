@@ -3,7 +3,7 @@ import json
 from config import setting
 from lib.utils.load_fiddler_files import LoadFiddlerFiles
 
-LD = LoadFiddlerFiles(setting.FIDDLER_CASES)
+LD = LoadFiddlerFiles(setting.Recording)
 
 
 class CreateJsonCaseObj(object):

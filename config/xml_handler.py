@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import os
-from xml.etree import ElementTree as ET
+from defusedxml.ElementTree import parse
 
 
 class MetaSingleton(type):
@@ -27,7 +27,7 @@ class XmlHandler(metaclass=MetaSingleton):
         :Usage:
             _getroot()
         """
-        return ET.parse(self.filename).getroot()
+        return parse(self.filename).getroot()
 
     def get_child(self, tag: str) -> dict:
         """
