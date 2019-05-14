@@ -1,9 +1,0 @@
-Request url: config.pinyin.sogou.com/api/brandScd/getBrandScd.php?version=20160401&h=713390583512B56BF110A98A97E3CD26&v=9.1.0.2618&r=6990_sogou_pinyin_8.9.0.2180_6990
-Request header: GET /api/brandScd/getBrandScd.php?version=20160401&h=713390583512B56BF110A98A97E3CD26&v=9.1.0.2618&r=6990_sogou_pinyin_8.9.0.2180_6990 HTTP/1.1
-User-Agent: SogouIMEMiniSetup_RandSkin
-Host: config.pinyin.sogou.com
-Cookie: YYID=713390583512B56BF110A98A97E3CD26; QQ_Sogou_Openid=9C0E38512EB1F15C5F038B8BFBAF70D0,1552268546; ad=zZllllllll2t5KLwlllllVec@cwlllllNnCtalllll9llllllylll5@@@@@@@@@@; IPLOC=CN3100; IMESKIN=1:1BA52897026E77FA6C313E3B41ACB4BB; IMEVER=9.1.0.2618; SUV=00EA50547C4EA4F95C3D461B3A00D873; IMESKINID=2:594652
-
-Request body: 
-Response code: 0
-Response body: 

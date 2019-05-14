@@ -11,7 +11,7 @@ XML_CONFIG:
 TEST_CASES:
   lib/test_cases/
 Recording:
-  record/
+  lib/record/
 WECHAT:
   config/wechat.yaml
 LOG:

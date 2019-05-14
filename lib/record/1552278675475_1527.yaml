@@ -1,9 +1,0 @@
-Request url: clients4.google.com:443
-Request header: CONNECT clients4.google.com:443 HTTP/1.1
-Host: clients4.google.com:443
-Proxy-Connection: keep-alive
-User-Agent: Chrome WIN 71.0.3578.98 (15234034d19b85dcd9a03b164ae89d04145d8368-refs/branch-heads/3578@{#897}) channel(stable)
-
-Request body: 
-Response code: 0
-Response body: 

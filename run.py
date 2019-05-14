@@ -23,20 +23,20 @@ def run(cases=setting.TEST_CASES, pattern='*.py', report=setting.REPORT):
     result = Report(test_suite)
     result.report(filename='HighTalkReport', description='HighTalkReport', log_path=report)
 
-    # 测试用例回溯
-    # try:
-    #     for files in os.listdir(cases):
-    #         filename = cases + files
-    #         if os.path.isfile(filename):
-    #             os.remove(filename)
-    # except PermissionError:
-    #     pass
+    # 临时文件回溯
+    def files_backtrack(filepath: list) -> None:
+        if isinstance(filepath, list):
+            for path in filepath:
+                try:
+                    for files in os.listdir(path):
+                        filename = path + files
+                        if os.path.isfile(filename):
+                            os.remove(filename)
+                except PermissionError:
+                    pass
 
-    # 临时变量文件回溯
-    # for files in os.listdir(setting.PUBLIC_RES):
-    #     filename = setting.PUBLIC_RES + files
-    #     if os.path.isfile(filename):
-    #         os.remove(filename)
+    back_track_files_path = [cases, setting.Recording, setting.WORK_FLOW]
+    files_backtrack(back_track_files_path)
 
     # 发送邮件
     # send_mail = email.SendMail()
