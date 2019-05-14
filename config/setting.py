@@ -24,7 +24,7 @@ __all__ = [
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PRO_PATH = {}
 with open(BASE_DIR + '/config/path.yaml', 'r', encoding='utf-8') as file:
-    PRO_PATH.update(yaml.load(file, Loader=yaml.FullLoader))
+    PRO_PATH.update(yaml.safe_load(file))
 
 
 # 项目各项目路径

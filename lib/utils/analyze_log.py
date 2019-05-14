@@ -12,7 +12,7 @@ class WeChatAlarm(object):
 
     WeChat = {}
     with open(setting.WECHAT, 'r', encoding='utf-8') as file:
-        WeChat.update(yaml.load(file, Loader=yaml.FullLoader)['wechat'])
+        WeChat.update(yaml.safe_load(file)['wechat'])
 
     @property
     def log_file(self) -> str:

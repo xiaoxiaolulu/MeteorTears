@@ -39,7 +39,7 @@ def cases_runner(func):
                             relevant_files = relevant_params + '.yaml'
                             _relevance = {}
                             with open(setting.RES + relevant_files, 'rb') as file:
-                                _relevance.update(yaml.load(file, Loader=yaml.FullLoader))
+                                _relevance.update(yaml.safe_load(file))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
                             body.update(eval(relevance_body))
@@ -51,7 +51,7 @@ def cases_runner(func):
 
                                 relevant_files = relevant_param + '.yaml'
                                 with open(setting.RES + relevant_files, 'rb') as file:
-                                    _relevance.update(yaml.load(file, Loader=yaml.FullLoader))
+                                    _relevance.update(yaml.safe_load(file))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
                             body.update(eval(relevance_body))
@@ -95,7 +95,7 @@ def cases_runner(func):
 
                                 relevant_sql = {}
                                 with open(setting.DATA + filename, 'rb') as file:
-                                    relevant_sql.update(yaml.load(file, Loader=yaml.FullLoader))
+                                    relevant_sql.update(yaml.safe_load(file))
 
                                 action = relevant_sql[relevant_database]['action']
                                 columns = relevant_sql[relevant_database]['execSQL']['columns']
@@ -116,7 +116,7 @@ def cases_runner(func):
 
                                     relevant_sql = {}
                                     with open(setting.DATA + filename, 'rb') as file:
-                                        relevant_sql.update(yaml.load(file, Loader=yaml.FullLoader))
+                                        relevant_sql.update(yaml.safe_load(file))
 
                                     action = relevant_sql[relevant_db]['action']
                                     columns = relevant_sql[relevant_db]['execSQL']['columns']

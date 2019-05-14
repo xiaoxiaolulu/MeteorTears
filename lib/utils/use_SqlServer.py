@@ -42,7 +42,7 @@ class ExecuteSQL(GetJsonParams):
         :Usage:
             loads_sql_data()
         """
-        with open(setting.DATA_PATH + filename, encoding='utf-8') as file:
+        with open(setting.DATA + filename, encoding='utf-8') as file:
             for dic in yaml.load(file):
                 for class_name, body in dic.items():
                     if len(body) > 1:
@@ -72,8 +72,4 @@ class ExecuteSQL(GetJsonParams):
 
 
 if __name__ == '__main__':
-    DataBaseSetting = {
-        'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotAdmin-TEST'
-    }
-    EX = ExecuteSQL(DataBaseSetting)
-    print(EX.execute("""SELECT Bot_Name FROM [dbo].[Tenant_Bot_Profile] WHERE Bot_Name = 'Null'"""))
+    pass
