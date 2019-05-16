@@ -75,7 +75,8 @@ class WeChatAlarm(object):
         :Args:
          - message: 错误的日志信息, STR TYPE.
         """
-        send_url = ' https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token={}'.format(cls.get_token())
+        send_url = (' https://qyapi.weixin.qq.com/cgi-bin/message/send?'
+                    'access_token={}'.format(cls.get_token()))
         post_data = {
             "touser": "@all",
             "msgtype": "text",

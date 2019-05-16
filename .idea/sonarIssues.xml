@@ -48,7 +48,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/A_HT.Api.Auth.Service/A001_validate_login.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/A_HT.Api.Auth.Service/A004_remove_token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/A_kqa_search.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/A_get_bot_list.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/B001_get_bot_list.yaml">
           <value>
             <set />
           </value>
@@ -73,7 +93,62 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/get_bot_status.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/get_public_key.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/get_service.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/kqa_add.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/kqa_bot_search.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/kqa_get.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/kqa_get_keyword.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/kqa_update.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/kqa_update_enable.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/kqa_upload.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/kqa_verify.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/skill_set_list.yaml">
           <value>
             <set />
           </value>
@@ -84,6 +159,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/cases/updatebotbaseinfo.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/uploadfiles.yaml">
           <value>
             <set />
           </value>
@@ -153,6 +233,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/public/http_keywords.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/public/load_cases.py">
           <value>
             <set />
@@ -169,6 +254,41 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/lib/relevant_params/Key.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomDate.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomName.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomParagraph.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomPhoneNum.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomPostcode.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomSsn.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomWord.yaml">
           <value>
             <set />
           </value>
@@ -228,6 +348,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/utils/random_data.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/utils/use_SqlServer.py">
           <value>
             <set />
@@ -273,6 +398,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/test.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/update_log.md">
           <value>
             <set />
@@ -289,6 +419,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../项目资料/测试脚本/doraemon-master/src/testcases/TestGithubApi.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="G:/django-codes/book_manager/front/views.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="G:/django-codes/book_manager/templates/upload.html">
           <value>
             <set />
           </value>

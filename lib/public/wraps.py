@@ -11,11 +11,19 @@ from lib.public import http_keywords
 from lib.utils.use_SqlServer import ExecuteSQL
 from lib.public.Recursion import GetJsonParams
 from lib.public.case_manager import TestContainer
+from lib.utils.random_data import RandomData
 
 
 DataBaseSetting = {
     'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotAdmin-TEST'
 }
+
+
+def create_random_data(func):
+    def wrapper(*args, **kwargs):
+        RandomData.create_random_test_data()
+        return func(*args, **kwargs)
+    return wrapper
 
 
 def cases_runner(func):
