@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/1231.html">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/README.md">
           <value>
             <set />
@@ -98,6 +103,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/get_demo.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/get_public_key.yaml">
           <value>
             <set />
@@ -148,7 +158,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/post_demo.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/remove_token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/skill_set_list.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/skip_demo.yaml">
           <value>
             <set />
           </value>
@@ -168,7 +193,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/validate_login.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/validate_token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/config/config.xml">
           <value>
             <set />
           </value>
@@ -318,6 +353,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/templates/email">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/templates/header">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/templates/report">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/test_cases/Uploadfiles.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/utils/analyze_log.py">
           <value>
             <set />
@@ -353,6 +408,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/utils/resvalues.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/utils/security.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/utils/use_SqlServer.py">
           <value>
             <set />
@@ -368,7 +433,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/report/Report.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/report/email">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/report/log/2019-05-14.log">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/report/log/2019-05-16.log">
           <value>
             <set />
           </value>

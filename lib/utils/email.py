@@ -6,6 +6,7 @@ from lib.public import logger
 from email.header import Header
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from lib.utils import resvalues
 
 
 class SendMail(object):
@@ -24,29 +25,35 @@ class SendMail(object):
             self.receiver = receiver
         self.mode = mode
         self.msg = MIMEMultipart()
+        self.cons = open(setting.EMAIL, encoding='utf-8')
+        self.con = self.cons.read()
+
+    def make_email_template(self):
+        content = resvalues.get_report_values()
+        with open(setting.REPORT + 'email', 'w', encoding='utf-8') as file:
+            file.write(self.con.format(content[0], content[1],  content[2], content[3]))
 
     @property
     def get_html_report(self) -> str:
         """
         获取测试报告路径
-
         :Usage:
             get_html_report()
         """
         try:
-            return setting.REPORT + 'HighTalkReport.html'
+            return setting.REPORT + 'Report.html'
         except FileNotFoundError:
             pass
 
     def email_content(self) -> None:
         """
         定义发送邮件的内容
-
         :Usage:
             email_content()
         """
         self.msg['Subject'] = Header('SEM AUTO TEST REPORT', 'utf-8')
-        with open(setting.EMAIL, self.mode) as file:
+        self.make_email_template()
+        with open(setting.REPORT + 'email', self.mode) as file:
             mail_body = file.read()
         self.msg.attach(MIMEText(mail_body, _subtype='html', _charset='utf-8'))
         att1 = MIMEText(open(self.get_html_report, self.mode).read(), 'base64', 'utf-8')
@@ -55,7 +62,7 @@ class SendMail(object):
         self.msg.attach(att1)
         att2 = MIMEText(open(fp.iter_files(setting.LOG)[-1], self.mode).read(), 'base64', 'utf-8')
         att2["Content-Type"] = 'application/octet-stream'
-        att2["Content-Disposition"] = 'attachment; filename="mar.log"'
+        att2["Content-Disposition"] = 'attachment; filename="MyApiTest.log"'
         self.msg.attach(att2)
 
     def send_mail(self):
@@ -73,8 +80,8 @@ class SendMail(object):
                 self.msg.as_string())
             logger.log_debug(
                 'Please check if the email has been sent successfully.')
-        except smtplib.SMTPException:
-            pass
+        except smtplib.SMTPException as error:
+            logger.log_warn(error)
         finally:
             server.quit()
 

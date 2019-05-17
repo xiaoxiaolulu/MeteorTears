@@ -172,6 +172,15 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
 4. 录制的原始接口信息会保存在/WorkFlow/目录下
 5. 录制完的接口为JSON格式文件, load_fiddler_files.py分析并生成新的迭代对象, create_workFlow_obj.py将生成新的Json格式用例文件,
 
+
+#### 效果展示
+![上传文件用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例001.png)
+![跳过本次用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例002.png)
+![Post请求用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例003.png)
+![Get请求用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例004.png)
+![测试报告](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例005.png)
+![自动生成的用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例006.png)
+![邮件展示](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例007.png)
 --------------
 
 欢迎交流   QQ: 546464268(Null)

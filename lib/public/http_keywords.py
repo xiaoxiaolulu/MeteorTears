@@ -6,7 +6,6 @@ from urllib import parse
 from lib.public import logger
 from lib.utils import exceptions
 from lib.public.Recursion import GetJsonParams
-import simplejson
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -70,10 +69,8 @@ class BaseKeyWords(GetJsonParams):
             logger.log_info("接受POST的请求参数为{}".format(
                 json.dumps(request_body, indent=4, ensure_ascii=False))
             )
-            try:
-                return self.post(**request_body).json()
-            except:
-                return self.post(**request_body).text
+
+            return self.post(**request_body).json()
 
         else:
             raise exceptions.TestApiMethodError("接口测试请求类型错误, 请检查相关用例!")
