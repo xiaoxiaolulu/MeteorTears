@@ -62,6 +62,8 @@ data                | 请求数据             | {"name": "SEMAUTO", "categoryId
 file                | 上传文件数据          | {file=operate_excel.save_excel(file=os.path.join(parameters.make_directory('Data', 0), 'excel\compaign_template.xlsx'),data_index=0,excel_key='落地页编号',excel_name='compaign_template_副本.xlsx')}
 json                | Json类型请求         | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
 headers             | 请求头               | {'Authorization': 'eyJ0eXAiOiJK', 'Content-Type': 'application/json'}
+setUp               | 前置条件             | setUp: print('前置条件')
+tearDown            | 后置条件             | tearDown: print('后置条件')
 skip                | 用例跳过             | 布尔值False或者True 
 assert              | 结果断言             | {"username": "NULL", "password": "123456", "auth_code": ['len', 4]}
 responseType        | 验证断言结果的数据类型 | {'Response': ['type', 'dict']}

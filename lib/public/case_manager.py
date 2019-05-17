@@ -25,6 +25,8 @@ class CreateCase(GetJsonParams):
     def make_headers_and_contents(
             self,
             class_name: str,
+            setup: str,
+            teardown: str,
             skip: str,
             func_name: str,
             description: str) -> None:
@@ -32,8 +34,10 @@ class CreateCase(GetJsonParams):
         创建用例文件
         :Args:
          - classname: 类名&文件名, STR TYPE.
+         - setup: 用例前置条件, STR TYPE.
+         - teardown: 用例后置条件, STR TYPE.
          - func_name: 函数方法名, STR TYPE.
-         - skip: 用例跳过, STR TYPE.
+         - skip: 用例是否跳过, STR TYPE.
          - description: 用例描述, STR TYPE.
         :Usage:
             make_headers_and_contents('Channel', 'add_channel', '新增渠道')
@@ -41,7 +45,7 @@ class CreateCase(GetJsonParams):
         filename = setting.TEST_CASES + class_name + '.py'
         if not os.path.exists(filename):
             with open(filename, 'w', encoding='utf-8') as file:
-                file.write(self.header.format(class_name, class_name))
+                file.write(self.header.format(class_name, class_name, setup, teardown))
 
         with open(filename, 'a', encoding='utf-8') as file:
             file.write(self.cont.format(skip, func_name,  description))
@@ -60,12 +64,16 @@ class CreateCase(GetJsonParams):
                         func_name = key
                         description = self.get_value(value, 'description')
                         skip = self.get_value(value, 'skip')
+                        setup = self.get_value(value, 'setUp')
+                        teardown = self.get_value(value, 'tearDown')
                         body = value
                         yield load_cases.Containers({
                             'class_name': class_name,
                             'func_name': func_name,
                             'description': description,
                             'skip': bool(skip),
+                            'setup': setup,
+                            'teardown': teardown,
                             'body': body
                         }), self.make_headers_and_contents
                 else:
@@ -75,6 +83,8 @@ class CreateCase(GetJsonParams):
                             'func_name': func,
                             'description': self.get_value(_body, 'description'),
                             'skip': bool(self.get_value(_body, 'skip')),
+                            'setup': self.get_value(_body, 'setUp'),
+                            'teardown': self.get_value(_body, 'tearDown'),
                             'body': _body
                         })
 
@@ -93,6 +103,8 @@ class TestContainer:
             obj, func = items
             func(
                 obj.crop['class_name'],
+                obj.crop['setup'],
+                obj.crop['teardown'],
                 obj.crop['skip'],
                 obj.crop['func_name'],
                 obj.crop['description']

@@ -8,7 +8,7 @@ class {}(unittest.TestCase):
     """{}接口测试脚本"""
 
     def setUp(self):
-        pass
+        {}
 
     def tearDown(self):
-        pass
+        {}

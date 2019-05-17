@@ -43,8 +43,8 @@ def run(cases=setting.TEST_CASES, pattern='*.py', report=setting.REPORT):
     files_backtrack(back_track_files_path)
 
     # 发送邮件
-    send_mail = email.SendMail()
-    send_mail.send_mail()
+    # send_mail = email.SendMail()
+    # send_mail.send_mail()
 
     # 日志告警
     # push_msg = WeChatAlarm()
