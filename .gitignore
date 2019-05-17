@@ -163,7 +163,6 @@ venv.bak/
 .mypy_cache/
 
 .idea/fileTemplates/
-lib/static/
 .idea/sonarlint/issuestore/0/
 .idea/sonarlint/issuestore/1/
 .idea/sonarlint/issuestore/2/
