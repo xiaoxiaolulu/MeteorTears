@@ -40,59 +40,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbc73178-6bec-49d2-b7e5-05535893c997" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/utils/resvalues.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/48e27125556544935784fbbea04be89bd283626e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52837d69394be326f6f92be7d9dfe205a691d69f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52b47af5d579b450ae858594aa5a5dd852c9774b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52b47af5d579b450ae858594aa5a5dd852c9774b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/546d86439a1e6b0422f4668c945760d64655294c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/546d86439a1e6b0422f4668c945760d64655294c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55516c4a72b554abbc2da784dbe5be0569644369" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/70d4f61a703b8878ae146a1361c8b499f5aba538" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74a65ef5a6bcc3d6b7b6cef06bb9a4211da925bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/943978f5203bd4ddbb53578959e5cd5927eb747f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/948af7a24852e9101a97a505cc5d2c7f7215c1f4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/948af7a24852e9101a97a505cc5d2c7f7215c1f4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94fc987327bf24b1fb3c038f1fcefc00a879bc45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b72958206b45a42e30e31fd655ab154bf120814" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c178135cc8554a3138afac75622754bff2bea635" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1dcc7af870c6eb5f9f4f4f0df5f5fbfd6473c3a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1dcc7af870c6eb5f9f4f4f0df5f5fbfd6473c3a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8c327246526b767856f8081bb2d6cf516d9aeb8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/caee358c4de207dc7d0ae3cd3c4437b26230e081" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d17a6c95fadb2eb8e130e68d681c6ad0a2b4eb59" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f385a94821fb4c0c7ee12028462df557d6255b4e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f599f85eaf0d4444b1b1eba92391a82e8a28045d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/public/http_keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/public/http_keywords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/public/wraps.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/public/wraps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/templates/content" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/content" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/templates/email" beforeDir="false" afterPath="$PROJECT_DIR$/lib/templates/email" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/A001ValidateLogin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/A002GetPublicKey.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/A003ValidateToken.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/A004RemoveToken.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/AKqaSearch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/B001GetBotList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/B002CreateBot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/Demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/GetBotStatus.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/GetService.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/KqaAdd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/KqaBotSearch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/KqaGet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/KqaGetKeyword.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/KqaUpdate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/KqaUpdateEnable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/KqaUpload.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/KqaVerify.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/SkillSetList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/UpdateBotBaseinfo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/Uploadfiles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test_cases/ValidateToken.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/security.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/security.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,21 +73,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="633">
-                <caret line="182" column="6" selection-start-line="182" selection-start-column="6" selection-end-line="182" selection-end-column="6" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="495">
+                <caret line="183" selection-start-line="183" selection-end-line="183" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -182,21 +139,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/public/logger.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="92">
-                <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-                <folding>
-                  <element signature="e#23#33#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor relative-caret-position="-161" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -225,6 +167,7 @@
       <find>testPass</find>
       <find>// Cutstart</find>
       <find>2019-05-17 10:09:28</find>
+      <find>static</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -233,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/utils/create_workFlow_obj.py" />
         <option value="$PROJECT_DIR$/lib/utils/analyze_log.py" />
         <option value="$PROJECT_DIR$/cases/A_HT.Api.Auth.Service/A004_remove_token.yaml" />
         <option value="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/B001_get_bot_list.yaml" />
@@ -283,6 +225,7 @@
         <option value="$PROJECT_DIR$/lib/utils/resvalues.py" />
         <option value="$PROJECT_DIR$/lib/public/logger.py" />
         <option value="$PROJECT_DIR$/lib/templates/email" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -546,7 +489,7 @@
       <workItem from="1557996993269" duration="941000" />
       <workItem from="1557997951767" duration="2180000" />
       <workItem from="1558000147362" duration="3051000" />
-      <workItem from="1558003213748" duration="12039000" />
+      <workItem from="1558003213748" duration="12381000" />
     </task>
     <servers />
   </component>
@@ -583,7 +526,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96016000" />
+    <option name="totallyTimeSpent" value="96358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,6 +539,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49731183" visible="true" weight="0.25201073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -622,7 +566,7 @@
       <window_info anchor="bottom" id="Gerrit" order="17" weight="0.3293011" />
       <window_info anchor="bottom" id="Database Changes" order="18" />
       <window_info anchor="bottom" id="reVu" order="19" weight="0.3293011" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="20" visible="true" weight="0.49462366" />
+      <window_info anchor="bottom" id="Terminal" order="20" weight="0.48387095" />
       <window_info anchor="bottom" id="Review Board" order="21" weight="0.3293011" />
       <window_info anchor="bottom" id="TeamCity" order="22" weight="0.3293011" />
       <window_info anchor="bottom" id="Alipay DevTools" order="23" weight="0.3293011" />
@@ -751,9 +695,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pipfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1053,18 +994,25 @@
     <entry file="file://$PROJECT_DIR$/lib/static/示例006.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="633">
-            <caret line="182" column="6" selection-start-line="182" selection-start-column="6" selection-end-line="182" selection-end-column="6" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="495">
+            <caret line="183" selection-start-line="183" selection-end-line="183" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="p4-ProjectCache">
