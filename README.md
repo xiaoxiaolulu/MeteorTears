@@ -174,13 +174,13 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
 
 
 #### 效果展示
-![上传文件用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例001.png)
-![跳过本次用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例002.png)
-![Post请求用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例003.png)
-![Get请求用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例004.png)
-![测试报告](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例005.png)
-![自动生成的用例](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例006.png)
-![邮件展示](https://github.com/xiaoxiaolulu/MeteorTears/lib/static/示例007.png)
+![上传文件用例](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B001.png)
+![跳过本次用例](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B002.png)
+![Post请求用例](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B003.png)
+![Get请求用例](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B004.png)
+![测试报告](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B005.png)
+![自动生成的用例](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B006.png)
+![邮件展示](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B007.png)
 --------------
 
 欢迎交流   QQ: 546464268(Null)
