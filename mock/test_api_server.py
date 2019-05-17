@@ -25,9 +25,8 @@ def get_all_task():
 
 
 if __name__ == "__main__":
-    if __name__ == "__main__":
-        app.run(
-            host="127.0.0.1",
-            port=8989,
-            debug=True
-        )
+    app.run(
+        host="127.0.0.1",
+        port=8989,
+        debug=True
+    )

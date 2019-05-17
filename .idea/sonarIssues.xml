@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/111.json">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/1231.html">
           <value>
             <set />
@@ -424,6 +429,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/lib/utils/use_SqlServer.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/mock/test_api_server.py">
           <value>
             <set />
           </value>
