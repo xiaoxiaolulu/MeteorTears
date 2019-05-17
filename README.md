@@ -174,13 +174,21 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
 
 
 #### 效果展示
-1. 上传文件用例示例 ![upload](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B001.png)
-2. 跳过用例示例 ![skip](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B002.png)
-3. Post请求用例示例 ![post](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B003.png)
-4. Get请求用例示例 ![get](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B004.png)
-5. 测试报告示例 ![report](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B005.png)
-6. 自动生成用例示例 ![case](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B006.png)
-7. 邮件示例 ![email](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B007.png)
+
+###### 上传文件用例示例 
+![upload](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B001.png)
+###### 跳过用例示例 
+![skip](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B002.png)
+###### Post请求用例示例 
+![post](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B003.png)
+###### Get请求用例示例 
+![get](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B004.png)
+###### 测试报告示例 
+![report](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B005.png)
+###### 自动生成用例示例 
+![case](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B006.png)
+###### 邮件示例 
+![email](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B007.png)
 --------------
 
 欢迎交流   QQ: 546464268(Null)
