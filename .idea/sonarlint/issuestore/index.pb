@@ -74,8 +74,6 @@ G
 setup.py,8\e\8e2edce0d507e1297474f25c00cae94258db38d8
 C
 lib/public/wraps.py,9\4\948af7a24852e9101a97a505cc5d2c7f7215c1f4
-F
-cases/uploadfiles.yaml,e\2\e20b06a6bbcb61e8738dcc468010ad8658f3f793
 =
 update_log.md,b\e\bef34275ebe3082d1d4188ad1239d4bdb072d867
 V
@@ -126,15 +124,9 @@ E
 lib/templates/content,7\4\740fc784b17304e4da5913d693b36ba7515bf928
 C
 cases/get_demo.yaml,9\8\9877c2b5b18bb5c63ee18f4da7871b14e1fa1221
-D
-cases/post_demo.yaml,e\5\e525620932bfc226d0b22d615f6675a7f32b76ad
 B
 report/Report.html,3\5\35c42e828350d240650cd0622abdbacaf4c3b86f
 I
 report/log/2019-05-16.log,2\a\2afaba4b1b05eff2980dccc00901c79aabda2e66
-7
-test.py,a\3\a36e355ddb203d7d4133221f339dc406cb9f480f
-D
-cases/skip_demo.yaml,9\f\9f954c3214237cfbb3be776d58ef34820ead45a7
 F
 lib/utils/resvalues.py,c\0\c03ed25e37b4a416a3db4b0fb9c53ef110c1a140

@@ -5,7 +5,7 @@ HEADER:
 EMAIL:
   lib/templates/email
 WORK_FLOW:
-  work_flow/
+  lib/work_flow/
 XML_CONFIG:
   config/config.xml
 TEST_CASES:

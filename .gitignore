@@ -69,7 +69,7 @@ config/wechat.yaml
 data/
 lib/relevant_params/
 report/
-work_flow/
+lib/work_flow/
 lib/record/
 build/
 develop-eggs/

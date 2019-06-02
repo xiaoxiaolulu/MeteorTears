@@ -1,7 +1,9 @@
 # -*- coding:utf-8 -*-
+import ast
 import json
 import urllib3
 import requests
+import simplejson
 from urllib import parse
 from lib.public import logger
 from lib.utils import exceptions
@@ -60,7 +62,12 @@ class BaseKeyWords(GetJsonParams):
             logger.log_info("接受GET的请求参数为{}".format(
                 json.dumps(request_body, indent=4, ensure_ascii=False))
             )
-            return self.get(**request_body).json()
+
+            response = self.get(**request_body)
+            try:
+                return ast.literal_eval(response.json()).update({'status_code': response.status_code})
+            except simplejson.JSONDecodeError:
+                return ast.literal_eval(response.text).update({'status_code': response.status_code})
 
         if method in ['post', 'POST']:
             temp = ('url', 'headers', 'json', 'data', 'files')
@@ -70,7 +77,11 @@ class BaseKeyWords(GetJsonParams):
                 json.dumps(request_body, indent=4, ensure_ascii=False))
             )
 
-            return self.post(**request_body).json()
+            response = self.post(**request_body)
+            try:
+                return ast.literal_eval(response.json()).update({'status_code': response.status_code})
+            except simplejson.JSONDecodeError:
+                return ast.literal_eval(response.text).update({'status_code': response.status_code})
 
         else:
             raise exceptions.TestApiMethodError("接口测试请求类型错误, 请检查相关用例!")
