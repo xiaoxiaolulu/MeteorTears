@@ -42,7 +42,7 @@ class ExecuteSQL(GetJsonParams):
         :Usage:
             loads_sql_data()
         """
-        with open(setting.DATA + filename, encoding='utf-8') as file:
+        with open(setting.CASE_DATA + filename, encoding='utf-8') as file:
             for dic in yaml.load(file):
                 for class_name, body in dic.items():
                     if len(body) > 1:
@@ -69,7 +69,3 @@ class ExecuteSQL(GetJsonParams):
             del self.conn
         else:
             self.conn.rollback()
-
-
-if __name__ == '__main__':
-    pass

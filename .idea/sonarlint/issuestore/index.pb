@@ -56,8 +56,6 @@ G
 lib/utils/exceptions.py,a\3\a30d2ea00a0b0fb916e646d0a0348241b916147a
 O
 lib/utils/load_fiddler_files.py,c\1\c1370020d1e1cc2a980182a0b3bc546d0728fd37
-F
-lib/utils/relevance.py,3\8\3833638ec0c386a34b3e57287460aef7b397012d
 E
 lib/utils/security.py,1\8\1880e2ad5018cc3d3a9fe9ba10c72de50b011548
 F
@@ -68,8 +66,6 @@ J
 lib/__about__.py,9\6\96a9174faa4b868927f3172b257c0d3d35015954
 ?
 lib/__init__.py,0\6\06445c09a5677a4773c7230426389a577b32c770
-G
-mock/test_api_server.py,0\7\07448ce77747d42d012e416ded2299da543f9f66
 8
 setup.py,8\e\8e2edce0d507e1297474f25c00cae94258db38d8
 C
@@ -122,8 +118,6 @@ D
 Pipfile.lock,e\5\e563262209b7c2e62d1869582c8134583baa2204
 E
 lib/templates/content,7\4\740fc784b17304e4da5913d693b36ba7515bf928
-C
-cases/get_demo.yaml,9\8\9877c2b5b18bb5c63ee18f4da7871b14e1fa1221
 B
 report/Report.html,3\5\35c42e828350d240650cd0622abdbacaf4c3b86f
 I

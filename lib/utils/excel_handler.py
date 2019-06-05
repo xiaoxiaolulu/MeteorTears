@@ -72,7 +72,7 @@ def save_excel(
     :Usage:
         save_excel('../data/test.json.xlsx', 2, 'landing_page', 'test.json-副本.xlsx')
     """
-    excel_copy = os.path.join(setting.DATA, 'copy_excel')
+    excel_copy = os.path.join(setting.CASE_DATA, 'copy_excel')
     workbook = xlwt.Workbook(encoding='utf-8')
     table, data = workbook.add_sheet(u"sheet1", cell_overwrite_ok=True), analyze_excel(file, data_index, excel_key)
 

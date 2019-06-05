@@ -65,9 +65,13 @@ class BaseKeyWords(GetJsonParams):
 
             response = self.get(**request_body)
             try:
-                return ast.literal_eval(response.json()).update({'status_code': response.status_code})
+                response_body = response.json()
             except simplejson.JSONDecodeError:
-                return ast.literal_eval(response.text).update({'status_code': response.status_code})
+                response_body = response.text
+            return {
+                "status_code": response.status_code,
+                "response_body": response_body
+            }
 
         if method in ['post', 'POST']:
             temp = ('url', 'headers', 'json', 'data', 'files')
@@ -79,13 +83,13 @@ class BaseKeyWords(GetJsonParams):
 
             response = self.post(**request_body)
             try:
-                return ast.literal_eval(response.json()).update({'status_code': response.status_code})
+                response_body = response.json()
             except simplejson.JSONDecodeError:
-                return ast.literal_eval(response.text).update({'status_code': response.status_code})
+                response_body = response.text
+            return {
+                "status_code": response.status_code,
+                "response_body": response_body
+            }
 
         else:
             raise exceptions.TestApiMethodError("接口测试请求类型错误, 请检查相关用例!")
-
-
-if __name__ == '__main__':
-    pass

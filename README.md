@@ -72,6 +72,7 @@ res_index           | 提取变量             | res_index: [RsaPublicKey, Key]
 check_db            | 落库检查             |   check_db: {TenantName: TESTRLBC}
 relevant_parameter  | 上下游接口关联参数     | relevant_parameter: [Host]
 relevant_sql        |  需要检查的sql语句    | relevant_sql: search_all_tenant_conf
+jsonDiff            | 接口自动对比          | jsonDiff: {Code:1, message: 成功}
 
 ##### 关于断言
 1. 多层结果断言, 以键值对的方式写入， 断言的Key: 预期的Value

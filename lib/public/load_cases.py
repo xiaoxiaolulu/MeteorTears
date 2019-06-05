@@ -59,7 +59,3 @@ class Containers(object):
             self.crop.get('class_name'),
             self.crop.get('func_name')
         )
-
-
-if __name__ == '__main__':
-    pass

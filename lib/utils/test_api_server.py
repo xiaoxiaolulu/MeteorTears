@@ -1,6 +1,9 @@
-from flask import abort, jsonify, Flask, request, Response
+from flask import abort, jsonify, Flask, request, Response, make_response
+from flask_httpauth import HTTPBasicAuth
 
+auth = HTTPBasicAuth()
 app = Flask(__name__)
+
 
 tasks = {
     "data": {

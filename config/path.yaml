@@ -18,9 +18,15 @@ LOG:
   report/log/
 REPORT:
   report/
+CASES_API:
+  cases/testcase
+TEST_SUITE:
+  cases/testsuite
 CASES:
   cases/
-DATA:
-  data/
+CASE_DATA:
+  data/case_data/
+ENV_DATA:
+  data/env_data/
 RES:
   lib/relevant_params/

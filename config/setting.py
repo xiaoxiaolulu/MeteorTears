@@ -11,12 +11,15 @@ __all__ = [
     'WORK_FLOW',
     'XML_CONFIG',
     'TEST_CASES',
+    'TEST_SUITE',
     'Recording',
     'WECHAT',
+    'CASES',
     'LOG',
     'REPORT',
-    'CASES',
-    'DATA',
+    'CASES_API',
+    'CASE_DATA',
+    'ENV_DATA',
     'RES'
 ]
 
@@ -38,9 +41,12 @@ Recording = PRO_PATH['Recording']
 WECHAT = PRO_PATH['WECHAT']
 LOG = PRO_PATH['LOG']
 REPORT = PRO_PATH['REPORT']
-CASES = PRO_PATH['CASES']
-DATA = PRO_PATH['DATA']
+CASES_API = PRO_PATH['CASES_API']
+TEST_SUITE = PRO_PATH['TEST_SUITE']
+CASE_DATA = PRO_PATH['CASE_DATA']
+ENV_DATA = PRO_PATH['ENV_DATA']
 RES = PRO_PATH['RES']
+CASES = PRO_PATH['CASES']
 
 
 # READ_CONF

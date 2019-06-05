@@ -28,19 +28,19 @@ def run(cases=setting.TEST_CASES, pattern='*.py', report=setting.REPORT):
     result.report(filename='Report', description='Report', log_path=report)
 
     # 临时文件回溯
-    def files_backtrack(filepath: list) -> None:
-        if isinstance(filepath, list):
-            for path in filepath:
-                try:
-                    for files in os.listdir(path):
-                        filename = path + files
-                        if os.path.isfile(filename):
-                            os.remove(filename)
-                except PermissionError:
-                    pass
-
-    back_track_files_path = [cases, setting.Recording, setting.WORK_FLOW]
-    files_backtrack(back_track_files_path)
+    # def files_backtrack(filepath: list) -> None:
+    #     if isinstance(filepath, list):
+    #         for path in filepath:
+    #             try:
+    #                 for files in os.listdir(path):
+    #                     filename = path + files
+    #                     if os.path.isfile(filename):
+    #                         os.remove(filename)
+    #             except PermissionError:
+    #                 pass
+    #
+    # back_track_files_path = [cases, setting.Recording, setting.WORK_FLOW]
+    # files_backtrack(back_track_files_path)
 
     # 发送邮件
     # send_mail = email.SendMail()

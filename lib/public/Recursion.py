@@ -49,7 +49,3 @@ class GetJsonParams(object):
             for key in args:
                 result.update({key: cls.get_value(my_dict, str(key))})
         return result
-
-
-if __name__ == '__main__':
-    pass
