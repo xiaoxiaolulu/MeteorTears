@@ -30,21 +30,6 @@ def cases_runner(func):
 
                     body = {}
 
-                    # 用例场景集合继承单组用例, 个组API表达一个测试动作
-                    # relevant_case_api = items.get('body').get('relevant_case_api')
-                    # if relevant_case_api:
-                    #
-                    #     if isinstance(relevant_case_api, list):
-                    #         _relevance = {}
-                    #         for case_api in relevant_case_api:
-                    #
-                    #             relevant_files = case_api + '.yaml'
-                    #             with open(path.join(setting.CASES_API, relevant_files), 'rb') as file:
-                    #                 _relevance.update(yaml.safe_load(file))
-                    #
-                    #         relevance_body = relevance.custom_manage(str(items['body']), _relevance)
-                    #         body.update(ast.literal_eval(relevance_body))
-
                     # 用例文件与临时变量文件相互关联
                     relevant_params = items.get('body').get('relevant_parameter')
 
@@ -55,7 +40,7 @@ def cases_runner(func):
                             for relevant_param in relevant_params:
 
                                 relevant_files = relevant_param + '.yaml'
-                                with open(setting.RES + relevant_files, 'rb') as file:
+                                with open(setting.RES + relevant_files, encoding='utf-8') as file:
                                     _relevance.update(yaml.safe_load(file))
 
                             relevance_body = relevance.custom_manage(str(items['body']), _relevance)
@@ -81,27 +66,6 @@ def cases_runner(func):
                                     with open(file_name + '.yaml', 'w', encoding='utf-8') as file:
                                         file.write('{}: {}'.format(res_key, return_res))
 
-                            if isinstance(res_index, str):
-                                return_res = GetJsonParams.get_value(result, res_index)
-                                file_name = setting.RES + res_index
-                                logger.log_debug('保存的变量值为 {}'.format(return_res))
-
-                                with open(file_name, 'w', encoding='utf-8') as file:
-                                    file.write('{}: {}'.format(res_index, return_res))
-
-                        # 场景测试用例继承单组api集合
-                        relevant_api = items.get('body').get('relevant_case_api')
-                        if relevant_api:
-                            if isinstance(relevant_params, list):
-                                _relevance = {}
-                                for relevant_param in relevant_params:
-                                    relevant_files = relevant_param + '.yaml'
-                                    with open(setting.RES + relevant_files, 'rb') as file:
-                                        _relevance.update(yaml.safe_load(file))
-
-                                relevance_body = relevance.custom_manage(str(items['body']), _relevance)
-                                body.update(ast.literal_eval(relevance_body))
-
                             # 运行用例，暂支持Post与Get请求接口
                             handler = http_keywords.BaseKeyWords(body)
                             result = handler.make_test_templates()
@@ -109,26 +73,6 @@ def cases_runner(func):
                             logger.log_info("本次用例执行的测试结果为{}".format(
                                 json.dumps(result, indent=4, ensure_ascii=False))
                             )
-
-                            # 将临时变量写入yaml文件
-                            res_index = items.get('body').get('res_index')
-                            if res_index:
-                                if isinstance(res_index, list):
-                                    for res_key in res_index:
-                                        return_res = GetJsonParams.get_value(result, res_key)
-                                        file_name = setting.RES + res_key
-                                        logger.log_debug('保存的变量值为 => {} '.format(return_res))
-
-                                        with open(file_name + '.yaml', 'w', encoding='utf-8') as file:
-                                            file.write('{}: {}'.format(res_key, return_res))
-
-                                if isinstance(res_index, str):
-                                    return_res = GetJsonParams.get_value(result, res_index)
-                                    file_name = setting.RES + res_index
-                                    logger.log_debug('保存的变量值为 {}'.format(return_res))
-
-                                    with open(file_name, 'w', encoding='utf-8') as file:
-                                        file.write('{}: {}'.format(res_index, return_res))
 
                         # 验证接口请求数据是否落库
                         excep_columns, res_sql = {}, {}

@@ -63,6 +63,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/HTMLTestRunner_cn.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/README.md">
           <value>
             <set />
@@ -98,6 +103,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/Api/Login.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/A_get_bot_list.yaml">
           <value>
             <set />
@@ -119,6 +129,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/cases/HT.Api.Auth.Service/validatelogin.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/Login.yaml">
           <value>
             <set />
           </value>
@@ -293,6 +308,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/json_data/LoginJson.json">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/search_all_tenant_conf.yaml">
           <value>
             <set />
@@ -358,12 +378,67 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/AndroidId.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/App.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/AppVersion.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/Host.json">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/relevant_params/Host.yaml">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/IMEI.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/relevant_params/Key.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/LoginJson.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/LoginJson.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/OS.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/OsVersion.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/PublicLatitude.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/PublicLongitude.yaml">
           <value>
             <set />
           </value>
@@ -418,7 +493,67 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/appName.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/deviceName.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/loginType.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/login_json.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/mac.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/mem_no.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/mobile.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/publicCityCode.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/publicToken.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/requestId.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/schema.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/relevant_params/token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/validCode.yaml">
           <value>
             <set />
           </value>
@@ -558,12 +693,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/report/log/2019-06-06.log">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/requirements.txt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/res/Host.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/result.html">
           <value>
             <set />
           </value>

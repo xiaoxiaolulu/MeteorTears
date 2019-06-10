@@ -1,2 +1,4 @@
 
-;python:S125h"Remove this commented out code.(ÁžªÅüÿÿÿÿ
+ypython:S3776 "TRefactor this function to reduce its Cognitive Complexity from 23 to the 15 allowed.(ê¡¥Úüÿÿÿÿ8¢Ö¸ß³-
+Opython:S1066¦"/Merge this if statement with the enclosing one.(™‰±–8¢Ö¸ß³-
+Bpython:S125g"Remove this commented out code.(ÁžªÅüÿÿÿÿ8§š¤ß³-

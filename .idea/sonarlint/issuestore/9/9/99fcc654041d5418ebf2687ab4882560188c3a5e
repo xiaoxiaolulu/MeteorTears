@@ -1,0 +1,23 @@
+
+Mpython:S1066ç"/Merge this if statement with the enclosing one.(üƒ£îúÿÿÿÿ
+Apython:S108…")Either remove or fill this block of code.(ã‘Û¾
+Apython:S108›")Either remove or fill this block of code.(ã‘Û¾
+Tpython:PrintStatementUsageÖ"-Replace print statement by built-in function.(—‘³—
+ppython:S101–"SRename class "Template_mixin" to match the regular expression ^[A-Z_][a-zA-Z0-9]+$.(â¹Ž†þÿÿÿÿ
+Mpython:S1066ü"/Merge this if statement with the enclosing one.(üƒ£îúÿÿÿÿ
+Dpython:S1481À"&Remove the unused local variable "ns".(ãá‹¨ÿÿÿÿÿ
+<python:S125ç"Remove this commented out code.(¹û¶£ÿÿÿÿÿ
+bpython:S107·"KMethod "__init__" has 8 parameters, which is greater than the 7 authorized.(¬ì~
+zpython:S117´"]Rename this local variable "sortedResult" to match the regular expression ^[_a-z][a-z0-9_]*$.(×ÂŸŠýÿÿÿÿ
+Mpython:S1066Ê"/Merge this if statement with the enclosing one.(üƒ£îúÿÿÿÿ
+upython:S107è"XMethod "_generate_report_test" has 8 parameters, which is greater than the 7 authorized.(Úñ±æÿÿÿÿÿ
+rpython:S3776Ð"TRefactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.(§¬¯àùÿÿÿÿ
+wpython:S117ð"ZRename this local variable "startTime" to match the regular expression ^[_a-z][a-z0-9_]*$.(×¯©Ýüÿÿÿÿ
+7python:S125¸"Remove this commented out code.(» µ×
+rpython:S3776è"TRefactor this function to reduce its Cognitive Complexity from 49 to the 15 allowed.(Úñ±æÿÿÿÿÿ
+7python:S125‚	"Remove this commented out code.(ÏÏÝž
+rpython:S3776²"TRefactor this function to reduce its Cognitive Complexity from 27 to the 15 allowed.(©ÔüŸþÿÿÿÿ
+<python:S125Š	"Remove this commented out code.(½äç¾ÿÿÿÿÿ
+Hpython:S1066Õ"/Merge this if statement with the enclosing one.(™‰±–
+python:S1871“"cEither merge this branch with the identical one on line "782" or change one of the implementations.(´˜Ö þÿÿÿÿ
+?python:S1481·"&Remove the unused local variable "ns".(øÑ¶
