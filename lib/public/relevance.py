@@ -3,12 +3,11 @@ import re
 
 
 def custom_manage(custom: str, relevance: dict) -> str:
-    """
-    自定义关联配置
+    r"""自定义关联配置
 
     :Args:
-     - custom:  自定义错误说明, STR TYPE.
-     - relevance:  关联对象, DICT TYPE.
+     - custom: 需要关联的数据对象, str object.
+     - relevance:  替换关联数据对象的数据, dict object.
     """
     if isinstance(custom, str):
         try:
@@ -19,7 +18,3 @@ def custom_manage(custom: str, relevance: dict) -> str:
         except TypeError:
             pass
         return custom
-
-
-if __name__ == "__main__":
-    pass

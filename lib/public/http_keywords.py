@@ -17,9 +17,8 @@ class BaseKeyWords(GetJsonParams):
     def __init__(self, request_body: dict):
         self.request_body = request_body
 
-    def post(self, **kwargs: dict):
-        """
-        发送POST请求。返回:class:`Response` object。
+    def post(self, **kwargs: dict) -> requests.Response:
+        r"""发送POST请求。返回:class:`Response` object。
 
         :Args:
          - \*\*kwargs:: “session.post”接受的可选参数。
@@ -29,9 +28,8 @@ class BaseKeyWords(GetJsonParams):
         """
         return requests.post(verify=False, **kwargs)
 
-    def get(self, **kwargs: dict):
-        """
-        发送GET请求。返回:class:`Response` object。
+    def get(self, **kwargs: dict) -> requests.Response:
+        r"""发送GET请求。返回:class:`Response` object。
 
         :Args:
          - \*\*kwargs:: “session.get”接受的可选参数
@@ -42,8 +40,7 @@ class BaseKeyWords(GetJsonParams):
         return requests.get(**kwargs, verify=False)
 
     def make_test_templates(self) -> dict:
-        """
-        创建测试用例的基础数据
+        r"""创建测试用例的基础数据
 
         :Usage:
             make_test_templates()
@@ -65,9 +62,13 @@ class BaseKeyWords(GetJsonParams):
 
             response = self.get(**request_body)
             try:
-                return ast.literal_eval(response.json()).update({'status_code': response.status_code})
+                response_body = response.json()
             except simplejson.JSONDecodeError:
-                return ast.literal_eval(response.text).update({'status_code': response.status_code})
+                response_body = response.text
+            return {
+                "status_code": response.status_code,
+                "response_body": response_body
+            }
 
         if method in ['post', 'POST']:
             temp = ('url', 'headers', 'json', 'data', 'files')
@@ -79,13 +80,13 @@ class BaseKeyWords(GetJsonParams):
 
             response = self.post(**request_body)
             try:
-                return ast.literal_eval(response.json()).update({'status_code': response.status_code})
+                response_body = response.json()
             except simplejson.JSONDecodeError:
-                return ast.literal_eval(response.text).update({'status_code': response.status_code})
+                response_body = response.text
+            return {
+                "status_code": response.status_code,
+                "response_body": response_body
+            }
 
         else:
             raise exceptions.TestApiMethodError("接口测试请求类型错误, 请检查相关用例!")
-
-
-if __name__ == '__main__':
-    pass

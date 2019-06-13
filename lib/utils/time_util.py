@@ -3,11 +3,10 @@ import time
 
 
 def timestamp(format_key: str) -> str:
-    """
-    格式化时间
+    r"""格式化时间
 
     :Args:
-     - format_key: 转化格式方式, STR TYPE.
+     - format_key: 转化格式方式, str object.
 
     :Usage:
         timestamp('format_day')
@@ -24,8 +23,7 @@ def timestamp(format_key: str) -> str:
 
 
 def time_unix() -> int:
-    """
-    转化为时间蹉
+    r"""转化为时间蹉
 
     :Usage:
         time_unix()

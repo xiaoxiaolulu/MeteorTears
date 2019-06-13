@@ -3,12 +3,14 @@ import os
 
 
 def iter_files(path: str, otype='path') -> list:
-    r"""
-    Returns a list of all files in the file directory path.
-    :param path: file path, str object.
-    :param otype: out params type, str object default path.
-    :return: files path list.
-    :rtype: list object
+    r"""返回文件目录路径中所有文件路径，以列表的形式返回.
+
+    :Args:
+     - param path: 文件路径, str object.
+     - param otype: 输出返回的数据类型、默认文件路径, str object default path.
+
+    :Usage:
+        iter_files('./cases/')
     """
 
     filename = []

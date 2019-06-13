@@ -30,15 +30,16 @@ class CreateCase(GetJsonParams):
             skip: str,
             func_name: str,
             description: str) -> None:
-        """
-        创建用例文件
+        r"""创建用例文件
+
         :Args:
-         - classname: 类名&文件名, STR TYPE.
-         - setup: 用例前置条件, STR TYPE.
-         - teardown: 用例后置条件, STR TYPE.
-         - func_name: 函数方法名, STR TYPE.
-         - skip: 用例是否跳过, STR TYPE.
-         - description: 用例描述, STR TYPE.
+         - classname: 测试用例文件名、等同于转化成py文件的类名(test suite), str object.
+         - setup: 测试用例前置条件, str object.
+         - teardown: 测试用例后置条件, str object.
+         - func_name: 具体的测试用例、等同于转化成py文件的函数名(test case), str object.
+         - skip: 测试用例是否跳过, str object.
+         - description: 测试用例的用例描述, str object.
+
         :Usage:
             make_headers_and_contents('Channel', 'add_channel', '新增渠道')
         """
@@ -51,8 +52,8 @@ class CreateCase(GetJsonParams):
             file.write(self.cont.format(skip, func_name,  description))
 
     def create_template(self) -> types.GeneratorType:
-        """
-        通过文件管理器Contextor创建并关闭文件
+        r"""通过上下文管理器读取yaml测试用例加载测试模板，自动生成unittest .py形式的case
+
         :Usage:
             create_template()
         """

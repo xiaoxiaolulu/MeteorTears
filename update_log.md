@@ -1,3 +1,54 @@
+### 2019-06-13
+1. 加入Response文本对比功能，关键词json_diff
+2. 优化邮件模板，新增现有测试用例统计元素
+3. 优化部分文件注释
+```示例
+  json_diff:
+    {
+      "status_code": 200,
+      "response_body": {
+        "data": {
+          "disCouponList": [
+          {
+            "id": "466667",
+            "disName": "我不知道",
+            "endDate": "2019-06-30 00:00",
+            "description": "1. 满100000000减2000\n2. 有效期：2019.06.12-2019.06.30\n3. 仅抵扣租金",
+            "overlaidType": "0",
+            "status": "1",
+            "isFirstLimit": "0",
+            "showPreferential": "￥2000"
+          },
+          {
+            "id": "466665",
+            "disName": "12",
+            "endDate": "2019-06-30 00:00",
+            "description": "1. 满1000减200\n2. 有效期：2019.06.11-2019.06.30\n3. 仅抵扣租金",
+            "overlaidType": "0",
+            "status": "1",
+            "isFirstLimit": "0",
+            "showPreferential": "￥200"
+          }
+          ],
+          "count": "2",
+          "totalPage": "1"
+        },
+        "resCode": "000000",
+        "resMsg": "success"
+      }
+    }
+```
+
+
+### 2019-06-12
+1. 报告失败重跑htmlReport, 暂时不稳定，请暂时使用HtmlReport_back
+2. 优化多层嵌套字典中存在相同Key取值的逻辑断言, 以.分割
+```示例
+  assert_same_key:
+    disCouponList.0.showPreferential: "￥2000"
+```
+
+
 ### 2019-06-02
 1. 项目结构目录调整
 2. 优化Response返回结构体

@@ -11,8 +11,7 @@ class LoadCase(object):
         self.path = path
 
     def get_all_files(self) -> list:
-        """
-        返回文件目录路径下全部文件列表
+        r"""返回文件目录路径下全部文件列表
 
         :Usage:
             get_all_files()
@@ -21,8 +20,7 @@ class LoadCase(object):
 
     @property
     def __get_files_name(self) -> list:
-        """
-        返回文件目录下的文件名
+        r"""返回文件目录下的文件名
 
         :Usage:
             __get_files_name
@@ -30,8 +28,7 @@ class LoadCase(object):
         return fp.iter_files(self.path, otype='name')
 
     def load_files(self) -> list:
-        """
-        加载文件
+        r"""加载cases目录下的用例文件
 
         :Usage:
             load_files()
@@ -59,7 +56,3 @@ class Containers(object):
             self.crop.get('class_name'),
             self.crop.get('func_name')
         )
-
-
-if __name__ == '__main__':
-    pass

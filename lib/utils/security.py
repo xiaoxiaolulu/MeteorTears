@@ -3,11 +3,10 @@ import base64
 
 
 def encrypt(key: bytes)-> bytes:
-    """
-    加密
+    r"""加密
 
     :Arg:
-     - key: 加密的字符串, BYTES TYPE.
+     - key: 加密的字符串, bytes object.
 
     :Usage:
         encrypt(b'hello')
@@ -24,11 +23,10 @@ def encrypt(key: bytes)-> bytes:
 
 
 def decryption(key: bytes) -> str:
-    """
-    解密
+    r"""解密
 
     :Args:
-     - key: 解密的字符串, BYTES TYPE.
+     - key: 解密的字符串, bytes object.
 
     :Usage:
         decryption(b'NTQ2NDY0MjY4QHFxLmNvbQ==')
@@ -45,17 +43,13 @@ def decryption(key: bytes) -> str:
 
 
 def batch_decryption(keys):
-    """
-    批量解密
+    r"""批量解密
+
     :Args:
-     - keys:    解密的数据, LIST TYPE OR DICT TYPE.
+     - keys:    解密的数据, list object or tuple object.
 
     :Usage:
         batch_decryption(['MTkyLjE2OC4xNzAuMjQ=', 'MzMwNg=='])
     """
     return dict(zip(keys, map(lambda content: decryption(bytes(content, encoding='utf-8')), keys.values())))\
         if isinstance(keys, dict) else list(map(lambda item: decryption(bytes(item, encoding='utf-8')), keys))
-
-
-if __name__ == '__main__':
-    print(encrypt('whpttvwcobmubbcd'))

@@ -16,8 +16,7 @@ class WeChatAlarm(object):
 
     @property
     def log_file(self) -> str:
-        """
-        获取最新的日志文件
+        r"""获取最新的日志文件
 
         :Usage:
             log_file()
@@ -27,8 +26,7 @@ class WeChatAlarm(object):
         return log_list[-1]
 
     def analyze_files(self) -> list:
-        """
-        分析日志信息，提取存在错误的信息
+        r"""分析日志信息，提取存在错误的信息
 
         :Usage:
             analyze_files()
@@ -42,8 +40,7 @@ class WeChatAlarm(object):
         return error_message
 
     def error_log_message(self) -> str:
-        """
-        拼接错误信息
+        r"""拼接错误信息
 
         :Usage:
             error_log_message()
@@ -55,8 +52,7 @@ class WeChatAlarm(object):
 
     @classmethod
     def get_token(cls) -> str:
-        """
-        获取微信公众号token信息
+        r"""获取微信公众号token信息
 
         :Usage:
             get_token()
@@ -70,10 +66,10 @@ class WeChatAlarm(object):
 
     @classmethod
     def send_message(cls, message: str) -> None:
-        """
-        发送错误的日志信息给企业微信
+        r"""发送错误的日志信息给企业微信
+
         :Args:
-         - message: 错误的日志信息, STR TYPE.
+         - message: 错误的日志信息, str object.
         """
         send_url = (' https://qyapi.weixin.qq.com/cgi-bin/message/send?'
                     'access_token={}'.format(cls.get_token()))

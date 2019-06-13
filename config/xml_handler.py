@@ -21,8 +21,7 @@ class XmlHandler(metaclass=MetaSingleton):
 
     @property
     def _getroot(self) -> str:
-        """
-        获取Xml节点
+        r"""获取Xml节点
 
         :Usage:
             _getroot()
@@ -30,11 +29,10 @@ class XmlHandler(metaclass=MetaSingleton):
         return parse(self.filename).getroot()
 
     def get_child(self, tag: str) -> dict:
-        """
-        获取Xml节点属性
+        r"""获取Xml节点属性
 
         :Args:
-         - tag: 根据tag取一个tag下对应的子属性, STR TYPE.
+         - tag: 根据tag取一个tag下对应的子属性, str object.
 
         :Usage:
             get_child('emailReceivers')
@@ -50,9 +48,8 @@ class XmlHandler(metaclass=MetaSingleton):
             raise IndexError("The element child key is exist ")
 
     @property
-    def get_all_receivers(self):
-        """
-        以列表的方式返回接收人列表
+    def get_all_receivers(self) -> list:
+        r"""以列表的方式返回接收人列表
 
         :Usage:
             get_all_receivers()
@@ -62,7 +59,3 @@ class XmlHandler(metaclass=MetaSingleton):
             for child in value.values():
                 receivers.append(child)
         return receivers
-
-
-if __name__ == '__main__':
-    pass

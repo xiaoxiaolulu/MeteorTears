@@ -10,13 +10,13 @@ Meteor tears 一款基于python-request通过Yaml格式文件管理用例的接�
 1.  数据管理使用Yaml文件
 2.  用例编写使用Yaml文件
 3.  支持上下游接口参数关联，提取
-4.  接口返回体多字段, Type断言, len断言
+4.  接口Response返回体多字段, Type断言, len断言, 对比
 5.  落库校验，支持多个字段
-6.  接口录制功能
+6.  接口录制功能(待完善)
 7.  微信，邮件告警
 
 
-#### 用例编写(Yaml文件管理)
+#### 用例(示例)
 ```yaml
 test_update_bot_baseinfo:
   relevant_parameter: [Host, Token]
@@ -57,7 +57,7 @@ key                 | value               | example
 ------------------- | ------------------- | ----------------
 url                 | 请求接口路由          | /admin/compaign/export
 method              | 请求方式             | GET
-params              | url地址参数          | ?channelId=123importId=456
+params              | url地址参数          | channelId=123importId=456
 data                | 请求数据             | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
 file                | 上传文件数据          | {file=operate_excel.save_excel(file=os.path.join(parameters.make_directory('Data', 0), 'excel\compaign_template.xlsx'),data_index=0,excel_key='落地页编号',excel_name='compaign_template_副本.xlsx')}
 json                | Json类型请求         | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
@@ -72,11 +72,13 @@ res_index           | 提取变量             | res_index: [RsaPublicKey, Key]
 check_db            | 落库检查             |   check_db: {TenantName: TESTRLBC}
 relevant_parameter  | 上下游接口关联参数     | relevant_parameter: [Host]
 relevant_sql        |  需要检查的sql语句    | relevant_sql: search_all_tenant_conf
+jsonDiff            | 接口自动对比          | jsonDiff: {Code:1, message: 成功}
 
 ##### 关于断言
 1. 多层结果断言, 以键值对的方式写入， 断言的Key: 预期的Value
 2. 返回体数据类型断言，整体返回提ResponseType：[type, dict], 断言某个Key的类型 Key: [type, str]
 3. 返回结果长度断言, Key: [len, 36]
+4. 断言中存在多层嵌套情况使用.进行分割取值，如：数组.索引.需要取值的key，若超出取值索引报IndexError
 ```text
 assert: 
     code: 1
@@ -91,6 +93,8 @@ assert:
     password: [
         len,
         8]
+assert_same_key:
+    disCouponList.0.showPreferential: "￥200"
 ```
 
 ##### 落库校验
@@ -173,24 +177,5 @@ File -》Save -》  (a) All sessions  以saz格式文件保存所有会话
 3. C:\Users\56464\Documents\Fiddler2\Scripts\目录下最好先备份原文件,并命名CustomRulesBack.js
 4. 录制的原始接口信息会保存在/WorkFlow/目录下
 5. 录制完的接口为JSON格式文件, load_fiddler_files.py分析并生成新的迭代对象, create_workFlow_obj.py将生成新的Json格式用例文件,
-
-
-#### 效果展示
-
-###### 上传文件用例示例 
-![upload](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B001.png)
-###### 跳过用例示例 
-![skip](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B002.png)
-###### Post请求用例示例 
-![post](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B003.png)
-###### Get请求用例示例 
-![get](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B004.png)
-###### 测试报告示例 
-![report](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B005.png)
-###### 自动生成用例示例 
-![case](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B006.png)
-###### 邮件示例 
-![email](https://github.com/xiaoxiaolulu/MeteorTears/blob/master/lib/static/%E7%A4%BA%E4%BE%8B007.png)
---------------
 
 欢迎交流   QQ: 546464268(Null)

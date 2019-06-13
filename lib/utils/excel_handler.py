@@ -7,10 +7,10 @@ from config import setting
 
 
 def read_excel(file: str) -> list:
-    """
-    读取excel
+    r"""读取excel
+
     :Args:
-     - file: 文件路径, STR TYPE.
+     - file: 文件路径, str object.
 
     :Usage:
         read_excel(../data/test.json.xlsx)
@@ -32,13 +32,12 @@ def read_excel(file: str) -> list:
 
 
 def analyze_excel(file: str, data_index: int, excel_key: str) -> list:
-    """
-    分析表格中的事件, 并使用eval方法执行py代码
+    r"""分析表格中的事件, 并使用eval方法执行py代码
 
     :Args:
-     - file: 文件路径, STR TYPE.
-     - data_index: 指定数据的索引, INT TYPE.
-     - excel_key: python代码数据对应的键, STR TYPE
+     - file: 文件路径, str object.
+     - data_index: 指定数据的索引, int object.
+     - excel_key: python代码数据对应的键, str object.
 
     :Usage:
         analyze_excel('..data/test.json.xlsx', 1, 'landing_page')
@@ -60,19 +59,18 @@ def save_excel(
         data_index: int,
         excel_key: str,
         excel_name: str = 'copy_excel'):
-    """
-    分析表格后得到新的数据,并写入一份副本文件
+    r"""分析表格后得到新的数据,并写入一份副本文件
 
     :Args:
-     - file: 文件路径, STR TYPE.
-     - data_index: 指定数据的索引, INT TYPE.
-     - excel_key: python代码数据对应的键, STR TYPE
-     - excel_name: 复制的文件名, 默认为copy_excel, STR TYPE.
+     - file: 文件路径, str object.
+     - data_index: 指定数据的索引, int object.
+     - excel_key: python代码数据对应的键, str object
+     - excel_name: 复制的文件名, 默认为copy_excel, str object.
 
     :Usage:
         save_excel('../data/test.json.xlsx', 2, 'landing_page', 'test.json-副本.xlsx')
     """
-    excel_copy = os.path.join(setting.DATA, 'copy_excel')
+    excel_copy = os.path.join(setting.CASE_DATA, 'copy_excel')
     workbook = xlwt.Workbook(encoding='utf-8')
     table, data = workbook.add_sheet(u"sheet1", cell_overwrite_ok=True), analyze_excel(file, data_index, excel_key)
 
@@ -87,7 +85,3 @@ def save_excel(
         for q, p in enumerate(j):
             table.write(i, q, str(p))
     workbook.save(os.path.join(excel_copy, excel_name))
-
-
-if __name__ == '__main__':
-    pass

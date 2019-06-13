@@ -5,17 +5,17 @@ import json
 import builtins
 from functools import wraps
 from config import setting
-from lib.utils import relevance
-from lib.public import logger
+from collections import Iterable
+from lib.utils import exceptions
+from lib.public import logger, relevance
 from lib.public import http_keywords
-from lib.utils.use_SqlServer import ExecuteSQL
+from lib.utils.use_MySql import ExecuteSQL
 from lib.public.Recursion import GetJsonParams
 from lib.public.case_manager import TestContainer
+from lib.public import text_similarity_comparison as diff_lib
 
 
-DataBaseSetting = {
-    'server': "192.168.1.171:21433", 'user': "testuser", 'password': "testuser@123", 'database': 'ChatbotAdmin-TEST'
-}
+DataBaseSetting = setting.DATA_BASE_CONF
 
 
 def cases_runner(func):
@@ -35,17 +35,7 @@ def cases_runner(func):
 
                     if relevant_params:
 
-                        if isinstance(relevant_params, str):
-                            relevant_files = relevant_params + '.yaml'
-                            _relevance = {}
-                            with open(setting.RES + relevant_files, 'rb') as file:
-                                _relevance.update(yaml.safe_load(file))
-
-                            relevance_body = relevance.custom_manage(str(items['body']), _relevance)
-                            body.update(ast.literal_eval(relevance_body))
-
                         if isinstance(relevant_params, list):
-
                             _relevance = {}
                             for relevant_param in relevant_params:
 
@@ -60,7 +50,7 @@ def cases_runner(func):
                         handler = http_keywords.BaseKeyWords(body)
                         result = handler.make_test_templates()
 
-                        logger.log_info("The test.json result is{}".format(
+                        logger.log_info("本次用例执行的测试结果为{}".format(
                             json.dumps(result, indent=4, ensure_ascii=False))
                         )
 
@@ -89,33 +79,12 @@ def cases_runner(func):
                         relevant_database = items.get('body').get('relevant_sql')
                         if relevant_database:
 
-                            if isinstance(relevant_database, str):
-
-                                filename = relevant_database + '.yaml'
-
-                                relevant_sql = {}
-                                with open(setting.DATA + filename, 'rb') as file:
-                                    relevant_sql.update(yaml.safe_load(file))
-
-                                action = relevant_sql[relevant_database]['action']
-                                columns = relevant_sql[relevant_database]['execSQL']['columns']
-                                table = relevant_sql[relevant_database]['execSQL']['table']
-                                params = relevant_sql[relevant_database]['execSQL']['params']
-                                desc = relevant_sql[relevant_database]['execSQL']['desc']
-                                execute_sql = '{} {} FROM {} {} {}'.format(action, columns, table, params, desc)
-                                execute_res = ExecuteSQL(DataBaseSetting).execute(execute_sql)[0][0]
-
-                                res_sql.update({columns: execute_res})
-                                logger.log_debug('执行sql结果为{}'.format(execute_res))
-
                             if isinstance(relevant_database, list):
-
                                 for relevant_db in relevant_database:
-
                                     filename = relevant_db + '.yaml'
 
                                     relevant_sql = {}
-                                    with open(setting.DATA + filename, 'rb') as file:
+                                    with open(setting.CASE_DATA + filename, 'rb') as file:
                                         relevant_sql.update(yaml.safe_load(file))
 
                                     action = relevant_sql[relevant_db]['action']
@@ -129,13 +98,15 @@ def cases_runner(func):
                                     res_sql.update({columns: execute_res})
                                     logger.log_debug('执行sql结果为{}'.format(execute_res))
 
-                            return func(
-                                *args,
-                                response=result,
-                                execute_res=res_sql,
-                                kwassert=items.get('body').get('assert'),
-                                db_check=items.get('body').get('check_db')
-                            )
+                        return func(
+                            *args,
+                            response=result,
+                            kwassert=items.get('body').get('assert'),
+                            kwassert_same=items.get('body').get('assert_same_key'),
+                            json_diff=items.get('body').get('json_diff'),
+                            execute_res=res_sql,
+                            db_check=items.get('body').get('check_db')
+                        )
 
     return wrap
 
@@ -147,7 +118,9 @@ def result_assert(func):
 
         response = kwargs.get('response')
         kwassert = kwargs.get('kwassert')
-        database_check = kwargs.get('db_check')
+        kwassert_same = kwargs.get('kwassert_same')
+        json_diff = kwargs.get('json_diff')
+        database_check = kwargs.get('db_check') if kwargs.get('db_check') else {}
         execute_res = kwargs.get('execute_res')
 
         tmp = tuple(kwassert.keys())
@@ -166,27 +139,45 @@ def result_assert(func):
                 else:
                     result[key] = [tp, getattr(builtins, tp)(result.get(key))]
 
+        expect_kwassert_same, response_kwassert_content = '', ''
+        if isinstance(kwassert_same, Iterable):
+            for key, value in dict(kwassert_same).items():
+                flag = key.split('.')
+                response_kwassert_content += GetJsonParams.get_same_content(response, flag[0], int(flag[1]), flag[2])
+                expect_kwassert_same += value
+
         expect_assert_value = json.dumps(
             result,
             sort_keys=True,
             ensure_ascii=False
         )
+
         kwassert_value = json.dumps(
             kwassert,
             sort_keys=True,
             ensure_ascii=False
         )
+
+        expect_json_diff = json.dumps(
+            json_diff,
+            sort_keys=True,
+            ensure_ascii=False
+        )
+
+        json_diff_content = diff_lib.contrast_num(str(expect_json_diff), str(response))
+        logger.log_info("本次Response自动对比结果为{}".format(
+            json.dumps(json_diff_content, indent=4, ensure_ascii=False))
+        )
+
         return func(
             *args,
             response=result,
             expect_assert_value=expect_assert_value,
             kwassert_value=kwassert_value,
+            expect_kwassert_same=expect_kwassert_same,
+            response_kwassert_content=response_kwassert_content,
             database_check=database_check,
             execute_res=execute_res
         )
 
     return wrap
-
-
-if __name__ == '__main__':
-    pass

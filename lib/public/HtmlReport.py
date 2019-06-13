@@ -67,11 +67,11 @@ class MakeResultJson:
         :param datas: 拿到所有返回数据结构
         """
         self.datas = datas
+        print(datas)
         self.result_schema = {}
 
     def __setitem__(self, key, value):
         """
-
         :param key: self[key]
         :param value: value
         :return:
@@ -92,16 +92,23 @@ class MakeResultJson:
             'status',
             'log',
         )
+        obj_type = (int, tuple, bool, str, dict, list, bytes, float)
         for key, data in zip(keys, self.datas):
-            self.result_schema.setdefault(key, data)
+            try:
+                if isinstance(data, obj_type):
+                    self.result_schema.setdefault(key, data)
+            except TypeError:
+                continue
         return json.dumps(self.result_schema)
 
 
-class ReportTestResult(unittest.TestResult):
+TestResult = unittest.TestResult
+
+
+class ReportTestResult(TestResult):
     """ override"""
 
-    def __init__(self, suite, stream=sys.stdout):
-        """ pass """
+    def __init__(self, suite, stream=sys.stdout, retry=1, save_last_try=False):
         super(ReportTestResult, self).__init__()
         self.begin_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         self.start_time = 0
@@ -120,6 +127,11 @@ class ReportTestResult(unittest.TestResult):
         self.suite = suite
         self.status = ''
         self.result_list = []
+        self.fail_result = []
+        self.retry = retry
+        self.save_last_try = save_last_try
+        self.case_status = 0
+        self.trys = 0
         self.case_log = ''
         self.default_report_name = '自动化测试报告'
         self.FIELDS = None
@@ -161,6 +173,30 @@ class ReportTestResult(unittest.TestResult):
             当测试用力执行完成后进行调用
         :return:
         """
+        if self.retry and self.retry >= 1:
+            self.trys += 1
+            if self.case_status == 1:
+                if self.trys <= self.retry:
+                    if self.save_last_try:
+                        t = self.fail_result.pop(-1)
+                        # if t[0] == 1:
+                        #     self.failure_count -= 1
+                        # else:
+                        #     self.error_count -= 1
+                    import copy
+                    test = copy.copy(test)
+                    sys.stderr.write("Retesting... ")
+                    sys.stderr.write(str(test))
+                    sys.stderr.write('..%d \n' % self.trys)
+                    doc = getattr(test, '_testMethodDoc', u"") or u''
+                    if doc.find('_retry') != -1:
+                        doc = doc[:doc.find('_retry')]
+                    desc = "%s__retry:%s" % (doc, '重跑用例')
+                    test._testMethodDoc = desc
+                    test(self)
+                else:
+                    self.case_status = 0
+                    self.trys = 0
         self.end_time = '{0:.3} s'.format((time.time() - self.start_time))
         self.result_list.append(self.get_all_result_info_tuple(test))
         self.complete_output()
@@ -238,6 +274,7 @@ class ReportTestResult(unittest.TestResult):
             sys.stderr.write('.')
         self.success_counter += 1
         self.status = '成功'
+        self.case_status = 0
         self.case_log = output.split('\n')
         self._mirrorOutput = True  # print(class_name, method_name, method_doc)
 
@@ -253,6 +290,7 @@ class ReportTestResult(unittest.TestResult):
         logs.append(output)
         logs.extend(self.error_or_failure_text(err))
         self.failure_count += 1
+        self.case_status = 1
         self.add_test_type('失败', logs)
         if self.verbosity > 1:
             sys.stderr.write('F  ')
@@ -275,6 +313,11 @@ class ReportTestResult(unittest.TestResult):
         logs.append(output)
         logs.extend(self.error_or_failure_text(err))
         self.failure_count += 1
+        self.case_status = 1
+        TestResult.addFailure(self, test, err)
+        _, _exc_str = self.failures[-1]
+        self.fail_result.append((1, test))
+        # self.result_list.append((1, test, output, _exc_str))
         self.add_test_type('失败', logs)
         if self.verbosity > 1:
             sys.stderr.write('F  ')
@@ -295,6 +338,7 @@ class ReportTestResult(unittest.TestResult):
         logs = [reason]
         self.complete_output()
         self.skipped += 1
+        self.case_status = 0
         self.add_test_type('跳过', logs)
 
         if self.verbosity > 1:
@@ -331,12 +375,14 @@ class ReportTestResult(unittest.TestResult):
 class Report(ReportTestResult, PATH):
     img_path = 'img/' if platform.system() != 'Windows' else 'img\\'
 
-    def __init__(self, suites):
+    def __init__(self, suites, retry=0, save_last_try=True):
         super(Report, self).__init__(suites)
         self.suites = suites
         self.log_path = None
         self.title = '自动化测试报告'
         self.filename = 'report.html'
+        self.retry = retry
+        self.save_last_try = save_last_try
 
     def report(self, description, filename: str = None, log_path='.'):
         """

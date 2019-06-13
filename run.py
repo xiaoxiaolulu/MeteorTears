@@ -24,7 +24,7 @@ def run(cases=setting.TEST_CASES, pattern='*.py', report=setting.REPORT):
     RandomData.create_random_test_data()
 
     test_suite = unittest.defaultTestLoader.discover(cases, pattern)
-    result = Report(test_suite)
+    result = Report(test_suite, retry=3)
     result.report(filename='Report', description='Report', log_path=report)
 
     # 临时文件回溯

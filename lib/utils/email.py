@@ -29,14 +29,16 @@ class SendMail(object):
         self.con = self.cons.read()
 
     def make_email_template(self):
-        content = resvalues.get_report_values()
+        r"""将各测试数据写入测试邮件模板
+        """
+        content, cases_table = resvalues.get_report_values(), resvalues.write_cases_result()
         with open(setting.REPORT + 'email', 'w', encoding='utf-8') as file:
-            file.write(self.con.format(content[0], content[1],  content[2], content[3]))
+            file.write(self.con.format(content[0], content[1],  content[2], content[3], cases_table))
 
     @property
     def get_html_report(self) -> str:
-        """
-        获取测试报告路径
+        r"""获取测试报告路径
+
         :Usage:
             get_html_report()
         """
@@ -46,8 +48,8 @@ class SendMail(object):
             pass
 
     def email_content(self) -> None:
-        """
-        定义发送邮件的内容
+        r"""定义发送邮件的内容
+
         :Usage:
             email_content()
         """
@@ -66,6 +68,8 @@ class SendMail(object):
         self.msg.attach(att2)
 
     def send_mail(self):
+        r"""发送测试报告邮件
+        """
         self.email_content()
         self.msg['From'] = setting.EMAIL_CONF['sendaddr_name']
         self.msg['To'] = ','.join(self.receiver)
@@ -84,7 +88,3 @@ class SendMail(object):
             logger.log_warn(error)
         finally:
             server.quit()
-
-
-if __name__ == '__main__':
-    pass

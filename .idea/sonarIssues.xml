@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../API_Automation-master/Common/Request.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/.gitignore">
           <value>
             <set />
@@ -73,6 +78,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/Api/ApiLogin.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/A_get_bot_list.yaml">
           <value>
             <set />
@@ -94,6 +104,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/cases/HT.Api.Auth.Service/validatelogin.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cases/User_Coupon/Coupon.yaml">
           <value>
             <set />
           </value>
@@ -233,6 +248,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/config/wechat.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/config/xml_handler.py">
           <value>
             <set />
@@ -273,6 +293,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/public/Recursion.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/public/case_manager.py">
           <value>
             <set />
@@ -293,7 +318,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/public/relevance.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/public/text_similarity_comparison.py">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/public/wraps.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/Host.yaml">
           <value>
             <set />
           </value>
@@ -353,6 +393,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/code_success.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/status_code.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/report/HighTalkReport.html">
           <value>
             <set />
@@ -374,6 +429,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/lib/templates/report">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/test_cases/Demo.py">
           <value>
             <set />
           </value>
@@ -424,6 +484,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/lib/utils/security.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/utils/test_api_server.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/utils/time_util.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/utils/use_MySql.py">
           <value>
             <set />
           </value>
@@ -508,12 +583,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../MockServer-master/config.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MockServer/MockServer/views.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mock-master/view/__init__.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../sweetest-master/sweetest/data/Baidu-baidu.csv">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../项目资料/测试脚本/doraemon-master/src/lib/BeautifulReport.py">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../项目资料/测试脚本/doraemon-master/src/testcases/TestGithubApi.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/MeteorTears/cases/User_Coupon/Coupon.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/MeteorTears/run.py">
           <value>
             <set />
           </value>

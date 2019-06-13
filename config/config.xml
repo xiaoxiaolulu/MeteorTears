@@ -9,4 +9,13 @@
         <sendaddr_name>546464268@qq.com</sendaddr_name>
         <sendaddr_pswd>whpttvwcobmubbcd</sendaddr_pswd>
     </emailSender>
+    <MySqlSetting>
+        <type>MySQLTest9</type>
+        <host>47.96.104.13</host>
+        <port>3306</port>
+        <user>autoTest</user>
+        <passwd>auto2016</passwd>
+        <db>atzuchedb</db>
+        <charset>utf8</charset>
+    </MySqlSetting>
 </myconfig>

@@ -1,26 +1,30 @@
-CONTENT:
-  lib/templates/content
-HEADER:
-  lib/templates/header
-EMAIL:
-  lib/templates/email
-WORK_FLOW:
-  lib/work_flow/
-XML_CONFIG:
-  config/config.xml
-TEST_CASES:
-  lib/test_cases/
-Recording:
-  lib/record/
-WECHAT:
-  config/wechat.yaml
-LOG:
-  report/log/
-REPORT:
-  report/
-CASES:
-  cases/
-DATA:
-  data/
-RES:
-  lib/relevant_params/
+### 项目个目录路径 ###
+
+# Unittest文件模板-用例函数部分(test case)
+CONTENT: lib/templates/content
+# Unittest文件模板-类组织结构(test suite)
+HEADER: lib/templates/header
+# 邮件模板
+EMAIL: lib/templates/email
+# 录制文件转化后的测试case
+WORK_FLOW: lib/work_flow/
+# 项目配置文件
+XML_CONFIG: config/config.xml
+# 自动生成.py用例文件
+TEST_CASES: lib/test_cases/
+# 录制接口源文件
+Recording: lib/record/
+# 企业微信相关参数文件
+WECHAT: config/wechat.yaml
+# 日志存放目录
+LOG: report/log/
+# 测试报告存放目录
+REPORT: report/
+# 编写Yaml格式测试用例目录
+CASES: cases/
+# 测试数据
+CASE_DATA: data/case_data/
+# 项目依赖的公共数据
+ENV_DATA: data/env_data/
+# 临时变量 & 常用变量 & 随机数据 文件目录
+RES: lib/relevant_params/

@@ -21,7 +21,9 @@ class RandomData(object):
     }
 
     @classmethod
-    def create_random_test_data(cls):
+    def create_random_test_data(cls) -> None:
+        r"""创建常用的随机数据，并生成.yaml文件存在临时文件目录中
+        """
         for key, value in cls.random_data.items():
             filepath = setting.RES + key + '.yaml'
             with open(filepath, 'w', encoding='utf-8') as file:

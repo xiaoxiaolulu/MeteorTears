@@ -1,7 +1,7 @@
 # # -*- coding:utf-8 -*-
 import yaml
 import types
-import pymssql
+import pymysql
 from config import setting
 from lib.public.Recursion import GetJsonParams
 
@@ -14,35 +14,33 @@ class ExecuteSQL(GetJsonParams):
         self.cursor = None
 
     def __enter__(self):
-        self.conn = pymssql.connect(**self.connect_setting)
+        self.conn = pymysql.connect(**self.connect_setting)
         self.cursor = self.conn.cursor()
         return self
 
     def execute(self, *args, **kwargs) -> dict:
-        """
-        执行SQL语句
+        r"""执行SQL语句
 
         :Args:
-         - query: 查询执行语句 STR TYPE.
-         - args: 用于执行的查询参数, TUPLE, LIST OR DICT TYPE.
+         - query: 查询执行语句 str object.
+         - args: 用于执行的查询参数, tuple/list/dict object.
 
         :Usage:
             execute("SELECT count(*) FROM sqlite_master WHERE type='table' AND name='test_results'")
         """
-        self.conn = pymssql.connect(**self.connect_setting)
-        self.cursor = self.conn.cursor()
+        self.conn = pymysql.connect(**self.connect_setting)
+        self.cursor = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
         self.cursor.execute(*args, **kwargs)
         return self.cursor.fetchall()
 
     @classmethod
     def loads_sql_data(cls, filename) -> types.GeneratorType:
-        """
-        加载SQL数据，并以字典的形式返回
+        r"""加载SQL数据，并以字典的形式返回
 
         :Usage:
             loads_sql_data()
         """
-        with open(setting.DATA + filename, encoding='utf-8') as file:
+        with open(setting.CASE_DATA + filename, encoding='utf-8') as file:
             for dic in yaml.load(file):
                 for class_name, body in dic.items():
                     if len(body) > 1:
@@ -69,7 +67,3 @@ class ExecuteSQL(GetJsonParams):
             del self.conn
         else:
             self.conn.rollback()
-
-
-if __name__ == '__main__':
-    pass

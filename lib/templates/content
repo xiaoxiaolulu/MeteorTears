@@ -6,4 +6,6 @@
         """{}"""
         response = kwargs.get('response')
         self.assertEqual(kwargs.get('expect_assert_value'), kwargs.get('kwassert_value'))
+        self.assertEqual(kwargs.get('expect_kwassert_same'), kwargs.get('response_kwassert_content'))
         self.assertEqual(kwargs.get('database_check'), kwargs.get('execute_res'))
+
