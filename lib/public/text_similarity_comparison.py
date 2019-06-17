@@ -9,11 +9,10 @@ from os import path
 
 
 def stopwords(seg_list: list) -> list:
-    r"""Filter out stop words.
+    r"""过滤掉文本中的停用词, 停用词路径：/data/env_data/stopKeywords/
 
-    :param seg_list: The list obtained after word segmentation, list object.
-    :return: Remove the data after the stop word.
-    :rtype: list object.
+    :Args:
+     - seg_list: 使用JieBa分词后对待测试文本进行分词后得到的一个列表对象, list object.
     """
 
     stayed_word = []
@@ -27,11 +26,10 @@ def stopwords(seg_list: list) -> list:
 
 
 def count(res: str):
-    r"""Keyword statistics and word frequency statistics.
+    r"""待测试文本进行分词后，统计得出词频。
 
-    :param res: Keywords, str object.
-    :return: Returns keyword and word frequency statistics.
-    :rtype: list object.
+    :Args:
+     - res: 待测试文本关键字, str object.
     """
 
     seg_list = list(jieba.cut(res))
@@ -42,23 +40,21 @@ def count(res: str):
 
 
 def merge_word(expect: dict, res: dict) -> list:
-    r"""Keyword merge diversity.
+    r"""关键词合并单词.
 
-    :param expect: The expected data, dict object.
-    :param res: Actual return result, dict object.
-    :return: And set the results.
-    :rtype: list object.
+    :Args:
+     - expect: 预期待测文本值, dict object.
+     - res: Response返回预对比值, dict object.
     """
     return list(set(list(expect.keys())).union(set(list(res.keys()))))
 
 
 def cal_vector(expect: dict, merge_word: list) -> list:
-    r"""Get the document vector
+    r"""获取文本向量值
 
-    :param expect: The expected data, dict object.
-    :param merge_word: Keyword merge diversity, list object.
-    :return: Get the vector result.
-    :rtype: list object.
+    :Args:
+     - expect: 预期待测文本值,, dict object.
+     - merge_word: 关键词合并单词., list object.
     """
     vector = []
     for ch in merge_word:
@@ -70,13 +66,12 @@ def cal_vector(expect: dict, merge_word: list) -> list:
 
 
 def cal_con_dis(v1: list, v2: list, length_vector):
-    r"""Compute cosine distance.
+    r"""计算余弦距离.
 
-    :param v1: Expected vector, list object.
-    :param v2: The actual vector, list object.
-    :param length_vector: The length of the vector, list object.
-    :return: Degree of contrast.
-    :rtype: float object.
+    :Args:
+     - v1: 预期的向量, list object.
+     - v2: 实际的向量, list object.
+     - length_vector: 向量的长度, list object.
     """
 
     a1 = np.asarray(v1)
@@ -90,13 +85,12 @@ def cal_con_dis(v1: list, v2: list, length_vector):
         return 0
 
 
-def contrast_num(expected_knowledge, actual_knowledge):
-    r"""result of contrast
+def contrast_num(expected_knowledge, actual_knowledge) -> float:
+    r"""得出计算对比度
 
-    :param expected_knowledge:  expected result, str object.
-    :param actual_knowledge:    actual result, str object.
-    :return: Contrast value
-    :rtype: float object.
+    :Args:
+     - expected_knowledge: 预期的待测试文本, str object.
+     - actual_knowledge: 实际Response返回文本, str object.
     """
     expect, res = count(expected_knowledge), count(actual_knowledge)
     merge = merge_word(expect, res)

@@ -7,6 +7,7 @@ import simplejson
 from urllib import parse
 from lib.public import logger
 from lib.utils import exceptions
+from requests import exceptions
 from lib.public.Recursion import GetJsonParams
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -50,7 +51,7 @@ class BaseKeyWords(GetJsonParams):
         method = GetJsonParams.get_value(self.request_body, 'method')
 
         if method in ['get', 'GET']:
-            temp = ('url', 'params', 'headers')
+            temp = ('url', 'params', 'headers', 'timeout')
             request_body = GetJsonParams.for_keys_to_dict(*temp, my_dict=self.request_body)
             if request_body['params']:
                 if '=' in request_body.get('params') or '&' in request_body.get('params'):
@@ -60,33 +61,39 @@ class BaseKeyWords(GetJsonParams):
                 json.dumps(request_body, indent=4, ensure_ascii=False))
             )
 
-            response = self.get(**request_body)
             try:
-                response_body = response.json()
-            except simplejson.JSONDecodeError:
-                response_body = response.text
-            return {
-                "status_code": response.status_code,
-                "response_body": response_body
-            }
+                response = self.get(**request_body)
+                try:
+                    response_body = response.json()
+                except simplejson.JSONDecodeError:
+                    response_body = response.text
+                return {
+                    "status_code": response.status_code,
+                    "response_body": response_body
+                }
+            except exceptions.Timeout as error:
+                raise error
 
         if method in ['post', 'POST']:
-            temp = ('url', 'headers', 'json', 'data', 'files')
+            temp = ('url', 'headers', 'json', 'data', 'files', 'timeout')
             request_body = GetJsonParams.for_keys_to_dict(*temp, my_dict=self.request_body)
 
             logger.log_info("接受POST的请求参数为{}".format(
                 json.dumps(request_body, indent=4, ensure_ascii=False))
             )
 
-            response = self.post(**request_body)
             try:
-                response_body = response.json()
-            except simplejson.JSONDecodeError:
-                response_body = response.text
-            return {
-                "status_code": response.status_code,
-                "response_body": response_body
-            }
+                response = self.post(**request_body)
+                try:
+                    response_body = response.json()
+                except simplejson.JSONDecodeError:
+                    response_body = response.text
+                return {
+                    "status_code": response.status_code,
+                    "response_body": response_body
+                }
+            except exceptions.Timeout as error:
+                raise error
 
         else:
             raise exceptions.TestApiMethodError("接口测试请求类型错误, 请检查相关用例!")

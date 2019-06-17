@@ -62,6 +62,7 @@ data                | 请求数据             | {"name": "SEMAUTO", "categoryId
 file                | 上传文件数据          | {file=operate_excel.save_excel(file=os.path.join(parameters.make_directory('Data', 0), 'excel\compaign_template.xlsx'),data_index=0,excel_key='落地页编号',excel_name='compaign_template_副本.xlsx')}
 json                | Json类型请求         | {"name": "SEMAUTO", "categoryId": $arguments, "enabled": 1}
 headers             | 请求头               | {'Authorization': 'eyJ0eXAiOiJK', 'Content-Type': 'application/json'}
+timeout             | 超时时间             | timeout: 8
 setUp               | 前置条件             | setUp: print('前置条件')
 tearDown            | 后置条件             | tearDown: print('后置条件')
 skip                | 用例跳过             | 布尔值False或者True 
@@ -73,6 +74,7 @@ check_db            | 落库检查             |   check_db: {TenantName: TESTRL
 relevant_parameter  | 上下游接口关联参数     | relevant_parameter: [Host]
 relevant_sql        |  需要检查的sql语句    | relevant_sql: search_all_tenant_conf
 jsonDiff            | 接口自动对比          | jsonDiff: {Code:1, message: 成功}
+
 
 ##### 关于断言
 1. 多层结果断言, 以键值对的方式写入， 断言的Key: 预期的Value

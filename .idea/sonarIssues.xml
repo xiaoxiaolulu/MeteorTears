@@ -203,6 +203,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/cases/test.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/cases/update_bot_baseinfo.yaml">
           <value>
             <set />
@@ -388,7 +393,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/TestJson.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/relevant_params/Token.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/assert.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/assert_success.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/check_db.yaml">
           <value>
             <set />
           </value>
@@ -398,7 +423,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/description.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/enabled.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/message.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/method.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/name.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/relevant_params/status_code.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/time_out.yaml">
           <value>
             <set />
           </value>
@@ -593,6 +648,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../Taffy-master/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Taffy-master/config/selenium.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../mock-master/view/__init__.py">
           <value>
             <set />
@@ -619,6 +684,56 @@
           </value>
         </entry>
         <entry key="F:/MeteorTears/run.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/Common/CustomFail.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/Common/FunctionReplace.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/Common/IniCase.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/Common/ParamManage.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/Common/ReadParam.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/Common/init.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/TestCase/TestAddProject/case.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/config/ConfRelevance.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/test.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/PyTest_allure_apitest-master/window运行.bat">
           <value>
             <set />
           </value>

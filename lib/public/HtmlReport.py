@@ -173,12 +173,14 @@ class ReportTestResult(TestResult):
             当测试用力执行完成后进行调用
         :return:
         """
+
+        # FIXME: 重跑方法存在问题, 暂时影响不是很大
         if self.retry and self.retry >= 1:
             self.trys += 1
             if self.case_status == 1:
                 if self.trys <= self.retry:
-                    if self.save_last_try:
-                        t = self.fail_result.pop(-1)
+                    # if self.save_last_try:
+                    #     t = self.fail_result.pop(-1)
                         # if t[0] == 1:
                         #     self.failure_count -= 1
                         # else:
