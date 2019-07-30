@@ -72,28 +72,6 @@ coupon:
     url: https://test2-appserver.atzc.com:7065/v40/disCoupon/own?pageSize=10&pageNum=1&token=61527c61c92946d58fe1b0934e84613f&status=1&OS=ANDROID&OsVersion=27&AppVersion=99&IMEI=861438046958534&mac=B40FB38790F3&androidID=7ccde31ec3ec4990&PublicLongitude=121.409244&PublicLatitude=31.172197&publicCityCode=021&appName=atzucheApp&deviceName=V1816A&publicToken=61527c61c92946d58fe1b0934e84613f&AppChannelId=testmarket&AndroidId=7ccde31ec3ec4990&requestId=B40FB38790F31561518520965&mem_no=819209698
 ```
 
-### TODO V2.5.0 测试平台前后端分离开发
-1. 在已有模块完善的情况下，进行前后端分离开发
-
-
-### TODO V2.0.0 测试平台，之前脚本框架稳健无特大问题的情况下研发
-1. 初步使用Flask进行研发, 前后端混合开发, 初期版本只包含接口部分
-
-
-### TODO V1.6.0 mock
-1. 完善mock机制，使用Flask，用上下文管理器，对Json的mock文件进行mock接口服务
-2. mock文件格式待构思
-3. 理论上Restful，支持POST, GET, DEL, PUT等类型接口
-
-
-### TODO V1.5.5  接口单接口性能待补充
-1. 接口单接口测试模板类构思及完成 -> templates.locust_func, templates.locust_header, templates.locust_load_attr
-2. 接口单接口测试用例编写格式模式构思及完成
-3. 接口性能与接口测试用例运行方式，并行 or 单独执行， 是否使用分布式待观察
-4. 测试报告Response 与 assert 部分内容颜色标记
-5. 接口性能报告使用Jinjia2模板引擎渲染
-6. 优化项目代码以及潜在问题
-
 
 ### 2019-06-25
 1. 接口录制模块完善, del老版code, 新增Recording module 
