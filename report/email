@@ -1,0 +1,156 @@
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ebebeb;color: #555;font-size: 16px;font-family:微软雅黑,Arial,sans-serif;line-height: 1.7;">
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
+                <tr>
+                    <td style="height: 3px;background: #E64545;"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;padding: 20px;background-color: #fff;color: #555;font-size: 14px;line-height: 1.7;">
+                <tr>
+                    <td style="font-size: 16px;font-weight: bold;color: #222;padding-bottom: 10px;">Hello All:</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        本次为考勤系统项目接口测试邮件，已经测试完毕(附件为本次测试报告)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 20px;">
+                        如有问题，及时反馈！谢谢！
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 16px;font-weight: bold;color: #222;padding-bottom: 10px;">注意事项:</td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        1. 邮件为每日定点发送, 如有打扰抱歉!
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        2. 如发现存在失败的用例，请及时检查！
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        3. 运行用例皆为框架自动生成, 如有纰漏及时检查。
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom: 10px;">
+                        4. 测试框架在不断升级ing, 如有使用上的问题请及时联系Null.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700" style="border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;padding: 20px;background-color: #fff;color: #555;font-size: 14px;line-height: 1.7;">
+                <tr>
+                    <td style="font-size: 16px;font-weight: bold;color: #222;padding-bottom: 10px;">结果数据统计如下:</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table align="center" border="1" cellpadding="0" cellspacing="0" width="700" style="border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;padding: 20px;background-color: #fff;color: #555;font-size: 14px;line-height: 1.7;">
+                <tr>
+                    <th>序号</th>
+                    <th>用例名称</th>
+                    <th>用例总数</th>
+                    <th>用例通过</th>
+                    <th>用例失败</th>
+                    <th>用例跳过</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>Report</th>
+                    <th> 5</th>
+                    <th> 2</th>
+                    <th> 3</th>
+                    <th> 0</th>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <table align="center" border="1" cellpadding="0" cellspacing="0" width="700" style="border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;padding: 20px;background-color: #fff;color: #555;font-size: 10px;line-height: 1.7;">
+                <tr>
+                    <th>Id</th>
+                    <th>TestSuite</th>
+                    <th>TestCase</th>
+                    <th>Description</th>
+                    <th>Url</th>
+                    <th>Method</th>
+                </tr>
+                
+                <tr>
+                    <th>1</th>
+                    <th>Apilogin</th>
+                    <th>test_api_login_success</th>
+                    <th>登录成功-/v31/mem/action/login</th>
+                    <th>/v31/mem/action/login</th>
+                    <th>post</th>
+                </tr>
+
+                <tr>
+                    <th>2</th>
+                    <th>Apilogin</th>
+                    <th>test_login_fail</th>
+                    <th>登录失败-/v31/mem/action/login</th>
+                    <th>/v31/mem/action/login</th>
+                    <th>post</th>
+                </tr>
+
+                <tr>
+                    <th>3</th>
+                    <th>Coupon</th>
+                    <th>test_coupon_success</th>
+                    <th>优惠券-/v40/disCoupon/own</th>
+                    <th>/v40/disCoupon/own</th>
+                    <th>get</th>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <table align="center" id="content" border="0" cellpadding="0" cellspacing="0" width="700" style="border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;padding: 20px;background-color: #fff;color: #555;font-size: 14px;line-height: 1.7;">
+                <tbody>
+                    <tr>
+                        <td style="padding-bottom: 10px;">
+                            如有任何问题或需要帮助，欢迎随时与我联系。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;">
+                            联系人：Null
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;">
+                            QQ：546464268
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="font-size: 14px;padding: 10px 0 40px;">
+            Copyright&copy; MeteorTearsTeam
+        </td>
+    </tr>
+</table>

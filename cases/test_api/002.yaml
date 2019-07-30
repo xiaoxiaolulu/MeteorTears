@@ -1,0 +1,11 @@
+- C:
+    request_body:
+      func_params: [username]
+      method: post
+      url: ${Host}$/v31/mem/action/login
+      json:
+        "AppChannelId": "testmarket"
+        "username": $<username>$
+      headers:
+        Content-Type: application/json; charset=utf-8
+

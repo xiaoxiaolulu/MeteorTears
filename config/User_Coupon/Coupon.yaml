@@ -1,0 +1,43 @@
+#####################################
+# Created By: Null
+# Created date: 2019-06-11
+# Desc: 优惠券
+#####################################
+test_api_setup:
+    relevant_parameter: [login]
+    description: "member_extend_case"
+    cases: ${login}$
+  # Response返回体提取的参数
+    res_index: [token]
+
+test_coupon_success:
+  # 关联的临时变量文件
+  relevant_parameter: [token, Host]
+  # 关联的Sql数据
+  relevant_sql: []
+  # 是否跳过
+  skip: False
+  # 用例描述
+  description: "优惠券-/v40/disCoupon/own"
+  # 请求方式
+  method: get
+  # 请求路由
+  url: ${Host}$/v40/disCoupon/own
+  params: pageSize=10&pageNum=1&token=${token}$&status=1&OS=ANDROID&OsVersion=28&AppVersion=98&IMEI=866957038129841&mac=54B12180B787&androidID=79f05a5ad238e896&PublicLongitude=121.409303&PublicLatitude=31.172189&publicCityCode=021&appName=atzucheApp&deviceName=STF-AL00&publicToken=${token}$&AppChannelId=testmarket&AndroidId=79f05a5ad238e896&requestId=54B12180B7871560241379724&mem_no=201158709&schema=A
+  timeout: 8
+  # 请求头部
+  headers:
+    Content-Type: application/json; charset=utf-8
+    User-Agent: Autoyol_98:Android_27|36722B4DB3C7E55D77375E490D3B5796D30A340002F1349E3B9F1CA3BF
+    Accept: application/json;version=3.0;compress=false
+  # 断言
+  assert:
+    status_code: 200
+    resCode: "000000"
+    resMsg: "success"
+  # 断言Json中存在多个相同的key，独立出来进行断言以.分割
+  assert_same_key:
+    disCouponList.0.showPreferential: "￥200"
+    disCouponList.1.showPreferential: "￥300"
+  # 落库校验
+  check_db:

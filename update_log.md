@@ -1,3 +1,144 @@
+### 2019-06-28
+1. 对测试用例数据执行前进行预处理
+```示例
+测试用例分层结构：
+    1.其中testapi目录不会执行
+    2.api文件和csase文件调用
+        a.testapi
+            以$<params>$方式代表入参方式
+            testapi: cases\testapi\api.yaml -> [一个yaml文件对应一个api]
+            入参方式: parmas_kwargs:
+                        user: tary.liu
+                        psw: 123456
+        b.testsuite 
+            testcase: cases\testcaes\case.yaml -> [一个yaml文件对应一个case文件]
+            suite一般调用正向的测试cases，通过组装不同的case形成不同的测试场景
+    3. 最后处理完数据后无序加载测试容器，执行逻辑运行逻辑不变
+        加载数据以[{filename: {casename: casebody}}, {filename: {casename: casebody}}]
+            转化成py文件对应的数据：
+                filename => 文件名&类名
+                casename => 用例函数名
+                casebody => 用例运行装饰器处理的测试数据,包含requestbody&断言等
+                
+cases----------------testapi
+        |
+        |------------testcases
+        |
+        |------------testsuites
+```
+
+### 2019-06-27
+1. 优化lib.public.load_cases，对测试用例数据进行分类
+```示例
+a.用例之间的调用以testcases: cases\testcaes\login.yaml进行调用
+b.被调用的测试用例以.py函数入参形式调用 status -> TODO
+    parmas_kwargs: 
+        - username: tracy.liu
+        - password: 546464628
+    
+    传统形式：<封装固定方法进行调用>
+        def login(username, password):
+            res = request.post(host, {user: username, psw: password}, headers)
+            self.assertEqual(res.status_code: 200)
+            self.assertEqual(res.json()[user], username)
+    
+     cases---------testcases
+            |
+            |------testsuites
+```
+
+
+### 2019-06-26
+1. 修复lib.utils.recording._params(filepath)录制Get类型接口
+```示例
+coupon:
+    assert:
+        status_code: 200
+    description: coupon
+    headers:
+        Accept: application/json;version=3.0;compress=false
+        Accept-Encoding: gzip
+        Connection: Keep-Alive
+        Content-Type: application/json; charset=utf-8
+        Host: test2-appserver.atzc.com:7065
+        User-Agent: Autoyol_99:Android_27|91AB99D0EDA542DCC966AABD2A0C5BB8D30A34D40031FF9E3B9F1CA3BF
+        X-Tingyun-Id: YfYbInNBhKA;c=2;r=1295516226;u=24e923be2321c04dc7b49754eae43b7f::839528A9D7D98C34
+    method: GET
+    relevant_parameter: []
+    relevant_sql: []
+    res_index: []
+    skip: false
+    timeout: 8
+    url: https://test2-appserver.atzc.com:7065/v40/disCoupon/own?pageSize=10&pageNum=1&token=61527c61c92946d58fe1b0934e84613f&status=1&OS=ANDROID&OsVersion=27&AppVersion=99&IMEI=861438046958534&mac=B40FB38790F3&androidID=7ccde31ec3ec4990&PublicLongitude=121.409244&PublicLatitude=31.172197&publicCityCode=021&appName=atzucheApp&deviceName=V1816A&publicToken=61527c61c92946d58fe1b0934e84613f&AppChannelId=testmarket&AndroidId=7ccde31ec3ec4990&requestId=B40FB38790F31561518520965&mem_no=819209698
+```
+
+### TODO V2.5.0 测试平台前后端分离开发
+1. 在已有模块完善的情况下，进行前后端分离开发
+
+
+### TODO V2.0.0 测试平台，之前脚本框架稳健无特大问题的情况下研发
+1. 初步使用Flask进行研发, 前后端混合开发, 初期版本只包含接口部分
+
+
+### TODO V1.6.0 mock
+1. 完善mock机制，使用Flask，用上下文管理器，对Json的mock文件进行mock接口服务
+2. mock文件格式待构思
+3. 理论上Restful，支持POST, GET, DEL, PUT等类型接口
+
+
+### TODO V1.5.5  接口单接口性能待补充
+1. 接口单接口测试模板类构思及完成 -> templates.locust_func, templates.locust_header, templates.locust_load_attr
+2. 接口单接口测试用例编写格式模式构思及完成
+3. 接口性能与接口测试用例运行方式，并行 or 单独执行， 是否使用分布式待观察
+4. 测试报告Response 与 assert 部分内容颜色标记
+5. 接口性能报告使用Jinjia2模板引擎渲染
+6. 优化项目代码以及潜在问题
+
+
+### 2019-06-25
+1. 接口录制模块完善, del老版code, 新增Recording module 
+```示例(注意事项逻辑未必稳定，待进一步测试)
+python recording.py --r=C:\Users\56464\Desktop\Untitled.har --n=test --p=C:\Users\56464\Desktop\MeteorTears
+
+参数：
+    --r 抓包工具保存下来的录制文件路径
+    --n 生成测试用例名称命名
+    --p 生成测试用例保存文件路径
+```
+
+
+### 2019-06-24
+1. 优化临时文件目录结构
+```示例
+现在分四层
+variables---------config_params         (Host等常量配置文件目录)
+            |
+            |-----extract_params        (接口提取参数保存文件目录)
+            |
+            |-----interface_params      (Data/Json等接口参数保存文件目录)
+            |
+            |-----random_params         (随机参数变量保存文件目录)
+```
+2. setUp & tearDown涉及负责多条数据处理时，使用EnvironClean模块进行函数编程，再在yamlCase中调用数据处理函数
+```示例
+EnvironPreparation:
+    setUp: EnvironClean.marketing_partner_operation()
+```
+
+
+### 2019-06-20
+1. 优化wraps.cases_runner逻辑，现支持临时变量文件中的变量替换
+2. 针对用例存在耦合的情况，以临时变量文件的方式继承api请求文件，以确保无论用例执行顺序如何，都能单独运行
+```示例
+test_api_setup001:
+  relevant_parameter: [login]
+  description: "member_extend_case001"
+  cases: ${login}$
+# Response返回体提取的参数
+  res_index: [token]
+```
+
+
 ### 2019-06-13
 1. 加入Response文本对比功能，关键词json_diff
 2. 优化邮件模板，新增现有测试用例统计元素
@@ -47,6 +188,10 @@
   assert_same_key:
     disCouponList.0.showPreferential: "￥2000"
 ```
+
+
+### 2019-06-06
+1. 优化报告逻辑，新增失败重跑功能
 
 
 ### 2019-06-02
@@ -109,30 +254,30 @@
 
 ### 2018-12-14
 1. 完成Email模板，样式已调试完毕
-2. 用例基本可跑批
-3. 查看项目代码, 使用FIXME对待完善代码就行标签注释(共计14个TODO)
+2. 用例基本可跑批 
+3. 查看项目代码, 使用FIXME对待完善代码就行标签注释(共计14个TODO) status -> 代码风格保持一致性，部分代码待优化美观
 
 
 ### V1.3.0 TODO
-1. 对Fiddler进行改造使之能够完成接口录制功能，python对录制接口分析并自动运行
+1. 对Fiddler进行改造使之能够完成接口录制功能，python对录制接口分析并自动运行 status -> done 逻辑变更，老版代码回溯删除
 
 
 ### V1.2.0 TODO
-1. 使用locust库二次开发，完成接口性能测试
+1. 使用locust库二次开发，完成接口性能测试 status -> 待研发
 
 
 ### V1.1.0 TODO
-1. 测试模型设计并编写完毕 done
-2. 服务器部署, 接入Jenkins, 持续集成 done
+1. 测试模型设计并编写完毕 status -> done
+2. 服务器部署, 接入Jenkins, 持续集成 status -> done
 
 
 ### V1.0.0 TODO
-1. 项目配置层代码优化, 当前代码过于繁琐复杂 done
-2. 测试用例的校验器设计[Response结构体分析->返回数据类型 code等多重断言] done
-3. 测试模板的重新定义, 使之功能更为全面 done
-4. 测试阶段，编写用例测试，框架逻辑是否有所遗漏 done
-5. 第一版本基本用例编写功能完成 done
-6. 后期完善之前老代码，重构告警机制代码 done
+1. 项目配置层代码优化, 当前代码过于繁琐复杂 status -> done
+2. 测试用例的校验器设计[Response结构体分析->返回数据类型 code等多重断言] status -> done
+3. 测试模板的重新定义, 使之功能更为全面 status -> done
+4. 测试阶段，编写用例测试，框架逻辑是否有所遗漏 status -> done
+5. 第一版本基本用例编写功能完成 status -> done
+6. 后期完善之前老代码，重构告警机制代码 status ->done
 
 
 ### 2018-12-13

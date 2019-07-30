@@ -1,0 +1,29 @@
+favorites:
+  skip: False
+  relevant_parameter: [token, RandomPostcode]
+  method: post
+  url: https://test2-appserver.atzc.com:7065/v57/favorites
+  json:
+    "AppChannelId": "testmarket"
+    "schema": "A"
+    "OS": "ANDROID"
+    "appName": "atzucheApp"
+    "OsVersion": "27"
+    "mem_no": "819209698"
+    "IMEI": "861438046958534"
+    "AndroidId": "7ccde31ec3ec4990"
+    "deviceName": "V1816A"
+    "mac": "B40FB38790F3"
+    "token": ${token}$
+    "AppVersion": ${RandomPostcode}$
+    "publicToken": ${token}$
+    "publicCityCode": "021"
+    "requestId": "B40FB38790F31560755232507"
+    "PublicLongitude": "121.409265"
+    "androidID": "7ccde31ec3ec4990"
+    "PublicLatitude": "31.172216"
+  timeout: 8
+  headers:
+    Content-Type: application/json; charset=utf-8
+    User-Agent: Autoyol_98:Android_27|36722B4DB3C7E55D77375E490D3B5796D30A340002F1349E3B9F1CA3BF
+    Accept: application/json;version=3.0;compress=false

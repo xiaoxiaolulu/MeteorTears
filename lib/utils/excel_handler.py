@@ -13,7 +13,7 @@ def read_excel(file: str) -> list:
      - file: 文件路径, str object.
 
     :Usage:
-        read_excel(../data/test.json.xlsx)
+        read_excel(../data/test.j.xlsx)
     """
     workbook = xlrd.open_workbook(file)
     table = workbook.sheet_by_index(0)
@@ -40,7 +40,7 @@ def analyze_excel(file: str, data_index: int, excel_key: str) -> list:
      - excel_key: python代码数据对应的键, str object.
 
     :Usage:
-        analyze_excel('..data/test.json.xlsx', 1, 'landing_page')
+        analyze_excel('..data/test.j.xlsx', 1, 'landing_page')
     """
 
     data = read_excel(file)[data_index]
@@ -68,7 +68,7 @@ def save_excel(
      - excel_name: 复制的文件名, 默认为copy_excel, str object.
 
     :Usage:
-        save_excel('../data/test.json.xlsx', 2, 'landing_page', 'test.json-副本.xlsx')
+        save_excel('../data/test.j.xlsx', 2, 'landing_page', 'test.j-副本.xlsx')
     """
     excel_copy = os.path.join(setting.CASE_DATA, 'copy_excel')
     workbook = xlwt.Workbook(encoding='utf-8')

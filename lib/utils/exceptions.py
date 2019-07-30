@@ -7,3 +7,11 @@ class JsonLoadingError(Exception):
 
 class TestApiMethodError(Exception):
     pass
+
+
+class CaseYamlFileNotFound(FileNotFoundError, FileExistsError):
+    pass
+
+
+class SubInheritCaseParamsKwargs(TypeError, KeyError):
+    pass

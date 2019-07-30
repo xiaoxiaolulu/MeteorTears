@@ -14,7 +14,6 @@ def stopwords(seg_list: list) -> list:
     :Args:
      - seg_list: 使用JieBa分词后对待测试文本进行分词后得到的一个列表对象, list object.
     """
-
     stayed_word = []
 
     filter_keywords = open(path.join(setting.ENV_DATA, 'stopKeywords'), 'r', encoding='utf-8')
@@ -31,7 +30,6 @@ def count(res: str):
     :Args:
      - res: 待测试文本关键字, str object.
     """
-
     seg_list = list(jieba.cut(res))
     seg_list = stopwords(seg_list)
     dic = Counter(seg_list)
@@ -73,7 +71,6 @@ def cal_con_dis(v1: list, v2: list, length_vector):
      - v2: 实际的向量, list object.
      - length_vector: 向量的长度, list object.
     """
-
     a1 = np.asarray(v1)
     a2 = np.asarray(v2)
     A = math.sqrt(np.sum(a1**2)) * math.sqrt(np.sum(a1**2))

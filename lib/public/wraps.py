@@ -3,10 +3,11 @@ import ast
 import yaml
 import json
 import builtins
+from os import path
+from os.path import exists
 from functools import wraps
-from config import setting
 from collections import Iterable
-from lib.utils import exceptions
+from config import setting
 from lib.public import logger, relevance
 from lib.public import http_keywords
 from lib.utils.use_MySql import ExecuteSQL
@@ -16,6 +17,7 @@ from lib.public import text_similarity_comparison as diff_lib
 
 
 DataBaseSetting = setting.DATA_BASE_CONF
+VariablesPathList = [setting.CONFIG_PARAMS, setting.EXTRACT_PARAMS, setting.INTERFACE_PARAMS, setting.RANDOM_PARAMS]
 
 
 def cases_runner(func):
@@ -31,19 +33,39 @@ def cases_runner(func):
                     body = {}
 
                     # 用例文件与临时变量文件相互关联
-                    relevant_params = items.get('body').get('relevant_parameter')
-
-                    _relevance = {}
-
+                    # relevant_params = items.get('body').get('relevant_parameter')
+                    relevant_params = GetJsonParams.get_value(items, 'relevant_parameter')
                     if relevant_params:
+
                         if isinstance(relevant_params, list):
+                            _relevance = {}
+
                             for relevant_param in relevant_params:
                                 relevant_files = relevant_param + '.yaml'
-                                with open(setting.RES + relevant_files, 'rb') as file:
-                                    _relevance.update(yaml.safe_load(file))
+                                for base_path in VariablesPathList:
+                                    if exists(path.join(base_path, relevant_files)):
+                                        with open(base_path + relevant_files, encoding='utf-8') as file:
+                                            _relevance.update(yaml.safe_load(file))
 
-                    relevance_body = relevance.custom_manage(str(items['body']), _relevance)
-                    body.update(relevance_body)
+                            # 判断关联文件中是否存在替换的变量，将其替换
+                            _relevance_params = GetJsonParams.get_value(_relevance, 'relevant_parameter')
+                            if _relevance_params:
+
+                                if isinstance(_relevance_params, list):
+                                    _next_relevance = {}
+
+                                    for _relevance_param in _relevance_params:
+                                        _relevant_files = _relevance_param + '.yaml'
+                                        for base_path in VariablesPathList:
+                                            if exists(path.join(base_path, _relevant_files)):
+                                                with open(base_path + _relevant_files, encoding='utf-8') as file:
+                                                    _next_relevance.update(yaml.safe_load(file))
+
+                                    _relevance_body = relevance.custom_manage(str(_relevance), _next_relevance)
+                                    _relevance.update(_relevance_body)
+
+                            relevance_body = relevance.custom_manage(str(items['body']), _relevance)
+                            body.update(relevance_body)
 
                     # 运行用例，暂支持Post与Get请求接口
                     handler = http_keywords.BaseKeyWords(body)
@@ -59,7 +81,7 @@ def cases_runner(func):
                         if isinstance(res_index, list):
                             for res_key in res_index:
                                 return_res = GetJsonParams.get_value(result, res_key)
-                                file_name = setting.RES + res_key
+                                file_name = setting.EXTRACT_PARAMS + res_key
                                 logger.log_debug('保存的变量值为 => {} '.format(return_res))
 
                                 with open(file_name + '.yaml', 'w', encoding='utf-8') as file:
@@ -67,7 +89,7 @@ def cases_runner(func):
 
                         if isinstance(res_index, str):
                             return_res = GetJsonParams.get_value(result, res_index)
-                            file_name = setting.RES + res_index
+                            file_name = setting.EXTRACT_PARAMS + res_index
                             logger.log_debug('保存的变量值为 {}'.format(return_res))
 
                             with open(file_name, 'w', encoding='utf-8') as file:
@@ -116,7 +138,7 @@ def result_assert(func):
     def wrap(*args, **kwargs):
 
         response = kwargs.get('response')
-        kwassert = kwargs.get('kwassert')
+        kwassert = kwargs.get('kwassert') if kwargs.get('kwassert') else {}
         kwassert_same = kwargs.get('kwassert_same')
         json_diff = kwargs.get('json_diff')
         database_check = kwargs.get('db_check') if kwargs.get('db_check') else {}

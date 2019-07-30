@@ -1,0 +1,9 @@
+import urllib3
+from locust import HttpLocust, TaskSet, task
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+
+class {}(TaskSet):
+
+    

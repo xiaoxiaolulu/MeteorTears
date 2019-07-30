@@ -1,0 +1,40 @@
+#####################################
+# Created By: Null
+# Created date: 2019-06-11
+# Desc: 我的
+#####################################
+test_api_setup:
+    relevant_parameter: [login]
+    description: "member_extend_case"
+    cases: ${login}$
+  # Response返回体提取的参数
+    res_index: [token]
+
+test_member_success:
+  # 关联的临时变量文件
+  relevant_parameter: [token, Host]
+  # 关联的Sql数据
+  relevant_sql: []
+  # 是否跳过
+  skip: False
+  # 用例描述
+  description: "我的页面-/v47/member/info"
+  # 请求方式
+  method: get
+  # 请求路由
+  url: ${Host}$/v47/member/info
+  params: machineCode=B40FB38790F38614380469585347ccde31ec3ec4990&token=${token}$&OS=ANDROID&OsVersion=27&AppVersion=98&IMEI=861438046958534&mac=B40FB38790F3&androidID=7ccde31ec3ec4990&PublicLongitude=121.409265&PublicLatitude=31.172216&publicCityCode=021&appName=atzucheApp&deviceName=V1816A&publicToken=${token}$&AppChannelId=testmarket&AndroidId=7ccde31ec3ec4990&requestId=B40FB38790F31560757258156&mem_no=819209698&schema=A
+  timeout: 8
+  # 请求头部
+  headers:
+    Content-Type: application/json; charset=utf-8
+    User-Agent: Autoyol_98:Android_27|36722B4DB3C7E55D77375E490D3B5796D30A340002F1349E3B9F1CA3BF
+    Accept: application/json;version=3.0;compress=false
+  # 断言
+  assert:
+    status_code: 200
+    resCode: "000000"
+    resMsg: "success"
+    nickName: "135***7378"
+  # 落库校验
+  check_db:

@@ -1,0 +1,7 @@
+bot_profile:
+  action: SELECT
+  execSQL:
+    table: "[dbo].[Tenant_Bot_Profile]"
+    columns: Bot_Name
+    params: WHERE Bot_Name = 'test'
+    desc: ""

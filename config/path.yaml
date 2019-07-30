@@ -6,14 +6,10 @@ CONTENT: lib/templates/content
 HEADER: lib/templates/header
 # 邮件模板
 EMAIL: lib/templates/email
-# 录制文件转化后的测试case
-WORK_FLOW: lib/work_flow/
 # 项目配置文件
 XML_CONFIG: config/config.xml
 # 自动生成.py用例文件
 TEST_CASES: lib/test_cases/
-# 录制接口源文件
-Recording: lib/record/
 # 企业微信相关参数文件
 WECHAT: config/wechat.yaml
 # 日志存放目录
@@ -22,9 +18,23 @@ LOG: report/log/
 REPORT: report/
 # 编写Yaml格式测试用例目录
 CASES: cases/
+
+API_PATH: cases/test_api/
+
+TEST_CASE: cases/test_cases/
+
+TEST_SUITE: cases/test_suites/
 # 测试数据
 CASE_DATA: data/case_data/
 # 项目依赖的公共数据
 ENV_DATA: data/env_data/
 # 临时变量 & 常用变量 & 随机数据 文件目录
-RES: lib/relevant_params/
+RES: variables/
+# 接口提取参数存放路径
+EXTRACT_PARAMS: variables/extract_params/
+# 接口Host等常量配置参数存放路径
+CONFIG_PARAMS: variables/config_params/
+# 接口Data/Json等参数存放路径
+INTERFACE_PARAMS: variables/interface_params/
+# 随机变量存放路径
+RANDOM_PARAMS: variables/random_params/

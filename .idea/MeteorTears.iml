@@ -11,7 +11,7 @@
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/lib/template" />
+        <option value="$MODULE_DIR$/lib/templates" />
       </list>
     </option>
   </component>

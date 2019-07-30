@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import unittest
 from lib.public import wraps
+import EnvironClean
 
 
 class {}(unittest.TestCase):

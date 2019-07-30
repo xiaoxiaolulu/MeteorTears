@@ -8,37 +8,72 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../API_Automation-master/Common/Request.py">
+        <entry key="$PROJECT_DIR$/../HttpRunner-master/httprunner/api.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/.gitignore">
+        <entry key="$PROJECT_DIR$/../HttpRunner-master/httprunner/loader.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/.travis.yml">
+        <entry key="$PROJECT_DIR$/../HttpRunner-master/httprunner/parser.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/1.json">
+        <entry key="$PROJECT_DIR$/1111.json">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/1.py">
+        <entry key="$PROJECT_DIR$/11111.json">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/111.json">
+        <entry key="$PROJECT_DIR$/123.json">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/1231.html">
+        <entry key="$PROJECT_DIR$/123.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/1231.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/1232132.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/231321.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/3123213.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/321321231.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/EnvironClean.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/EnvironPreparation.py">
           <value>
             <set />
           </value>
@@ -48,32 +83,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/A002_get_public_key.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/A003_validate_token.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/A004_remove_token.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/A_HT.Api.Auth.Service/A001_validate_login.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/A_HT.Api.Auth.Service/A004_remove_token.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/A_kqa_search.yaml">
+        <entry key="$PROJECT_DIR$/__init__.py">
           <value>
             <set />
           </value>
@@ -83,162 +93,97 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/A_get_bot_list.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/B001_get_bot_list.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/B_HT.Api.Admin.Portal/B002_create_bot.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/HT.Api.Auth.Service/ValidateToken.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/HT.Api.Auth.Service/validatelogin.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/cases/User_Coupon/Coupon.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/demo.yaml">
+        <entry key="$PROJECT_DIR$/cases/User_Favorites/Favorites.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/get_bot_status.yaml">
+        <entry key="$PROJECT_DIR$/cases/User_Home/Home.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/get_demo.yaml">
+        <entry key="$PROJECT_DIR$/cases/User_Member/Member.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/get_public_key.yaml">
+        <entry key="$PROJECT_DIR$/cases/api.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/get_service.yaml">
+        <entry key="$PROJECT_DIR$/cases/case.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/kqa_add.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_api/002.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/kqa_bot_search.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_api/api.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/kqa_get.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_api/case.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/kqa_get_keyword.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_cases/003.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/kqa_update.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_cases/case.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/kqa_update_enable.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_cases/demo.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/kqa_upload.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_cases/login.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/kqa_verify.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_cases/login_cases.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/post_demo.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_suite/demo.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/remove_token.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_suite/demo002.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/setupteardown.yaml">
+        <entry key="$PROJECT_DIR$/cases/test_suite/login_suite.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/cases/skill_set_list.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/skip_demo.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/test.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/update_bot_baseinfo.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/updatebotbaseinfo.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/uploadfiles.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/validate_login.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/cases/validate_token.yaml">
+        <entry key="$PROJECT_DIR$/config/User_Member/Member.yaml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/config/config.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/config/path.json">
           <value>
             <set />
           </value>
@@ -253,47 +198,17 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/config/wechat.yaml">
+        <entry key="$PROJECT_DIR$/coupon.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/config/xml_handler.py">
+        <entry key="$PROJECT_DIR$/doc/CaseWrite.md">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/data/bot_profile.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/data/bot_prs.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/data/search_all_tenant_conf.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/doc/case_write.md">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/doc/project_log.md">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/public/BeautifulReport.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/public/HtmlReport.py">
+        <entry key="$PROJECT_DIR$/doc/fiddler_obj.md">
           <value>
             <set />
           </value>
@@ -318,7 +233,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/public/logger.py">
+        <entry key="$PROJECT_DIR$/lib/public/loader.py">
           <value>
             <set />
           </value>
@@ -328,27 +243,17 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/public/text_similarity_comparison.py">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/lib/public/wraps.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/Host.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/Key.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/lib/relevant_params/RandomDate.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomEmail.yaml">
           <value>
             <set />
           </value>
@@ -363,117 +268,17 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomPhoneNum.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/lib/relevant_params/RandomPostcode.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomSsn.yaml">
+        <entry key="$PROJECT_DIR$/lib/relevant_params/favorites.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/RandomWord.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/RecordId.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/RsaPublicKey.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/TestJson.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/Token.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/assert.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/assert_success.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/check_db.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/code_success.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/description.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/enabled.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/message.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/method.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/name.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/status_code.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/time_out.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/relevant_params/token.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/report/HighTalkReport.html">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/templates/content">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/templates/email">
+        <entry key="$PROJECT_DIR$/lib/relevant_params/login.yaml">
           <value>
             <set />
           </value>
@@ -483,37 +288,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/templates/report">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/test_cases/Demo.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/test_cases/Uploadfiles.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/analyze_log.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/create_workFlow_obj.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/email.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/excel_handler.py">
+        <entry key="$PROJECT_DIR$/lib/test_cases/Apilogin.py">
           <value>
             <set />
           </value>
@@ -523,57 +298,22 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/fp.py">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/lib/utils/random_data.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/resvalues.py">
+        <entry key="$PROJECT_DIR$/lib/utils/recording.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/security.py">
+        <entry key="$PROJECT_DIR$/loader.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/test_api_server.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/time_util.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/use_MySql.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib/utils/use_SqlServer.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/mock/test_api_server.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/relevant_params/Token.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/report/HighTalkReport.html">
+        <entry key="$PROJECT_DIR$/order_positive_tests.yaml">
           <value>
             <set />
           </value>
@@ -583,37 +323,12 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/report/email">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/report/log/2019-05-14.log">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/report/log/2019-05-16.log">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/requirements.txt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/res/Host.yaml">
+        <entry key="$PROJECT_DIR$/report/log/2019-06-26.log">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/run.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/skip/A_get_bot_list.yaml">
           <value>
             <set />
           </value>
@@ -628,122 +343,77 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/test001.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test12321.py">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test_login.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/update_log.md">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/大.json">
+        <entry key="$PROJECT_DIR$/variables/config_params/Host.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../MockServer-master/config.py">
+        <entry key="$PROJECT_DIR$/variables/extract_params/token.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../MockServer/MockServer/views.py">
+        <entry key="$PROJECT_DIR$/variables/random_params/RandomPhoneNum.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../Taffy-master/README.md">
+        <entry key="$PROJECT_DIR$/variables/random_params/RandomPostcode.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../Taffy-master/config/selenium.yml">
+        <entry key="$PROJECT_DIR$/variables/random_params/RandomSentence.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../mock-master/view/__init__.py">
+        <entry key="$PROJECT_DIR$/variables/random_params/RandomSsn.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../sweetest-master/sweetest/data/Baidu-baidu.csv">
+        <entry key="$PROJECT_DIR$/variables/random_params/RandomText.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../项目资料/测试脚本/doraemon-master/src/lib/BeautifulReport.py">
+        <entry key="$PROJECT_DIR$/variables/random_params/RandomWord.yaml">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../项目资料/测试脚本/doraemon-master/src/testcases/TestGithubApi.py">
+        <entry key="$PROJECT_DIR$/../har2case-master/har2case/cli.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="F:/MeteorTears/cases/User_Coupon/Coupon.yaml">
+        <entry key="$PROJECT_DIR$/../har2case-master/har2case/utils.py">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="F:/MeteorTears/run.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/Common/CustomFail.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/Common/FunctionReplace.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/Common/IniCase.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/Common/ParamManage.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/Common/ReadParam.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/Common/init.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/TestCase/TestAddProject/case.yaml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/config/ConfRelevance.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/test.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="F:/PyTest_allure_apitest-master/window运行.bat">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="G:/django-codes/book_manager/front/views.py">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="G:/django-codes/book_manager/templates/upload.html">
+        <entry key="$USER_HOME$/Downloads/order-test-master/OrderBusinessTest/tests/api/config.yaml">
           <value>
             <set />
           </value>

@@ -132,6 +132,7 @@ class ReportTestResult(TestResult):
         self.save_last_try = save_last_try
         self.case_status = 0
         self.trys = 0
+        self.trys = 1
         self.case_log = ''
         self.default_report_name = '自动化测试报告'
         self.FIELDS = None
@@ -173,8 +174,8 @@ class ReportTestResult(TestResult):
             当测试用力执行完成后进行调用
         :return:
         """
-
         # FIXME: 重跑方法存在问题, 暂时影响不是很大
+
         if self.retry and self.retry >= 1:
             self.trys += 1
             if self.case_status == 1:
@@ -353,7 +354,7 @@ class ReportTestResult(TestResult):
 
     def add_test_type(self, status: str, case_log: list) -> None:
         """
-            abstruct add test.json type and return tuple
+            abstruct add test.j type and return tuple
         :param status:
         :param case_log:
         :return:

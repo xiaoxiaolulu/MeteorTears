@@ -1,0 +1,4 @@
+- A:
+    testapi: cases/002.yaml
+    params_kwargs:
+      username: 'tracy.liu'

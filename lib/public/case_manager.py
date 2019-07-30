@@ -57,6 +57,7 @@ class CreateCase(GetJsonParams):
         :Usage:
             create_template()
         """
+        # tags = LD.sub_case_func_params()
         tags = LD.load_files()
         for items in tags:
             for class_name, body in items.items():

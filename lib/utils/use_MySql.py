@@ -41,22 +41,30 @@ class ExecuteSQL(GetJsonParams):
             loads_sql_data()
         """
         with open(setting.CASE_DATA + filename, encoding='utf-8') as file:
-            for dic in yaml.load(file):
-                for class_name, body in dic.items():
-                    if len(body) > 1:
-                        query_action = body['action']
-                        table = cls.get_value(body['execSQL'], 'table')
-                        columns = cls.get_value(body['execSQL'], 'columns')
-                        params = cls.get_value(body['execSQL'], 'params')
-                        desc = cls.get_value(body['execSQL'], 'desc')
-                        yield {
-                            'classname': class_name,
-                            'action': query_action,
-                            'table': table,
-                            'columns': columns,
-                            'params': params,
-                            'desc': desc
-                        }
+            for class_name, body in yaml.safe_load(file).items():
+                if len(body) > 1:
+                    query_action = body['action']
+                    table = cls.get_value(body['execSQL'], 'table')
+                    columns = cls.get_value(body['execSQL'], 'columns')
+                    params = cls.get_value(body['execSQL'], 'params')
+                    desc = cls.get_value(body['execSQL'], 'desc')
+                    yield {
+                        'classname': class_name,
+                        'action': query_action,
+                        'table': table,
+                        'columns': columns,
+                        'params': params,
+                        'desc': desc
+                    }
+
+    def specify_file_execution_data(self, filename: str):
+        for sql_content in iter(self.loads_sql_data(filename)):
+            class_name = sql_content['class_name']
+            action = sql_content['action']
+            table = sql_content['sql']
+            columns = sql_content['columns']
+            params = sql_content['params']
+            desc = sql_content['desc']
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         if not exc_tb:

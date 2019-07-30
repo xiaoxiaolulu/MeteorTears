@@ -1,3 +1,4 @@
+import ast
 from config import setting
 from faker import Faker
 from lib.public import logger
@@ -25,7 +26,7 @@ class RandomData(object):
         r"""创建常用的随机数据，并生成.yaml文件存在临时文件目录中
         """
         for key, value in cls.random_data.items():
-            filepath = setting.RES + key + '.yaml'
+            filepath = setting.RANDOM_PARAMS + key + '.yaml'
             with open(filepath, 'w', encoding='utf-8') as file:
                 file.write('{}: {}'.format(key, value))
                 logger.log_info('生成随机测试数据 => {} 成功.'.format(filepath))

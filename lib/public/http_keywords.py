@@ -94,6 +94,5 @@ class BaseKeyWords(GetJsonParams):
                 }
             except exceptions.Timeout as error:
                 raise error
-
         else:
             raise exceptions.TestApiMethodError("接口测试请求类型错误, 请检查相关用例!")

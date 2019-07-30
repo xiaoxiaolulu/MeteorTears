@@ -1,0 +1,95 @@
+#####################################
+# Created By: Null
+# Created date: 2019-06-05
+# Desc: 登录
+#####################################
+test_api_login_success:
+  # 关联的临时变量文件
+  relevant_parameter: [Host]
+  # 关联的Sql数据
+  relevant_sql: []
+  # 是否跳过
+  skip: False
+  # 用例描述
+  description: "登录成功-/v31/mem/action/login"
+  # 请求方式
+  method: post
+  # 请求路由
+  url: ${Host}$/v31/mem/action/login
+  timeout: 8
+  # 请求参数
+  json:
+    "AppChannelId": "testmarket"
+    "OS": "ANDROID"
+    "validCode": "111111"
+    "loginType": "validCode"
+    "appName": "atzucheApp"
+    "OsVersion": "27"
+    "mobile": "13564957378"
+    "mem_no": "718160237"
+    "IMEI": ""
+    "AndroidId": "7ccde31ec3ec4990"
+    "deviceName": "V1816A"
+    "mac": "B40FB38790F3"
+    "AppVersion": 98
+    "publicToken": "0"
+    "publicCityCode": "021"
+    "requestId": "B40FB38790F31560751297632"
+    "PublicLongitude": "0"
+    "androidID": "7ccde31ec3ec4990"
+    "PublicLatitude": "0"
+  # 请求头部
+  headers:
+    Content-Type: application/json; charset=utf-8
+    User-Agent: Autoyol_80:Android_21|CF336E2B0D0A361E679A6699A38A1576D3013004042034B17B72C7B188
+    Accept: application/json;version=3.0;compress=false
+  # Response返回体提取的参数
+  res_index: [token]
+  # 断言
+  assert:
+    status_code: 200
+    resCode: "000000"
+    resMsg: "success"
+  # 落库校验
+  check_db:
+
+
+test_login_fail:
+  relevant_parameter: [Host]
+  relevant_sql: []
+  skip: False
+  description: "登录失败-/v31/mem/action/login"
+  method: post
+  url: ${Host}$/v31/mem/action/login
+  timeout: 8
+  json:
+    AppChannelId: "testmarket"
+    schema: "A"
+    OS: "ANDROID"
+    validCode: "111111"
+    loginType: "validCode"
+    appName: "atzucheApp"
+    OsVersion: "28"
+    mobile: "158008738061111111111111111111111111111111111111111111111"
+    mem_no: null
+    IMEI: "866957038129841"
+    AndroidId: "79f05a5ad238e896"
+    deviceName: "STF-AL00"
+    mac: "54B12180B787"
+    AppVersion: 98
+    publicToken: "0"
+    publicCityCode: "021"
+    requestId: "54B12180B7871559714482129"
+    PublicLongitude: "121.409095"
+    androidID: "79f05a5ad238e896"
+    PublicLatitude: "31.172282"
+  headers:
+    Content-Type: application/json; charset=utf-8
+    Accept-Encoding: gzip
+    User-Agent: Autoyol_80:Android_21|CF336E2B0D0A361E679A6699A38A1576D3013004042034B17B72C7B188
+    Accept: application/json;version=3.0;compress=false
+  assert:
+    status_code: 200
+    resCode: "000000"
+    resMsg: "success"
+  check_db:
